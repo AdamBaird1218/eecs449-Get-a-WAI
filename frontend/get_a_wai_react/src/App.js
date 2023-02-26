@@ -10,6 +10,12 @@ function App() {
     setText_entry('');
     setMessage_list(prev_list => [...prev_list, text_entry])};
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSubmit()
+    }
+  }
+
   return (
     <>
     <div className="App">
@@ -33,7 +39,7 @@ function App() {
         
 
     <div>
-          <input type="text" name="user_question" value={text_entry} onChange={e => setText_entry(e.target.value)} />
+          <input type="text" name="user_question" value={text_entry}  onChange={e => setText_entry(e.target.value)} onKeyDown={handleKeyDown}/>
           <button onClick={handleSubmit} > Submit ME!</button>
        
     </div>
