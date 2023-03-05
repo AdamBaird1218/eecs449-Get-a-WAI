@@ -1,2 +1,2 @@
 """flask import"""
-from cities.api.index import *
+from cities.api.api import *

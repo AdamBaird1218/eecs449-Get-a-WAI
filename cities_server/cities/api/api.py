@@ -9,7 +9,7 @@ def get_services():
         "cities": "/api/cities/",
         "messages": "api/messages"
     }
-    return flask.jasonify(**context)
+    return flask.jsonify(**context)
 
 @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 def city_activities(cityid):
