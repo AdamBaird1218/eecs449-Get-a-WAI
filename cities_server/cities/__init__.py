@@ -8,6 +8,6 @@ app.config.from_object('cities.config')
 
 #import destinations.views
 import cities.model
-
+import cities.api
 
 
