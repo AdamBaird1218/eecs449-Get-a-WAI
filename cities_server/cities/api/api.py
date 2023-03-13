@@ -30,15 +30,33 @@ def getCities(activity_list):
 
 def filter_activities(con, act_list):
     nlp = spacy.load('en_core_web_md')
-    activites_list = get_all_activites(con)
+    activites_dict = get_all_activites(con)
+    act_string = []
+    for entry in activites_dict:
+        act_string += entry['activity_name'] + " "
+    
     filtered_acts = []
-    for usr_act in act_list: 
-        for db_act in activites_list:
-            
-            pass
+    for usr_act in act_list:
+        temp_sim_list = []
+        input_word = nlp(usr_act)
+        db_words = nlp(act_string)
         
-    
-    
+        for token in db_words:
+            temp_sim_list.append(
+                {
+                    "activity": token.text,
+                    "similarity": input_word.similarity(token)
+                }
+            )
+        temp_sim_list.sort(reverse=True, key=sorting_sims)
+        filtered_acts.append(temp_sim_list[0])
+    filtered_acts.sort(reverse=True, key=sorting_sims)
+    return filtered_acts[0], filtered_acts[1], filtered_acts[2]
+        
+        
+def sorting_sims(sim_entry):
+    return sim_entry['similarity']    
+
 def get_all_activites(con):
     curr = con.execute(
         "SELECT DISTINCT A.activity_name "
@@ -49,3 +67,7 @@ def get_all_activites(con):
     
 def convert(lst):
     return str(lst).translate(None, '[],\'')
+
+if __name__ == '__main__':
+    connection = cities.model.get_db()
+    print(filter_activities(connection, ["gambling", "beaches", "clubbing", "shopping"]))

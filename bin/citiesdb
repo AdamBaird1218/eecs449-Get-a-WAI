@@ -27,7 +27,8 @@ case $1 in
   "reset")
     rm -f var/cities.sqlite3
     mkdir -p var/
-    sqlite3 var/cities.sqlite3 < cities_server/cities/sql/cities.sql
+    sqlite3 var/cities.sqlite3 < cities_server/cities/sql/createTables.sql
+    sqlite3 var/cities.sqlite3 < cities_server/cities/sql/loadTestData.sql
     ;;
   "load")
     sqlite3 var/cities.sqlite3 < cities_server/cities/sql/loadTestData.sql
