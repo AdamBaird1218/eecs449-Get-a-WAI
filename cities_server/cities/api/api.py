@@ -77,6 +77,7 @@ def get_city_activities_by_id(con, cityid):
     )
     
     return curr.fetchall()
+
     
     
     
