@@ -14,23 +14,38 @@ function App() {
           />
   ])
 
-  useEffect(() => {
-    const fetchData = async () => {
-        if (send_query === ''){return}
-        const response = await fetch(`https://jsonplaceholder.typicode.com/albums/${send_query}`)
-        const newData = await response.json()
+//   useEffect(() => {
+//     const fetchData = async () => {
 
-        await setMessage_list(prev_list => [...prev_list, <MessageBox
-            position={newData["position"]}
-            type={"text"}
-            title={"AI"}
-            text={newData["response"]}
-            />
-        ])
-    };
+//         const path1 = "localhost:8000"
+//         fetch(path1 + "/api/?${send_query}")
+//         .then((response) => {
+//           return response.json()
+//         })
+//         .then((data) => {
+//           setMessage_list(prev_list => [...prev_list, <MessageBox
+//             position={"left"}
+//             type={"text"}
+//             title={"AI"}
+//             text={data["response"]}/>])
+//         })
 
-    fetchData();
- }, [send_query])
+
+//         // if (send_query === ''){return}
+//         // const response = await fetch(`https://jsonplaceholder.typicode.com/albums/?${send_query}`)
+//         // const newData = await response.json()
+//         // const newMessage = await <MessageBox
+//         // position={newData["position"]}
+//         // type={"text"}
+//         // title={"AI"}
+//         // text={newData["response"]}
+//         // />
+//         // setMessage_list(prev_list => [...prev_list, newMessage
+//         // ])
+//     };
+
+//     fetchData();
+//  }, [send_query])
 
   const handleSubmit = () => {
     setSend_query(text_entry)
@@ -42,7 +57,30 @@ function App() {
             title={"Me"}
             text={text_entry}
           />
-    ])};
+    ])
+    const path1 = "http://localhost:8000/api/?query=${send_query}"
+    fetch(path1, {credentials: "same-origin"})
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        if (data.type = "message") {
+          setMessage_list(prev_list => [...prev_list, <MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={data.response}/>])
+        }
+        if (data.type = "cities") {
+          // setMessage_list(prev_list => [...prev_list, 
+          //   // TODO: Create city component 
+          // ])
+        }
+          
+        })  
+      .catch((error) => console.log(error));
+  };
+
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {

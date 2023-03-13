@@ -6,10 +6,12 @@ import cities
 def get_services():
     """return list of avalible services"""
     context = {
-        "cities": "/api/cities/",
-        "messages": "api/messages"
+        "response": "This is the response",
+        "type": "message"
     }
-    return flask.jsonify(**context)
+    response = flask.jsonify(**context)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 def city_activities(cityid):
