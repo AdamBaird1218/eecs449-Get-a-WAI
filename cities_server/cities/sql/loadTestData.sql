@@ -30,3 +30,24 @@ VALUES (9, "New Orleans", "Louisiana", 29.9511, 90.0715);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
 VALUES (10, "Miami", "Florida", 25.7617, 80.1918);
+
+INSERT INTO Activities (activity_id, activity_name)
+VALUES (1, "Beach");
+
+INSERT INTO Activities (activity_id, activity_name)
+VALUES (2, "Ziplining");
+
+INSERT INTO Activities (activity_id, activity_name)
+VALUES (3, "Surfing");
+
+INSERT INTO Activities (activity_id, activity_name)
+VALUES (4, "Gambling");
+
+INSERT INTO City_Activities (city_id, activity_id, rating)
+VALUES (1, 4, 1);
+
+INSERT INTO City_Activities (city_id, activity_id, rating)
+VALUES (7, 3, 1);
+
+INSERT INTO City_Activities (city_id, activity_id, rating)
+VALUES (10, 1, 1);
