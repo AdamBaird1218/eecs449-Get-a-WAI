@@ -97,8 +97,10 @@ def do_nlp():
             #     print(x, y, y.similarity(x))
             if x.similarity(y) > 0.7:
                 finalList.add(y.text)
+    context = {
+        "activities": list(finalList)
+    }
     
-
     
     return flask.jsonify(**context)
 
