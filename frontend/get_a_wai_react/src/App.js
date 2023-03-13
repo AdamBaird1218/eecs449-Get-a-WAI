@@ -5,14 +5,7 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const [text_entry, setText_entry] = useState('')
   const [send_query, setSend_query] = useState('')
-  const [message_list, setMessage_list] = useState([
-          <MessageBox
-            position={"right"}
-            type={"text"}
-            title={"Me"}
-            text={"hello"}
-          />
-  ])
+  const [message_list, setMessage_list] = useState([])
 
 //   useEffect(() => {
 //     const fetchData = async () => {
@@ -48,7 +41,7 @@ function App() {
 //  }, [send_query])
 
   const handleSubmit = () => {
-    setSend_query(text_entry)
+    const current_query = text_entry
     setText_entry('');
     setMessage_list(prev_list => [...prev_list,
           <MessageBox
@@ -58,27 +51,58 @@ function App() {
             text={text_entry}
           />
     ])
-    const path1 = "http://localhost:8000/api/?query=${send_query}"
+    const path1 = `http://localhost:8000/nlp/?query=${text_entry}`
     fetch(path1, {credentials: "same-origin"})
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        if (data.type = "message") {
+        if (data.type === "message") {
           setMessage_list(prev_list => [...prev_list, <MessageBox
             position={"left"}
             type={"text"}
             title={"AI"}
-            text={data.response}/>])
+            text={data.response}/>]);
         }
-        if (data.type = "cities") {
-          // setMessage_list(prev_list => [...prev_list, 
-          //   // TODO: Create city component 
-          // ])
-        }
-          
-        })  
+        if (data.type === "cities") {
+          console.log(data.cities[0].city_name)
+          let act_string = data.activities[0] + ", " + data.activities[1] + ", and " + data.activities[2];
+          let message2 = data.cities[1].city_name + "\n Has the following Activities:\n" + data.activities[0] + "\n" + data.activities[1] + "\n" + data.activities[2];
+          let message3 = data.cities[2].city_name + "\n Has the following Activities:\n" + data.activities[0] + "\n" + data.activities[1] + "\n" + data.activities[2];
+          setMessage_list(prev_list => [...prev_list, 
+            <MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={"I would recommend vacations at the following locations:"}/>,<MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={data.cities[0].city_name}/>,<MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={"It has the following activites " + act_string}/>,<MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={data.cities[1].city_name}/>,<MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={"It has the following activites " + act_string}/>,<MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={data.cities[2].city_name}/>,<MessageBox
+            position={"left"}
+            type={"text"}
+            title={"AI"}
+            text={"It has the following activites " + act_string}/>])
+        } 
+      })  
       .catch((error) => console.log(error));
+      setText_entry('');
   };
 
 
@@ -94,7 +118,7 @@ function App() {
       <MessageBox
       position={"left"}
       type={"text"}
-      title={"Message Box Title"}
+      title={"Get-A_WAI BOT"}
       text="Welcome to Get-A-WAI! What do you like to do?"
       />
     </div>

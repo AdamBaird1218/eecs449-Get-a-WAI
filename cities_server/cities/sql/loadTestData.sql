@@ -140,6 +140,12 @@ INSERT INTO Activities (activity_id, activity_name)
 VALUES (16, 'Ziplining');
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
+VALUES (1, 9, 1);
+
+INSERT INTO City_Activities (city_id, activity_id, rating)
+VALUES (1, 12, 1);
+
+INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (1, 15, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
@@ -200,9 +206,6 @@ INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (13, 13, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (13, 4, 1);
-
-INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (13, 5, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
@@ -216,9 +219,6 @@ VALUES (13, 8, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (13, 9, 1);
-
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (13, 10, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (13, 12, 1);
@@ -303,9 +303,6 @@ VALUES (18, 8, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (18, 9, 1);
-
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (18, 10, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (18, 12, 1);
@@ -426,6 +423,9 @@ VALUES (24, 8, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (24, 9, 1);
+
+INSERT INTO City_Activities (city_id, activity_id, rating)
+VALUES (24, 10, 1);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (24, 12, 1);

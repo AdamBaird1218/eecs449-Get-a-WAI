@@ -82,25 +82,31 @@ def get_city_activities_by_id(con, cityid):
     
 
 def getCities(activity_list):
+    print(activity_list)
     connection = cities.model.get_db()
-    act1, act2, act3 = filter_activities(activity_list)
-    curr = connection.execute("SELECT C.city_name, A.activity_name "
-   "FROM Cities C "
-   "INNER JOIN City_Activities CA "
-   "ON C.city_id = CA.city_id "
-   "INNER JOIN Activities A "
-   "ON CA.activity_id = A.activity_id "
-   "WHERE A.activity_name = ? OR A.activity_name = ? OR A.activity_name = ?"
-   "LIMIT 5"
-   ,(act1,act2,act3)
-    )
-    cities = curr.fetchall()
-    return cities
+    act1, act2, act3 = filter_activities(connection, activity_list)
+    print(act1 + " " + act2 + " " + act3 )
+    curr = connection.execute(
+        "SELECT * FROM ("
+        "SELECT C.city_id, C.city_name, COUNT(*) as num_act "
+        "FROM Cities C, City_Activities CA, Activities A "
+        "WHERE C.city_id = CA.city_id AND CA.activity_id = A.activity_id "
+        "AND (A.activity_name = ? OR A.activity_name = ? OR A.activity_name = ?) "
+        "GROUP BY C.city_id, C.city_name) "
+        "ORDER BY num_act desc LIMIT 3",
+        (act1, act2, act3,)
+    )  
+    
+    
+    city_dic = curr.fetchall()    
+    return city_dic, [act1, act2, act3]
+
 
 def filter_activities(con, act_list):
     nlp = spacy.load('en_core_web_md')
     activites_dict = get_all_activites(con)
-    act_string = []
+    print(type(activites_dict))
+    act_string = ''
     for entry in activites_dict:
         act_string += entry['activity_name'] + " "
     
@@ -120,7 +126,7 @@ def filter_activities(con, act_list):
         temp_sim_list.sort(reverse=True, key=sorting_sims)
         filtered_acts.append(temp_sim_list[0])
     filtered_acts.sort(reverse=True, key=sorting_sims)
-    return filtered_acts[0], filtered_acts[1], filtered_acts[2]
+    return filtered_acts[0]['activity'], filtered_acts[1]['activity'], filtered_acts[2]['activity']
         
         
 def sorting_sims(sim_entry):

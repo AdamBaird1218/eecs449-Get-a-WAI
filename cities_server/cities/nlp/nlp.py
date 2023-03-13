@@ -2,6 +2,7 @@
 import spacy
 import cities
 import flask
+from cities.api.api import getCities, filter_activities
 from spacy import displacy 
 
 from nltk.tokenize import word_tokenize
@@ -11,8 +12,6 @@ import nltk
 
 @cities.app.route('/nlp/', methods=['GET'])
 def do_nlp():
-    nltk.download('punkt')
-    nltk.download('averaged_perceptron_tagger')
     #SPACY
     nlp = spacy.load("en_core_web_sm")
     
@@ -48,7 +47,7 @@ def do_nlp():
                         'seaplane rides', 'zipline and canopy tours', 'hunting', 'rock scrambling', 'mountain climbing',    
                         'mountainboarding', 'kitesurfing', 'base jumping', 'bouldering', 'cave exploring', 'geo caching',    
                         'kite landboarding', 'microlighting', 'parasailing', 'slacklining', 'trampolining', 'ultralight flying',
-                        'wake skating', 'wakesurfing', 'white water rafting', 'wind surfing', 'sun']
+                        'wake skating', 'wakesurfing', 'white water rafting', 'wind surfing', 'sun', 'clubbing', 'gambling', 'gamble', 'clubs', 'shops', 'sightseeing']
                     
     # feeling_keywords = [
     #     'adventurous', 'alive', 'amazed', 'amused', 'awe', 'awestruck', 'blissful', 'breezy', 'calm', 'carefree', 
@@ -97,12 +96,17 @@ def do_nlp():
             #     print(x, y, y.similarity(x))
             if x.similarity(y) > 0.7:
                 finalList.add(y.text)
+    connection = cities.model.get_db()
+    city_results, activities = getCities(list(finalList))
     context = {
-        "activities": list(finalList)
+        "cities": city_results,
+        "activities": activities,
+        "type": "cities"
     }
     
-    
-    return flask.jsonify(**context)
+    response = flask.jsonify(**context)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 
     # print("Similarity:", token1.similarity(token2))
