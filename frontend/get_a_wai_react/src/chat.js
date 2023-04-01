@@ -1,8 +1,9 @@
-import './App.css';
+//import './chat.css';
 import "react-chat-elements/dist/main.css";
 import { MessageBox} from "react-chat-elements";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState, useEffect } from 'react';
-function App() {
+function Chat() {
   const [text_entry, setText_entry] = useState('')
   const [send_query, setSend_query] = useState('')
   const [message_list, setMessage_list] = useState([])
@@ -114,28 +115,36 @@ function App() {
 
   return (
     <>
-    <div className="App">
-      <MessageBox
-      position={"left"}
-      type={"text"}
-      title={"Get-A_WAI BOT"}
-      text="Welcome to Get-A-WAI! What do you like to do?"
-      />
-    </div>
-    <div>
-        {message_list.map(text_list_item =>{
-          return (text_list_item)
-        })}
+    <div class='card-body p-4' style={{height: "800px", overflow: "auto" }}>
+      
+      <div className="App">
+        <MessageBox
+        position={"left"}
+        type={"text"}
+        title={"Get-A_WAI BOT"}
+        text="Welcome to Get-A-WAI! What do you like to do?"
+        />
+      </div>
+      <div>
+          {message_list.map(text_list_item =>{
+            return (text_list_item)
+          })}
+      </div>
     </div>
         
 
-    <div>
-          <input type="text" name="user_question" value={text_entry}  onChange={e => setText_entry(e.target.value)} onKeyDown={handleKeyDown}/>
-          <button onClick={handleSubmit} > Submit ME!</button>
+    <div class='card-footer bg-transparent position-absolute w-100 bottom-0 m-0 p-1'>
+      <div class="input-group">
+        <input type="text" class="form-control border-0" placeholder="Write a message" name="user_question" value={text_entry}  onChange={e => setText_entry(e.target.value)} onKeyDown={handleKeyDown}/>
+        <div class="input-group-text bg-transparent border-0">
+            <button class="btn btn-light" onClick={handleSubmit} ><FontAwesomeIcon icon={"fa fa-paper-plane"} /> </button>
+        </div>
+      </div>
+          
        
     </div>
   </>
   );
 }
 
-export default App;
+export default Chat;
