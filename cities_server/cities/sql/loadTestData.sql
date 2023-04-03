@@ -2,94 +2,103 @@ PRAGMA foreign_keys = ON;
 
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (1, "Las Vegas", "Nevada", 36.1716, 115.1391);
+VALUES (1, Las Vegas, Nevada, 36.1716, 115.1391);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (2, "New York", "New York", 40.7128, 74.0060);
+VALUES (2, New York City, New York, 40.7128, 74.006);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (3, "Orlando", "Florida", 28.5384, 81.3789);
+VALUES (3, Orlando, Florida, 28.5384, 81.3789);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (4, "Los Angeles", "California", 34.0522, 118.2437);
+VALUES (4, Los Angeles, California, 34.0522, 118.2437);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (5, "Chicago", "Illinois", 41.8781, 87.6298);
+VALUES (5, Chicago, Illinois, 41.8781, 87.6298);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (6, "Nashville", "Tennessee", 36.1627, 86.7816);
+VALUES (6, Nashville, Tennessee, 36.1627, 86.7816);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (7, "San Diego", "California", 32.7157, 117.1611);
+VALUES (7, San Diego, California, 32.7157, 117.1611);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (8, "Miami Beach", "Florida", 25.7907, 80.1300);
+VALUES (8, Miami Beach, Florida, 25.7907, 80.13);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (9, "New Orleans", "Louisiana", 29.9511, 90.0715);
+VALUES (9, New Orleans, Louisiana, 29.9511, 90.0715);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (10, "Miami", "Florida", 25.7617, 80.1918);
+VALUES (10, Miami, Florida, 25.7617, 80.1918);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (11, 'Washington DC', 'District of Columbia', 38.9072, 77.0369);
+VALUES (11, Washington DC, District of Columbia, 38.9072, 77.0369);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (12, 'Honolulu', 'Hawaii', 21.3099, 157.8581);
+VALUES (12, Honolulu, Hawaii, 21.3099, 157.8581);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (13, 'Houston', 'Texas', 29.7604, 95.3698);
+VALUES (13, Houston, Texas, 29.7604, 95.3698);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (14, 'Atlanta', 'Georgia', 33.7488, 84.3877);
+VALUES (14, Atlanta, Georgia, 33.7488, 84.3877);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (15, 'Anaheim', 'California', 33.8366, 117.9143);
+VALUES (15, Anaheim, California, 33.8366, 117.9143);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (16, 'San Francisco', 'California', 37.7749, 122.4194);
+VALUES (16, San Francisco, California, 37.7749, 122.4194);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (17, 'Boston', 'Massachusetts', 42.3601, 71.0589);
+VALUES (17, Boston, Massachusetts, 42.3601, 71.0589);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (18, 'Atlantic City', 'New Jersey', 39.3643, 74.4229);
+VALUES (18, Atlantic City, New Jersey, 39.3643, 74.4229);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (19, 'San Antonio', 'Texas', 29.4252, 98.4946);
+VALUES (19, San Antonio, Texas, 29.4252, 98.4946);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (20, 'Fort Lauderdale', 'Florida', 26.1224, 80.1373);
+VALUES (20, Fort Lauderdale, Florida, 26.1224, 80.1373);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (21, 'Dallas', 'Texas', 32.7767, -96.797);
+VALUES (21, Dallas, Texas, 32.7767, -96.797);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (22, 'Bay Lake', 'Florida', 28.393, -81.57);
+VALUES (22, Grand_Canyon_National_Park, Arizona, 36.2679, 112.3535);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (23, 'Austin', 'Texas', 30.2672, -97.7431);
+VALUES (23, Austin, Texas, 30.2672, -97.7431);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (24, 'Myrtle Beach', 'South Carolina', 33.6891, -78.8867);
+VALUES (24, Myrtle Beach, South Carolina, 33.6891, -78.8867);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (25, 'Phoenix', 'Arizona', 33.4484, -112.074);
+VALUES (25, Phoenix, Arizona, 33.4484, -112.074);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (26, 'Denver', 'Colorado', 39.7392, -104.9903);
+VALUES (26, Denver, Colorado, 39.7392, -104.9903);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (27, 'Four Corners', '', 36.9989, -109.0452);
+VALUES (27, Yellowstone_National_Park, Wyoming, 44.428, 110.5885);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (28, 'Gatlinburg', 'Tennessee', 35.7143, -83.5102);
+VALUES (28, Gatlinburg, Tennessee, 35.7143, -83.5102);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (29, 'Tampa', 'Florida', 27.9506, -82.4572);
+VALUES (29, Tampa, Florida, 27.9506, -82.4572);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (30, 'Seattle', 'Washington', 47.6062, -122.3321);
+VALUES (30, Seattle, Washington, 47.6062, -122.3321);
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
+VALUES (30, Maui, Hawaii, 20.7984, 156.3319);
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
+VALUES (30, Lake_Tahoe, California, 39.0968, 120.0324);
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
+VALUES (30, Key_West, Florida, 24.5554, 81.7842);
 
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (0, 'skiing');
