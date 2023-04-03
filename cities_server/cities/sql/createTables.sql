@@ -16,7 +16,7 @@ CREATE TABLE Activities(
 CREATE TABLE City_Activities(
     city_id Integer,
     activity_id Integer,
-    total_rating Float,
+    total_rating DECIMAL(15,1),
     PRIMARY KEY (city_id, activity_id),
     FOREIGN KEY (city_id) REFERENCES Cities(city_id) ON DELETE CASCADE,
     FOREIGN KEY (activity_id) REFERENCES Activities(activity_id) ON DELETE CASCADE
@@ -28,7 +28,7 @@ CREATE TABLE Specific_Activities(
     activity_name VARCHAR(64) NOT NULL,
     rating Float,
     number_ratings Integer,
-    weighted_rating Float,
+    weighted_rating DECIMAL(11,1),
     PRIMARY KEY (city_id, activity_name),
     FOREIGN KEY (city_id) REFERENCES Cities(city_id) ON DELETE CASCADE,
     FOREIGN KEY (activity_id) REFERENCES Activities(activity_id) ON DELETE CASCADE
