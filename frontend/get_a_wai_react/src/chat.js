@@ -133,7 +133,7 @@ function Chat() {
     </div>
         
 
-    <div class='card-footer bg-transparent position-absolute w-100 bottom-0 m-0 p-1'>
+    <div class='card-footer bg-transparent position-relative w-100 bottom-0 m-0 p-1'>
       <div class="input-group">
         <input type="text" class="form-control border-0" placeholder="Write a message" name="user_question" value={text_entry}  onChange={e => setText_entry(e.target.value)} onKeyDown={handleKeyDown}/>
         <div class="input-group-text bg-transparent border-0">
