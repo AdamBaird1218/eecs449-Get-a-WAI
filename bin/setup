@@ -26,3 +26,7 @@ pip install -e cities_server
 
 # for the frontend you need to run
 # npm install bootstrap --legacy-peer-deps
+
+# pip install resa
+# needed to fix socket issue
+# pip install websockets==10.0 
