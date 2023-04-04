@@ -1,13 +1,40 @@
 import React, { useState, useEffect } from 'react';
-import Chat from './chat';
 import Information from './information';
+import Chat from './Chat';
 
 
 function Main() {
-    const [activityData, setActivity_list] = useState({
-        "name":"Activities",
-        "limit": 3,
-        "list": ["test1","test2", "test3", "test4"]
+    const [attributeInfo_List, setAttributeInfo_List] = useState({
+        "activities": {
+            "name":"Activities",
+            "limit": 3,
+            "list": []  
+        },
+        "climate": {
+            "name": "Climate",
+            "limit": 1,
+            "list": []
+        },
+        "location": {
+            "name": "Location",
+            "limit": 1,
+            "list": []
+        },
+        "travelMethod": {
+            "name": "Travel Method",
+            "limit": 1,
+            "list": []
+        },
+        "tripDuration": {
+            "name": "Trip Length in Nights",
+            "limit": 1,
+            "list": []
+        },
+        "budget": {
+            "name": "Budget",
+            "limit": 1,
+            "list": []
+        }
     })
 
     
@@ -17,13 +44,15 @@ function Main() {
         <div class="row">
             <div class='col-lg-3' style={{height: "860px", overflow: "auto" }}>       
                     <Information 
-                    activitiesInfo={activityData}
+                    activitiesInfo={attributeInfo_List}
                     />   
-                
             </div>
             <div class='col-lg-9' >
                 <div class='card'>
-                    <Chat /> 
+                    <Chat
+                    attributeInfoList={attributeInfo_List}
+                    setAttributeInfoList={setAttributeInfo_List} 
+                    /> 
                 </div>
             </div>
         </div>

@@ -3,12 +3,15 @@ import flask
 import cities
 import spacy
 
-@cities.app.route('/api/', methods=['GET'])
+@cities.app.route('/api/testing/', methods=['GET'])
 def get_services():
     """return list of avalible services"""
+    input = flask.request.args.get('query')
+    # intent names needs to match the json key entry in main.js
     context = {
-        "response": "This is the response",
-        "type": "message"
+        "intent": "activities",
+        "items": ["fishing"],
+        "input": input
     }
     response = flask.jsonify(**context)
     response.headers.add('Access-Control-Allow-Origin', '*')

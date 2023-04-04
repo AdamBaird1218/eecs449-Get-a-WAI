@@ -7,8 +7,7 @@ function AttributeTracker({attributeName, attributeLimit, attributeList}) {
     
     useEffect(()=>{
         setAttributeCount(attributeList.length);
-    }, [attributeCount])
-
+    }, [attributeList])
 
     return <>
         <div class="card mb-2">
