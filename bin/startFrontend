@@ -1,0 +1,3 @@
+cd frontend/get_a_wai_react
+pwd
+npm start

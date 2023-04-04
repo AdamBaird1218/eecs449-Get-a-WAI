@@ -22,3 +22,7 @@ source ./env/bin/activate
 
 pip install -r requirements.txt
 pip install -e cities_server
+
+
+# for the frontend you need to run
+# npm install bootstrap --legacy-peer-deps
