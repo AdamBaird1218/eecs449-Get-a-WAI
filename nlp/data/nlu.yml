@@ -142,11 +142,12 @@ nlu:
     - My address is [314 E William St., Ann Arbor, MI, 48104](location)
     - [45489 beepbop road](location) is my address
     - I am from [michigan](location)
-    - [arizona](location)
+    - I come from [arizona](location)
     - [Boston](location)
     - [seattle](location) is where I am from
     - [washington](location)
     - My home address is [420 Michigan ave. Ann arbor](location)
+    - I'm currently located in [Commerce Township, Michigan](location)
 
 
 - intent: travelMethod
@@ -175,6 +176,8 @@ nlu:
     - I want to relax for [8 days](tripDuration)
     - [5 nights](tripDuration)
     - I am looking to spend around a [week](tripDuration) there
+    - I want to stay about [5 days](tripDuration)
+    - I think we are going to stay around [2 weeks](tripDuration), and maybe even later.
 
 
 - intent: budget
@@ -189,6 +192,9 @@ nlu:
     - [1000 bucks](budget)
     - I only have [400 dollars](budget)
     - can I do an vacation for [200 dollars](budget)
+    - I can only pay about [800](budget)
+    - I think we budgeted about [7000] for this trip.
+
 
 
 

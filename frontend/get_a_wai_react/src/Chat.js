@@ -1,7 +1,7 @@
 import "react-chat-elements/dist/main.css";
 import { MessageBox} from "react-chat-elements";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 
 function Chat({attributeInfoList, setAttributeInfoList}) {
@@ -22,32 +22,49 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
           />
     ])
     // TODO: Change to correct RASA route
-    const path1 = `http://localhost:8000/api/testing/?query=${text_entry}` 
-    fetch(path1, {credentials: "same-origin"})
+    const path1 = 'http://localhost:5005/model/parse/'
+
+    const options = {
+      method: "POST",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({text: text_entry})
+    }
+  
+    fetch(path1, options)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        handleIntent(data, data.intent)
+        handleIntent(data)
       })  
       .catch((error) => console.log(error));
       setText_entry('');
   };
 
   //intent type needs to match the names declared in main.js for the attrivuteInfo object
-  const handleIntent = (data, intentType) => {
-    if (data.items.length + attributeInfoList[intentType].list.length <= attributeInfoList[intentType].limit){
-        let updated_info = attributeInfoList
-        updated_info[intentType].list = [...attributeInfoList[intentType].list, ...data.items]
-        setAttributeInfoList(() => ({...updated_info}))
-        setMessage_list(prev_list => [...prev_list, 
-            <MessageBox
-            position={"left"}
-            type={"text"}
-            title={"GET-a-wAI Bot"}
-            text={`Triggered ${intentType}Intent. TODO: make better responses`}/>])
-    }
+  const handleIntent = (data) => {
+    let updated_info = attributeInfoList
+    data.entities.forEach((entity) => {
+      const entityType = entity.entity
+      if(attributeInfoList[entityType].list.length + 1 <= attributeInfoList[entityType].limit){
+        updated_info[entityType].list = [...updated_info[entityType].list, entity.value]
+      }
+    })
+    setAttributeInfoList(() => ({...updated_info}))
+    generateTextResponse(data)
   }
+
+  const generateTextResponse = (data) => {
+    setMessage_list(prev_list => [...prev_list, 
+      <MessageBox
+      position={"left"}
+      type={"text"}
+      title={"GET-a-wAI Bot"}
+      text={`Triggered ${data.intent.name}Intent. TODO: make better responses`}/>])
+  } 
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
