@@ -50,16 +50,151 @@ nlu:
     - not really
 
 - intent: activities
-  examples: / 
-    - skiing
-    - hiking
-    - beaches
-    - museums
-    - clubs
-    - parks
-    - shopping
-    - amusements
-    - zoos
-    - casinos
-    - theares
-    - aquariums
+  examples: |
+    - I love [hiking](activities) mountains.
+    - I enjoy tanning on the [beach](activities) hiking.
+    - I want to see atrifacts in [museums](activities)
+    - Lets party at a [club](activities)
+    - Can we visit the [park](activities)
+    - I like to go [shopping](activities)
+    - I like [amusement parks](activities)
+    - My favorite thing to do is see the animals at the [zoo](activities)
+    - I like [gambling](activities) at [casino](activities)
+    - I like watching movies at the [theater](activities)
+    - Can I visit places with nice [aquariums](activities)
+    - I love to [hike](activities) in the forest to go [birdwatching](activities)
+    - I want to go [boating](activities)
+    - I like places that have good [camping](activities)
+    - I want to canoeing(activities)
+    - I like deep sea [fishing](activities)
+    - I love [horseback riding](activities)
+    - I want to learn how to [mountain bike](activities)
+    - Can I visit somewhere that [scuba diving](activities) is available.
+    - I like places that are mountainous so I can go [skiing](activities)
+    - Somewhere cold so I can go [snowboarding](activities)
+    - [Snorkeling](activities) is one of my favorite things to do.
+    - [Paddleboarding](activities), [surfing](activities), and [swimming](activities)
+    - wildlife viewing(activities)
+    - wine tasting(activities)
+    - I love [festivals](activities) and [events](activities)
+    - Visiting [historical landmarks](activities) is one of my passsions.
+    - eating local cuisine(activities)
+    - [going to the theater or opera](activities) is my favorite
+    - I want to go somewhere that has [spas](activities) and [hot springs](activities)
+    - [ziplining](activities) is my favorite activity
+    - I want to try [skydiving](activities) with my friends
+    - I like [whitewater kayaking](activities)
+    - I love [sandboarding](activities)
+    - I want to go on a trip that has [safari](activities) and has [backpacking](activities) trips
+    - I want to get better at [skiing](activities)
+    - Can I try [snowmobiling](activities) in the mountains
+    - I want to try [dog sledding](activities) in the snow
+    - I want try [ice fishing](activities) in the winter
+    - I want to learn [wakeboarding](activities) in the ocean
+    - I want to learn [water skiing](activities)
+    - I like [dolphin watching](activities)
+    - I want to go [hunting](activities)
+    - I love [mountain climbing](activities)
+    - I enjoy [kitesurfing](activities)
+    - Can I go [base jumping](activities)
+    - Can we go [cave exploring](activities)
+    - I want to go [geo caching](activities)
+    - I love [parasailing](activities)
+    - I enjoy [trampolining](activities)
+    - I want to go [wakesurfing](activities)
+    - I like to go [white water rafting](activities)
+    - I like [wind surfing](activities)
+    - I want to be in the [sun](activities)
+    - i enjoy [clubbing](activities)
+    - I love [gambling](activities)
+    - I want to [gamble](activities)
+    - I enjoy going to [clubs](activities)
+    - I want to visit [shops](activities)
+    - I want to go [sightseeing](activities)
+
+- intent: climate
+  examples: |
+    - I like [warm](climate) weather
+    - I enjoy [cold](climate) weather
+    - I like [cold](climate) weather
+    - [cold](climate)
+    - [sunny](climate)
+    - [hot](climate)
+    - [burning hot](climate)
+    - Lets go somewhere [tropical](climate)
+    - [tropical](climate)
+    - Can you find places that are [hot](climate) and [humid](climate)
+    - [humid](climate)
+    - [frigid](climate)
+    - I enjoy [Warm](climate) temperature
+    - I love [tropical](climate)
+    - [temporate](climate)
+    - [dry](climate)
+    - [arid](climate)
+    - [freezing](climate)
+    - [sunny](climate)
+
+- intent: location 
+  examples: |
+    - I am located in [New York City](location)
+    - I live in [Ann Arbor](location)
+    - I currently reside in [west bloomfield](location)
+    - My address is [314 E William St., Ann Arbor, MI, 48104](location)
+    - [45489 beepbop road](location) is my address
+    - I am from [michigan](location)
+    - [arizona](location)
+    - [Boston](location)
+    - [seattle](location) is where I am from
+    - [washington](location)
+    - My home address is [420 Michigan ave. Ann arbor](location)
+
+
+- intent: travelMethod
+  examples: |
+    - I am going to [drive](travelMethod)
+    - I want to take a [flight](travelMethod)
+    - [driving](travelMethod)
+    - [flying](travelMethod)
+    - I want to [drive](travelMethod) there
+    - lets take a [plane](travelMethod)
+    - Is there any [trains](travelMethod) to that place
+    - [drive](travelMethod)
+    - Ill take a [car](travelMethod) there
+
+
+- intent: tripDuration
+  examples: |
+    - I want to travel for [1 week](tripDuration)
+    - I want a [4 day](tripDuration) vacation
+    - I would love a [3 week](tripDuration) vaction
+    - [1 day](tripDuration) vacation is what I am looking for
+    - My family needs a [6 day](tripDuration) getaway
+    - [3 days](tripDuration)
+    - [1 month](tripDuration)
+    - I need to be on a [9 day](tripDuration) trip
+    - I want to relax for [8 days](tripDuration)
+    - [5 nights](tripDuration)
+    - I am looking to spend around a [week](tripDuration) there
+
+
+- intent: budget
+  examples: |
+    - I want a [cheap](budget) vacation
+    - I have an [unlimited](budget) budget
+    - I only have [500 dollars](budget)
+    - I want to drop [four grand](budget) on this trip
+    - Max I can spend is [300 dollars](budget)
+    - I need to spend at least [400 bucks](budget) on this getaway
+    - I want to spend around [2000 dollars](budget)
+    - [1000 bucks](budget)
+    - I only have [400 dollars](budget)
+    - can I do an vacation for [200 dollars](budget)
+
+
+
+
+
+
+
+
+    
