@@ -7,4 +7,9 @@ env/
 *.pyc
 
 */node_modules/*
+var/
 
+
+*.rasa*
+
+*models*

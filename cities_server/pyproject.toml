@@ -9,6 +9,8 @@ dependencies = [
     "bs4",
     "Flask",
     "requests",
+    "spacy",
+    "nltk"
 ]
 requires-python = ">=3.8"
 
