@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import AttributeTracker from './attributeTracker';
-function Information({activitiesInfo}) {
+function Information({activitiesInfo, tripFull}) {
+
+    if (tripFull){
+        return <>Trip Full. TODO Replace with cities objects</>
+    }
+    else {
     return <>
         <AttributeTracker
             attributeName={activitiesInfo.activities.name}
@@ -32,7 +37,8 @@ function Information({activitiesInfo}) {
             attributeLimit={activitiesInfo.budget.limit}
             attributeList={activitiesInfo.budget.list}
         />
-
-    </>
+    </>  
+    }
+    
 }
 export default Information

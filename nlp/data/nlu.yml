@@ -161,6 +161,7 @@ nlu:
     - Is there any [trains](travelMethod) to that place
     - [drive](travelMethod)
     - Ill take a [car](travelMethod) there
+    - I would love to [fly](travelMethod) there 
 
 
 - intent: tripDuration

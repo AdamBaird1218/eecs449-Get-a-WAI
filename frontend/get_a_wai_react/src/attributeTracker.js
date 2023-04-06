@@ -15,8 +15,8 @@ function AttributeTracker({attributeName, attributeLimit, attributeList}) {
             <div>{attributeCount}/{attributeLimit}</div>
             </div>
             <div class="card-body">
-                {attributeList.map((attribute) => {
-                    return <span class="badge rounded-pill text-bg-secondary ms-1">{attribute}</span>
+                {attributeList.map((attribute, index) => {
+                    return <span key={index} class="badge rounded-pill text-bg-secondary ms-1">{attribute}</span>
                 })}
             </div> 
         </div>
