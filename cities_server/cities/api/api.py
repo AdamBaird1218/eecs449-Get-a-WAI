@@ -62,7 +62,7 @@ def get_recommended_cities():
         citiesList.append(cityObject)
     context = {
         "citiesList":citiesList,
-        "userBudget":5,
+        "userBudget":budget,
         "userActivities":activities
 
     }
