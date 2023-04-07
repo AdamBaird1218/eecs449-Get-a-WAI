@@ -29,7 +29,7 @@ def scrape_flight_prices(location1,location2):
     driver.execute_script("arguments[0].click();", button2)
     time.sleep(5)
 
-    soup = BeautifulSoup(driver.page_source, 'html.parser')\
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
     
     flight_price_string = soup.select(".NtS4zd")[0].text
     first_index = flight_price_string.find('–')
@@ -49,13 +49,33 @@ def get_distance(location1,location2):
   driver.get(URL)
   time.sleep(5)
 
-  soup = BeautifulSoup(driver.page_source, 'html.parser')\
+  soup = BeautifulSoup(driver.page_source, 'html.parser')
     
   distance_string = soup.select(".rreh")[0].text
   first_index = distance_string.find('(')
   second_index = distance_string.find('.')
-  return int(distance_string[first_index + 1:second_index])
+  third_index = 0
+  fourth_index = distance_string.find('n')
+  distance_object = {"time":distance_string[third_index:fourth_index+1],"distance":int(distance_string[first_index + 1:second_index])}
+  return distance_object
 
+def get_flight_duration(location1,location2):
+    URL = "https://www.google.com/search?q=flight+time+from+" + location1 + "+to+" + location2 + "&rlz=1C1CHBD_enUS889US891&ei=ipswZIW-M5GjptQPh9ON6AE&ved=0ahUKEwiFq42L65j-AhWRkYkEHYdpAx0Q4dUDCBA&uact=5"
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--remote-debugging-port=9222")
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+    driver.get(URL)
+    time.sleep(5)
+
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+    duration_string = soup.select(".BNeawe")[0].text
+    return duration_string
+    
 def main():
     scrape_flight_prices("ann arbor","miami")
 

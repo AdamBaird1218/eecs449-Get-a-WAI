@@ -3,7 +3,7 @@ import flask
 import cities
 import spacy
 
-from scrape_prices import scrape_flight_prices, get_distance
+from scrape_prices import scrape_flight_prices, get_distance, get_flight_duration
 
 @cities.app.route('/api/testing/', methods=['GET'])
 def get_services():
@@ -39,18 +39,32 @@ def get_recommended_cities():
                                  (climate, city))
         result = cur.fetchall()
         if(result.notEmpty()):
-            next_city_filter.append(result['city_name'])
+            next_city_filter.append(result[0])
     if(len(next_city_filter) == 0):
         for city in first_set_cities:
-            next_city_filter.append(city['city_name'])
+            city_object = {'city_id': city['city_id'],'city_name':city['city_name']}
+            next_city_filter.append(city_object)
     starting_location = input_json['location']['list'][0]
     preferred_travel_method = input_json['travelMethod']['list'][0]
     travel_method = get_travel_method(preferred_travel_method)
     trip_duration = input_json['tripDuration']['list'][0]
     budget = input_json['budget']['list'][0]
-    city_expenses_dict = get_city_expenses(travel_method,starting_location, next_city_filter,trip_duration,budget)
+    citiesList = []
+    for city in next_city_filter:
+        cost, travel_duration = get_expenses_travel_duration(travel_method,starting_location, city['city_name'],trip_duration,budget)
+        cityObject = {"name":city['city_name'],
+                      "id":city['city_id'],
+                      "nights":trip_duration,
+                      "travel_method":travel_method,
+                      "travelTimeEstimate":travel_duration,
+                      "estimated_cost": cost,
+                      "cityActivityList": }
+        citiesList.append(cityObject)
     context = {
-        
+        "citiesList":citiesList,
+        "userBudget":5,
+        "userActivities":activities
+
     }
     response = flask.jsonify(**context)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -251,15 +265,37 @@ def get_travel_method(usr_travel_method):
     temp_sim_list.sort(reverse=True, key=sorting_sims)
     return temp_sim_list[0]['method']
 
-def get_city_expenses(travel_method, starting_location, cities_list, trip_duration, budget):
-    for city in cities_list:
-        if(travel_method == 'flight'):
-            flight_price = scrape_flight_prices(starting_location,city)
+def get_expenses_travel_duration(travel_method, starting_location, city, trip_duration, budget):
+    travel_duration = 0
+    if(travel_method == 'flight'):
+        flight_price = scrape_flight_prices(starting_location,city)
+        travel_duration = get_flight_duration(starting_location,city)
+        connection = cities.model.get_db()
+        cur = connection.execute("SELECT C.Avg_Hotel_Price"
+                                    "FROM Cities C"
+                                    "WHERE C.City_Name = ?",
+                                    (city))
+        results = cur.fetchall()
+        hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
+        total_price = hotel_price + flight_price
 
-        elif(travel_method == 'drive'):
-            distance = get_distance(starting_location,city)
-            approximate_driving_cost = distance * 0.15
 
+    elif(travel_method == 'drive'):
+        distance, travel_duration = get_distance(starting_location,city)
+        approximate_driving_cost = distance * 0.15
+        connection = cities.model.get_db()
+        cur = connection.execute("SELECT C.Avg_Hotel_Price"
+                                    "FROM Cities C"
+                                    "WHERE C.City_Name = ?",
+                                    (city))
+        results = cur.fetchall()
+        hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
+        total_price = hotel_price + approximate_driving_cost
+    return total_price,travel_duration
+
+def get_city_activities_list(city):
+    connection = cities.model.get_db()
+    cur = connection.execute("")
 
 
 
