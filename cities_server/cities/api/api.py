@@ -19,7 +19,7 @@ def get_services():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-@cities.app.route('/recommendCities/', methods=['POST'])
+@cities.app.route('/recommendCities/', methods=['GET'])
 def get_recommended_cities():
     """return list of avalible services"""
     input_json = flask.request.json
@@ -255,7 +255,7 @@ def get_city_expenses(travel_method, starting_location, cities_list, trip_durati
     for city in cities_list:
         if(travel_method == 'flight'):
             flight_price = scrape_flight_prices(starting_location,city)
-            
+
         elif(travel_method == 'drive'):
             distance = get_distance(starting_location,city)
             approximate_driving_cost = distance * 0.15
