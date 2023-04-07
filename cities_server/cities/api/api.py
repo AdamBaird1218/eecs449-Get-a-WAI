@@ -3,6 +3,8 @@ import flask
 import cities
 import spacy
 
+from scrape_prices import scrape_flight_prices, get_distance
+
 @cities.app.route('/api/testing/', methods=['GET'])
 def get_services():
     """return list of avalible services"""
@@ -28,6 +30,25 @@ def get_recommended_cities():
     first_set_cities, activities = get10Cities(new_activities)
     input_climate = input_json['climate']['list'][0]
     climate = filter_climate(input_climate)
+    next_city_filter = []
+    for city in first_set_cities:
+        connection = cities.model.get_db()
+        cur = connection.execute("SELECT C.city_id, C.city_name "
+                                 "FROM Cities C "
+                                 "WHERE C.Climate = ? AND C.city_name = ? ",
+                                 (climate, city))
+        result = cur.fetchall()
+        if(result.notEmpty()):
+            next_city_filter.append(result['city_name'])
+    if(len(next_city_filter) == 0):
+        for city in first_set_cities:
+            next_city_filter.append(city['city_name'])
+    starting_location = input_json['location']['list'][0]
+    preferred_travel_method = input_json['travelMethod']['list'][0]
+    travel_method = get_travel_method(preferred_travel_method)
+    trip_duration = input_json['tripDuration']['list'][0]
+    budget = input_json['budget']['list'][0]
+    city_expenses_dict = get_city_expenses(travel_method,starting_location, next_city_filter,trip_duration,budget)
     context = {
         
     }
@@ -172,7 +193,7 @@ def filter_climate(con, climate):
     climates_dict = get_all_climates(con)
     climates_string = []
     for entry in climates_dict:
-        climates_string += entry['climate_name'] + " "
+        climates_string += entry['climate'] + " "
 
     temp_sim_list = []
     input_word = nlp(climate)
@@ -200,7 +221,7 @@ def get_all_activites(con):
 
 def get_all_climates(con):
     curr = con.execute(
-        "SELECT DISTINCT C.climate_name "
+        "SELECT DISTINCT C.climate "
         "FROM Cities C"
     )
     return curr.fetchall()
@@ -208,6 +229,39 @@ def get_all_climates(con):
     
 def convert(lst):
     return str(lst).translate(None, '[],\'')
+
+def get_travel_method(usr_travel_method):    
+    nlp = spacy.load('en_core_web_md')
+    methods_list = ["flight","drive"]
+    methods_string = ''
+    for entry in methods_list:
+        methods_string += entry + " "
+    
+    temp_sim_list = []
+    input_word = nlp(usr_travel_method)
+    db_words = nlp(methods_list)
+        
+    for token in db_words:
+        temp_sim_list.append(
+            {
+                "method": token.text,
+                "similarity": input_word.similarity(token)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    return temp_sim_list[0]['method']
+
+def get_city_expenses(travel_method, starting_location, cities_list, trip_duration, budget):
+    for city in cities_list:
+        if(travel_method == 'flight'):
+            flight_price = scrape_flight_prices(starting_location,city)
+            
+        elif(travel_method == 'drive'):
+            distance = get_distance(starting_location,city)
+            approximate_driving_cost = distance * 0.15
+
+
+
 
 if __name__ == '__main__':
     connection = cities.model.get_db()
