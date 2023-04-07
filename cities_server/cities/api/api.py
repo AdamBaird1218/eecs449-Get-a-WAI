@@ -17,6 +17,23 @@ def get_services():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@cities.app.route('/recommendCities/', methods=['POST'])
+def get_recommended_cities():
+    """return list of avalible services"""
+    input_json = flask.request.json
+    # intent names needs to match the json key entry in main.js
+    activities_list = input_json['activities']['list']
+    act1, act2, act3 = filter_activities(activities_list)
+    new_activities = [act1, act2, act3]
+    first_set_cities, activities = get10Cities(new_activities)
+    input_climate = input_json['climate']['list'][0]
+    climate = filter_climate(input_climate)
+    context = {
+        
+    }
+    response = flask.jsonify(**context)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID
@@ -104,6 +121,25 @@ def getCities(activity_list):
     city_dic = curr.fetchall()    
     return city_dic, [act1, act2, act3]
 
+def get10Cities(activity_list):
+    print(activity_list)
+    connection = cities.model.get_db()
+    act1, act2, act3 = filter_activities(connection, activity_list)
+    print(act1 + " " + act2 + " " + act3 )
+    curr = connection.execute(
+        "SELECT * FROM ("
+        "SELECT C.city_id, C.city_name, COUNT(*) as num_act "
+        "FROM Cities C, City_Activities CA, Activities A "
+        "WHERE C.city_id = CA.city_id AND CA.activity_id = A.activity_id "
+        "AND (A.activity_name = ? OR A.activity_name = ? OR A.activity_name = ?) "
+        "GROUP BY C.city_id, C.city_name) "
+        "ORDER BY num_act desc LIMIT 10",
+        (act1, act2, act3,)
+    )  
+    
+    
+    city_dic = curr.fetchall()    
+    return city_dic, [act1, act2, act3]
 
 def filter_activities(con, act_list):
     nlp = spacy.load('en_core_web_md')
@@ -131,7 +167,27 @@ def filter_activities(con, act_list):
     filtered_acts.sort(reverse=True, key=sorting_sims)
     return filtered_acts[0]['activity'], filtered_acts[1]['activity'], filtered_acts[2]['activity']
         
+def filter_climate(con, climate):
+    nlp = spacy.load('en_core_web_md')
+    climates_dict = get_all_climates(con)
+    climates_string = []
+    for entry in climates_dict:
+        climates_string += entry['climate_name'] + " "
+
+    temp_sim_list = []
+    input_word = nlp(climate)
+    db_words = nlp(climates_string)
         
+    for token in db_words:
+        temp_sim_list.append(
+            {
+                "climate": token.text,
+                "similarity": input_word.similarity(token)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    return temp_sim_list[0]['climate']
+
 def sorting_sims(sim_entry):
     return sim_entry['similarity']    
 
@@ -139,6 +195,13 @@ def get_all_activites(con):
     curr = con.execute(
         "SELECT DISTINCT A.activity_name "
         "FROM Activities A"
+    )
+    return curr.fetchall()
+
+def get_all_climates(con):
+    curr = con.execute(
+        "SELECT DISTINCT C.climate_name "
+        "FROM Cities C"
     )
     return curr.fetchall()
     
