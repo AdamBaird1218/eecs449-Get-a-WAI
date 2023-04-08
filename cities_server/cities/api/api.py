@@ -25,13 +25,15 @@ def get_recommended_cities():
     """return list of avalible services"""
     input_json = flask.request.json
     # intent names needs to match the json key entry in main.js
+    connection = cities.model.get_db()
     activities_list = input_json['activities']['list']
-    act1, act2, act3 = filter_activities(activities_list)
+    act1, act2, act3 = filter_activities(connection,activities_list)
     new_activities = [act1, act2, act3]
     first_set_cities, activities = get10Cities(new_activities)
     input_climate = input_json['climate']['list'][0]
-    climate = filter_climate(input_climate)
+    climate = filter_climate(connection,input_climate)
     next_city_filter = []
+    
     for city in first_set_cities:
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.city_id, C.city_name "
@@ -41,6 +43,7 @@ def get_recommended_cities():
         result = cur.fetchall()
         if(result.notEmpty()):
             next_city_filter.append(result[0])
+    
     if(len(next_city_filter) == 0):
         for city in first_set_cities:
             city_object = {'city_id': city['city_id'],'city_name':city['city_name']}
@@ -303,6 +306,12 @@ def get_specific_city_activities_list(city_id):
                              "ON A.activity_id = CA.activity_id "
                              "WHERE CA.city_id = ?",(city_id))
     city_general_activities = cur.fetchall()
+    """
+    activity_list = []
+    for activity in city_general_activities:
+        activity_list.append(activity['activity_name'])
+    """
+
     activity_map = {}
     for activity in city_general_activities:
         general_activity = activity['activity_name']
@@ -315,7 +324,7 @@ def get_specific_city_activities_list(city_id):
         for result in results:
             specific_activity_list.append(result['activity_name'])
         activity_map[general_activity] = specific_activity_list
-    return specific_activity_list
+    return activity_map
 
 
 if __name__ == '__main__':

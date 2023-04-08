@@ -77,7 +77,7 @@ def get_flight_duration(location1,location2):
     return duration_string
     
 def main():
-    scrape_flight_prices("ann arbor","miami")
+    scrape_flight_prices("san francisco","miami")
 
 if __name__ == "__main__":
     main()
