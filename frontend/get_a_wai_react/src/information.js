@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import AttributeTracker from './attributeTracker';
+import CitiesContainer from './citiesContainer';
 import TestingCities from './testingCities';
-function Information({activitiesInfo, tripFull}) {
+function Information({activitiesInfo, tripFull, citiesInfo, showLeftColumn, setShowLeftColumn}) {
 
-    if (tripFull){
-        return <>Trip Full. TODO Replace with cities objects</>
+    const togglePosition = () => {
+        setShowLeftColumn((current) => !current)
+    }
+
+    if (showLeftColumn){
+        return <>
+        <CitiesContainer
+        citiesInfo={citiesInfo}
+        tripFull={tripFull}
+        />
+
+        <div class="d-grid gap-2"> <button class="btn btn-primary" type="button" onClick={togglePosition}>Toggle activities View</button> </div>
+        </>
+
     }
     else {
     return <>
@@ -38,7 +51,9 @@ function Information({activitiesInfo, tripFull}) {
             attributeLimit={activitiesInfo.budget.limit}
             attributeList={activitiesInfo.budget.list}
         />
+        {tripFull && <div class="d-grid gap-2"> <button class="btn btn-primary" type="button" onClick={togglePosition}>Toggle activities View</button> </div>}
     </>  
+   
     }
     
 }

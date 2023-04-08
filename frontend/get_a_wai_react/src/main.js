@@ -60,6 +60,7 @@ function Main() {
         
 
     const [citiesObject, setCitiesList] = useState()
+    const [showCitiesLeftColumn, setShowCitiesLeftColumn] = useState(false)
 
     //checks if the all the attributes are full
     useEffect(()=>{
@@ -77,10 +78,13 @@ function Main() {
         
     }, [attributeInfo_List])
 
+
+
     //When tripInfoIsFull this triggers
     useEffect(()=>{
             if (tripInfoIsFull){
-               getCities() 
+                // Remove testing
+                getCities() 
             }
             else{
                 console.log(`Error: trying to trigger while tripInfoIsFull value = ${tripInfoIsFull}`);
@@ -127,6 +131,9 @@ function Main() {
                     <Information 
                     activitiesInfo={attributeInfo_List}
                     tripFull={tripInfoIsFull}
+                    citiesInfo={citiesObject}
+                    showLeftColumn={showCitiesLeftColumn}
+                    setShowLeftColumn={setShowCitiesLeftColumn}
                     />
                     
                  
@@ -141,11 +148,13 @@ function Main() {
             </div>
         </div>
         <div class="row mt-2 row-cols-1 row-cols-md-4 g-4">
-            <TestingCities />
-            <CitiesContainer
+            {!showCitiesLeftColumn &&
+               <CitiesContainer
                     citiesInfo={citiesObject}
                     tripFull={tripInfoIsFull}
-                    />
+                    /> 
+            }
+            
         </div>
     </div>
     </>

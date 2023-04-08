@@ -5,8 +5,9 @@ function CitiesContainer({citiesInfo, tripFull}) {
     if (tripFull){
         return <>
         {citiesInfo.citiesList.map((city, index) => {
-            return <div class="col"><CityObject
+            return <div class="col"><CityObject 
                 key={index}
+                rank={index + 1}
                 cityName={city.name}
                 cityID={city.cityID}
                 imgLink={city.imgLink}

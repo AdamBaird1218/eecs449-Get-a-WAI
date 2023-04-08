@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function CityObject({
+    rank,
     cityName,
     cityID,
     imgLink,
@@ -19,10 +20,12 @@ function CityObject({
         return "fa-solid fa-plane"
     }
 
-    return  <div class="card">
+    return  <div class="card mb-2">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <div>{cityName}</div>
-                <div><FontAwesomeIcon icon={getCorrectIcon()} /> {travelTimeEstimate}</div>
+                <div>#{rank}</div>
+                
+                
             </div>
             <img class="card-img-top" src={imgLink} alt="Card image cap" />
             <div class="card-body"> 
@@ -36,6 +39,10 @@ function CityObject({
                     })}
                     </ul>
                 </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <div><FontAwesomeIcon icon={getCorrectIcon()} /> {travelTimeEstimate}</div>
+                <div>${estimatedCost}</div>
             </div>
         </div>
 
