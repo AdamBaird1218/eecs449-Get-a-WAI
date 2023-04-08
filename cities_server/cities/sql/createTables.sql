@@ -33,3 +33,4 @@ CREATE TABLE Specific_Activities(
     FOREIGN KEY (city_id) REFERENCES Cities(city_id) ON DELETE CASCADE,
     FOREIGN KEY (activity_id) REFERENCES Activities(activity_id) ON DELETE CASCADE
 );
+

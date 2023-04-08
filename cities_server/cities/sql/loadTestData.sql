@@ -139,6 +139,7 @@ VALUES (11, 'theares');
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (12, 'aquariums');
 
+/*
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (0, 4, "Fountains of Bellagio", 4.5, 92120, 22.33959268181487);
 
@@ -12375,4 +12376,4 @@ VALUES (32, 4, 220.94422411792146);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (32, 5, 118.95053206921554);
-
+*/
