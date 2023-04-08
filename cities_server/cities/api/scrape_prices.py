@@ -52,12 +52,13 @@ def get_distance(location1,location2):
   soup = BeautifulSoup(driver.page_source, 'html.parser')
     
   distance_string = soup.select(".rreh")[0].text
-  first_index = distance_string.find('(')
+  first_index = distance_string.find('(') #for distance
   second_index = distance_string.find('.')
-  third_index = 0
+  third_index = 0 #for travel duration
   fourth_index = distance_string.find('n')
-  distance_object = {"time":distance_string[third_index:fourth_index+1],"distance":int(distance_string[first_index + 1:second_index])}
-  return distance_object
+  distance = int(distance_string[first_index + 1:second_index])
+  travel_duration = distance_string[third_index:fourth_index+1]
+  return distance, travel_duration
 
 def get_flight_duration(location1,location2):
     URL = "https://www.google.com/search?q=flight+time+from+" + location1 + "+to+" + location2 + "&rlz=1C1CHBD_enUS889US891&ei=ipswZIW-M5GjptQPh9ON6AE&ved=0ahUKEwiFq42L65j-AhWRkYkEHYdpAx0Q4dUDCBA&uact=5"
