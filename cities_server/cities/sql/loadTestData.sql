@@ -2,103 +2,103 @@ PRAGMA foreign_keys = ON;
 
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (0, "Las Vegas", "Nevada", 36.1716, 115.1391);
+VALUES (0, "Las Vegas", "Nevada", 36.1716, 115.1391, "BWh", 171);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (1, "New York City", "New York", 40.7128, 74.006);
+VALUES (1, "New York City", "New York", 40.7128, 74.006, "Dfa", 175);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (2, "Orlando", "Florida", 28.5384, 81.3789);
+VALUES (2, "Orlando", "Florida", 28.5384, 81.3789, "Am", 174);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (3, "Los Angeles", "California", 34.0522, 118.2437);
+VALUES (3, "Los Angeles", "California", 34.0522, 118.2437, "Csa", 177);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (4, "Chicago", "Illinois", 41.8781, 87.6298);
+VALUES (4, "Chicago", "Illinois", 41.8781, 87.6298, "Dfa", 161);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (5, "Nashville", "Tennessee", 36.1627, 86.7816);
+VALUES (5, "Nashville", "Tennessee", 36.1627, 86.7816, "Cfa", 152);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (6, "San Diego", "California", 32.7157, 117.1611);
+VALUES (6, "San Diego", "California", 32.7157, 117.1611, "BSh", 214);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (7, "Miami Beach", "Florida", 25.7907, 80.13);
+VALUES (7, "Miami Beach", "Florida", 25.7907, 80.13, "Am", 211);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (8, "New Orleans", "Louisiana", 29.9511, 90.0715);
+VALUES (8, "New Orleans", "Louisiana", 29.9511, 90.0715, "Cfa", 135);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (9, "Miami", "Florida", 25.7617, 80.1918);
+VALUES (9, "Miami", "Florida", 25.7617, 80.1918, "Am", 153);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (10, "Washington DC", "District of Columbia", 38.9072, 77.0369);
+VALUES (10, "Washington DC", "District of Columbia", 38.9072, 77.0369, "Cfa", 185);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (11, "Honolulu", "Hawaii", 21.3099, 157.8581);
+VALUES (11, "Honolulu", "Hawaii", 21.3099, 157.8581, "Am", 274);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (12, "Houston", "Texas", 29.7604, 95.3698);
+VALUES (12, "Houston", "Texas", 29.7604, 95.3698, "Cfa", 86);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (13, "Atlanta", "Georgia", 33.7488, 84.3877);
+VALUES (13, "Atlanta", "Georgia", 33.7488, 84.3877, "Cfa", 131);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (14, "Anaheim", "California", 33.8366, 117.9143);
+VALUES (14, "Anaheim", "California", 33.8366, 117.9143, "Csa", 195);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (15, "San Francisco", "California", 37.7749, 122.4194);
+VALUES (15, "San Francisco", "California", 37.7749, 122.4194, "Csb", 199);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (16, "Boston", "Massachusetts", 42.3601, 71.0589);
+VALUES (16, "Boston", "Massachusetts", 42.3601, 71.0589, "Dfa", 230);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (17, "Atlantic City", "New Jersey", 39.3643, 74.4229);
+VALUES (17, "Atlantic City", "New Jersey", 39.3643, 74.4229, "Cfa", 108);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (18, "San Antonio", "Texas", 29.4252, 98.4946);
+VALUES (18, "San Antonio", "Texas", 29.4252, 98.4946, "Cfa", 129);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (19, "Fort Lauderdale", "Florida", 26.1224, 80.1373);
+VALUES (19, "Fort Lauderdale", "Florida", 26.1224, 80.1373, "Am", 166);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (20, "Dallas", "Texas", 32.7767, -96.797);
+VALUES (20, "Dallas", "Texas", 32.7767, -96.797, "Cfa", 121);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (21, "Grand_Canyon_National_Park", "Arizona", 36.2679, 112.3535);
+VALUES (21, "Grand_Canyon_National_Park", "Arizona", 36.2679, 112.3535, "BWh", 150);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (22, "Austin", "Texas", 30.2672, -97.7431);
+VALUES (22, "Austin", "Texas", 30.2672, -97.7431, "Cfa", 152);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (23, "Myrtle Beach", "South Carolina", 33.6891, -78.8867);
+VALUES (23, "Myrtle Beach", "South Carolina", 33.6891, -78.8867, "Cfa", 192);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (24, "Phoenix", "Arizona", 33.4484, -112.074);
+VALUES (24, "Phoenix", "Arizona", 33.4484, -112.074, "BWh", 106);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (25, "Denver", "Colorado", 39.7392, -104.9903);
+VALUES (25, "Denver", "Colorado", 39.7392, -104.9903, "BSk", 172);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (26, "Yellowstone_National_Park", "Wyoming", 44.428, 110.5885);
+VALUES (26, "Yellowstone_National_Park", "Wyoming", 44.428, 110.5885, "Dfa", 150);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102);
+VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102, "Cfa", 256);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (28, "Tampa", "Florida", 27.9506, -82.4572);
+VALUES (28, "Tampa", "Florida", 27.9506, -82.4572, "Cfa", 133);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (29, "Seattle", "Washington", 47.6062, -122.3321);
+VALUES (29, "Seattle", "Washington", 47.6062, -122.3321, "Csb", 187);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319);
+VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319, "Am", 250);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (31, "Lake_Tahoe", "California", 39.0968, 120.0324);
+VALUES (31, "Lake_Tahoe", "California", 39.0968, 120.0324, "Csb", 150);
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude)
-VALUES (32, "Key_West", "Florida", 24.5554, 81.7842);
+VALUES (32, "Key_West", "Florida", 24.5554, 81.7842, "Am", 215);
 
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (0, 'skiing');
@@ -139,7 +139,6 @@ VALUES (11, 'theares');
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (12, 'aquariums');
 
-/*
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (0, 4, "Fountains of Bellagio", 4.5, 92120, 22.33959268181487);
 
@@ -12376,4 +12375,3 @@ VALUES (32, 4, 220.94422411792146);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (32, 5, 118.95053206921554);
-*/
