@@ -5,7 +5,16 @@ import spacy
 
 
 import scrape_prices as sp
-
+climate_map = {
+    "BWh": "hot desert climate",
+    "Dfa": "hot summer humid continental climate",
+    "Am": "tropical monsoon climate",
+    "Csa": "Mediterranean climate",
+    "Cfa": "humid subtropical climate",
+    "BSh": "hot semi-arid climate",
+    "Csb": "Mediterranean climate",
+    "BSk": "cold semi-arid climate"
+}
 @cities.app.route('/api/testing/', methods=['GET'])
 def get_services():
     """return list of avalible services"""
@@ -212,7 +221,7 @@ def filter_climate(con, climate):
     climates_dict = get_all_climates(con)
     climates_string = []
     for entry in climates_dict:
-        climates_string += entry['climate'] + " "
+        climates_string += climate_map[entry['climate']] + " "
 
     temp_sim_list = []
     input_word = nlp(climate)
