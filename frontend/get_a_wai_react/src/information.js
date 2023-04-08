@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AttributeTracker from './attributeTracker';
+import TestingCities from './testingCities';
 function Information({activitiesInfo, tripFull}) {
 
     if (tripFull){

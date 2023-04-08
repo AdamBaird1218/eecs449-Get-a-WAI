@@ -5,7 +5,7 @@ function CitiesContainer({citiesInfo, tripFull}) {
     if (tripFull){
         return <>
         {citiesInfo.citiesList.map((city, index) => {
-            return <CityObject
+            return <div class="col"><CityObject
                 key={index}
                 cityName={city.name}
                 cityID={city.cityID}
@@ -17,7 +17,7 @@ function CitiesContainer({citiesInfo, tripFull}) {
                 userBudget={citiesInfo.userBudget}
                 userActivities={citiesInfo.userActivities}
                 nights={citiesInfo.nights}
-            />
+            /></div>
         })}
         </>
     }

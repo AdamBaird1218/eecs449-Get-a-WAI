@@ -19,25 +19,25 @@ function CityObject({
         return "fa-solid fa-plane"
     }
 
-    return <>
-        <div class="card mb-2">
+    return  <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <div>cityName</div>
-                <div><FontAwesomeIcon icon={getCorrectIcon()} /> estimatedTravelTime</div>
+                <div>{cityName}</div>
+                <div><FontAwesomeIcon icon={getCorrectIcon()} /> {travelTimeEstimate}</div>
             </div>
-            <img class="card-img-top" src={process.env.PUBLIC_URL + imgLink} alt="Card image cap" />
+            <img class="card-img-top" src={imgLink} alt="Card image cap" />
             <div class="card-body"> 
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${cityID}`} aria-expanded="false" aria-controls={`collapse${cityID}`}>
-                    See General Activities
+                    City's General Activities
                 </button>
                 <div class="collapse" id={`collapse${cityID}`}>
-                    <div class="card card-body">
-                        
-                    </div>
+                    <ul class="list-group list-group-flush">
+                        {cityActivitiesList.map((act, index) => {
+                        return <li class="list-group-item" key={index}>{act}</li>
+                    })}
+                    </ul>
                 </div>
             </div>
         </div>
-    </>
-    
+
 }
 export default CityObject
