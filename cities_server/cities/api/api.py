@@ -54,22 +54,29 @@ def get_recommended_cities():
     print(filtered_climate)
     climate = climate_text_to_abbreviation_map[filtered_climate]
     print(climate)
+    print(type(climate))
     next_city_filter = []
     
     for city in first_set_cities:
+        print(type(city))
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.city_id, C.city_name "
                                  "FROM Cities C "
-                                 "WHERE C.Climate = ? AND C.city_name = ? ",
-                                 (climate, city))
+                                 "WHERE C.climate = ? AND C.city_name = ? ",
+                                 (climate, city["city_name"]))
+        # cur = connection.execute("SELECT city_id, city_name "
+        #                          "FROM Cities "
+        #                          "WHERE city_name = ? ",
+        #                          (city))
         result = cur.fetchall()
-        if(result.notEmpty()):
+        print("RESULT1:", result)
+        if(len(result) > 0):
             next_city_filter.append(result[0])
     if(len(next_city_filter) == 0):
         for city in first_set_cities:
             city_object = {'city_id': city['city_id'],'city_name':city['city_name']}
             next_city_filter.append(city_object)
-    print(next_city_filter)
+    print("CLimate Filtered Cities: ", next_city_filter)
     starting_location = input_json['location']['list'][0]
     preferred_travel_method = input_json['travelMethod']['list'][0]
     travel_method = get_travel_method(preferred_travel_method)
@@ -195,12 +202,13 @@ def get10Cities(activity_list):
         "WHERE C.city_id = CA.city_id AND CA.activity_id = A.activity_id "
         "AND (A.activity_name = ? OR A.activity_name = ? OR A.activity_name = ?) "
         "GROUP BY C.city_id, C.city_name) "
-        "ORDER BY num_act desc LIMIT 10",
+        "ORDER BY num_act desc LIMIT 15",
         (act1, act2, act3,)
     )  
     
     
-    city_dic = curr.fetchall()    
+    city_dic = curr.fetchall()
+    print(city_dic)    
     return city_dic, [act1, act2, act3]
 
 def filter_activities(con, act_list):
@@ -300,12 +308,12 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
     if(travel_method == 'flight'):
         flight_price = sp.scrape_flight_prices(starting_location,city)
         travel_duration = sp.get_flight_duration(starting_location,city)
-        
+        print(city)
         connection = cities.model.get_db()
-        cur = connection.execute("SELECT C.Avg_Hotel_Price"
-                                    "FROM Cities C"
+        cur = connection.execute("SELECT C.Avg_Hotel_Price "
+                                    "FROM Cities C "
                                     "WHERE C.City_Name = ?",
-                                    (city))
+                                    (city,))
         results = cur.fetchall()
         hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
         total_price = hotel_price + flight_price
@@ -316,8 +324,8 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
         approximate_driving_cost = distance * 0.15 * 2
         
         connection = cities.model.get_db()
-        cur = connection.execute("SELECT C.Avg_Hotel_Price"
-                                    "FROM Cities C"
+        cur = connection.execute("SELECT C.Avg_Hotel_Price "
+                                    "FROM Cities C "
                                     "WHERE C.City_Name = ?",
                                     (city))
         results = cur.fetchall()
@@ -333,7 +341,7 @@ def get_specific_city_activities_list(city_id):
                              "FROM Activities A "
                              "INNER JOIN City_Activities CA "
                              "ON A.activity_id = CA.activity_id "
-                             "WHERE CA.city_id = ?",(city_id))
+                             "WHERE CA.city_id = ?",(city_id,))
     city_general_activities = cur.fetchall()
     """
     activity_list = []
@@ -345,10 +353,11 @@ def get_specific_city_activities_list(city_id):
     for activity in city_general_activities:
         general_activity = activity['activity_name']
         connection = cities.model.get_db()
-        cur = connection.execute("SELECT A.activity_name, A.rating "
+        cur = connection.execute("SELECT SA.activity_name, SA.rating "
                                 "FROM Specific_Activities SA "
                                 "WHERE SA.city_id = ? AND SA.activity_id = ?",(city_id,activity['activity_id']))
         results = cur.fetchall()
+        print("RESULTS:", results)
         results.sort(reverse=True, key=sorting_ratings)
         activity_map[general_activity] = results
     
