@@ -1,55 +1,19 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: start_vacation_planning
   examples: |
-    - hey
-    - hello
-    - hello there
-    - hi
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - I would like to plan a trip.
+    - Yes, lets plan a trip.
+    - what do you need to know.
+    - lets do it
+    - I want to plan a vacation
+    - lets plan a vacation
+    - yes, lets plan one
+    - I'm ready to begin
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: activities
+- intent: inform_vacation_data
   examples: |
     - I love [hiking](activities) mountains.
     - I enjoy tanning on the [beach](activities) hiking.
@@ -111,9 +75,6 @@ nlu:
     - I enjoy going to [clubs](activities)
     - I want to visit [shops](activities)
     - I want to go [sightseeing](activities)
-
-- intent: climate
-  examples: |
     - I like [warm](climate) weather
     - I enjoy [cold](climate) weather
     - I like [cold](climate) weather
@@ -133,25 +94,19 @@ nlu:
     - [arid](climate)
     - [freezing](climate)
     - [sunny](climate)
-
-- intent: location 
-  examples: |
-    - I am located in [New York City](location)
-    - I live in [Ann Arbor](location)
-    - I currently reside in [west bloomfield](location)
-    - My address is [314 E William St., Ann Arbor, MI, 48104](location)
-    - [45489 beepbop road](location) is my address
-    - I am from [michigan](location)
-    - I come from [arizona](location)
-    - [Boston](location)
-    - [seattle](location) is where I am from
-    - [washington](location)
-    - My home address is [420 Michigan ave. Ann arbor](location)
-    - I'm currently located in [Commerce Township, Michigan](location)
-
-
-- intent: travelMethod
-  examples: |
+    - I am located in New York City
+    - I live in Ann Arbor
+    - I currently reside in west bloomfield
+    - My address is 314 E William St., Ann Arbor, MI, 48104
+    - 45489 beepbop road is my address
+    - I am from michigan
+    - I come from arizona
+    - Boston
+    - seattle is where I am from
+    - washington
+    - My home address is 420 Michigan ave. Ann arbor
+    - I'm currently located in Commerce Township, Michigan
+    - I live at 8552 Walnut Lake Drive, Novi Michigan
     - I am going to [drive](travelMethod)
     - I want to take a [flight](travelMethod)
     - [driving](travelMethod)
@@ -162,10 +117,6 @@ nlu:
     - [drive](travelMethod)
     - Ill take a [car](travelMethod) there
     - I would love to [fly](travelMethod) there 
-
-
-- intent: tripDuration
-  examples: |
     - I want to travel for [1 week](tripDuration)
     - I want a [4 day](tripDuration) vacation
     - I would love a [3 week](tripDuration) vaction
@@ -176,25 +127,73 @@ nlu:
     - I need to be on a [9 day](tripDuration) trip
     - I want to relax for [8 days](tripDuration)
     - [5 nights](tripDuration)
-    - I am looking to spend around a [week](tripDuration) there
+    - I am looking to spend around [a week](tripDuration) there
     - I want to stay about [5 days](tripDuration)
     - I think we are going to stay around [2 weeks](tripDuration), and maybe even later.
-
-
-- intent: budget
-  examples: |
-    - I want a [cheap](budget) vacation
-    - I have an [unlimited](budget) budget
-    - I only have [500 dollars](budget)
-    - I want to drop [four grand](budget) on this trip
-    - Max I can spend is [300 dollars](budget)
-    - I need to spend at least [400 bucks](budget) on this getaway
-    - I want to spend around [2000 dollars](budget)
-    - [1000 bucks](budget)
+    - I want a cheap vacation
+    - I have an unlimited budget
+    - I only have 500 dollars
+    - I want to drop four grand on this trip
+    - Max I can spend is 300 dollars
+    - I need to spend at least 400 bucks on this getaway
+    - I want to spend around 2000 dollars
+    - 1000 bucks
     - I only have [400 dollars](budget)
-    - can I do an vacation for [200 dollars](budget)
+    - can I do an vacation for 200 dollars
     - I can only pay about [800](budget)
-    - I think we budgeted about [7000] for this trip.
+    - I think we budgeted about 7000 for this trip.
+    - 800
+
+
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hello there
+    - hi
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
 
 
 

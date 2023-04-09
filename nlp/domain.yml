@@ -1,22 +1,125 @@
 version: "3.1"
 
 intents:
+  - start_vacation_planning
   - greet
   - goodbye
   - affirm
   - deny
-  - activities
-  - climate
-  - location
-  - travelMethod
-  - budget
+  - inform_vacation_data
+entities:
+- activities
+- climate
+- travelMethod
+- tripDuration
+- GPE
+- Money
+slots:
+  liked_activity_1:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: activities
+  liked_activity_2:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: activities
+  liked_activity_3:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: activities
+  preferred_climate:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: climate
+  preferred_travel_method:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: travelMethod
+  preferred_trip_length:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tripDuration
+  preferred_budget:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: MONEY
+  user_city:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: GPE
+  user_state:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: GPE
+
+  
+forms:
+  vacation_data_form:
+    required_slots:
+      - liked_activity_1
+      - liked_activity_2
+      - liked_activity_3
+      - preferred_climate
+      - preferred_travel_method
+      - preferred_trip_length
+      - preferred_budget
+      - user_city
+      - user_state
+
 
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  utter_respond_capabilities:
+  - text: "Get-a-wAI helps individuals discover new and exciting vaction destinations. To design your tailored-made trip, I need to collect information about your activity instrests, weather preference, budget, trip length, travel method, and address."
+  utter_ask_liked_activity_1:
+  - text: "What kind of activities are you interested in doing on your vaction? Please only include one activity at a time."
+  utter_ask_liked_activity_2:
+  - text: "What is another activity you like?"
+  utter_ask_liked_activity_3:
+  - text: "Whats one more thing you're interested in doing on your trip?"
+  utter_ask_preferred_climate:
+  - text: "What type of weather would you like?"
+  utter_ask_preferred_travel_method:
+  - text: "Would you prefer to drive or fly to your destination?"
+  utter_ask_preferred_trip_length:
+  - text: "How many nights are you planning on staying?"
+  utter_ask_preferred_budget:
+  - text: "How much are you looking to spend on this trip?"
+  utter_ask_user_city:
+  - text: "What city will you be traveling from?"
+  utter_ask_user_state:
+  - text: "What state will you be traveling from?"
+  utter_all_data_collected:
+  - text: "I found that you want to do {liked_activity_1}, {liked_activity_2}, {liked_activity_3} in {preferred_climate} conditions."
+  utter_default:
+  - text: "Sorry, I didn't quite understand. Could you rephrase that?"
+  - text: "I didn't quite catch that. Is it possible for you to reword it?"
+  - text: "I'm not sure I understand what your saying. Could you try rephrasing?"
+actions:
+- validate_vacation_data_form
+  
 
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
