@@ -13,7 +13,8 @@ entities:
 - travelMethod
 - tripDuration
 - GPE
-- Money
+- budget
+- MONEY
 slots:
   liked_activity_1:
     type: text

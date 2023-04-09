@@ -5,9 +5,10 @@ import CitiesContainer from './citiesContainer';
 import TestingCities from './testingCities';
 import { v4 as uuid } from 'uuid';
 
+const userId = uuid()
 
 function Main() {
-    const userId = uuid()
+    
     const [attributeInfo_List, setAttributeInfo_List] = useState({
         "activities": {
             "name":"Activities",

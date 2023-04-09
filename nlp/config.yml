@@ -4,7 +4,7 @@ language: en
 
 pipeline:
   - name: SpacyNLP
-    model: 'en_core_web_md'
+    model: 'en_core_web_trf'
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
