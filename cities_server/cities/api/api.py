@@ -346,10 +346,7 @@ def get_specific_city_activities_list(city_id):
                                 "FROM Specific_Activities SA "
                                 "WHERE SA.city_id = ? AND SA.activity_id = ?",(city_id,activity['activity_id']))
         results = cur.fetchall()
-        specific_activity_list = []
-        for result in results:
-            specific_activity_list.append(result)
-        activity_map[general_activity] = specific_activity_list
+        activity_map[general_activity] = results
     
     #return activity_list
     return activity_map
