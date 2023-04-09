@@ -14,11 +14,13 @@ import logging as log
 def scrape_flight_prices(location1,location2):
     URL = "https://www.google.com/search?q=" + location1 + "+to+" + location2 + "+flights&rlz=1C1CHBD_enUS889US891&oq=ann+a&aqs=chrome.0.69i59j46i131i433i512j0i131i433i512l3j69i61j69i60l2.1418j1j7&sourceid=chrome&ie=UTF-8"
     chrome_options = webdriver.ChromeOptions()
+    """
     chrome_options.add_argument("--disable-extensions")
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--remote-debugging-port=9222")
+    """
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
     driver.get(URL)
     time.sleep(5)

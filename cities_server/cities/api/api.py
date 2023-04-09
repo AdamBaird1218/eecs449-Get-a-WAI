@@ -3,9 +3,9 @@ import flask
 import cities
 import spacy
 
+from cities_server.cities.api import scrape_prices as sp
 
-import scrape_prices as sp
-climate_map = {
+climate_abbreviation_to_text_map = {
     "BWh": "hot desert climate",
     "Dfa": "hot summer humid continental climate",
     "Am": "tropical monsoon climate",
@@ -14,6 +14,15 @@ climate_map = {
     "BSh": "hot semi-arid climate",
     "Csb": "Mediterranean climate",
     "BSk": "cold semi-arid climate"
+}
+climate_text_to_abbreviation_map = {
+    "hot desert climate" : "BWh",
+    "hot summer humid continental climate" : "Dfa",
+    "tropical monsoon climate": "Am",
+    "Mediterranean climate": "Csa",
+    "humid subtropical climate" : "Cfa",
+    "hot semi-arid climate" : "BSh",
+    "cold semi-arid climate" : "BSk"
 }
 @cities.app.route('/api/testing/', methods=['GET'])
 def get_services():
@@ -40,7 +49,11 @@ def get_recommended_cities():
     new_activities = [act1, act2, act3]
     first_set_cities, activities = get10Cities(new_activities)
     input_climate = input_json['climate']['list'][0]
-    climate = filter_climate(connection,input_climate)
+    next_city_filter = []
+    filtered_climate = filter_climate(connection,input_climate)
+    print(filtered_climate)
+    climate = climate_text_to_abbreviation_map[filtered_climate]
+    print(climate)
     next_city_filter = []
     
     for city in first_set_cities:
@@ -52,11 +65,11 @@ def get_recommended_cities():
         result = cur.fetchall()
         if(result.notEmpty()):
             next_city_filter.append(result[0])
-    
     if(len(next_city_filter) == 0):
         for city in first_set_cities:
             city_object = {'city_id': city['city_id'],'city_name':city['city_name']}
             next_city_filter.append(city_object)
+    print(next_city_filter)
     starting_location = input_json['location']['list'][0]
     preferred_travel_method = input_json['travelMethod']['list'][0]
     travel_method = get_travel_method(preferred_travel_method)
@@ -219,19 +232,15 @@ def filter_activities(con, act_list):
 def filter_climate(con, climate):
     nlp = spacy.load('en_core_web_md')
     climates_dict = get_all_climates(con)
-    climates_string = []
-    for entry in climates_dict:
-        climates_string += climate_map[entry['climate']] + " "
-
     temp_sim_list = []
+    
     input_word = nlp(climate)
-    db_words = nlp(climates_string)
-        
-    for token in db_words:
+    for entry in climates_dict:
+        db_words = nlp(climate_abbreviation_to_text_map[entry['climate']])
         temp_sim_list.append(
             {
-                "climate": token.text,
-                "similarity": input_word.similarity(token)
+                "climate": climate_abbreviation_to_text_map[entry['climate']],
+                "similarity": input_word.similarity(db_words)
             }
         )
     temp_sim_list.sort(reverse=True, key=sorting_sims)
@@ -267,7 +276,7 @@ def get_travel_method(usr_travel_method):
     
     temp_sim_list = []
     input_word = nlp(usr_travel_method)
-    db_words = nlp(methods_list)
+    db_words = nlp(methods_string)
         
     for token in db_words:
         temp_sim_list.append(
@@ -277,6 +286,7 @@ def get_travel_method(usr_travel_method):
             }
         )
     temp_sim_list.sort(reverse=True, key=sorting_sims)
+    print(temp_sim_list)
     return temp_sim_list[0]['method']
 
 def get_expenses_travel_duration(travel_method, starting_location, city, trip_duration, budget):
@@ -284,6 +294,7 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
     if(travel_method == 'flight'):
         flight_price = sp.scrape_flight_prices(starting_location,city)
         travel_duration = sp.get_flight_duration(starting_location,city)
+        
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.Avg_Hotel_Price"
                                     "FROM Cities C"
@@ -296,7 +307,8 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
 
     elif(travel_method == 'drive'):
         distance, travel_duration = sp.get_distance(starting_location,city)
-        approximate_driving_cost = distance * 0.15
+        approximate_driving_cost = distance * 0.15 * 2
+        
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.Avg_Hotel_Price"
                                     "FROM Cities C"
@@ -305,6 +317,8 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
         results = cur.fetchall()
         hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
         total_price = hotel_price + approximate_driving_cost
+    
+        
     return total_price,travel_duration
 
 def get_specific_city_activities_list(city_id):
@@ -333,7 +347,10 @@ def get_specific_city_activities_list(city_id):
         for result in results:
             specific_activity_list.append(result['activity_name'])
         activity_map[general_activity] = specific_activity_list
+    
+    #return activity_list
     return activity_map
+
 
 
 if __name__ == '__main__':
