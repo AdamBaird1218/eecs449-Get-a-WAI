@@ -250,7 +250,10 @@ def filter_climate(con, climate):
     return temp_sim_list[0]['climate']
 
 def sorting_sims(sim_entry):
-    return sim_entry['similarity']    
+    return sim_entry['similarity']
+
+def sorting_ratings(rating_entry):
+    return rating_entry['rating']        
 
 def get_all_activites(con):
     curr = con.execute(
@@ -346,6 +349,7 @@ def get_specific_city_activities_list(city_id):
                                 "FROM Specific_Activities SA "
                                 "WHERE SA.city_id = ? AND SA.activity_id = ?",(city_id,activity['activity_id']))
         results = cur.fetchall()
+        results.sort(reverse=True, key=sorting_ratings)
         activity_map[general_activity] = results
     
     #return activity_list
