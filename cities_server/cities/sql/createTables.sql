@@ -37,3 +37,20 @@ CREATE TABLE Specific_Activities(
     FOREIGN KEY (activity_id) REFERENCES Activities(activity_id) ON DELETE CASCADE
 );
 
+CREATE TABLE Cuisines(
+    cuisine_id INTEGER PRIMARY KEY,
+    cuisine_name VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE City_Restaurants(
+    city_id Integer,
+    cuisine_id Integer,
+    restaurant_id Integer,
+    restaurant_name VARCHAR(64) NOT NULL,
+    rating Integer,
+    number_ratings Integer,
+    weighted_rating DECIMAL(11,1),
+    PRIMARY KEY (restaurant_id),
+    FOREIGN KEY (city_id) REFERENCES Cities(city_id) ON DELETE CASCADE,
+    FOREIGN KEY (cuisine_id) REFERENCES Cuisines(cuisine_id) ON DELETE CASCADE
+);
