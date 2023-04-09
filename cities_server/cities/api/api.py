@@ -232,14 +232,17 @@ def filter_activities(con, act_list):
 def filter_climate(con, climate):
     nlp = spacy.load('en_core_web_md')
     climates_dict = get_all_climates(con)
+    stop_words = ["semi-arid"]
     temp_sim_list = []
     
-    input_word = nlp(climate)
+    input_word = climate
+    input_nlp = nlp(' '.join([str(t) for t in input_word if not t in stop_words]))
     for entry in climates_dict:
-        db_words = nlp(climate_abbreviation_to_text_map[entry['climate']])
+        mapped_climate = climate_abbreviation_to_text_map[entry['climate']]
+        db_words = nlp(' '.join([str(t) for t in mapped_climate if not t in stop_words]))
         temp_sim_list.append(
             {
-                "climate": climate_abbreviation_to_text_map[entry['climate']],
+                "climate": mapped_climate,
                 "similarity": input_word.similarity(db_words)
             }
         )
