@@ -7,7 +7,8 @@ CREATE TABLE Cities(
     longitude REAL NOT NULL,
     latitude REAL NOT NULL,
     climate VARCHAR(64) NOT NULL,
-    Avg_Hotel_Price INTEGER NOT NULL
+    Avg_Hotel_Price INTEGER NOT NULL,
+    closest_airport VARCHAR(64) NOT NULL
 );
 
 CREATE TABLE Activities(
