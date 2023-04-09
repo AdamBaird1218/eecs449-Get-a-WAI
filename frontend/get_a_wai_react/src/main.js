@@ -22,7 +22,7 @@ function Main() {
         },
         "location": {
             "name": "Location",
-            "limit": 1,
+            "limit": 2,
             "list": []
         },
         "travelMethod": {
@@ -76,25 +76,13 @@ function Main() {
             totalAttributeCount++
         }
         if (totalAttributeCount === filledAttributeCount){
-            setTripInfoIsFull(true)
+            
+            getCities()
         }
         
     }, [attributeInfo_List])
 
 
-
-    //When tripInfoIsFull this triggers
-    useEffect(()=>{
-            if (tripInfoIsFull){
-                // Remove testing
-                getCities() 
-            }
-            else{
-                console.log(`Error: trying to trigger while tripInfoIsFull value = ${tripInfoIsFull}`);
-            }
-            
-        }
-    , [tripInfoIsFull])
 
 
     //posts to the backend to get recommended cities
@@ -118,6 +106,7 @@ function Main() {
             })
             .then((data) => {
                 setCitiesList(data)
+                setTripInfoIsFull(true)
             })
             .catch((error) => console.log(error));
         return null
@@ -158,6 +147,7 @@ function Main() {
                     tripFull={tripInfoIsFull}
                     /> 
             }
+            <TestingCities />
             
         </div>
     </div>

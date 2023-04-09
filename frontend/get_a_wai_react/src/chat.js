@@ -91,26 +91,47 @@ function Chat({attributeInfoList, setAttributeInfoList, userId}) {
 
     switch (key) {
       case "liked_activity_1":
-        let updated_info = attributeInfoList
-        updated_info.activities.list = [...updated_info.activities.list, slots[key]]
+        update_activity_display(key, slots, "activities")
+        break;
+      case "liked_activity_2":
+        update_activity_display(key, slots, "activities")
+        break;
+      case "liked_activity_3":
+        update_activity_display(key, slots, "activities")
+        break;
+      case "preferred_climate":
+        update_activity_display(key, slots, "climate")
+        break;
+      case "preferred_travel_method":
+        update_activity_display(key, slots, "travelMethod")
+        break;
+      case "preferred_trip_length":
+        update_activity_display(key, slots, "tripDuration")
+        break;
+      case "preferred_budget":
+        update_activity_display(key, slots, "budget")
+        break;
+      case "user_city":
+        update_activity_display(key, slots, "location")
+        break;
+      case "user_state":
+        update_activity_display(key, slots, "location")
+        break;
+      default:
+    }
+    
+  }
+
+  const update_activity_display = (key, slots, attributeName) => {
+    let updated_info = attributeInfoList
+        updated_info[attributeName].list = [...updated_info[attributeName].list, slots[key]]
         console.log(updated_info)
         setAttributeInfoList({...updated_info})
         let updated_slot_tracker = slot_tracker
         updated_slot_tracker[key] = true
         setSlot_tracker({...updated_slot_tracker})
-        break;
-      case "liked_activity_2":
-      case "liked_activity_3":
-      case "preferred_climate":
-      case "preferred_travel_method":
-      case "preferred_trip_length":
-      case "preferred_budget":
-      case "user_city":
-      case "user_state":
-      default:
-    }
-    
   }
+
 
   const generateTextResponse = (data) => {
       console.log(data.text)

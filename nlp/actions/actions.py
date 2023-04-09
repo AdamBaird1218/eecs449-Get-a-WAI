@@ -27,6 +27,7 @@ class ValidateVacationDataForm(FormValidationAction):
         tracker: Tracker,
         domain: DomainDict               
         ) -> Dict[Text, Any]:
+
         return {"liked_activity_1": slot_value}
 
     def validate_liked_activity_2(
