@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState} from 'react';
 
 
-function Chat({attributeInfoList, setAttributeInfoList}) {
+function Chat({attributeInfoList, setAttributeInfoList, userId}) {
   const [text_entry, setText_entry] = useState('')
   const [message_list, setMessage_list] = useState([<MessageBox
     position={"left"}
@@ -22,7 +22,7 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
           />
     ])
     // TODO: Change to correct RASA route
-    const path1 = 'http://localhost:5005/model/parse/'
+    const path1 = 'http://localhost:5005/webhooks/rest/webhook'
 
     const options = {
       method: "POST",
@@ -30,7 +30,7 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({text: text_entry})
+      body: JSON.stringify({text: text_entry, sender: userId})
     }
   
     fetch(path1, options)
@@ -38,23 +38,26 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
         return response.json();
       })
       .then((data) => {
-        handleIntent(data)
+        handleResponse(data)
       })  
       .catch((error) => console.log(error));
       setText_entry('');
   };
 
   //intent type needs to match the names declared in main.js for the attrivuteInfo object
-  const handleIntent = (data) => {
-    let updated_info = attributeInfoList
-    data.entities.forEach((entity) => {
-      const entityType = entity.entity
-      if(attributeInfoList[entityType].list.length + 1 <= attributeInfoList[entityType].limit){
-        updated_info[entityType].list = [...updated_info[entityType].list, entity.value]
-      }
-    })
-    setAttributeInfoList(() => ({...updated_info}))
-    generateTextResponse(data)
+  const handleResponse = (data) => {
+    console.log(data.length)
+
+
+    // let updated_info = attributeInfoList
+    // data.entities.forEach((entity) => {
+    //   const entityType = entity.entity
+    //   if(attributeInfoList[entityType].list.length + 1 <= attributeInfoList[entityType].limit){
+    //     updated_info[entityType].list = [...updated_info[entityType].list, entity.value]
+    //   }
+    // })
+    // setAttributeInfoList(() => ({...updated_info}))
+    // generateTextResponse(data)
   }
 
   const generateTextResponse = (data) => {

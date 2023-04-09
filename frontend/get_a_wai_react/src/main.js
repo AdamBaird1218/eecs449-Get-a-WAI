@@ -3,9 +3,11 @@ import Information from './information';
 import Chat from './chat';
 import CitiesContainer from './citiesContainer';
 import TestingCities from './testingCities';
+import { v4 as uuid } from 'uuid';
 
 
 function Main() {
+    const userId = uuid()
     const [attributeInfo_List, setAttributeInfo_List] = useState({
         "activities": {
             "name":"Activities",
@@ -127,7 +129,7 @@ function Main() {
     return <>
     <div class='container mt-4'> 
         <div class="row">
-            <div class='col-md-3' style={{height: "860px", overflow: "auto" }}>       
+            <div class='col-md-3' style={{height: "860px", overflow: "auto" }}>      
                     <Information 
                     activitiesInfo={attributeInfo_List}
                     tripFull={tripInfoIsFull}
@@ -143,6 +145,7 @@ function Main() {
                     <Chat
                     attributeInfoList={attributeInfo_List}
                     setAttributeInfoList={setAttributeInfo_List} 
+                    userId={userId}
                     /> 
                 </div>
             </div>
