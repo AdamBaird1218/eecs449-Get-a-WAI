@@ -109,6 +109,7 @@ def scrapeRestaurantInfo(url,counter, sql_restaurants, cuisines_list, restaurant
                 sql_line2 = f"VALUES ({counter}, \"NA\", {restaurant_id},\"{title}\", {rating}, {num_rating}, {weighted_rating});\n"
                 sql_restaurants.write(sql_line + '\n' + sql_line2 + '\n')
                 restaurant_id = restaurant_id + 1
+    return restaurant_id
             # print([title, rating, num_rating, cuisines])
 
     
@@ -129,7 +130,7 @@ def main():
         
         for i, row in enumerate(csv_reader):
             print(row[2])
-            scrapeRestaurantInfo(row[2], i, sql_restaurants, cuisines_list, restaurant_id)
+            restaurant_id = scrapeRestaurantInfo(row[2], i, sql_restaurants, cuisines_list, restaurant_id)
         
         sql_restaurants.close()
         input.close()

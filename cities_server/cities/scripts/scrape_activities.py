@@ -65,7 +65,7 @@ for counter in range(len(urls)):
     filtered_activities = []
 
     print('Starting', current_city)
-
+    specific_activity_id = 0
     for i in range(4):
         offset = i * 30
         url = update_oa_param(original_url, offset)
@@ -80,7 +80,7 @@ for counter in range(len(urls)):
         html_content = response.content
         soup = BeautifulSoup(html_content, 'lxml')
         elements = soup.select('.jemSU[data-automation="WebPresentation_SingleFlexCardSection"]')
-        sql_line = f"INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)"
+        sql_line = f"INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)"
         for element in elements :
             title = re.sub(r'^\d+\.\s', '',element.find('span',{'class': 'title'}).text)
             names.append(title)
@@ -114,11 +114,13 @@ for counter in range(len(urls)):
                     if activity == split_activity_type.lower():
                         flag = 1
                         filtered_activities.append(activity)
-                        sql_line2 = f'VALUES ({counter}, {index}, "{title}", {rating}, {number_rating}, {weighted_rating});\n'
+                        sql_line2 = f'VALUES ({counter}, {index}, {specific_activity_id}, "{title}", {rating}, {number_rating}, {weighted_rating});\n'
+                        specific_activity_id = specific_activity_id + 1
                         current_city_activities[index] += weighted_rating
             if flag == 0:
                 filtered_activities.append('sightseeing')
-                sql_line2 = f'VALUES ({counter}, {4}, "{title}", {rating}, {number_rating}, {weighted_rating});\n'
+                sql_line2 = f'VALUES ({counter}, {4}, {specific_activity_id}, "{title}", {rating}, {number_rating}, {weighted_rating});\n'
+                specific_activity_id = specific_activity_id + 1
                 current_city_activities[4] += weighted_rating
             activity_types.append(activity_type)
             print("#", len(names), "collected")

@@ -28,6 +28,7 @@ CREATE TABLE City_Activities(
 CREATE TABLE Specific_Activities(
     city_id Integer,
     activity_id Integer,
+    specific_activity_id Integer,
     activity_name VARCHAR(64) NOT NULL,
     rating Float,
     number_ratings Integer,
