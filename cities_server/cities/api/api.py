@@ -243,7 +243,7 @@ def filter_climate(con, climate):
         temp_sim_list.append(
             {
                 "climate": mapped_climate,
-                "similarity": input_word.similarity(db_words)
+                "similarity": input_nlp.similarity(db_words)
             }
         )
     temp_sim_list.sort(reverse=True, key=sorting_sims)
