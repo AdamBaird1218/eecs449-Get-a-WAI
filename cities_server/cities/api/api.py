@@ -19,7 +19,7 @@ def get_services():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-@cities.app.route("/api/getCity/", method=['GET'])
+@cities.app.route("/api/getCity/", methods=['GET'])
 def get_cities_by_name():
     connection = cities.model.get_db()
     city_name = flask.request.args.get('city_name')
@@ -53,7 +53,7 @@ def get_cities_by_name():
     
     
     
-@cities.app.route("/api/getCuisines/", method=['GET'])
+@cities.app.route("/api/getCuisines/", methods=['GET'])
 def get_cuisines_by_city():
     city_name = flask.request.args.get('city_name')
     connection = cities.model.get_db()
@@ -75,7 +75,7 @@ def get_cuisines_by_city():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-@cities.app.route("/api/getRestaurantsByCityCuisines/", method=['GET'])
+@cities.app.route("/api/getRestaurantsByCityCuisines/", methods=['GET'])
 def getRestaurantsByCityCuisines():
     city_name = flask.request.args.get('city_name')   
     cuisines_list = flask.request.args.get("cuisines")
@@ -155,8 +155,10 @@ def get_recommended_cities():
                       "nights":trip_duration,
                       "travel_method":travel_method,
                       "estimated_cost": cost,
+                      "absolute_difference_to_budget": abs(cost - budget),
                       "cityActivityList": city_specific_activity_list}
         citiesList.append(cityObject)
+    citiesList.sort(reverse=False, key = sorting_costs)
     context = {
         "citiesList":citiesList,
         "userBudget":budget,
@@ -357,7 +359,10 @@ def sorting_sims(sim_entry):
     return sim_entry['similarity']
 
 def sorting_ratings(rating_entry):
-    return rating_entry['weighted_rating']        
+    return rating_entry['weighted_rating']   
+
+def sorting_costs(entry):
+    return entry["absolute_difference_to_budget"] 
 
 def get_all_activites(con):
     curr = con.execute(
@@ -444,6 +449,7 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
     if(travel_method == 'flight'):
         closest_airport = get_closest_airport(city)
         flight_price = sp.scrape_flight_prices(starting_location,closest_airport)
+        print(flight_price)
         #travel_duration = sp.get_flight_duration(starting_location,closest_airport)
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.Avg_Hotel_Price "
@@ -456,8 +462,7 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
 
 
     elif(travel_method == 'drive'):
-        distance, travel_duration = sp.get_distance(starting_location,city)
-        approximate_driving_cost = distance * 0.15 * 2
+        distance = sp.get_distance(starting_location,city) * 2
         
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.Avg_Hotel_Price "
@@ -466,10 +471,10 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
                                     (city))
         results = cur.fetchall()
         hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
-        total_price = hotel_price + approximate_driving_cost
+        total_price = hotel_price + distance
     
         
-    return total_price,travel_duration
+    return total_price
 
 def get_specific_city_activities_list(city_id):
     connection = cities.model.get_db()
@@ -503,7 +508,7 @@ def get_closest_airport(city_name):
     connection = cities.model.get_db()
     cur = connection.execute("SELECT C.closest_airport "
                             "FROM Cities C "
-                            "WHERE C.city_name = ?",(city_name))
+                            "WHERE C.city_name = ?",(city_name,))
     results = cur.fetchall()
     return results[0]['closest_airport']
 
