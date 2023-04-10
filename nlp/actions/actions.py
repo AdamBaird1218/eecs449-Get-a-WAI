@@ -29,9 +29,42 @@ class ActionSetCityInterestedSlot(Action):
             dispatcher.utter_message(text=msg)
             return []
         
-        
+        dispatcher.utter_message(text=f"We have information on both restaurants and specifc activities in {interested_city}. Which would you like to know more about?")
         return [SlotSet("interested_city", interested_city)]
 
+
+class ActionGetCityCusines(Action):
+    def name(self) -> Text:
+        return "action_get_specific_activities"
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        interested_city = tracker.get_slot("interested_city")
+        interested_general_activity = next(tracker.get_latest_entity_values('activities'), None)
+        
+        if not interested_city:
+            msg = f"Hmm I didn't detect a interested city. What city are you interested in?"
+            dispatcher.utter_message(text=msg)
+            return []
+        if not interested_general_activity:
+            msg = f"Hmm I didn't detect a interested general activity. What general activity are you interested in for {interested_city}?"
+            dispatcher.utter_message(text=msg)
+            return []
+        
+        
+        payload = {'city_name': interested_city, 'activity_name': interested_general_activity }
+        r = requests.get('http://localhost:8000/api/getCity/', params=payload)
+        specific_activites = specific_activites.json()
+        for idx, activity in enumerate(specific_activites):
+            msg = f"#{idx} {activity['activity_name']}"
+            dispatcher.utter_message(text=msg)
+        
+            
+        
+        
+        return []
+    
 
 class ActionGetSpecificActivities(Action):
     
@@ -59,7 +92,7 @@ class ActionGetSpecificActivities(Action):
         specific_activites = specific_activites.json()
         for idx, activity in enumerate(specific_activites):
             msg = f"#{idx} {activity['activity_name']}"
-            dispatcher.utter_message(f"activity[]")
+            dispatcher.utter_message(text=msg)
         
             
         

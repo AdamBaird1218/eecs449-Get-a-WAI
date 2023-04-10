@@ -9,12 +9,13 @@ intents:
 - inform_vacation_data
 - specific_activity_intent
 - start_vacation_planning
+- restaurants_interest
 entities:
-- tripDuration
+- travelMethod
+- budget
 - activities
 - climate
-- budget
-- travelMethod
+- tripDuration
 - GPE
 - MONEY
 slots:
@@ -24,54 +25,63 @@ slots:
     mappings:
     - type: from_entity
       entity: activities
+      intent: inform_vacation_data
   liked_activity_2:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: activities
+      intent: inform_vacation_data
   liked_activity_3:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: activities
+      intent: inform_vacation_data
   preferred_climate:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: climate
+      intent: inform_vacation_data
   preferred_travel_method:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: travelMethod
+      intent: inform_vacation_data
   preferred_trip_length:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: tripDuration
+      intent: inform_vacation_data
   preferred_budget:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: MONEY
+      intent: inform_vacation_data
   user_city:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: GPE
+      intent: inform_vacation_data
   user_state:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: GPE
+      intent: inform_vacation_data
   interested_city:
     type: text
     influence_conversation: true
@@ -124,15 +134,13 @@ responses:
   - text: Getting potential activities for the city you selected!
   utter_next_steps:
   - text: Please look through the cities below and let me know which one you are interested in.
-  utter_restaurants_or_specific_activities:
-  - text: We have information on both restaurants and specifc activities in {interested_city}. Which would you like to know more about?
 actions:
 - set_city_interest_slot
-- action_get_specific_activities
 - utter_next_steps
+- utter_all_data_collected
+- action_get_specific_activities
 - utter_respond_capabilities
 - utter_restaurants_or_specific_activities
-- utter_all_data_collected
 - utter_greet
 - validate_vacation_data_form
 session_config:

@@ -10,6 +10,7 @@ nlu:
     - lets plan a vacation
     - yes, lets plan one
     - I'm ready to begin
+    - I would like to plan a vacation
 - intent: inform_vacation_data
   examples: |
     - I love [hiking](activities) mountains.
@@ -140,12 +141,21 @@ nlu:
     - I like [hiking](activities)
     - I also enjoy [hunting](activities)
     - I want to learn how to [snowboard](activities)
-    - [tropical](climate)
     - [fly](travelMethod)
     - around [8 nights](tripDuration)
     - I can spend [2000 dollars](budget)
     - I live in Novi
     - I am coming from Nevada
+    - I enjoy [hiking](activities) up mountains
+    - I love [hunting](activities)
+    - I really enjoy [sightseeing](activities)
+    - I like [cold](climate) weather
+    - We will probably be taking the [car](travelMethod)
+    - I think we are taking the [car](travelMethod)
+    - We are going to spend [7 nights](tripDuration)
+    - We can spend [1200 dollars](budget)
+    - I am traveling from Novi
+    - I live in New York
 - intent: city_interest
   examples: |
     - I'm interested in Dallas
@@ -191,6 +201,7 @@ nlu:
     - Lake Tahoe
     - Key West
     - I think Los Vegas sounds awesome
+    - I think Los Vegas is interesting
 - intent: specific_activity_intent
   examples: |
     - yes, I am interested in the specific activities for Denver.
@@ -203,6 +214,14 @@ nlu:
     - What [beaches](activities) are available.
     - I want to know about which activities are offered
     - I am interested in [Gambling]{"entity": "activities", "value": "gambling"}
+    - I am pretty interested in [gambling](activities).
+- intent: restaurants_interest
+  examples: |
+    - I'm interested in what restaurants are avaliable
+    - What kind of food can i get there
+    - What are my eating options
+    - Sure, show me what my eating options are
+    - Lets what meal places we can go to
 - intent: help
   examples: |
     - what can you do
@@ -260,3 +279,6 @@ nlu:
     - no way
     - not really
     - great
+- synonym: gambling
+  examples: |
+    - Gambling

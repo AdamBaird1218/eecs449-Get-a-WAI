@@ -23,7 +23,7 @@ def get_cities_by_name():
     city_name = flask.request.args.get('city_name')
     activity_name = flask.request.args.get('activity_name')
     city_name = filter_cities(connection, city_name)
-    # todo filter activity_name
+    # TODO filter activity_name
     
     
     curr = connection.execute(
@@ -37,6 +37,7 @@ def get_cities_by_name():
     city_activity_id_dict = curr.fetchall()
     
     # TODO sort list above by weighted rating. With best raiting as the first element
+    city_activity_id_dict.sort(reverse=True, key = sorting_ratings)
     
     response = flask.jsonify(**city_activity_id_dict)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -44,17 +45,6 @@ def get_cities_by_name():
     
     
     # ignore below
-    
-    result_dict = {}
-    for entry in city_activity_id_dict:
-        curr2 = connection.execute(
-            "SELECT SA.activity_name, SA.weighted_rating, FROM Specifc_activites SA WHERE "
-            " SA.city_id = ? AND SA.activity_id = ? ",
-            (entry['city_id'], entry['activity_id'])
-            )
-        temp_list_of_dict = curr2.fetchall()
-        temp_list_of_dict.sort(temp_list_of_dict.items(), reverse=True, key=lambda x: x[1])
-        result_dict[temp_list_of_dict[0]['activity_name']] = temp_list_of_dict[]
         
         
     
@@ -62,7 +52,7 @@ def get_cities_by_name():
     
     
 @cities.app.route("/api/getCuisines/", method=['GET'])
-def get_cities_by_name():
+def get_cuisines_by_city():
     city_name = flask.request.args.get('city_name')
     connection = cities.model.get_db()
     cur = connection.execute("SELECT DISTINCT CU.cuisine_name "
@@ -89,6 +79,10 @@ def getRestaurantsByCityCuisines():
     cuisines_list = flask.request.args.get("cuisines")
     filtered_cuisines = filter_cuisines(cuisines_list)
     connection = cities.model.get_db()
+    cuisines_string = "("
+    for cuisine in filtered_cuisines:
+        cuisines_string += cuisine + ","
+    cuisines_string += ")"
     cur = connection.execute("SELECT DISTINCT CR.restaurant_name, CR.weighted_rating "
                              "FROM City_Restaurants CR "
                              "INNER JOIN Cities C "
@@ -96,7 +90,15 @@ def getRestaurantsByCityCuisines():
                              "INNER JOIN Cuisines CU "
                              "ON CR.cuisine_id = CU.cuisine_id "
                              "WHERE CU.cuisine_name IN ? AND C.city_name = ? "
-                             "ORDER BY CR.weighted_rating ",(filtered_cuisines,city_name))
+                             "ORDER BY CR.weighted_rating ",(cuisines_string,city_name))
+    results = cur.fetchall()
+    results.sort(reverse = True, key = sorting_ratings)
+    context = {
+        "restaurants": results
+    }
+    response = flask.jsonify(**context)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID

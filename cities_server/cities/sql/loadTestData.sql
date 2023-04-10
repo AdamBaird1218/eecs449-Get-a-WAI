@@ -4151,7 +4151,7 @@ INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, nu
 VALUES (10, 4, "The National Theatre", 4.0, 144, 8.633449968380997);
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, ""The Exorcist" Steps", 4.0, 131, 8.469085182623056);
+VALUES (10, 4, "The Exorcist Steps", 4.0, 131, 8.469085182623056);
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (10, 4, "Ronald Reagan Building and International Trade Center", 4.0, 249, 9.584797388382944);
@@ -5603,7 +5603,7 @@ INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, nu
 VALUES (14, 4, "Chance Theater", 5.0, 5, 3.4948500216800937);
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (14, 4, ""San Antonio de Padua del Canon Catholic Church"", 5.0, 5, 3.4948500216800937);
+VALUES (14, 4, "San Antonio de Padua del Canon Catholic Church", 5.0, 5, 3.4948500216800937);
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (14, 4, "Main Street Vehicles", 4.5, 16, 5.418539921951661);
