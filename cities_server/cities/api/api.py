@@ -202,7 +202,7 @@ def get10Cities(activity_list):
         "WHERE C.city_id = CA.city_id AND CA.activity_id = A.activity_id "
         "AND (A.activity_name = ? OR A.activity_name = ? OR A.activity_name = ?) "
         "GROUP BY C.city_id, C.city_name) "
-        "ORDER BY num_act desc LIMIT 15",
+        "ORDER BY num_act desc LIMIT 20",
         (act1, act2, act3,)
     )  
     
@@ -238,13 +238,16 @@ def filter_activities(con, act_list):
     return filtered_acts[0]['activity'], filtered_acts[1]['activity'], filtered_acts[2]['activity']
         
 def filter_climate(con, climate):
+    print("CLim In:", climate)
     nlp = spacy.load('en_core_web_md')
     climates_dict = get_all_climates(con)
+    print(climates_dict)
     #stop_words = ["semi-arid"]
     temp_sim_list = []
     
     input_word = climate
     input_nlp = nlp(input_word)
+    print(input_nlp)
     for entry in climates_dict:
         mapped_climate = climate_abbreviation_to_text_map[entry['climate']]
         db_words = nlp(mapped_climate)
@@ -255,6 +258,7 @@ def filter_climate(con, climate):
             }
         )
     temp_sim_list.sort(reverse=True, key=sorting_sims)
+    print(temp_sim_list)
     return temp_sim_list[0]['climate']
 
 def sorting_sims(sim_entry):

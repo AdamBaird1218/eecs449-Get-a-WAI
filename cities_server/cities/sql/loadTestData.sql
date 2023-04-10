@@ -1,3 +1,106 @@
+PRAGMA foreign_keys = ON;
+
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (0, "Las Vegas", "Nevada", 36.1716, 115.1391, "BWh", 171, "LAS");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (1, "New York City", "New York", 40.7128, 74.006, "Dfa", 175, "New York");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (2, "Orlando", "Florida", 28.5384, 81.3789, "Am", 174, "MCO");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (3, "Los Angeles", "California", 34.0522, 118.2437, "Csa", 177, "LAX");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (4, "Chicago", "Illinois", 41.8781, 87.6298, "Dfa", 161, "Chicago");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (5, "Nashville", "Tennessee", 36.1627, 86.7816, "Cfa", 152, "BNA");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (6, "San Diego", "California", 32.7157, 117.1611, "BSh", 214, "SAN");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (7, "Miami Beach", "Florida", 25.7907, 80.13, "Am", 211, "MIA");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (8, "New Orleans", "Louisiana", 29.9511, 90.0715, "Cfa", 135, "MSY");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (9, "Miami", "Florida", 25.7617, 80.1918, "Am", 153, "MIA");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (10, "Washington DC", "District of Columbia", 38.9072, 77.0369, "Cfa", 185, "DCA");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (11, "Honolulu", "Hawaii", 21.3099, 157.8581, "Am", 274, "HNL");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (12, "Houston", "Texas", 29.7604, 95.3698, "Cfa", 86, "IAH");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (13, "Atlanta", "Georgia", 33.7488, 84.3877, "Cfa", 131, "ATL");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (14, "Anaheim", "California", 33.8366, 117.9143, "Csa", 195, "SNA");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (15, "San Francisco", "California", 37.7749, 122.4194, "Csb", 199, "SFO");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (16, "Boston", "Massachusetts", 42.3601, 71.0589, "Dfa", 230, "BOS");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (17, "Atlantic City", "New Jersey", 39.3643, 74.4229, "Cfa", 108, "ACY");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (18, "San Antonio", "Texas", 29.4252, 98.4946, "Cfa", 129, "SAT");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (19, "Fort Lauderdale", "Florida", 26.1224, 80.1373, "Am", 166, "FLL");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (20, "Dallas", "Texas", 32.7767, -96.797, "Cfa", 121, "DFW");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (21, "Grand_Canyon_National_Park", "Arizona", 36.2679, 112.3535, "BWh", 150, "PHX");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (22, "Austin", "Texas", 30.2672, -97.7431, "Cfa", 152, "AUS");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (23, "Myrtle Beach", "South Carolina", 33.6891, -78.8867, "Cfa", 192, "MYR");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (24, "Phoenix", "Arizona", 33.4484, -112.074, "BWh", 106, "PHX");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (25, "Denver", "Colorado", 39.7392, -104.9903, "BSk", 172, "DEN");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (26, "Yellowstone_National_Park", "Wyoming", 44.428, 110.5885, "Dfa", 150, "BZN");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102, "Cfa", 256, "TYS");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (28, "Tampa", "Florida", 27.9506, -82.4572, "Cfa", 133, "TPA");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (29, "Seattle", "Washington", 47.6062, -122.3321, "Csb", 187, "SEA");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319, "Am", 250, "OGG");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (31, "Lake_Tahoe", "California", 39.0968, 120.0324, "Csb", 150, "TVL");
+
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (32, "Key_West", "Florida", 24.5554, 81.7842, "Am", 215, "EYW");
+
+
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (0, 'skiing');
 INSERT INTO Activities (activity_id, activity_name)
@@ -1228,7 +1331,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (0, 1, 7, "Ferraro's Ristorante", 4.5, 1067, 4801.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (0, "NA", 8,"Freed's Bakery", 4.5, 685, 3082.5);
+VALUES (0, NULL, 8,"Freed's Bakery", 4.5, 685, 3082.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (0, 0, 9, "Black Bear Diner", 4.5, 880, 3960.0);
@@ -1303,10 +1406,10 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (0, 1, 32, "Casa Di Amore", 4.5, 1685, 7582.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (0, "NA", 33,"Chin Chin", 4.5, 5318, 23931.0);
+VALUES (0, NULL, 33,"Chin Chin", 4.5, 5318, 23931.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (0, "NA", 34,"EDO Gastro Tapas & Wine", 5.0, 98, 490.0);
+VALUES (0, NULL, 34,"EDO Gastro Tapas & Wine", 5.0, 98, 490.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (0, 1, 35, "Fresco Italiano", 4.5, 914, 4113.0);
@@ -1318,7 +1421,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (0, 8, 37, "Weera Thai Restaurant", 4.5, 626, 2817.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (0, "NA", 38,"The Halal Guys - Spring Mountain", 3.5, 43, 150.5);
+VALUES (0, NULL, 38,"The Halal Guys - Spring Mountain", 3.5, 43, 150.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (0, 0, 39, "Steak 'n Shake", 4.5, 1196, 5382.0);
@@ -1327,7 +1430,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (0, 0, 40, "Jamm's Restaurant", 4.5, 628, 2826.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (0, "NA", 41,"Fat Tuesday", 4.5, 356, 1602.0);
+VALUES (0, NULL, 41,"Fat Tuesday", 4.5, 356, 1602.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (0, 5, 42, "Monta Noodle House", 4.5, 320, 1440.0);
@@ -1459,7 +1562,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (1, 0, 84, "EatWith: Diana of New York City", 5.0, 114, 570.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (1, "NA", 85,"EatWith: Gustavo of New York", 5.0, 14, 70.0);
+VALUES (1, NULL, 85,"EatWith: Gustavo of New York", 5.0, 14, 70.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (1, 19, 86, "Dina of Dina's Kitchen", 5.0, 31, 155.0);
@@ -1492,7 +1595,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (1, 12, 95, "Mille-Feuille Bakery & Cafe", 4.5, 320, 1440.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (1, "NA", 96,"Wafels & Dinges", 4.5, 660, 2970.0);
+VALUES (1, NULL, 96,"Wafels & Dinges", 4.5, 660, 2970.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (1, 22, 97, "Stumptown Coffee Roasters", 4.5, 353, 1588.5);
@@ -1501,7 +1604,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (1, 22, 98, "Bibble & Sip", 4.5, 338, 1521.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (2, "NA", 99,"Istanbul Grill", 4.0, 21, 84.0);
+VALUES (2, NULL, 99,"Istanbul Grill", 4.0, 21, 84.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (2, 16, 100, "Adega Gaucha", 5.0, 142, 710.0);
@@ -1519,10 +1622,10 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (2, 4, 104, "The Mexican Camel", 5.0, 89, 445.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (2, "NA", 105,"Kilwins Celebration", 4.5, 461, 2074.5);
+VALUES (2, NULL, 105,"Kilwins Celebration", 4.5, 461, 2074.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (2, "NA", 106,"Haagen Dazs Ice Cream", 4.5, 319, 1435.5);
+VALUES (2, NULL, 106,"Haagen Dazs Ice Cream", 4.5, 319, 1435.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (2, 0, 107, "Senor Frog's Orlando", 4.5, 3496, 15732.0);
@@ -1921,7 +2024,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (5, 0, 238, "Burger Up", 4.5, 556, 2502.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (5, "NA", 239,"Whiskey River Saloon - Nashville, TN", 5.0, 1, 5.0);
+VALUES (5, NULL, 239,"Whiskey River Saloon - Nashville, TN", 5.0, 1, 5.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (5, 0, 240, "Jeff Ruby's Steakhouse, Nashville", 4.5, 598, 2691.0);
@@ -2056,7 +2159,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (6, 0, 283, "The Baked Bear", 4.5, 616, 2772.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (6, "NA", 284,"The Mission - East Village", 4.5, 428, 1926.0);
+VALUES (6, NULL, 284,"The Mission - East Village", 4.5, 428, 1926.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (6, 5, 285, "Harney Sushi", 4.5, 437, 1966.5);
@@ -2173,10 +2276,10 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (7, 5, 322, "El Tiesto Cafe Miami", 4.0, 19, 76.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (7, "NA", 323,"Pane & Vino", 5.0, 5075, 25375.0);
+VALUES (7, NULL, 323,"Pane & Vino", 5.0, 5075, 25375.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (7, "NA", 324,"Cafe Americano", 5.0, 704, 3520.0);
+VALUES (7, NULL, 324,"Cafe Americano", 5.0, 704, 3520.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (7, 4, 325, "Oh Mexico Ocean Drive", 5.0, 776, 3880.0);
@@ -2215,7 +2318,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (7, 0, 336, "On Ocean 7 Cafe", 4.5, 1670, 7515.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (7, "NA", 337,"CVI.CHE 105", 5.0, 6422, 32110.0);
+VALUES (7, NULL, 337,"CVI.CHE 105", 5.0, 6422, 32110.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (7, 16, 338, "Ole Ole Steakhouse", 5.0, 515, 2575.0);
@@ -2275,7 +2378,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (7, 18, 356, "Triton Supermarket", 4.0, 139, 556.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (7, "NA", 357,"GO-GO Fresh Food", 4.5, 323, 1453.5);
+VALUES (7, NULL, 357,"GO-GO Fresh Food", 4.5, 323, 1453.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (7, 1, 358, "Blocks Pizza Deli", 4.5, 710, 3195.0);
@@ -2338,7 +2441,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (8, 0, 377, "District Donuts.Sliders.Brew", 4.5, 775, 3487.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (8, "NA", 378,"Meals From The Heart Cafe", 4.5, 816, 3672.0);
+VALUES (8, NULL, 378,"Meals From The Heart Cafe", 4.5, 816, 3672.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (8, 0, 379, "Mambo's", 4.5, 1443, 6493.5);
@@ -2371,7 +2474,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (8, 0, 388, "Cochon Butcher", 4.5, 3042, 13689.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (8, "NA", 389,"Alberto’s Cheese & Wine Bistro", 4.5, 349, 1570.5);
+VALUES (8, NULL, 389,"Alberto’s Cheese & Wine Bistro", 4.5, 349, 1570.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (8, 0, 390, "Parkway Bakery & Tavern", 4.5, 1420, 6390.0);
@@ -2389,7 +2492,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (8, 0, 394, "Restaurant Rebirth", 4.5, 396, 1782.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (8, "NA", 395,"Restaurant August", 4.5, 2267, 10201.5);
+VALUES (8, NULL, 395,"Restaurant August", 4.5, 2267, 10201.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (8, 1, 396, "Irene's", 4.5, 2343, 10543.5);
@@ -2512,13 +2615,13 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (9, 1, 435, "Ferraro's Kitchen Restaurant & Wine Bar", 5.0, 362, 1810.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (9, "NA", 436,"Aromas del Peru", 4.5, 538, 2421.0);
+VALUES (9, NULL, 436,"Aromas del Peru", 4.5, 538, 2421.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (9, 0, 437, "Fireman Derek's Bake Shop & Desserts", 4.5, 221, 994.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (9, "NA", 438,"House of Food Porn", 5.0, 487, 2435.0);
+VALUES (9, NULL, 438,"House of Food Porn", 5.0, 487, 2435.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (9, 0, 439, "The Capital Grille", 4.5, 1344, 6048.0);
@@ -2554,10 +2657,10 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (9, 15, 449, "El Mago de las Fritas", 4.5, 393, 1768.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (9, "NA", 450,"Jardim de Portugal", 4.5, 341, 1534.5);
+VALUES (9, NULL, 450,"Jardim de Portugal", 4.5, 341, 1534.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (9, "NA", 451,"Smoothie Spot Downtown", 4.0, 12, 48.0);
+VALUES (9, NULL, 451,"Smoothie Spot Downtown", 4.0, 12, 48.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (9, 1, 452, "Spris Artisan Pizza", 4.5, 89, 400.5);
@@ -2602,7 +2705,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (9, 0, 465, "Angelina's Coffee and Juice", 4.5, 58, 261.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (9, "NA", 466,"Freddo", 4.0, 46, 184.0);
+VALUES (9, NULL, 466,"Freddo", 4.0, 46, 184.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (9, 22, 467, "Dunkin'", 4.0, 66, 264.0);
@@ -2614,7 +2717,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (9, 22, 469, "Vice City Bean", 5.0, 16, 80.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (10, "NA", 470,"Ambar Capitol Hill", 4.5, 1654, 7443.0);
+VALUES (10, NULL, 470,"Ambar Capitol Hill", 4.5, 1654, 7443.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (10, 0, 471, "Old Ebbitt Grill", 4.5, 13076, 58842.0);
@@ -2683,10 +2786,10 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (10, 0, 492, "The Dabney", 4.5, 304, 1368.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (10, "NA", 493,"Keren Restaurant", 4.5, 306, 1377.0);
+VALUES (10, NULL, 493,"Keren Restaurant", 4.5, 306, 1377.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (10, "NA", 494,"Bistro Aracosia", 4.5, 177, 796.5);
+VALUES (10, NULL, 494,"Bistro Aracosia", 4.5, 177, 796.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (10, 0, 495, "The Capital Burger", 4.5, 239, 1075.5);
@@ -2728,7 +2831,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (10, 22, 507, "Compass Coffee", 4.5, 72, 324.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (10, "NA", 508,"Dolcezza Gelato", 4.5, 92, 414.0);
+VALUES (10, NULL, 508,"Dolcezza Gelato", 4.5, 92, 414.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (10, 0, 509, "Soho Tea and Coffee", 4.5, 113, 508.5);
@@ -2761,7 +2864,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (11, 0, 518, "Duke's Waikiki", 4.5, 15657, 70456.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (11, "NA", 519,"Chef Chai", 4.5, 252, 1134.0);
+VALUES (11, NULL, 519,"Chef Chai", 4.5, 252, 1134.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (11, 8, 520, "Noi Thai Cuisine - Hawaii", 4.5, 690, 3105.0);
@@ -2773,7 +2876,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (11, 0, 522, "STRIPSTEAK Waikiki", 4.5, 602, 2709.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (11, "NA", 523,"Tropical Tribe", 4.5, 255, 1147.5);
+VALUES (11, NULL, 523,"Tropical Tribe", 4.5, 255, 1147.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (11, 0, 524, "Steak Shack", 4.5, 1698, 7641.0);
@@ -2797,7 +2900,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (11, 12, 530, "La Mer", 4.5, 698, 3141.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (11, "NA", 531,"Hy's Steak House - Waikiki", 4.5, 1225, 5512.5);
+VALUES (11, NULL, 531,"Hy's Steak House - Waikiki", 4.5, 1225, 5512.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (11, 14, 532, "Orchids", 4.5, 1664, 7488.0);
@@ -2815,7 +2918,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (11, 0, 536, "House Without a Key", 4.5, 2366, 10647.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (11, "NA", 537,"Lucky Belly", 4.5, 516, 2322.0);
+VALUES (11, NULL, 537,"Lucky Belly", 4.5, 516, 2322.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (11, 0, 538, "Uncle Bo's Pupu Bar & Grill", 4.5, 1237, 5566.5);
@@ -2866,7 +2969,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (12, 0, 553, "Rainbow Lodge", 4.5, 368, 1656.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (12, "NA", 554,"Mezza Grille", 4.5, 413, 1858.5);
+VALUES (12, NULL, 554,"Mezza Grille", 4.5, 413, 1858.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (12, 19, 555, "Phoenicia Specialty Foods", 4.5, 1488, 6696.0);
@@ -3007,7 +3110,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (12, 22, 600, "FIX Coffeebar", 4.5, 33, 148.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (13, "NA", 601,"Desta Ethiopian Kitchen", 4.5, 547, 2461.5);
+VALUES (13, NULL, 601,"Desta Ethiopian Kitchen", 4.5, 547, 2461.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (13, 8, 602, "Poor Calvin's", 4.5, 701, 3154.5);
@@ -3073,7 +3176,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (13, 0, 622, "Blue Ridge Grill", 4.5, 386, 1737.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (13, "NA", 623,"Red Phone Booth - Downtown", 4.5, 260, 1170.0);
+VALUES (13, NULL, 623,"Red Phone Booth - Downtown", 4.5, 260, 1170.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (13, 5, 624, "Eight Sushi Lounge", 4.5, 199, 895.5);
@@ -3082,7 +3185,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (13, 0, 625, "Wisteria", 4.5, 378, 1701.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (13, "NA", 626,"Herban Fix - Vegan Kitchen", 4.5, 244, 1098.0);
+VALUES (13, NULL, 626,"Herban Fix - Vegan Kitchen", 4.5, 244, 1098.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (13, 19, 627, "Aviva by Kameel", 5.0, 805, 4025.0);
@@ -3145,7 +3248,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (14, 1, 646, "Baci di Firenze Trattoria", 5.0, 540, 2700.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (14, "NA", 647,"Joe’s Italian Ice", 4.5, 252, 1134.0);
+VALUES (14, NULL, 647,"Joe’s Italian Ice", 4.5, 252, 1134.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (14, 1, 648, "The Pizza Press", 4.5, 1270, 5715.0);
@@ -3211,7 +3314,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (14, 0, 668, "Bubba Gump Shrimp Co.", 4.0, 1924, 7696.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (14, "NA", 669,"Trader Sam's Enchanted Tiki Bar", 4.5, 594, 2673.0);
+VALUES (14, NULL, 669,"Trader Sam's Enchanted Tiki Bar", 4.5, 594, 2673.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (14, 0, 670, "Ralph Brennan's Jazz Kitchen", 4.0, 1750, 7000.0);
@@ -3271,7 +3374,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (15, 24, 688, "Betty Lou's Seafood and Grill", 4.5, 270, 1215.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (15, "NA", 689,"Burma Superstar Restaurant", 4.5, 880, 3960.0);
+VALUES (15, NULL, 689,"Burma Superstar Restaurant", 4.5, 880, 3960.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (15, 1, 690, "Cafe Tiramisu", 4.0, 301, 1204.0);
@@ -3283,7 +3386,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (15, 22, 692, "B. Patisserie", 4.5, 278, 1251.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (15, "NA", 693,"Norman's Ice Cream and Freezes", 4.5, 323, 1453.5);
+VALUES (15, NULL, 693,"Norman's Ice Cream and Freezes", 4.5, 323, 1453.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (15, 0, 694, "Eight Am", 4.5, 1264, 5688.0);
@@ -3295,7 +3398,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (15, 1, 696, "Seven Hills", 4.5, 936, 4212.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (15, "NA", 697,"Quince", 4.5, 554, 2493.0);
+VALUES (15, NULL, 697,"Quince", 4.5, 554, 2493.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (15, 1, 698, "Frascati", 4.5, 621, 2794.5);
@@ -3556,7 +3659,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (17, 0, 783, "Johnny Rockets", 4.0, 603, 2412.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (17, "NA", 784,"The Irish Pub Inn Restaurant", 4.0, 567, 2268.0);
+VALUES (17, NULL, 784,"The Irish Pub Inn Restaurant", 4.0, 567, 2268.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (17, 0, 785, "Chickie's & Pete's", 4.0, 506, 2024.0);
@@ -3715,7 +3818,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (18, 4, 836, "210 Ceviche Seafood and Mariscos", 4.5, 159, 715.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (18, "NA", 837,"Green Vegetarian Cuisine", 4.5, 522, 2349.0);
+VALUES (18, NULL, 837,"Green Vegetarian Cuisine", 4.5, 522, 2349.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (18, 1, 838, "Battalion", 4.5, 260, 1170.0);
@@ -3766,7 +3869,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (18, 22, 853, "Local Coffee", 4.5, 25, 112.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (18, "NA", 854,"Olmos Perk Coffee Bar", 4.5, 16, 72.0);
+VALUES (18, NULL, 854,"Olmos Perk Coffee Bar", 4.5, 16, 72.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (18, 22, 855, "Barrio Barista & Bargains", 4.5, 18, 81.0);
@@ -3790,7 +3893,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (19, 19, 861, "Mini Pita", 4.5, 251, 1129.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (19, "NA", 862,"Yo Mama's Ice Cream & Pops Corn", 4.5, 314, 1413.0);
+VALUES (19, NULL, 862,"Yo Mama's Ice Cream & Pops Corn", 4.5, 314, 1413.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (19, 1, 863, "Cafe Vico Restaurant & Piano Bar", 4.5, 564, 2538.0);
@@ -3925,7 +4028,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (20, 4, 906, "Velvet Taco", 4.5, 640, 2880.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (20, "NA", 907,"Maple Leaf Diner", 4.5, 323, 1453.5);
+VALUES (20, NULL, 907,"Maple Leaf Diner", 4.5, 323, 1453.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (20, 4, 908, "Meso Maya Comida y Copas", 4.5, 1147, 5161.5);
@@ -4048,10 +4151,10 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (20, 22, 947, "Palmieri Cafe", 4.5, 22, 99.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (20, "NA", 948,"Weekend Coffee", 4.5, 21, 94.5);
+VALUES (20, NULL, 948,"Weekend Coffee", 4.5, 21, 94.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (20, "NA", 949,"Houndstooth Coffee", 4.5, 28, 126.0);
+VALUES (20, NULL, 949,"Houndstooth Coffee", 4.5, 28, 126.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (20, 22, 950, "Cultivar Coffee Bar & Roaster", 4.5, 23, 103.5);
@@ -4141,13 +4244,13 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (22, 27, 978, "Deli In The Pines", 3.5, 182, 637.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (23, "NA", 979,"Pulaski Deli", 4.5, 536, 2412.0);
+VALUES (23, NULL, 979,"Pulaski Deli", 4.5, 536, 2412.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (23, 1, 980, "Luigi's Trattoria", 4.5, 1340, 6030.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (23, "NA", 981,"Cafe Old Vienna", 4.5, 1286, 5787.0);
+VALUES (23, NULL, 981,"Cafe Old Vienna", 4.5, 1286, 5787.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (23, 0, 982, "Hot Stacks Cafe", 4.5, 207, 931.5);
@@ -4273,7 +4376,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (23, 22, 1022, "Fresh Brewed Coffee House", 4.5, 15, 67.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (23, "NA", 1023,"Dunkin", 3.5, 69, 241.5);
+VALUES (23, NULL, 1023,"Dunkin", 3.5, 69, 241.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (23, 0, 1024, "Starbucks Tanger 17 Outlet", 3.5, 29, 101.5);
@@ -4309,7 +4412,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (24, 1, 1034, "Pizzeria Bianco", 4.5, 322, 1449.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (24, "NA", 1035,"Frost A Gelato Shoppe", 5.0, 139, 695.0);
+VALUES (24, NULL, 1035,"Frost A Gelato Shoppe", 5.0, 139, 695.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (24, 0, 1036, "Little Miss BBQ", 4.5, 689, 3100.5);
@@ -4318,7 +4421,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (24, 0, 1037, "Rusconi's American Kitchen", 4.5, 900, 4050.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (24, "NA", 1038,"Postino B-Side", 4.5, 486, 2187.0);
+VALUES (24, NULL, 1038,"Postino B-Side", 4.5, 486, 2187.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (24, 4, 1039, "Fuego @ the Clarendon", 4.5, 700, 3150.0);
@@ -4420,7 +4523,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (25, 0, 1071, "Guard and Grace", 4.5, 896, 4032.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (25, "NA", 1072,"ChoLon Modern Asian", 4.5, 675, 3037.5);
+VALUES (25, NULL, 1072,"ChoLon Modern Asian", 4.5, 675, 3037.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (25, 1, 1073, "Panzano", 4.5, 1703, 7663.5);
@@ -4462,7 +4565,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (25, 0, 1085, "Lucile's Creole Cafe", 4.5, 442, 1989.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (25, "NA", 1086,"Anise, Modern Vietnamese Eatery", 5.0, 8, 40.0);
+VALUES (25, NULL, 1086,"Anise, Modern Vietnamese Eatery", 5.0, 8, 40.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (25, 0, 1087, "Sam's No. 3", 4.5, 3139, 14125.5);
@@ -4537,7 +4640,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (26, 0, 1110, "Old Faithful Inn Bear Paw Deli", 3.5, 196, 686.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (26, "NA", 1111,"Mammoth General Store", 4.0, 216, 864.0);
+VALUES (26, NULL, 1111,"Mammoth General Store", 4.0, 216, 864.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (26, 0, 1112, "Canyon Soda Fountain", 4.0, 51, 204.0);
@@ -4762,7 +4865,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (28, 0, 1185, "Nicki's Omlette & Grill", 4.5, 217, 976.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (28, "NA", 1186,"Coppertail Brewing Company", 4.5, 166, 747.0);
+VALUES (28, NULL, 1186,"Coppertail Brewing Company", 4.5, 166, 747.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (28, 27, 1187, "Five Star Pizza", 4.5, 126, 567.0);
@@ -4855,7 +4958,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (29, 0, 1216, "Macrina Bakery", 4.5, 454, 2043.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (29, "NA", 1217,"Fremont Brewing", 4.5, 196, 882.0);
+VALUES (29, NULL, 1217,"Fremont Brewing", 4.5, 196, 882.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (29, 0, 1218, "Citizen Coffee", 4.5, 422, 1899.0);
@@ -4921,7 +5024,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (29, 14, 1238, "FOB Poke Bar", 5.0, 64, 320.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (29, "NA", 1239,"Uli's Famous Sausage", 4.5, 175, 787.5);
+VALUES (29, NULL, 1239,"Uli's Famous Sausage", 4.5, 175, 787.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (29, 0, 1240, "Voula's Offshore Cafe", 4.5, 158, 711.0);
@@ -4969,7 +5072,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (30, 14, 1254, "Aunty Sandy's Banana Bread", 4.5, 561, 2524.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (30, "NA", 1255,"Choice Health Bar", 4.5, 410, 1845.0);
+VALUES (30, NULL, 1255,"Choice Health Bar", 4.5, 410, 1845.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (30, 14, 1256, "Ululani’s Hawaiian Shave Ice", 4.5, 306, 1377.0);
@@ -5062,13 +5165,13 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (30, 1, 1285, "Round Table Pizza", 4.0, 315, 1260.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (30, "NA", 1286,"Sam Sato's", 4.5, 222, 999.0);
+VALUES (30, NULL, 1286,"Sam Sato's", 4.5, 222, 999.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (30, 0, 1287, "Maui Bread Company", 4.5, 148, 666.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (30, "NA", 1288,"Mana Foods", 4.5, 908, 4086.0);
+VALUES (30, NULL, 1288,"Mana Foods", 4.5, 908, 4086.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (30, 0, 1289, "808 Deli", 4.5, 968, 4356.0);
@@ -5110,7 +5213,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (31, 0, 1301, "Vinny's Pizzeria", 4.0, 131, 524.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (31, "NA", 1302,"Truckee River Winery", 4.5, 41, 184.5);
+VALUES (31, NULL, 1302,"Truckee River Winery", 4.5, 41, 184.5);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (31, 1, 1303, "Goodfellas Pizza", 4.0, 69, 276.0);
@@ -5323,7 +5426,7 @@ INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_nam
 VALUES (32, 1, 1372, "Duetto Pizza and Gelato", 4.5, 2866, 12897.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
-VALUES (32, "NA", 1373,"Mam's Best Food", 4.5, 212, 954.0);
+VALUES (32, NULL, 1373,"Mam's Best Food", 4.5, 212, 954.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (32, 25, 1374, "Viva Argentinian Steakhouse", 4.0, 514, 2056.0);
