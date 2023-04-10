@@ -35,34 +35,39 @@ class ActionSetCityInterestedSlot(Action):
 
 class ActionGetCityCusines(Action):
     def name(self) -> Text:
-        return ""
+        return "action_get_restaurants_info"
     
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         interested_city = tracker.get_slot("interested_city")
-        interested_general_activity = next(tracker.get_latest_entity_values('cuisine'), None)
+        interested_cuisine = next(tracker.get_latest_entity_values('cuisine'), None)
         
         if not interested_city:
             msg = f"Hmm I didn't detect a interested city. What city are you interested in?"
             dispatcher.utter_message(text=msg)
             return []
-        if not interested_general_activity:
-            msg = f"Hmm I didn't detect any specified cuisine. What kind of food are you in the mood for ?"
+        if not interested_cuisine:
+            msg = f"Hmm I didn't detect any specified cuisine. Here are the cuisine options for {interested_city}:"
             dispatcher.utter_message(text=msg)
+            payload = {'city_name': interested_city}
+            re = requests.get("http://localhost:8000/api/getCuisines/", params=payload)
+            cuisines = re.json()
+            msg2 = ''
+            for cuisine in cuisines:
+                msg2 += cuisine + " "
+            tracker.utter_message("msg2")
             return []
         
-        
-        payload = {'city_name': interested_city, 'activity_name': interested_general_activity }
-        r = requests.get('http://localhost:8000/api/getCity/', params=payload)
-        specific_activites = specific_activites.json()
-        for idx, activity in enumerate(specific_activites):
-            msg = f"#{idx} {activity['activity_name']}"
+        payload = {'city_name': interested_city, 'cuisines': interested_cuisine }
+        r = requests.get('http://localhost:8000/api/getRestaurantsByCityCuisines/', params=payload)
+        specific_rest = r.json()
+        for idx, rest in enumerate(specific_rest):
+            msg = f"#{idx} {rest['restaurant_name']}"
             dispatcher.utter_message(text=msg)
-        
+        if len(specific_rest):
+            dispatcher.utter_message(text=f"Sorry, we couldn't find any resturants that have {interested_cuisine} in {interested_city}")
             
-        
-        
         return []
     
 
@@ -89,7 +94,7 @@ class ActionGetSpecificActivities(Action):
         
         payload = {'city_name': interested_city, 'activity_name': interested_general_activity }
         r = requests.get('http://localhost:8000/api/getCity/', params=payload)
-        specific_activites = specific_activites.json()
+        specific_activites = r.json()
         for idx, activity in enumerate(specific_activites):
             msg = f"#{idx} {activity['activity_name']}"
             dispatcher.utter_message(text=msg)
