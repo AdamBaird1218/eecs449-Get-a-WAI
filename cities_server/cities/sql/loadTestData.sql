@@ -4343,10 +4343,13 @@ VALUES (23, 1, 1009, "AJ's Pizza", 4.5, 350, 1575.0);
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (23, 0, 1010, "Paula Deen's Family Kitchen", 4.5, 3595, 16177.5);
 
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (23, 0, 1011, "42nd Street Bar And Grill", 5.0, 297, 1485.0);
 
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (23, 0, 1012, "Carolina Pancake House", 4.5, 428, 1926.0);
 
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
 VALUES (23, 0, 1013, "Donald's Pancake House", 4.5, 738, 3321.0);
 
 INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
@@ -5553,7 +5556,6 @@ VALUES (14, 4, "It's a Small World", 4.5, 128, 9.482444863415406);
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (14, 4, "Space Mountain", 4.5, 156, 9.869060692595077);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (14, 4, "City National Grove of Anaheim", 4.0, 75, 7.500245053566799);
