@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: start_vacation_planning
   examples: |
@@ -11,8 +10,6 @@ nlu:
     - lets plan a vacation
     - yes, lets plan one
     - I'm ready to begin
-
-
 - intent: inform_vacation_data
   examples: |
     - I love [hiking](activities) mountains.
@@ -93,17 +90,14 @@ nlu:
     - [dry](climate)
     - [arid](climate)
     - [freezing](climate)
-    - [sunny](climate)
     - I am located in New York City
     - I live in Ann Arbor
     - I currently reside in west bloomfield
     - My address is 314 E William St., Ann Arbor, MI, 48104
     - 45489 beepbop road is my address
-    - I am from michigan
-    - I come from arizona
-    - Boston
+    - I am from Michigan
+    - I come from Arizona
     - seattle is where I am from
-    - washington
     - My home address is 420 Michigan ave. Ann arbor
     - I'm currently located in Commerce Township, Michigan
     - I live at 8552 Walnut Lake Drive, Novi Michigan
@@ -116,7 +110,7 @@ nlu:
     - Is there any [trains](travelMethod) to that place
     - [drive](travelMethod)
     - Ill take a [car](travelMethod) there
-    - I would love to [fly](travelMethod) there 
+    - I would love to [fly](travelMethod) there
     - I want to travel for [1 week](tripDuration)
     - I want a [4 day](tripDuration) vacation
     - I would love a [3 week](tripDuration) vaction
@@ -143,8 +137,84 @@ nlu:
     - I can only pay about [800](budget)
     - I think we budgeted about [7000](budget) for this trip.
     - [800](budget)
-
-
+    - I like [hiking](activities)
+    - I also enjoy [hunting](activities)
+    - I want to learn how to [snowboard](activities)
+    - [tropical](climate)
+    - [fly](travelMethod)
+    - around [8 nights](tripDuration)
+    - I can spend [2000 dollars](budget)
+    - I live in Novi
+    - I am coming from Nevada
+- intent: city_interest
+  examples: |
+    - I'm interested in Dallas
+    - Yes, Phoenix looks interesting
+    - Can I take a closer took at Myrtle Beach
+    - I'm going to go with Tampa
+    - I would love to visit Miami
+    - I think Las Vegas looks the best
+    - I want to visit New York City
+    - I pick Los Angeles
+    - Can I go to Houston
+    - Yes, Chicago looks nice
+    - Nashville will work nicely
+    - Seattle
+    - Maui
+    - Las Vegas
+    - New York City
+    - Orlando
+    - Los Angeles
+    - Chicago
+    - Nashville
+    - San Diego
+    - Miami Beach
+    - New Orleans
+    - Houston
+    - Can I see more info about Miami
+    - Anaheim
+    - San Francisco
+    - Atlanta
+    - Boston
+    - Atlantic City
+    - San Antonio
+    - Fort Lauderdale
+    - Dallas
+    - Grand Canyon National Park
+    - Austin
+    - Myrtle Beach
+    - Phoenix
+    - Denver
+    - Yellowstone National Park
+    - Gatlinburg
+    - Tampa
+    - Lake Tahoe
+    - Key West
+    - I think Los Vegas sounds awesome
+- intent: specific_activity_intent
+  examples: |
+    - yes, I am interested in the specific activities for Denver.
+    - Yes, I would like to know more about [hiking](activities).
+    - Can I know more about the activities thar are available?
+    - what activities are there?
+    - Lets go with the activities
+    - What kind of stuff is there to do in Miami
+    - what are my activity options
+    - What [beaches](activities) are available.
+    - I want to know about which activities are offered
+    - I am interested in [Gambling]{"entity": "activities", "value": "gambling"}
+- intent: help
+  examples: |
+    - what can you do
+    - what's your purpose
+    - what do you do
+    - how do I chat with you
+    - whats the point of your existance
+    - how can you help me
+    - help
+    - help please
+    - functionality
+    - commands
 - intent: greet
   examples: |
     - hey
@@ -160,7 +230,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - cu
@@ -173,7 +242,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -182,7 +250,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -192,13 +259,4 @@ nlu:
     - don't like that
     - no way
     - not really
-
-
-
-
-
-
-
-
-
-    
+    - great

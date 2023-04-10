@@ -17,6 +17,52 @@ def get_services():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@cities.app.route("/api/getCity/", method=['GET'])
+def get_cities_by_name():
+    connection = cities.model.get_db()
+    city_name = flask.request.args.get('city_name')
+    activity_name = flask.request.args.get('activity_name')
+    city_name = filter_cities(connection, city_name)
+    # todo filter activity_name
+    
+    
+    curr = connection.execute(
+        "SELECT DISTINCT CS.activity_name, CS.weighted_rating FROM Cities C,  "
+        "Activities A, Specific_Activities SA "
+        "WHERE C.city_id = SA.city_id AND SA.activity_id = A.activity_id "
+        "AND C.city_name = ? AND A.activity_name = ? ",
+        (city_name, activity_name,)
+    )
+    
+    city_activity_id_dict = curr.fetchall()
+    
+    # TODO sort list above by weighted rating. With best raiting as the first element
+    
+    response = flask.jsonify(**city_activity_id_dict)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+    
+    
+    # ignore below
+    
+    result_dict = {}
+    for entry in city_activity_id_dict:
+        curr2 = connection.execute(
+            "SELECT SA.activity_name, SA.weighted_rating, FROM Specifc_activites SA WHERE "
+            " SA.city_id = ? AND SA.activity_id = ? ",
+            (entry['city_id'], entry['activity_id'])
+            )
+        temp_list_of_dict = curr2.fetchall()
+        temp_list_of_dict.sort(temp_list_of_dict.items(), reverse=True, key=lambda x: x[1])
+        result_dict[temp_list_of_dict[0]['activity_name']] = temp_list_of_dict[]
+        
+        
+    
+    
+    
+    
+@cities.app.route("/api/ge/", method=['GET'])
+def get_cities_by_name():
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID
@@ -130,10 +176,36 @@ def filter_activities(con, act_list):
         filtered_acts.append(temp_sim_list[0])
     filtered_acts.sort(reverse=True, key=sorting_sims)
     return filtered_acts[0]['activity'], filtered_acts[1]['activity'], filtered_acts[2]['activity']
-        
+
+def filter_cities(con, usr_city):
+    nlp = spacy.load('en_core_web_md')
+    cities_dict = get_all_cities(con)
+    print(type(cities_dict))
+    city_string = ''
+    for entry in cities_dict:
+        city_string += entry['city_name'] + " "
+    
+
+    temp_sim_list = []
+    input_word = nlp(usr_city)
+    db_words = nlp(city_string)
+    
+    for token in db_words:
+        temp_sim_list.append(
+            {
+                "city": token.text,
+                "similarity": input_word.similarity(token)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    return temp_sim_list[0]['city']
+
         
 def sorting_sims(sim_entry):
-    return sim_entry['similarity']    
+    return sim_entry['similarity']   
+
+def sorting_sims(sim_entry):
+    return sim_entry['similarity']  
 
 def get_all_activites(con):
     curr = con.execute(
@@ -141,8 +213,16 @@ def get_all_activites(con):
         "FROM Activities A"
     )
     return curr.fetchall()
-    
-    
+
+def get_all_cities(con):
+    curr = con.execute(
+        "SELECT DISTINCT C.city_name "
+        "FROM Cities C"
+    )
+    return curr.fetchall()
+
+
+
 def convert(lst):
     return str(lst).translate(None, '[],\'')
 

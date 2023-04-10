@@ -5,7 +5,10 @@ CREATE TABLE Cities(
     city_name VARCHAR(64) NOT NULL,
     state_name VARCHAR(64) NOT NULL,
     longitude REAL NOT NULL,
-    latitude REAL NOT NULL
+    latitude REAL NOT NULL,
+    temp_jan REAL NOT NULL,
+    temp_jul REAL NOT NULL,
+    hotel REAL NOT NULL
 );
 
 CREATE TABLE Activities(
