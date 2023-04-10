@@ -6,15 +6,9 @@ CREATE TABLE Cities(
     state_name VARCHAR(64) NOT NULL,
     longitude REAL NOT NULL,
     latitude REAL NOT NULL,
-<<<<<<< HEAD
-    temp_jan REAL NOT NULL,
-    temp_jul REAL NOT NULL,
-    hotel REAL NOT NULL
-=======
     climate VARCHAR(64) NOT NULL,
     Avg_Hotel_Price INTEGER NOT NULL,
     closest_airport VARCHAR(64) NOT NULL
->>>>>>> sidnaga/recommend_cities
 );
 
 CREATE TABLE Activities(
