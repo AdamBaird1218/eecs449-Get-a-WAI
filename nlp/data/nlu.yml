@@ -218,10 +218,19 @@ nlu:
 - intent: restaurants_interest
   examples: |
     - I'm interested in what restaurants are avaliable
+    - I'm in the mood for [chinease](cuisine) food.
     - What kind of food can i get there
     - What are my eating options
     - Sure, show me what my eating options are
-    - Lets what meal places we can go to
+    - What can I get to eat
+    - Where can I eat
+    - Where can I got to eat
+    - [italian](cuisine) food
+    - I really like [korean](cuisine) food
+    - I could go for some [indian](cuisine) food
+    - I really like [thai](cuisine)
+    - [mediterranean](cuisine)
+    - 
 - intent: help
   examples: |
     - what can you do

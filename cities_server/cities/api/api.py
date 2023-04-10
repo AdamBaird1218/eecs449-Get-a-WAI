@@ -164,13 +164,12 @@ def get_recommended_cities():
     budget = input_json['budget']['list'][0]
     citiesList = []
     for city in next_city_filter:
-        cost, travel_duration = get_expenses_travel_duration(travel_method,starting_location, city['city_name'],trip_duration,budget)
+        cost = get_expenses_travel_duration(travel_method,starting_location, city['city_name'],trip_duration,budget)
         city_specific_activity_list = get_specific_city_activities_list(city['city_id'])
         cityObject = {"name":city['city_name'],
                       "id":city['city_id'],
                       "nights":trip_duration,
                       "travel_method":travel_method,
-                      "travelTimeEstimate":travel_duration,
                       "estimated_cost": cost,
                       "cityActivityList": city_specific_activity_list}
         citiesList.append(cityObject)
@@ -423,6 +422,7 @@ def get_all_cuisines():
     for result in results:
         cuisine_list.append(result["cuisine_name"])
     return cuisine_list
+
 def get_all_climates(con):
     curr = con.execute(
         "SELECT DISTINCT C.climate "
@@ -461,7 +461,7 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
     if(travel_method == 'flight'):
         closest_airport = get_closest_airport(city)
         flight_price = sp.scrape_flight_prices(starting_location,closest_airport)
-        travel_duration = sp.get_flight_duration(starting_location,closest_airport)
+        #travel_duration = sp.get_flight_duration(starting_location,closest_airport)
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.Avg_Hotel_Price "
                                     "FROM Cities C "
@@ -527,3 +527,4 @@ def get_closest_airport(city_name):
 if __name__ == '__main__':
     connection = cities.model.get_db()
     print(filter_activities(connection, ["gambling", "beaches", "clubbing", "shopping"]))
+    get_all_cuisines()

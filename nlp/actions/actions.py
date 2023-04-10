@@ -35,7 +35,7 @@ class ActionSetCityInterestedSlot(Action):
 
 class ActionGetCityCusines(Action):
     def name(self) -> Text:
-        return "action_get_specific_activities"
+        return ""
     
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:

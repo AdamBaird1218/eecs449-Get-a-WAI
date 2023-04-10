@@ -65,7 +65,7 @@ INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate
 VALUES (20, "Dallas", "Texas", 32.7767, -96.797, "Cfa", 121, "DFW");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (21, "Grand_Canyon_National_Park", "Arizona", 36.2679, 112.3535, "BWh", 150, "PHX");
+VALUES (21, "Grand Canyon National Park", "Arizona", 36.2679, 112.3535, "BWh", 150, "PHX");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
 VALUES (22, "Austin", "Texas", 30.2672, -97.7431, "Cfa", 152, "AUS");
@@ -80,7 +80,7 @@ INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate
 VALUES (25, "Denver", "Colorado", 39.7392, -104.9903, "BSk", 172, "DEN");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (26, "Yellowstone_National_Park", "Wyoming", 44.428, 110.5885, "Dfa", 150, "BZN");
+VALUES (26, "Yellowstone National Park", "Wyoming", 44.428, 110.5885, "Dfa", 150, "BZN");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
 VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102, "Cfa", 256, "TYS");
@@ -95,11 +95,10 @@ INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate
 VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319, "Am", 250, "OGG");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (31, "Lake_Tahoe", "California", 39.0968, 120.0324, "Csb", 150, "TVL");
+VALUES (31, "Lake Tahoe", "California", 39.0968, 120.0324, "Csb", 150, "TVL");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (32, "Key_West", "Florida", 24.5554, 81.7842, "Am", 215, "EYW");
-
+VALUES (32, "Key West", "Florida", 24.5554, 81.7842, "Am", 215, "EYW");
 
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (0, 'skiing');

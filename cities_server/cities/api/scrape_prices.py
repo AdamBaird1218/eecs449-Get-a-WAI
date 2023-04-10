@@ -1,85 +1,52 @@
-import csv
-import time
-import argparse
-import json
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
 
-import logging as log
+import requests
+import re
+import math
 
 def scrape_flight_prices(location1,location2):
-    URL = "https://www.google.com/search?q=" + location1 + "+to+" + location2 + "+flights&rlz=1C1CHBD_enUS889US891&oq=ann+a&aqs=chrome.0.69i59j46i131i433i512j0i131i433i512l3j69i61j69i60l2.1418j1j7&sourceid=chrome&ie=UTF-8"
-    chrome_options = webdriver.ChromeOptions()
-    """
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--remote-debugging-port=9222")
-    """
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-    driver.get(URL)
-    time.sleep(5)
+    URL = "https://www.google.com/search?q=" + location1 + "+to+" + location2 + "+flights"
+    print(URL)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'
+    }
+    timeout = 10
+    response = requests.get(URL, headers=headers, timeout=timeout)
 
-    button = driver.find_element(By.CSS_SELECTOR, ".S8ee5")
-    driver.execute_script("arguments[0].click();", button)
-    button2 = driver.find_element(By.CSS_SELECTOR, ".rfmBib")
-    driver.execute_script("arguments[0].click();", button2)
-    time.sleep(5)
-
-    soup = BeautifulSoup(driver.page_source, 'html.parser')
     
-    flight_price_string = soup.select(".NtS4zd")[0].text
-    first_index = flight_price_string.find('–')
-    second_index = flight_price_string.find('.')
-    return int(flight_price_string[first_index + 1:second_index])
+    html_content = response.content
+    soup = BeautifulSoup(html_content, 'html.parser')
+    elements = soup.select('div.BNeawe.DwrKqd.s3v9rd.AP7Wnd')
+    prices = []
+    for element in elements:
+        price = element.text.replace('$', '')
+        if price.isdigit():
+            prices.append(int(price))
+    average = 0
+    for price in prices:
+        average += price / len(prices)
+    return math.ceil(average)
+
 
 def get_distance(location1,location2):
-  URL = "https://www.google.com/search?q=distance+between+" + location1 + "+and+" + location2 + "&rlz=1C1CHBD_enUS889US891&oq=&aqs=chrome.1.69i59i450l8.77315263j0j15&sourceid=chrome&ie=UTF-8"
-  chrome_options = webdriver.ChromeOptions()
-  chrome_options.add_argument("--headless")
-  chrome_options.add_argument("--no-sandbox")
-  chrome_options.add_argument("--disable-extensions")
-  chrome_options.add_argument("--disable-gpu")
-  chrome_options.add_argument("--disable-dev-shm-usage")
-  chrome_options.add_argument("--remote-debugging-port=9222")
-  driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-  driver.get(URL)
-  time.sleep(5)
+    URL = "https://www.google.com/search?q=distance+between+" + location1 + "+and+" + location2
+    print(URL)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'
+    }
+    timeout = 10
+    response = requests.get(URL, headers=headers, timeout=timeout)
 
-  soup = BeautifulSoup(driver.page_source, 'html.parser')
     
-  distance_string = soup.select(".rreh")[0].text
-  first_index = distance_string.find('(') #for distance
-  second_index = distance_string.find('.')
-  third_index = 0 #for travel duration
-  fourth_index = distance_string.find('n')
-  distance = int(distance_string[first_index + 1:second_index])
-  travel_duration = distance_string[third_index:fourth_index+1]
-  return distance, travel_duration
-
-def get_flight_duration(location1,location2):
-    URL = "https://www.google.com/search?q=flight+time+from+" + location1 + "+to+" + location2 + "&rlz=1C1CHBD_enUS889US891&ei=ipswZIW-M5GjptQPh9ON6AE&ved=0ahUKEwiFq42L65j-AhWRkYkEHYdpAx0Q4dUDCBA&uact=5"
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--remote-debugging-port=9222")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-    driver.get(URL)
-    time.sleep(5)
-
-    soup = BeautifulSoup(driver.page_source, 'html.parser')
-    duration_string = soup.select(".BNeawe")[0].text
-    return duration_string
-    
-def main():
-    scrape_flight_prices("san francisco","miami")
-
-if __name__ == "__main__":
-    main()
+    html_content = response.content
+    soup = BeautifulSoup(html_content, 'html.parser')
+    #BNeawe deIvCb AP7Wnd
+    element = soup.select_one('div.BNeawe.deIvCb.AP7Wnd')
+    text = element.text
+    pattern = r'\d{1,3}(?:,\d{3})*\.\d+'
+    matches = re.findall(pattern, text)
+    if matches:
+        distance = float(matches[0].replace(',', ''))
+        return(math.ceil(distance*4.011/24.2))
+    else:
+        return(0)
