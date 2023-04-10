@@ -63,7 +63,7 @@ def get_cuisines_by_city():
                              "ON C.city_id = CR.city_id "
                              "INNER JOIN Cuisines CU "
                              "ON CR.cuisine_id = CU.cuisine_id "
-                             "WHERE C.city_name = ?", (city_name))
+                             "WHERE C.city_name = ?", (city_name,))
     results = cur.fetchall()
     cuisines_list = []
     for result in results:
@@ -78,21 +78,17 @@ def get_cuisines_by_city():
 @cities.app.route("/api/getRestaurantsByCityCuisines/", methods=['GET'])
 def getRestaurantsByCityCuisines():
     city_name = flask.request.args.get('city_name')   
-    cuisines_list = flask.request.args.get("cuisines")
-    filtered_cuisines = filter_cuisines(cuisines_list)
+    cuisine = flask.request.args.get("cuisine")
+    filtered_cuisine = filter_cuisines(cuisine)
     connection = cities.model.get_db()
-    cuisines_string = "("
-    for cuisine in filtered_cuisines:
-        cuisines_string += cuisine + ","
-    cuisines_string += ")"
     cur = connection.execute("SELECT DISTINCT CR.restaurant_name, CR.weighted_rating "
                              "FROM City_Restaurants CR "
                              "INNER JOIN Cities C "
                              "ON CR.city_id = C.city_id "
                              "INNER JOIN Cuisines CU "
                              "ON CR.cuisine_id = CU.cuisine_id "
-                             "WHERE CU.cuisine_name IN ? AND C.city_name = ? "
-                             "ORDER BY CR.weighted_rating ",(cuisines_string,city_name))
+                             "WHERE CU.cuisine_name = ? AND C.city_name = ? "
+                             "ORDER BY CR.weighted_rating ",(filtered_cuisine,city_name,))
     results = cur.fetchall()
     results.sort(reverse = True, key = sorting_ratings)
     context = {
@@ -144,8 +140,8 @@ def get_recommended_cities():
     starting_location = input_json['location']['list'][0]
     preferred_travel_method = input_json['travelMethod']['list'][0]
     travel_method = get_travel_method(preferred_travel_method)
-    trip_duration = input_json['tripDuration']['list'][0]
     budget = filter_budget(input_json['budget']['list'][0])
+    trip_duration = filter_trip_duration(input_json['tripDuration']['list'][0])
     citiesList = []
     for city in next_city_filter:
         cost = get_expenses_travel_duration(travel_method,starting_location, city['city_name'],trip_duration,budget)
@@ -185,6 +181,23 @@ def filter_budget(input):
 
 
 
+
+def filter_trip_duration(string_duration):
+    word_list = string_duration.split()
+    extracted_num = 4
+    multiplier = 1
+    is_day = 0
+    for word in word_list:
+        if word.isnumeric():
+            extracted_num = int(word)
+        if word.strip().lower() == "week":
+            multiplier = 7
+        if word.strip().lower() == "month":
+            multiplier = 30
+        if word.string().lower() == "day" or word.string().lower() == "days":
+            is_day = 1
+            
+    return (extracted_num - 1) * multiplier
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID
@@ -396,27 +409,26 @@ def get_all_cities(con):
     return curr.fetchall()
 
 
-def filter_cuisines(cuisines_list):
+def filter_cuisines(cuisine):
     nlp = spacy.load('en_core_web_md')
     all_cuisines = get_all_cuisines()
     cuisines_string = ''
     for entry in all_cuisines:
         cuisines_string += entry + " "
-    filtered_cuisines_list = []
-    for cuisine in cuisines_list:
-        input_word = nlp(cuisine)
-        db_words = nlp(cuisines_string)
-        temp_sim_list = []
-        for token in db_words:
-            temp_sim_list.append(
-                {
-                    "cuisine": token.text,
-                    "similarity": input_word.similarity(token)
-                }
-            )
-        temp_sim_list.sort(reverse=True, key=sorting_sims)
-        filtered_cuisines_list.append(temp_sim_list[0]["cuisine"])
-    return filtered_cuisines_list
+    
+    input_word = nlp(cuisine)
+    db_words = nlp(cuisines_string)
+    temp_sim_list = []
+    for token in db_words:
+        temp_sim_list.append(
+            {
+                "cuisine": token.text,
+                "similarity": input_word.similarity(token)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    print(temp_sim_list[0]["cuisine"])
+    return temp_sim_list[0]["cuisine"]
 
 def get_all_cuisines():
     connection = cities.model.get_db()

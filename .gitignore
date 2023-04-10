@@ -13,3 +13,4 @@ var/
 *.rasa*
 
 *models*
+myenv/
