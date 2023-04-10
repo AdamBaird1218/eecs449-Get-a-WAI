@@ -61,8 +61,42 @@ def get_cities_by_name():
     
     
     
-@cities.app.route("/api/ge/", method=['GET'])
+@cities.app.route("/api/getCuisines/", method=['GET'])
 def get_cities_by_name():
+    city_name = flask.request.args.get('city_name')
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT DISTINCT CU.cuisine_name "
+                             "FROM Cities C "
+                             "INNER JOIN City_Restaurants CR "
+                             "ON C.city_id = CR.city_id "
+                             "INNER JOIN Cuisines CU "
+                             "ON CR.cuisine_id = CU.cuisine_id "
+                             "WHERE C.city_name = ?", (city_name))
+    results = cur.fetchall()
+    cuisines_list = []
+    for result in results:
+        cuisines_list.append(result["cuisine_name"])
+    context = {
+        "cuisines_list": cuisines_list
+    }
+    response = flask.jsonify(**context)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@cities.app.route("/api/getRestaurantsByCityCuisines/", method=['GET'])
+def getRestaurantsByCityCuisines():
+    city_name = flask.request.args.get('city_name')   
+    cuisines_list = flask.request.args.get("cuisines")
+    filtered_cuisines = filter_cuisines(cuisines_list)
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT DISTINCT CR.restaurant_name, CR.weighted_rating "
+                             "FROM City_Restaurants CR "
+                             "INNER JOIN Cities C "
+                             "ON CR.city_id = C.city_id "
+                             "INNER JOIN Cuisines CU "
+                             "ON CR.cuisine_id = CU.cuisine_id "
+                             "WHERE CU.cuisine_name IN ? AND C.city_name = ? "
+                             "ORDER BY CR.weighted_rating ",(filtered_cuisines,city_name))
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID
@@ -204,8 +238,8 @@ def filter_cities(con, usr_city):
 def sorting_sims(sim_entry):
     return sim_entry['similarity']   
 
-def sorting_sims(sim_entry):
-    return sim_entry['similarity']  
+def sorting_ratings(entry):
+    return entry['weighted_rating']  
 
 def get_all_activites(con):
     curr = con.execute(
@@ -222,7 +256,37 @@ def get_all_cities(con):
     return curr.fetchall()
 
 
+def filter_cuisines(cuisines_list):
+    nlp = spacy.load('en_core_web_md')
+    all_cuisines = get_all_cuisines()
+    cuisines_string = ''
+    for entry in all_cuisines:
+        cuisines_string += entry + " "
+    filtered_cuisines_list = []
+    for cuisine in cuisines_list:
+        input_word = nlp(cuisine)
+        db_words = nlp(cuisines_string)
+        temp_sim_list = []
+        for token in db_words:
+            temp_sim_list.append(
+                {
+                    "cuisine": token.text,
+                    "similarity": input_word.similarity(token)
+                }
+            )
+        temp_sim_list.sort(reverse=True, key=sorting_sims)
+        filtered_cuisines_list.append(temp_sim_list[0]["cuisine"])
+    return filtered_cuisines_list
 
+def get_all_cuisines():
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT cuisine_name "
+                             "FROM Cuisines")
+    results = cur.fetchall()
+    cuisine_list = []
+    for result in results:
+        cuisine_list.append(result["cuisine_name"])
+    return cuisine_list
 def convert(lst):
     return str(lst).translate(None, '[],\'')
 
