@@ -202,7 +202,7 @@ def get10Cities(activity_list):
         "WHERE C.city_id = CA.city_id AND CA.activity_id = A.activity_id "
         "AND (A.activity_name = ? OR A.activity_name = ? OR A.activity_name = ?) "
         "GROUP BY C.city_id, C.city_name) "
-        "ORDER BY num_act desc LIMIT 20",
+        "ORDER BY num_act desc ",
         (act1, act2, act3,)
     )  
     
@@ -265,7 +265,7 @@ def sorting_sims(sim_entry):
     return sim_entry['similarity']
 
 def sorting_ratings(rating_entry):
-    return rating_entry['rating']        
+    return rating_entry['weighted_rating']        
 
 def get_all_activites(con):
     curr = con.execute(
@@ -310,9 +310,9 @@ def get_travel_method(usr_travel_method):
 def get_expenses_travel_duration(travel_method, starting_location, city, trip_duration, budget):
     travel_duration = 0
     if(travel_method == 'flight'):
-        flight_price = sp.scrape_flight_prices(starting_location,city)
-        travel_duration = sp.get_flight_duration(starting_location,city)
-        print(city)
+        closest_airport = get_closest_airport(city)
+        flight_price = sp.scrape_flight_prices(starting_location,closest_airport)
+        travel_duration = sp.get_flight_duration(starting_location,closest_airport)
         connection = cities.model.get_db()
         cur = connection.execute("SELECT C.Avg_Hotel_Price "
                                     "FROM Cities C "
@@ -347,28 +347,33 @@ def get_specific_city_activities_list(city_id):
                              "ON A.activity_id = CA.activity_id "
                              "WHERE CA.city_id = ?",(city_id,))
     city_general_activities = cur.fetchall()
-    """
+    
     activity_list = []
     for activity in city_general_activities:
         activity_list.append(activity['activity_name'])
+    
     """
-
     activity_map = {}
     for activity in city_general_activities:
         general_activity = activity['activity_name']
         connection = cities.model.get_db()
-        cur = connection.execute("SELECT SA.activity_name, SA.rating "
+        cur = connection.execute("SELECT SA.activity_name, SA.weighted_rating "
                                 "FROM Specific_Activities SA "
                                 "WHERE SA.city_id = ? AND SA.activity_id = ?",(city_id,activity['activity_id']))
         results = cur.fetchall()
         print("RESULTS:", results)
         results.sort(reverse=True, key=sorting_ratings)
         activity_map[general_activity] = results
-    
-    #return activity_list
-    return activity_map
+    """
+    return activity_list
 
-
+def get_closest_airport(city_name):
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT C.closest_airport "
+                            "FROM Cities C "
+                            "WHERE C.city_name = ?",(city_name))
+    results = cur.fetchall()
+    return results[0]['closest_airport']
 
 if __name__ == '__main__':
     connection = cities.model.get_db()
