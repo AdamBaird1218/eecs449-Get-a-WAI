@@ -35,6 +35,8 @@ case $1 in
     ;;
   "dump")
     sqlite3 -batch -line var/cities.sqlite3 'SELECT * FROM cities'
+    sqlite3 -batch -line var/cities.sqlite3 'SELECT * FROM Activities'
+    sqlite3 -batch -line var/cities.sqlite3 'SELECT * FROM City_Activities'
     ;;
   *)
     usage

@@ -1,503 +1,492 @@
 PRAGMA foreign_keys = ON;
 
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (0, "Las Vegas", "Nevada", 36.1716, 115.1391, 47.8, 91.7, 96);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (0, "Las Vegas", "Nevada", 36.1716, 115.1391, "BWh", 171, "LAS");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (1, "New York City", "New York", 40.7128, 74.006, 33, 76.9, 175);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (1, "New York City", "New York", 40.7128, 74.006, "Dfa", 175, "New York");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (2, "Orlando", "Florida", 28.5384, 81.3789, 60, 82, 174);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (2, "Orlando", "Florida", 28.5384, 81.3789, "Am", 174, "MCO");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (3, "Los Angeles", "California", 34.0522, 118.2437, 58, 73.3, 169);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (3, "Los Angeles", "California", 34.0522, 118.2437, "Csa", 177, "LAX");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (4, "Chicago", "Illinois", 41.8781, 87.6298, 23.7, 73.9, 161);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (4, "Chicago", "Illinois", 41.8781, 87.6298, "Dfa", 161, "Chicago");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (5, "Nashville", "Tennessee", 36.1627, 86.7816, 38.1, 79.9, 145);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (5, "Nashville", "Tennessee", 36.1627, 86.7816, "Cfa", 152, "BNA");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (6, "San Diego", "California", 32.7157, 117.1611, 57.6, 70.5, 217);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (6, "San Diego", "California", 32.7157, 117.1611, "BSh", 214, "SAN");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (7, "Miami Beach", "Florida", 25.7907, 80.13, 67.9, 83.9, 159);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (7, "Miami Beach", "Florida", 25.7907, 80.13, "Am", 211, "MIA");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (8, "New Orleans", "Louisiana", 29.9511, 90.0715, 52.9, 82.8, 132);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (8, "New Orleans", "Louisiana", 29.9511, 90.0715, "Cfa", 135, "MSY");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (9, "Miami", "Florida", 25.7617, 80.1918, 67.9, 83.9, 152);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (9, "Miami", "Florida", 25.7617, 80.1918, "Am", 153, "MIA");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (10, "Washington DC", "District of Columbia", 38.9072, 77.0369, 36.1, 79.8, 185);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (10, "Washington DC", "District of Columbia", 38.9072, 77.0369, "Cfa", 185, "DCA");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (11, "Honolulu", "Hawaii", 21.3099, 157.8581, 80.4, 87.8, 274);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (11, "Honolulu", "Hawaii", 21.3099, 157.8581, "Am", 274, "HNL");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (12, "Houston", "Texas", 29.7604, 95.3698, 52.7, 84, 86);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (12, "Houston", "Texas", 29.7604, 95.3698, "Cfa", 86, "IAH");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (13, "Atlanta", "Georgia", 33.7488, 84.3877, 43.5, 80.4, 72);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (13, "Atlanta", "Georgia", 33.7488, 84.3877, "Cfa", 131, "ATL");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (14, "Anaheim", "California", 33.8366, 117.9143, 56.2, 75.1, 195);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (14, "Anaheim", "California", 33.8366, 117.9143, "Csa", 195, "SNA");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (15, "San Francisco", "California", 37.7749, 122.4194, 52.1, 61.3, 154);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (15, "San Francisco", "California", 37.7749, 122.4194, "Csb", 199, "SFO");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (16, "Boston", "Massachusetts", 42.3601, 71.0589, 29.3, 73.7, 233);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (16, "Boston", "Massachusetts", 42.3601, 71.0589, "Dfa", 230, "BOS");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (17, "Atlantic City", "New Jersey", 39.3643, 74.4229, 38.2, 81.5, 116);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (17, "Atlantic City", "New Jersey", 39.3643, 74.4229, "Cfa", 108, "ACY");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (18, "San Antonio", "Texas", 29.4252, 98.4946, 51.8, 84.7, 110);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (18, "San Antonio", "Texas", 29.4252, 98.4946, "Cfa", 129, "SAT");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (19, "Fort Lauderdale", "Florida", 26.1224, 80.1373, 68, 83.3, 143);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (19, "Fort Lauderdale", "Florida", 26.1224, 80.1373, "Am", 166, "FLL");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (20, "Dallas", "Texas", 32.7767, -96.797, 45.9, 85.5, 117);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (20, "Dallas", "Texas", 32.7767, -96.797, "Cfa", 121, "DFW");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (21, "Grand Canyon National Park", "Arizona", 36.2679, 112.3535, 29, 68, 270);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (21, "Grand_Canyon_National_Park", "Arizona", 36.2679, 112.3535, "BWh", 150, "PHX");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (22, "Austin", "Texas", 30.2672, -97.7431, 51.5, 85, 147);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (22, "Austin", "Texas", 30.2672, -97.7431, "Cfa", 152, "AUS");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (23, "Myrtle Beach", "South Carolina", 33.6891, -78.8867, 47.8, 81.6, 180);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (23, "Myrtle Beach", "South Carolina", 33.6891, -78.8867, "Cfa", 192, "MYR");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (24, "Phoenix", "Arizona", 33.4484, -112.074, 56.5, 94.8, 126);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (24, "Phoenix", "Arizona", 33.4484, -112.074, "BWh", 106, "PHX");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (25, "Denver", "Colorado", 39.7392, -104.9903, 31.4, 74.1, 167);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (25, "Denver", "Colorado", 39.7392, -104.9903, "BSk", 172, "DEN");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (26, "Yellowstone National Park", "Wyoming", 44.428, 110.5885, 14, 60, 217);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (26, "Yellowstone_National_Park", "Wyoming", 44.428, 110.5885, "Dfa", 150, "BZN");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102, 40.4, 74.6, 378);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102, "Cfa", 256, "TYS");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (28, "Tampa", "Florida", 27.9506, -82.4572, 60.6, 82.8, 130);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (28, "Tampa", "Florida", 27.9506, -82.4572, "Cfa", 133, "TPA");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (29, "Seattle", "Washington", 47.6062, -122.3321, 41.8, 65.5, 184);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (29, "Seattle", "Washington", 47.6062, -122.3321, "Csb", 187, "SEA");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319, 77.8, 82, 500);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319, "Am", 250, "OGG");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (31, "Lake_Tahoe", "California", 39.0968, 120.0324, 41.1, 79.2, 274);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (31, "Lake_Tahoe", "California", 39.0968, 120.0324, "Csb", 150, "TVL");
 
-INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, temp_jan, temp_jul, hotel)
-VALUES (32, "Key_West", "Florida", 24.5554, 81.7842, 72.7, 88.2, 281);
+INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
+VALUES (32, "Key_West", "Florida", 24.5554, 81.7842, "Am", 215, "EYW");
+
 
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (0, 'skiing');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (1, 'hiking');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (2, 'beaches');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (3, 'museums');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (4, 'sightseeing');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (5, 'clubs');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (6, 'parks');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (7, 'shopping');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (8, 'amusements');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (9, 'zoos');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (10, 'casinos');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (11, 'theares');
-
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (12, 'aquariums');
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Fountains of Bellagio", 4.5, 92120, 22.33959268181487);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 0, "Fountains of Bellagio", 4.5, 92122, 22.33963511134057);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 6, "Red Rock Canyon National Conservation Area", 4.5, 26363, 19.89447673339781);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 6, 1, "Red Rock Canyon National Conservation Area", 4.5, 26365, 19.894624990503672);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Bellagio Conservatory & Botanical Garden", 4.5, 14700, 18.75292800636679);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 2, "Bellagio Conservatory & Botanical Garden", 4.5, 14703, 18.753326807545314);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Strip", 4.5, 34921, 20.44389002263332);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 3, "The Strip", 4.5, 34923, 20.444001947790472);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Fremont Street Experience", 4.0, 44966, 18.611537024570932);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 4, "Fremont Street Experience", 4.0, 44970, 18.611691550271765);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "High Roller", 4.5, 25633, 19.839597468851366);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 5, "High Roller", 4.5, 25641, 19.840207314054606);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Hoover Dam Bypass", 4.5, 11566, 18.28432434585409);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 6, "Hoover Dam Bypass", 4.5, 11568, 18.284662259777047);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "The Mob Museum", 4.5, 9822, 17.96489968408013);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 7, "The Mob Museum", 4.5, 9823, 17.96509864821047);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Stratosphere Tower", 4.5, 13252, 18.550266422444647);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 8, "Stratosphere Tower", 4.5, 13255, 18.550708794311003);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Wynn Las Vegas Casino", 4.5, 6428, 17.136341406410878);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 9, "Wynn Las Vegas Casino", 4.5, 6428, 17.136341406410878);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "The Neon Museum", 4.5, 5287, 16.754441896823);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 10, "The Neon Museum", 4.5, 5287, 16.754441896823);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Titanic: The Artifact Exhibition", 4.5, 4571, 16.470050495801985);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 11, "Titanic: The Artifact Exhibition", 4.5, 4572, 16.4704779977546);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "KA by Cirque du Soleil", 4.5, 8509, 17.684453356455524);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 12, "KA by Cirque du Soleil", 4.5, 8511, 17.684912657319813);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Mirage Volcano", 4.5, 6012, 17.005585373616917);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 13, "Mirage Volcano", 4.5, 6013, 17.005910417304744);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Pinball Hall of Fame", 4.5, 2992, 15.641827151365904);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 14, "Pinball Hall of Fame", 4.5, 2994, 15.643133082031651);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 7, "The Grand Canal Shoppes at The Venetian Resort", 4.5, 2858, 15.55228001004728);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 7, 15, "The Grand Canal Shoppes at The Venetian Resort", 4.5, 2858, 15.55228001004728);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Mount Charleston", 4.5, 1484, 14.271452554243536);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 16, "Mount Charleston", 4.5, 1484, 14.271452554243536);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Welcome to Fabulous Las Vegas Sign", 4.5, 5458, 16.81665089100245);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 17, "Eiffel Tower Viewing Deck", 4.5, 7018, 17.30796013745724);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Eiffel Tower Viewing Deck", 4.5, 7018, 17.30796013745724);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 18, "Welcome to Fabulous Las Vegas Sign", 4.5, 5458, 16.81665089100245);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Shelby American, Inc.", 4.5, 1520, 14.318296145751475);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 19, "Shelby American, Inc.", 4.5, 1520, 14.318296145751475);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The LINQ Promenade", 4.5, 3324, 15.84747456800433);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 20, "The LINQ Promenade", 4.5, 3325, 15.848062423376055);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 7, "Forum Shops at Caesars Palace", 4.5, 2650, 15.404606432715633);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 7, 21, "Forum Shops at Caesars Palace", 4.5, 2650, 15.404606432715633);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Madame Tussauds -  Las Vegas", 4.0, 5124, 14.838436484290595);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 22, "Madame Tussauds -  Las Vegas", 4.0, 5126, 14.8391144073929);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at Bellagio", 4.5, 4337, 16.36735239966943);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 23, "Casino at Bellagio", 4.5, 4337, 16.36735239966943);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 7, "Fashion Show Las Vegas", 4.5, 2162, 15.006850603277812);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 7, 24, "Fashion Show Las Vegas", 4.5, 2162, 15.006850603277812);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Allegiant Stadium Tours", 5.0, 347, 12.701647373954367);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 25, "Allegiant Stadium Tours", 5.0, 348, 12.707896219732904);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Ellis Island Casino & Brewery", 4.0, 2011, 13.213648282386966);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 26, "Ellis Island Casino & Brewery", 4.0, 2013, 13.215375099554617);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Bodies The Exhibition", 4.5, 2108, 14.95741772943229);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 27, "Bodies The Exhibition", 4.5, 2108, 14.95741772943229);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Springs Preserve", 4.5, 751, 12.940379716518756);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 28, "Counts Kustoms", 4.5, 2027, 14.880841869118537);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Counts Kustoms", 4.5, 2027, 14.880841869118537);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 29, "Springs Preserve", 4.5, 751, 12.940379716518756);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas Downtown", 4.5, 4279, 16.3410402891777);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 30, "Las Vegas Downtown", 4.5, 4279, 16.3410402891777);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "The National Atomic Testing Museum", 4.0, 1610, 12.827303504127398);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 31, "The National Atomic Testing Museum", 4.0, 1610, 12.827303504127398);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 12, "Shark Reef Aquarium", 4.0, 4291, 14.530234058130684);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 12, 32, "Shark Reef Aquarium", 4.0, 4295, 14.531852672669043);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Paris Las Vegas", 4.0, 4451, 14.593830377130088);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 33, "Paris Las Vegas", 4.0, 4452, 14.594220622650681);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino At The Venetian", 4.5, 2865, 15.557060818365336);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 34, "Las Vegas Motor Speedway", 4.5, 853, 13.189270640253852);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas Motor Speedway", 4.5, 853, 13.189270640253852);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 7, 35, "Miracle Mile Shops at Planet Hollywood", 4.0, 1824, 13.044099335969587);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 7, "Miracle Mile Shops at Planet Hollywood", 4.0, 1824, 13.044099335969587);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 36, "Zak Bagans' The Haunted Museum", 4.0, 1107, 12.176590483514891);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Zak Bagans' The Haunted Museum", 4.0, 1106, 12.175020507874716);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 37, "Casino At The Venetian", 4.5, 2865, 15.557060818365336);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Colosseum", 4.5, 986, 13.47244611723545);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 38, "The Colosseum", 4.5, 986, 13.47244611723545);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas South Premium Outlets", 4.0, 2422, 13.536696555228131);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 39, "Las Vegas South Premium Outlets", 4.0, 2423, 13.537413656550024);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "T-Mobile Arena", 4.5, 1431, 14.200378351918992);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 40, "T-Mobile Arena", 4.5, 1432, 14.201743580873265);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "V Theater", 4.0, 3335, 14.09238335301027);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 41, "V Theater", 4.0, 3335, 14.09238335301027);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "The Cosmopolitan Casino", 4.5, 1957, 14.812158715461004);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 42, "The Cosmopolitan Casino", 4.5, 1957, 14.812158715461004);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 7, "Downtown Container Park", 4.0, 2244, 13.404091410336493);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 7, 43, "Downtown Container Park", 4.0, 2244, 13.404091410336493);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Palazzo Resort Casino", 4.5, 1462, 14.242263176798286);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 44, "Palazzo Resort Casino", 4.5, 1462, 14.242263176798286);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 9, "Flamingo Wildlife Habitat", 4.0, 1399, 12.58327085796731);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 9, 45, "Flamingo Wildlife Habitat", 4.0, 1399, 12.58327085796731);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 1, "Historic Railroad Trail", 4.5, 195, 10.30515575113133);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 9, 46, "Siegfried & Roy's Secret Garden and Dolphin Habitat", 4.0, 2723, 13.740190565359857);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 9, "Siegfried & Roy's Secret Garden and Dolphin Habitat", 4.0, 2723, 13.740190565359857);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 47, "Historic Railroad Trail", 4.5, 196, 10.31515232110414);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "DISCOVERY Children's Museum", 4.5, 312, 11.223695673082991);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 48, "DISCOVERY Children's Museum", 4.5, 313, 11.229949518959017);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas Monorail", 4.0, 1703, 12.924858591850404);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 49, "Gold & Silver Pawn Shop", 3.5, 3931, 12.58076065337031);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Gold & Silver Pawn Shop", 3.5, 3929, 12.579987100841322);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 50, "Las Vegas Monorail", 4.0, 1705, 12.926897533314065);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 7, "Town Square Las Vegas", 4.5, 571, 12.404862487106314);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 7, 51, "Town Square Las Vegas", 4.5, 571, 12.404862487106314);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Dolby Live", 4.5, 387, 11.6446993425851);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 52, "Dolby Live", 4.5, 387, 11.6446993425851);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Marvel Avengers S.T.A.T.I.O.N.", 3.5, 2290, 11.759424188189605);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 53, "Marvel Avengers S.T.A.T.I.O.N.", 3.5, 2300, 11.766047426061574);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Beatles - Love - Cirque du Soleil", 4.5, 18384, 19.18998005104894);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 54, "The Beatles - Love - Cirque du Soleil", 4.5, 18389, 19.190511507601475);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "O - Cirque du Soleil", 4.5, 11816, 18.326117170367517);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 55, "O - Cirque du Soleil", 4.5, 11817, 18.326282559879616);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Bellagio Chocolate Fountain", 4.0, 991, 11.984294617941101);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 56, "Bellagio Chocolate Fountain", 4.0, 991, 11.984294617941101);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at Luxor Las Vegas", 4.0, 1609, 12.826224176396117);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 57, "Casino at Luxor Las Vegas", 4.0, 1609, 12.826224176396117);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "MGM Grand Arena", 4.0, 1444, 12.63826877293448);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 58, "MGM Grand Arena", 4.0, 1444, 12.63826877293448);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at New York - New York", 4.0, 1366, 12.541802797382054);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 59, "Casino at New York - New York", 4.0, 1366, 12.541802797382054);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at Aria Resort", 4.5, 1492, 14.281959704114922);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 60, "Casino at Aria Resort", 4.5, 1492, 14.281959704114922);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 7, "The Shops At Crystals", 4.0, 467, 10.677267522264447);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 7, 61, "The Shops At Crystals", 4.0, 467, 10.677267522264447);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 1, "Gold Strike Canyon Hot Springs", 5.0, 79, 9.488135456452206);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 62, "Princess Diana: A Tribute Exhibition", 4.5, 110, 9.186267083212012);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Battlefield Vegas", 5.0, 5511, 18.706152055127355);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 63, "Gold Strike Canyon Hot Springs", 5.0, 79, 9.488135456452206);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Princess Diana: A Tribute Exhibition", 4.5, 106, 9.113876393691465);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 64, "Battlefield Vegas", 5.0, 5513, 18.706939962396344);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino Royale", 4.0, 688, 11.350353752942043);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 65, "The Gallery at Aria", 4.5, 340, 11.391655126690146);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Gallery at Aria", 4.5, 340, 11.391655126690146);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 66, "Red Rock Casino", 4.5, 519, 12.21825311031806);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Red Rock Casino", 4.5, 519, 12.21825311031806);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 67, "Casino Royale", 4.0, 688, 11.350353752942043);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Clark County Wetlands Park", 4.5, 203, 10.383732170609456);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 68, "Clark County Wetlands Park", 4.5, 203, 10.383732170609456);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at the MGM Grand", 4.0, 1345, 12.514889137353705);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 69, "Casino at the MGM Grand", 4.0, 1345, 12.514889137353705);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Burlesque Hall of Fame", 4.5, 121, 9.372534166424025);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 70, "Burlesque Hall of Fame", 4.5, 121, 9.372534166424025);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 5, "Mandalay Bay Beach", 4.0, 349, 10.171301707836719);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 5, 71, "Mandalay Bay Beach", 4.0, 349, 10.171301707836719);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 12, "SeaQuest", 4.5, 359, 11.497925018602436);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 72, "Dig This", 5.0, 3504, 17.722820487480213);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Dig This", 5.0, 3497, 17.718478161546223);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 12, 73, "SeaQuest", 4.5, 359, 11.497925018602436);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Las Vegas Natural History Museum", 4.0, 227, 9.42410342877249);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 74, "Las Vegas Natural History Museum", 4.0, 227, 9.42410342877249);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at Mandalay Bay", 4.0, 728, 11.448525517252147);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 75, "Casino at Mandalay Bay", 4.0, 728, 11.448525517252147);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 9, "White Tiger Habitat at the Mirage", 4.0, 656, 11.26761535750264);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 9, 76, "White Tiger Habitat at the Mirage", 4.0, 656, 11.26761535750264);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 1, "Mary Jane Falls Trail", 4.5, 75, 8.437775685262649);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 77, "Mary Jane Falls Trail", 4.5, 75, 8.437775685262649);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Bellagio Gallery of Fine Art", 4.0, 549, 10.958289377800366);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 78, "Bellagio Gallery of Fine Art", 4.0, 549, 10.958289377800366);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Park MGM Las Vegas Casino", 3.5, 447, 9.276076330961777);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 79, "Park MGM Las Vegas Casino", 3.5, 447, 9.276076330961777);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "The Casino at The Mirage", 4.0, 612, 11.147005688582244);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 80, "The Casino at The Mirage", 4.0, 612, 11.147005688582244);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Bakkt Theater", 4.0, 513, 10.840469460447263);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 81, "Bakkt Theater", 4.0, 513, 10.840469460447263);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Vegas! The Show", 4.5, 6868, 17.265736289199953);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 82, "Vegas! The Show", 4.5, 6870, 17.266305316767976);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Saxe Theater", 4.0, 688, 11.350353752942043);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 83, "Saxe Theater", 4.0, 688, 11.350353752942043);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas Convention Center", 4.0, 312, 9.97661837607377);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 84, "Las Vegas Convention Center", 4.0, 312, 9.97661837607377);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Machine Guns Vegas", 5.0, 4945, 18.47083147966599);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 85, "Machine Guns Vegas", 5.0, 4944, 18.470392310403795);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Binion's Gambling Hall", 4.0, 610, 11.141319340043067);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 86, "Binion's Gambling Hall", 4.0, 610, 11.141319340043067);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Mystère by Cirque du Soleil", 4.5, 5482, 16.825225640415656);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 87, "Pearl Concert Theater", 4.5, 113, 9.238852995675387);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Pearl Concert Theater", 4.5, 113, 9.238852995675387);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 88, "Mystère by Cirque du Soleil", 4.5, 5484, 16.825938507528637);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Michael Jackson ONE by Cirque du Soleil", 4.5, 7949, 17.55140623642677);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 89, "Michael Jackson ONE by Cirque du Soleil", 4.5, 7952, 17.552143671251656);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Guardian Angel Cathedral", 4.5, 97, 8.940472804198102);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 90, "Guardian Angel Cathedral", 4.5, 97, 8.940472804198102);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at Encore", 4.5, 352, 11.459441985651589);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 91, "Casino at Encore", 4.5, 352, 11.459441985651589);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 3, "Real Bodies at Bally's", 4.0, 179, 9.011412123919571);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 3, 92, "Real Bodies at Bally's", 4.0, 179, 9.011412123919571);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Little Vegas Chapel", 5.0, 1167, 15.335354280226849);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 12, 93, "Silverton Aquarium", 4.0, 205, 9.247015444223017);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 12, "Silverton Aquarium", 4.0, 205, 9.247015444223017);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 94, "The Little Vegas Chapel", 5.0, 1171, 15.342784475361814);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 1, "Calico Tanks Trail", 5.0, 43, 8.167342277897932);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 95, "Calico Tanks Trail", 5.0, 43, 8.167342277897932);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Piff the Magic Dragon", 5.0, 2008, 16.513818542364906);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 96, "Piff the Magic Dragon", 5.0, 2015, 16.52137525238564);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at the El Cortez Hotel", 4.0, 247, 9.570787813038663);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 97, "Casino at the El Cortez Hotel", 4.0, 247, 9.570787813038663);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Chapel of the Flowers", 4.5, 2285, 15.11498791982641);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 98, "Chapel of the Flowers", 4.5, 2287, 15.116697740730366);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Absinthe", 4.5, 5053, 16.665971842072036);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 99, "Absinthe", 4.5, 5055, 16.666745219671586);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Raiding The Rock Vault", 5.0, 4416, 18.225145323605712);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 100, "Raiding The Rock Vault", 5.0, 4421, 18.227602574529367);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Escapology Escape Rooms Las Vegas", 5.0, 3228, 17.544667630250164);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 101, "Escapology Escape Rooms Las Vegas", 5.0, 3229, 17.545340225085805);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Paranormal - The Mindreading Magic Show", 5.0, 2989, 17.3776295751964);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 102, "Paranormal - The Mindreading Magic Show", 5.0, 2989, 17.3776295751964);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Lucky Little Chapel Downtown", 5.0, 58, 8.817139967814686);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 103, "Lucky Little Chapel Downtown", 5.0, 58, 8.817139967814686);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 6, "Floyd Lamb State Park", 4.5, 77, 8.489208263276169);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 6, 104, "Floyd Lamb State Park", 4.5, 77, 8.489208263276169);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas Harley-Davidson", 4.5, 75, 8.437775685262649);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 105, "Las Vegas Harley-Davidson", 4.5, 75, 8.437775685262649);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Mentalist", 4.5, 2267, 15.099531840569327);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 106, "The Mentalist", 4.5, 2273, 15.104697460762367);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas Shooting Center", 5.0, 907, 14.788036435300473);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 107, "Las Vegas Shooting Center", 5.0, 910, 14.795206961605468);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Centurion Lounge", 4.0, 336, 10.105357109559375);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 108, "Art of Richard MacDonald", 4.5, 109, 9.168419240732804);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Art of Richard MacDonald", 4.5, 109, 9.168419240732804);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 109, "The Centurion Lounge", 4.0, 337, 10.110519603485354);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Carrot Top", 4.5, 2682, 15.428064480820108);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 110, "Carrot Top", 4.5, 2682, 15.428064480820108);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 6, "The Park", 4.5, 220, 10.540902063699928);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 6, 111, "The Park", 4.5, 220, 10.540902063699928);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "ALL SHOOK UP - Tribute to the King", 5.0, 2428, 16.9262434120161);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 112, "ALL SHOOK UP - Tribute to the King", 5.0, 2430, 16.928031367991558);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 10, "Casino at The Cromwell", 4.0, 906, 11.828512790707252);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 10, 113, "Casino at The Cromwell", 4.0, 906, 11.828512790707252);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "David Copperfield", 4.0, 6808, 15.332078188306124);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 114, "David Copperfield", 4.0, 6826, 15.336665135770478);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "The Range 702", 5.0, 2165, 16.677289503446918);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 115, "The Range 702", 5.0, 2166, 16.678292261446504);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Las Vegas North Premium Outlets", 4.0, 5313, 14.901359263638946);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 116, "Las Vegas North Premium Outlets", 4.0, 5314, 14.901686200297034);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Le Boulevard at Paris", 4.0, 93, 7.87393179421574);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 117, "St. Mark's Square", 4.5, 75, 8.437775685262649);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Mac King Comedy Magic Show", 4.5, 2185, 15.027531485878981);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 118, "Le Boulevard at Paris", 4.0, 93, 7.87393179421574);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (0, 4, "Cowboy Trail Rides, Inc.", 5.0, 999, 14.997827441129912);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 119, "Mac King Comedy Magic Show", 4.5, 2185, 15.027531485878981);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (0, 1, 8.167342277897932);
@@ -506,7 +495,7 @@ INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (0, 3, 9.011412123919571);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (0, 4, 309.2986337664328);
+VALUES (0, 4, 302.7843851985055);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (0, 6, 19.030110326976097);
@@ -517,4844 +506,4951 @@ VALUES (0, 10, 32.8587425893975);
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (0, 12, 9.247015444223017);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Central Park", 4.5, 133701, 23.067605949865612);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 0, "Central Park", 4.5, 133706, 23.067679034159173);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "The National 9/11 Memorial & Museum", 4.5, 96425, 22.428853413921356);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 1, "The National 9/11 Memorial & Museum", 4.5, 96430, 22.42895475042645);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "The Metropolitan Museum of Art", 5.0, 55019, 23.702563462944745);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 2, "The Metropolitan Museum of Art", 5.0, 55021, 23.702642396874577);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Empire State Building", 4.5, 93762, 22.37412088141201);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 3, "Empire State Building", 4.5, 93784, 22.37457938390106);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Top of the Rock", 4.5, 79787, 22.058694611368434);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 4, "Top of the Rock", 4.5, 79797, 22.058939538826216);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "The High Line", 4.5, 62808, 21.59106733958169);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 5, "The High Line", 4.5, 62814, 21.591254025847157);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Statue of Liberty", 4.5, 43867, 20.88962070595101);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 6, "Statue of Liberty", 4.5, 43869, 20.88970980621402);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Manhattan Skyline", 5.0, 21475, 21.6596658625164);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 7, "Manhattan Skyline", 5.0, 21477, 21.659868085687478);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Brooklyn Bridge", 4.5, 25774, 19.850318208820134);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 8, "Brooklyn Bridge", 4.5, 25781, 19.850848914911264);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Grand Central Terminal", 4.5, 44621, 20.922926845583408);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 9, "Grand Central Terminal", 4.5, 44625, 20.92310203104112);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Broadway", 4.5, 31146, 20.220310256681216);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 10, "Broadway", 4.5, 31160, 20.22118852050237);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Times Square", 4.5, 56558, 21.38622319606314);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 11, "Times Square", 4.5, 56564, 21.38643051119233);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Staten Island Ferry", 4.5, 22902, 19.61943034649734);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 12, "Staten Island Ferry", 4.5, 22907, 19.619856971216567);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Bryant Park", 4.5, 23777, 19.692706760024638);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 13, "Bryant Park", 4.5, 23780, 19.692953326272026);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Rockefeller Center", 4.5, 25523, 19.83119274213807);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 14, "Rockefeller Center", 4.5, 25525, 19.831345878415263);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "New York Public Library", 4.5, 14549, 18.732749147451717);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 15, "New York Public Library", 4.5, 14549, 18.732749147451717);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "One World Observatory", 4.5, 28829, 20.069233101670854);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 16, "One World Observatory", 4.5, 28831, 20.06936867747171);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "St. Patrick's Cathedral", 4.5, 15212, 18.81983842532795);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 17, "St. Patrick's Cathedral", 4.5, 15214, 18.8200953536355);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "The Museum of Modern Art (MoMA)", 4.5, 18201, 19.1704286234867);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 18, "The Museum of Modern Art (MoMA)", 4.5, 18203, 19.17064336089693);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "American Museum of Natural History", 4.5, 25984, 19.86617703402486);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 19, "American Museum of Natural History", 4.5, 25988, 19.866477861419988);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Madison Square Garden", 4.5, 9133, 17.82276055941559);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 20, "Chelsea Market", 4.5, 9721, 17.944699244086376);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Chelsea Market", 4.5, 9719, 17.944297119564677);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 21, "Madison Square Garden", 4.5, 9137, 17.823616312102963);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Radio City Music Hall", 4.5, 9270, 17.851858803650234);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 22, "Radio City Music Hall", 4.5, 9270, 17.851858803650234);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Intrepid Sea, Air & Space Museum", 4.5, 9516, 17.903044950143528);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 23, "Ground Zero Museum Workshop", 5.0, 3013, 17.39499565836678);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Ground Zero Museum Workshop", 5.0, 3010, 17.39283247796922);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 24, "Intrepid Sea, Air & Space Museum", 4.5, 9520, 17.903866267730134);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "The Met Cloisters", 4.5, 5138, 16.69857344968647);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 25, "The Met Cloisters", 4.5, 5138, 16.69857344968647);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "SUMMIT One Vanderbilt", 4.5, 1495, 14.285885366972016);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 26, "SUMMIT One Vanderbilt", 4.5, 1517, 14.314435113540284);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Ellis Island", 4.5, 7287, 17.381469462861567);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 27, "Ellis Island", 4.5, 7288, 17.381737637842235);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Fifth Avenue", 4.5, 8567, 17.697729451053807);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 28, "Frick Collection", 4.5, 8673, 17.72176205875644);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Frick Collection", 4.5, 8673, 17.72176205875644);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 29, "Fifth Avenue", 4.5, 8567, 17.697729451053807);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "The Morgan Library & Museum", 4.5, 2090, 14.940658287499742);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 30, "The Morgan Library & Museum", 4.5, 2091, 14.941593147679521);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "The Roosevelt Island Tramway", 4.5, 3715, 16.06481468143467);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 31, "The Roosevelt Island Tramway", 4.5, 3715, 16.06481468143467);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Museum of Sex", 4.5, 537, 12.284884285648);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 32, "Museum of Sex", 4.5, 537, 12.284884285648);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "The Oculus", 4.5, 2613, 15.377127343772965);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 33, "The Oculus", 4.5, 2614, 15.377875124600362);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Greenwich Village", 4.5, 3817, 16.11774971977094);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 34, "Greenwich Village", 4.5, 3817, 16.11774971977094);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Tenement Museum", 4.5, 6661, 17.205927451455864);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 35, "Tenement Museum", 4.5, 6662, 17.20622082759821);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "World Trade Center's Liberty Park", 5.0, 2985, 17.37472167732694);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 36, "World Trade Center's Liberty Park", 5.0, 2985, 17.37472167732694);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "SoHo", 4.5, 3847, 16.133049838380668);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 37, "SoHo", 4.5, 3847, 16.133049838380668);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Christmas Spectacular Starring the Radio City Rockettes", 4.5, 2889, 15.573363938298884);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 38, "Christmas Spectacular Starring the Radio City Rockettes", 4.5, 2889, 15.573363938298884);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "World Trade Center Memorial Foundation", 5.0, 1351, 15.653276745110151);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 39, "World Trade Center Memorial Foundation", 5.0, 1351, 15.653276745110151);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Whitney Museum of American Art", 4.5, 3218, 15.784137178933548);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 40, "Whitney Museum of American Art", 4.5, 3218, 15.784137178933548);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Washington Square Park", 4.5, 3632, 16.02065627932071);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 41, "Washington Square Park", 4.5, 3633, 16.021194290382216);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Lincoln Center for the Performing Arts", 4.5, 2487, 15.28054103371471);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 42, "Lincoln Center for the Performing Arts", 4.5, 2487, 15.28054103371471);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Madame Tussauds New York", 4.0, 8160, 15.646760635015443);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 43, "Madame Tussauds New York", 4.0, 8161, 15.646973511423724);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Flatiron Building", 4.5, 3432, 15.909962756295004);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 44, "Flatiron Building", 4.5, 3431, 15.90939323125278);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "West Village", 4.5, 1615, 14.436776370002045);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 45, "West Village", 4.5, 1615, 14.436776370002045);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "The Vessel", 4.5, 1368, 14.112387438228437);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 46, "The Vessel", 4.5, 1368, 14.112387438228437);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Ellis Island Immigration Museum", 4.5, 3163, 15.750446363620751);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 47, "Ellis Island Immigration Museum", 4.5, 3164, 15.751064136715375);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "St. Paul's Chapel", 4.5, 3446, 15.917918729004043);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 48, "St. Paul's Chapel", 4.5, 3446, 15.917918729004043);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Museum at Eldridge Street", 4.5, 486, 12.089863211680319);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 49, "Museum at Eldridge Street", 4.5, 487, 12.093880325465854);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "United Nations Headquarters", 4.0, 2104, 13.292182941926805);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 50, "United Nations Headquarters", 4.0, 2105, 13.293008400686746);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Chrysler Building", 4.5, 3062, 15.687023338630087);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 51, "Chrysler Building", 4.5, 3063, 15.687661485629574);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "One World Trade Center", 4.5, 996, 13.492167022906642);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 52, "Lower Manhattan", 4.5, 1200, 13.856315607214311);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Lower Manhattan", 4.5, 1200, 13.856315607214311);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 53, "One World Trade Center", 4.5, 996, 13.492167022906642);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "World Trade Center Station (PATH)", 4.5, 1291, 13.99916809019889);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 54, "World Trade Center Station (PATH)", 4.5, 1291, 13.99916809019889);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Trinity Church", 4.5, 1514, 14.31056643823824);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 55, "Trinity Church", 4.5, 1514, 14.31056643823824);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Roosevelt Island", 4.5, 888, 13.267858346003704);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 56, "Roosevelt Island", 4.5, 888, 13.267858346003704);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Gershwin Theater", 4.5, 587, 12.458871455614265);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 57, "Gershwin Theater", 4.5, 587, 12.458871455614265);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "St. Patrick's Old Cathedral", 4.5, 465, 12.00353828800479);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 58, "St. Patrick's Old Cathedral", 4.5, 465, 12.00353828800479);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Jazz at Lincoln Center", 4.5, 917, 13.330662010515095);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 59, "Jazz at Lincoln Center", 4.5, 917, 13.330662010515095);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Cathedral Church of Saint John the Divine", 4.5, 1542, 14.346379681717218);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 60, "Cathedral Church of Saint John the Divine", 4.5, 1542, 14.346379681717218);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Neue Galerie", 4.5, 1614, 14.435565886737232);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 61, "Upper West Side", 4.5, 878, 13.245725321577462);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Upper West Side", 4.5, 878, 13.245725321577462);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 62, "Neue Galerie", 4.5, 1614, 14.435565886737232);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Manhattan Bridge", 4.5, 1237, 13.91566364833104);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 63, "Manhattan Bridge", 4.5, 1237, 13.91566364833104);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "New-York Historical Society Museum & Library", 4.5, 849, 13.180084606097786);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 64, "New-York Historical Society Museum & Library", 4.5, 849, 13.180084606097786);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Union Square", 4.0, 1462, 12.659789490487364);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 65, "Union Square", 4.0, 1462, 12.659789490487364);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Merchant's House Museum", 4.5, 314, 11.236183416329464);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 66, "Merchant's House Museum", 4.5, 315, 11.242397492053202);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Majestic Theatre", 4.5, 803, 13.071219953754063);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 67, "Chelsea", 4.5, 515, 12.203132530685359);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Chelsea", 4.5, 515, 12.203132530685359);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 68, "Majestic Theatre", 4.5, 803, 13.071219953754063);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "New Amsterdam Theater", 4.5, 646, 12.646046330977876);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 69, "New Amsterdam Theater", 4.5, 646, 12.646046330977876);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Harlem", 4.0, 1185, 12.29487340138449);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 70, "Harlem", 4.0, 1186, 12.296338756112975);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 7, "Brookfield Place", 4.5, 580, 12.435425971033215);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 7, 71, "Brookfield Place", 4.5, 580, 12.435425971033215);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Hayden Planetarium", 4.5, 422, 11.813906029327532);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 72, "Hayden Planetarium", 4.5, 422, 11.813906029327532);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Columbia University", 4.5, 582, 12.442153430924499);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 73, "Columbia University", 4.5, 582, 12.442153430924499);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Strawberry Fields, John Lennon Memorial", 4.0, 1840, 13.059271292038144);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 74, "Strawberry Fields, John Lennon Memorial", 4.0, 1839, 13.058326916952309);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Winter Garden Theatre", 4.5, 236, 10.67810401336548);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 75, "Winter Garden Theatre", 4.5, 236, 10.67810401336548);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "SPYSCAPE", 4.5, 430, 11.850608050108137);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 76, "Bethesda Fountain", 4.5, 761, 12.966230955467577);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Bethesda Fountain", 4.5, 761, 12.966230955467577);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 77, "Woolworth Building", 4.5, 1059, 13.612031820483683);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Woolworth Building", 4.5, 1059, 13.612031820483683);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 78, "Hudson River Park", 4.5, 540, 12.295771919203359);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Grand Central Market", 4.5, 776, 13.004377745661847);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 79, "Grand Central Market", 4.5, 776, 13.004377745661847);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Hudson River Park", 4.5, 540, 12.295771919203359);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 80, "Madison Square Park", 4.5, 724, 12.86882354788716);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Madison Square Park", 4.5, 724, 12.86882354788716);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 81, "SPYSCAPE", 4.5, 430, 11.850608050108137);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "National Museum of the American Indian", 4.0, 799, 11.610187117255965);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 82, "National Museum of the American Indian", 4.0, 799, 11.610187117255965);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "St. Thomas Church", 4.5, 499, 12.141452455305254);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 83, "St. Thomas Church", 4.5, 499, 12.141452455305254);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Conservatory Garden", 4.5, 389, 11.654773205965682);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 84, "Conservatory Garden", 4.5, 389, 11.654773205965682);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Riverside Park", 4.5, 474, 12.041002537533382);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 85, "Beacon Theatre", 4.5, 415, 11.781216435204417);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Beacon Theatre", 4.5, 416, 11.785919987820341);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 86, "Riverside Park", 4.5, 474, 12.041002537533382);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "SeaGlass Carousel", 4.0, 2771, 13.770546103128925);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 87, "SeaGlass Carousel", 4.0, 2771, 13.770546103128925);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Broadway Theatre", 4.5, 517, 12.210707443922741);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 88, "Broadway Theatre", 4.5, 517, 12.210707443922741);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Rockefeller Center Christmas Tree", 4.5, 412, 11.767037472149106);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 89, "Rockefeller Center Christmas Tree", 4.5, 412, 11.767037472149106);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Times Square Church", 4.5, 267, 10.919300676140587);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 90, "Times Square Church", 4.5, 267, 10.919300676140587);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Minskoff Theatre", 4.5, 279, 11.005218914731188);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 91, "Stone Street Historic District", 4.5, 210, 10.449986826302636);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Stone Street Historic District", 4.5, 210, 10.449986826302636);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 92, "Governors Island National Monument", 4.5, 796, 13.05410880481951);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Governors Island National Monument", 4.5, 796, 13.05410880481951);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 93, "Museum of Jewish Heritage", 4.5, 509, 12.180230020515413);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Museum of Jewish Heritage", 4.5, 509, 12.180230020515413);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 94, "Minskoff Theatre", 4.5, 279, 11.005218914731188);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Alice in Wonderland Statue", 4.5, 581, 12.438792595756485);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 95, "Alice in Wonderland Statue", 4.5, 581, 12.438792595756485);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Rubin Museum of Art", 4.5, 405, 11.733547604466008);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 96, "Union Square Green Market", 4.5, 352, 11.459441985651589);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Union Square Green Market", 4.5, 352, 11.459441985651589);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 97, "The Lion King", 5.0, 9252, 19.831178120492908);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "GhostBusters Firestation", 4.0, 419, 10.48885609186518);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 98, "Rubin Museum of Art", 4.5, 406, 11.738367151097371);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "The Lion King", 5.0, 9252, 19.831178120492908);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 99, "GhostBusters Firestation", 4.0, 419, 10.48885609186518);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Meatpacking District", 4.5, 692, 12.780477425055409);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 100, "Al Hirschfeld Theatre", 4.5, 246, 10.759207981965204);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Upper East Side", 4.5, 273, 10.962731911683402);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 101, "Upper East Side", 4.5, 273, 10.962731911683402);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "The Museum at FIT", 4.5, 243, 10.735228231192403);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 102, "The Museum at FIT", 4.5, 243, 10.735228231192403);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Saks Fifth Avenue", 4.0, 724, 11.438954264788586);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 103, "Meatpacking District", 4.5, 692, 12.780477425055409);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Al Hirschfeld Theatre", 4.5, 244, 10.743254218524282);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 104, "Saks Fifth Avenue", 4.0, 724, 11.438954264788586);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Park Avenue", 4.5, 436, 11.877689201708636);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 105, "Park Avenue", 4.5, 436, 11.877689201708636);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Fort Tryon Park", 4.5, 240, 10.710950587702227);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 106, "Neil Simon Theatre", 4.5, 278, 10.99820158163134);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Neil Simon Theatre", 4.5, 278, 10.99820158163134);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 107, "Lyric Theatre", 4.5, 207, 10.421866554556129);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "St Joseph's Chapel Catholic Memorial at Ground Zero", 4.5, 1262, 13.954767097086519);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 108, "Fort Tryon Park", 4.5, 240, 10.710950587702227);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Lyric Theatre", 4.5, 207, 10.421866554556129);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 109, "St Joseph's Chapel Catholic Memorial at Ground Zero", 4.5, 1262, 13.954767097086519);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "New York City Fire Museum", 4.5, 272, 10.955560068153893);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 110, "New York City Fire Museum", 4.5, 272, 10.955560068153893);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 6, "Little Island", 4.5, 157, 9.881548435841552);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 111, "Little Island", 4.5, 158, 9.893956891294902);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Friends Building", 4.0, 437, 10.561925747881686);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 112, "Friends Building", 4.0, 437, 10.561925747881686);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 7, "Westfield World Trade Center", 4.5, 343, 11.408823540192465);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 7, 113, "Westfield World Trade Center", 4.5, 343, 11.408823540192465);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 3, "Theodore Roosevelt Birthplace National Historic Site", 4.5, 231, 10.636253909514648);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 3, 114, "Theodore Roosevelt Birthplace National Historic Site", 4.5, 231, 10.636253909514648);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Fraunces Tavern Museum", 4.5, 216, 10.505041880179188);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 115, "Fraunces Tavern Museum", 4.5, 216, 10.505041880179188);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Macy's Thanksgiving Day Parade", 4.5, 213, 10.477708215474319);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 116, "Studio 54", 4.5, 258, 10.852288676834535);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Belvedere Castle", 4.0, 526, 10.883942976614955);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 117, "Macy's Thanksgiving Day Parade", 4.5, 213, 10.477708215474319);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Marquis Theatre", 4.5, 191, 10.264650152614772);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 118, "Belvedere Castle", 4.0, 526, 10.883942976614955);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (1, 4, "Richard Rodgers Theatre", 4.0, 334, 10.094985867246258);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 119, "Marquis Theatre", 4.5, 191, 10.264650152614772);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (1, 3, 56.240819833842366);
+VALUES (1, 3, 56.24563938047373);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (1, 4, 255.61308111080552);
+VALUES (1, 4, 256.38633768383477);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (1, 6, 20.59249902354378);
+VALUES (1, 6, 20.604907478997127);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (1, 7, 11.408823540192465);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "The Wizarding World of Harry Potter", 5.0, 41291, 23.079277004494955);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 0, "The Wizarding World of Harry Potter", 5.0, 41292, 23.07932959334277);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Universal's Islands of Adventure", 4.5, 52194, 21.22929261552228);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 1, "Universal's Islands of Adventure", 4.5, 52196, 21.229367501054178);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Discovery Cove", 5.0, 17490, 21.21394904739338);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 2, "Discovery Cove", 5.0, 17492, 21.214197343364095);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Magic Kingdom Park", 4.5, 69314, 21.783694329043747);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 3, "Magic Kingdom Park", 4.5, 69318, 21.783807106767163);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Disney's Animal Kingdom Theme Park", 4.5, 34676, 20.430130474257368);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 4, "Disney's Animal Kingdom Theme Park", 4.5, 34682, 20.430468602549432);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Universal Studios Florida", 4.5, 40964, 20.755810608603884);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 5, "Universal Studios Florida", 4.5, 40969, 20.756049135836008);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Fun Spot America", 4.5, 4954, 16.62730201012418);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 6, "Fun Spot America", 4.5, 4975, 16.635568882867847);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Epcot", 4.5, 29593, 20.120350473615385);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 7, "Epcot", 4.5, 29597, 20.12061461623022);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "SeaWorld", 4.5, 33628, 20.37015467435306);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 8, "SeaWorld", 4.5, 33633, 20.37044523280033);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Walt Disney World Resort", 4.5, 34058, 20.394986135159918);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 9, "Walt Disney World Resort", 4.5, 34070, 20.395674601055447);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 7, "Disney Springs", 4.5, 13716, 18.61752364399308);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 10, "Disney's Typhoon Lagoon Water Park", 4.5, 9147, 17.82575405588269);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Disney's Typhoon Lagoon Water Park", 4.5, 9146, 17.825540386700983);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 7, 11, "Disney Springs", 4.5, 13717, 18.61766612386545);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Disney’s Hollywood Studios", 4.5, 29062, 20.084964742965298);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 12, "Disney’s Hollywood Studios", 4.5, 29065, 20.085166472815832);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Epcot World Showcase", 4.5, 12435, 18.425906053226797);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 13, "Epcot World Showcase", 4.5, 12435, 18.425906053226797);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Orlando International Premium Outlets", 4.5, 8696, 17.72693788985207);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 14, "Orlando International Premium Outlets", 4.5, 8696, 17.72693788985207);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Avatar Flight of Passage", 5.0, 1927, 16.424408573277262);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 15, "Avatar Flight of Passage", 5.0, 1927, 16.424408573277262);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Orlando Vineland Premium Outlets", 4.5, 5801, 16.935762894604185);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 16, "Orlando Vineland Premium Outlets", 4.5, 5801, 16.935762894604185);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "International Drive", 4.5, 4769, 16.5529229509524);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 17, "International Drive", 4.5, 4769, 16.5529229509524);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Basilica of the National Shrine of Mary, Queen of the Universe", 4.5, 1553, 14.360271550778512);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 18, "Basilica of the National Shrine of Mary, Queen of the Universe", 4.5, 1553, 14.360271550778512);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Lake Eola Park", 4.5, 1814, 14.663867772258342);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 19, "Lake Eola Park", 4.5, 1814, 14.663867772258342);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Disney’s Blizzard Beach Water Park", 4.5, 6599, 17.187651577629552);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 20, "Disney’s Blizzard Beach Water Park", 4.5, 6599, 17.187651577629552);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Amway Center", 4.5, 2461, 15.260002261662608);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 21, "Amway Center", 4.5, 2461, 15.260002261662608);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Harry P. Leu Gardens", 4.5, 1417, 14.18116432611357);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 22, "Harry P. Leu Gardens", 4.5, 1417, 14.18116432611357);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Pandora – The World of Avatar", 4.5, 1909, 14.763626677771502);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 23, "Pandora – The World of Avatar", 4.5, 1909, 14.763626677771502);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 7, "The Florida Mall", 4.5, 3522, 15.96055208234066);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 7, 24, "The Florida Mall", 4.5, 3522, 15.96055208234066);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Cinderella Castle", 4.5, 2284, 15.114132448082144);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 25, "Cinderella Castle", 4.5, 2284, 15.114132448082144);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Disney's Boardwalk", 4.5, 2821, 15.526813887699145);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 26, "Disney's Boardwalk", 4.5, 2821, 15.526813887699145);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Aquatica", 4.0, 7864, 15.582574019296315);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 27, "Aquatica", 4.0, 7870, 15.583898929436256);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Tree of Life", 4.5, 2403, 15.213391968617548);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 28, "Tree of Life", 4.5, 2403, 15.213391968617548);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Museum Of Illusions Orlando", 5.0, 416, 13.095466653133712);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 29, "Museum Of Illusions Orlando", 4.5, 417, 11.790612247381906);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Madame Tussauds Orlando", 4.5, 2714, 15.451244294956732);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 30, "ICON Park", 4.5, 1720, 14.559878011083969);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "ICON Park", 4.5, 1719, 14.558741445091734);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 31, "Madame Tussauds Orlando", 4.5, 2714, 15.451244294956732);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Orlando Watersports Complex", 4.5, 493, 12.117811136747534);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 12, 32, "SEA LIFE Orlando Aquarium", 4.0, 2358, 13.49017520303628);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 12, "SEA LIFE Orlando Aquarium", 4.0, 2357, 13.489438330097295);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 33, "Orlando Watersports Complex", 4.5, 493, 12.117811136747534);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Wild Africa Trek", 4.5, 473, 12.03687513332015);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 34, "Wild Africa Trek", 4.5, 473, 12.03687513332015);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Orlando Science Center", 4.5, 859, 13.20296923724059);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 35, "Orlando Science Center", 4.5, 859, 13.20296923724059);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Soarin'", 4.5, 749, 12.935168179647597);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 36, "Soarin'", 4.5, 749, 12.935168179647597);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 9, "Exotic Animal Experience", 5.0, 402, 13.02113026542235);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 9, 37, "Exotic Animal Experience", 5.0, 402, 13.02113026542235);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Titanic: The Artifact Exhibition (Orlando)", 4.0, 1495, 12.698564770641791);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 38, "Titanic: The Artifact Exhibition (Orlando)", 4.0, 1496, 12.699726374113768);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Mako", 5.0, 290, 12.311989989494778);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 39, "Mako", 5.0, 290, 12.311989989494778);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Expedition Everest - Legend of the Forbidden Mountain", 5.0, 490, 13.450980400142567);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 40, "Expedition Everest - Legend of the Forbidden Mountain", 5.0, 490, 13.450980400142567);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Rock 'n' Roller Coaster Starring Aerosmith", 5.0, 476, 13.388034763602466);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 41, "Rock 'n' Roller Coaster Starring Aerosmith", 5.0, 476, 13.388034763602466);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Kilimanjaro Safaris", 4.5, 421, 11.809269431260505);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 42, "Kilimanjaro Safaris", 4.5, 421, 11.809269431260505);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "The Twilight Zone Tower of Terror", 4.5, 550, 12.331632102724095);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 43, "The Twilight Zone Tower of Terror", 4.5, 551, 12.335182194833033);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Orange County Convention Center", 4.5, 951, 13.401812326218362);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 44, "Orange County Convention Center", 4.5, 951, 13.401812326218362);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Orlando Kart Center", 4.5, 330, 11.333312729450492);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 45, "Orlando Kart Center", 4.5, 330, 11.333312729450492);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Ripley's Believe It or Not! Orlando", 4.0, 1853, 13.071501677275588);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 46, "Ripley's Believe It or Not! Orlando", 4.0, 1853, 13.071501677275588);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Splash Mountain", 4.5, 434, 11.868703782806296);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 47, "Toy Story Midway Mania!", 4.5, 422, 11.813906029327532);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Toy Story Midway Mania!", 4.5, 422, 11.813906029327532);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 48, "Splash Mountain", 4.5, 434, 11.868703782806296);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Star Wars Launch Bay", 4.5, 454, 11.956751337856968);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 49, "Star Wars Launch Bay", 4.5, 454, 11.956751337856968);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Big Thunder Mountain Railroad", 4.5, 382, 11.619285133102688);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 50, "Big Thunder Mountain Railroad", 4.5, 382, 11.619285133102688);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Downtown Orlando", 4.0, 774, 11.554963842731569);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 51, "Downtown Orlando", 4.0, 774, 11.554963842731569);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Tibet-Butler Preserve", 4.5, 177, 10.11587969862813);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 52, "Tibet-Butler Preserve", 4.5, 177, 10.11587969862813);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Dr. Phillips Center for the Performing Arts", 4.5, 443, 11.908816768003813);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 53, "Dr. Phillips Center for the Performing Arts", 4.5, 443, 11.908816768003813);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Lake Rianhard", 4.5, 93, 8.858173268492708);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 54, "Lake Rianhard", 4.5, 93, 8.858173268492708);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Kennedy Space Center Store", 4.5, 347, 11.43148263655893);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 55, "Kennedy Space Center Store", 4.5, 347, 11.43148263655893);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Nona Adventure Park", 5.0, 121, 10.41392685158225);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 56, "Happily Ever After Fireworks", 5.0, 24997, 21.98943945103519);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Happily Ever After Fireworks", 5.0, 24996, 21.989352579976853);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 57, "Nona Adventure Park", 5.0, 121, 10.41392685158225);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Space Mountain", 4.5, 475, 12.045121243311899);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 58, "Space Mountain", 4.5, 475, 12.045121243311899);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Star Tours - The Adventures Continue", 4.5, 317, 11.25476667997988);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 59, "Star Tours - The Adventures Continue", 4.5, 317, 11.25476667997988);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Orlando StarFlyer", 4.5, 164, 9.966797316214642);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 60, "Orlando StarFlyer", 4.5, 164, 9.966797316214642);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Haunted Mansion", 4.5, 437, 11.882166466366897);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 61, "Haunted Mansion", 4.5, 437, 11.882166466366897);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "The Orange County Regional History Center", 4.5, 172, 10.059878011083969);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 62, "The Orange County Regional History Center", 4.5, 172, 10.059878011083969);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "ESPN Wide World of Sports", 4.0, 782, 11.572827012239392);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 63, "ESPN Wide World of Sports", 4.0, 782, 11.572827012239392);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Corpus Christi Catholic Church", 5.0, 97, 9.933858671331224);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 64, "Corpus Christi Catholic Church", 5.0, 97, 9.933858671331224);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Universal's Volcano Bay", 3.5, 4928, 12.92434744704729);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 65, "Orlando Shakespeare Theater", 5.0, 128, 10.53604984823934);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Orlando Shakespeare Theater", 5.0, 128, 10.53604984823934);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 66, "Universal's Volcano Bay", 3.5, 4936, 12.926813028588146);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Test Track Presented by Chevrolet", 4.5, 387, 11.6446993425851);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 67, "Test Track Presented by Chevrolet", 4.5, 387, 11.6446993425851);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 7, "Thornton Park", 4.5, 64, 8.12780988292749);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 7, 68, "Orlando Outlet Marketplace", 4.5, 133, 9.557332384351886);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 7, "Orlando Outlet Marketplace", 4.5, 133, 9.557332384351886);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 69, "Seven Dwarfs Mine Train", 4.5, 527, 12.248147768456459);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Seven Dwarfs Mine Train", 4.5, 527, 12.248147768456459);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 70, "Star Wars: Galaxy's Edge", 4.0, 266, 9.699526546524266);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Star Wars: Galaxy's Edge", 4.0, 266, 9.699526546524266);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 71, "Pirates of the Caribbean", 4.5, 403, 11.72387270763499);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Pirates of the Caribbean", 4.5, 403, 11.72387270763499);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 72, "Buzz Lightyear's Space Ranger Spin", 4.5, 310, 11.211127622254226);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Buzz Lightyear's Space Ranger Spin", 4.5, 310, 11.211127622254226);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 7, 73, "Thornton Park", 4.5, 64, 8.12780988292749);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Camp Disney", 5.0, 72, 9.286662482156341);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 74, "Camp Disney", 5.0, 72, 9.286662482156341);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Wycliffe Discovery Center", 4.5, 50, 7.6453650195120835);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 75, "Spaceship Earth", 4.5, 345, 11.420185927829733);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 7, "Pointe Orlando", 3.5, 739, 10.04025553438189);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 76, "Wycliffe Discovery Center", 4.5, 50, 7.6453650195120835);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Spaceship Earth", 4.5, 344, 11.414512991571884);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 7, 77, "Pointe Orlando", 3.5, 739, 10.04025553438189);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Characters in Flight", 4.0, 302, 9.920027771828602);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 78, "Characters in Flight", 4.0, 302, 9.920027771828602);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Mickey's PhilharMagic", 4.5, 214, 10.486861980071357);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 79, "Mickey's PhilharMagic", 4.5, 214, 10.486861980071357);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "World's Largest Entertainment McDonald's & PlayPlace", 3.5, 685, 9.92491700022349);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 80, "World's Largest Entertainment McDonald's & PlayPlace", 3.5, 685, 9.92491700022349);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Orlando Museum of Art", 4.0, 207, 9.26388138182767);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 81, "Orlando Museum of Art", 4.0, 207, 9.26388138182767);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Castaway Creek", 4.5, 23, 6.127775262079168);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 82, "Castaway Creek", 4.5, 23, 6.127775262079168);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Orlando Brewing", 4.5, 167, 10.002224120164126);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 83, "Orlando Brewing", 4.5, 167, 10.002224120164126);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "The Escape Game Orlando", 5.0, 6403, 19.031917509120834);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 84, "The Escape Game Orlando", 5.0, 6403, 19.031917509120834);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Meet Disney Pals - Epcot Character Spot", 4.5, 135, 9.586501958227528);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 85, "Meet Disney Pals - Epcot Character Spot", 4.5, 135, 9.586501958227528);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Kali River Rapids", 4.5, 187, 10.223287229414245);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 86, "It's Tough to be a Bug!", 4.5, 220, 10.540902063699928);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "It's Tough to be a Bug!", 4.5, 220, 10.540902063699928);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 87, "Kali River Rapids", 4.5, 187, 10.223287229414245);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Indiana Jones Epic Stunt Spectacular!", 4.5, 236, 10.67810401336548);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 88, "Indiana Jones Epic Stunt Spectacular!", 4.5, 236, 10.67810401336548);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Under the Sea - Journey of The Little Mermaid", 4.5, 241, 10.719076691586906);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 89, "Under the Sea - Journey of The Little Mermaid", 4.5, 241, 10.719076691586906);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Quantum Leap Winery", 4.5, 63, 8.097032472541116);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 90, "Quantum Leap Winery", 4.5, 63, 8.097032472541116);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Exploria Stadium", 4.5, 89, 8.772255029902107);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 91, "Exploria Stadium", 4.5, 89, 8.772255029902107);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Magical Midway", 4.0, 260, 9.659893391883271);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 92, "Magical Midway", 4.0, 260, 9.659893391883271);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Living with the Land", 4.0, 237, 9.498993384040416);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 93, "Living with the Land", 4.0, 237, 9.498993384040416);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Escapology", 5.0, 4968, 18.48090793584262);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 94, "Escapology", 5.0, 4968, 18.48090793584262);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Gorilla Falls Exploration Trail", 4.5, 81, 8.588182584953923);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 95, "Gorilla Falls Exploration Trail", 4.5, 81, 8.588182584953923);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Back to Nature Wildlife Refuge", 4.5, 55, 7.831632102724098);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 96, "Back to Nature Wildlife Refuge", 4.5, 55, 7.831632102724098);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Mennello Museum of American Art", 4.0, 68, 7.330035650824945);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 3, 97, "Mennello Museum of American Art", 4.0, 68, 7.330035650824945);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Cross Country Creek", 5.0, 16, 6.020599913279623);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 98, "Cross Country Creek", 5.0, 16, 6.020599913279623);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Star Wars: A Galactic Spectacular", 4.5, 187, 10.223287229414245);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 99, "Star Wars: A Galactic Spectacular", 4.5, 187, 10.223287229414245);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Pirates & Pals Fireworks Voyage", 4.5, 143, 9.699012168592777);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 100, "Pirates & Pals Fireworks Voyage", 4.5, 143, 9.699012168592777);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Tri-Circle-D Ranch", 4.5, 77, 8.489208263276169);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 101, "Tri-Circle-D Ranch", 4.5, 77, 8.489208263276169);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Access Line Transportation", 5.0, 1427, 15.772119865573233);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 102, "Access Line Transportation", 5.0, 1431, 15.77819816879888);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Celebration Farmers Market", 4.0, 72, 7.429329985725073);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 103, "Moss Park", 4.5, 71, 8.330662569235837);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Moss Park", 4.5, 71, 8.330662569235837);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 104, "Fantasmic!", 4.5, 14814, 18.76802553142009);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Fantasmic!", 4.5, 14814, 18.76802553142009);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 105, "Mad Cow Theatre", 4.5, 55, 7.831632102724098);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Mad Cow Theatre", 4.5, 55, 7.831632102724098);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 106, "Celebration Farmers Market", 4.0, 72, 7.429329985725073);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Dinosaur", 4.0, 226, 9.416433756589603);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 107, "Dinosaur", 4.0, 226, 9.416433756589603);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Bill Frederick Park at Turkey Lake", 4.5, 51, 7.684065792440713);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 108, "Bill Frederick Park at Turkey Lake", 4.5, 51, 7.684065792440713);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "B-52 Memorial Park", 4.5, 33, 6.833312729450493);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 109, "B-52 Memorial Park", 4.5, 33, 6.833312729450493);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "AMC Theatre at Universal Orlando", 4.0, 196, 9.169024285425902);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 110, "AMC Theatre at Universal Orlando", 4.0, 196, 9.169024285425902);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Typhoon Lagoon Surf Pool", 4.5, 60, 8.001680626726396);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 111, "Typhoon Lagoon Surf Pool", 4.5, 60, 8.001680626726396);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "The Seas with Nemo & Friends", 4.0, 224, 9.40099207333665);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 112, "East End Market", 4.5, 38, 7.109026184775645);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Dumbo the Flying Elephant", 4.5, 143, 9.699012168592777);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 113, "The Seas with Nemo & Friends", 4.0, 224, 9.40099207333665);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Tomorrowland Transit Authority PeopleMover", 4.0, 199, 9.195412305638826);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 114, "Dumbo the Flying Elephant", 4.5, 143, 9.699012168592777);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Jungle Cruise", 4.0, 290, 9.849591991595823);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 115, "Tomorrowland Transit Authority PeopleMover", 4.0, 199, 9.195412305638826);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Monsters, Inc. Laugh Floor", 4.0, 143, 8.621344149860246);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 116, "Jungle Cruise", 4.0, 290, 9.849591991595823);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 4, "Turtle Talk with Crush", 4.5, 92, 8.837045223054998);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 117, "Monsters, Inc. Laugh Floor", 4.0, 143, 8.621344149860246);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 6, "Dezerland Park Orlando", 4.0, 62, 7.169566757993015);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 6, 118, "Dezerland Park Orlando", 4.0, 62, 7.169566757993015);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (2, 3, "Walt Disney: One Man's Dream", 4.5, 86, 8.705243030596053);
+INSERT INTO Specific_Activities (city_id, activity_id, specific_activity_id, activity_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 119, "Turtle Talk with Crush", 4.5, 92, 8.837045223054998);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (2, 3, 16.035278681420998);
+VALUES (2, 3, 7.330035650824945);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (2, 4, 202.7777307633196);
+VALUES (2, 4, 209.8928352513209);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (2, 6, 64.59252562851455);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Universal Studios Hollywood", 4.5, 37058, 20.559968896408137);
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (0, 'american');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (1, 'italian');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (2, 'korean');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (3, 'italian');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (4, 'mexican');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (5, 'japanese');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (6, 'indian');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (7, 'chinese');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (8, 'thai');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (9, 'vietnamese');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (10, 'filipino');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (11, 'turkish');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (12, 'french');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (13, 'germanisraeli');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (14, 'hawaiian');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (15, 'cuban');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (16, 'brazilian');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (17, 'Venezuelan');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (18, 'latin');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (19, 'mediterranean');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (20, 'caribbean');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (21, 'international');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (22, 'cafe');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (23, 'fast-food');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (24, 'seafood');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (25, 'steakhouse');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (26, 'bar');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (27, 'pizza');
+INSERT INTO Cuisines (cuisine_id, cuisine_name)
+VALUES (28, 'contemporary');
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 0, "18bin", 4.5, 10, 45.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 1, "Eggscellent", 5.0, 151, 755.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 8, 2, "Arawan Thai Bistro", 4.5, 621, 2794.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 21, 3, "VegeNation", 4.5, 524, 2358.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 5, 4, "SOHO Japanese Restaurant", 4.5, 191, 859.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 5, "Pizza Rock", 4.5, 1813, 8158.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 19, 6, "Marrakech Mediterranean Restaurant", 4.5, 375, 1687.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 7, "Ferraro's Ristorante", 4.5, 1067, 4801.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, NULL, 8,"Freed's Bakery", 4.5, 685, 3082.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 9, "Black Bear Diner", 4.5, 880, 3960.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 11, 10, "Istanbul Mediterranean (Halal)", 4.0, 78, 312.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 11, "Esther's Kitchen", 4.5, 283, 1273.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 12, "Crepe Expectations", 4.5, 694, 3123.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 13, "Juan's Flaming Fajitas & Cantina", 4.5, 949, 4270.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 8, 14, "Le Thai", 4.5, 1056, 4752.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "The Getty Center", 5.0, 14667, 20.83170645991749);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 15, "Carson Kitchen", 4.5, 1002, 4509.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Griffith Observatory", 4.5, 20527, 19.405464670418088);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 5, 16, "Jaburritos", 4.5, 211, 949.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Petersen Automotive Museum", 4.5, 2438, 15.241651655770632);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 17, "The Egg & I", 4.5, 1625, 7312.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Walt Disney Concert Hall", 4.5, 3068, 15.690849098746245);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 25, 18, "Sinatra", 4.5, 1634, 7353.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Griffith Park", 4.5, 3197, 15.771341863222593);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 19, "Kassi Beach House", 5.0, 9, 45.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "La Brea Tar Pits and Museum", 4.5, 3227, 15.78959534431757);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 20, "Primal Steakhouse", 5.0, 663, 3315.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Battleship USS Iowa Museum", 4.5, 2021, 14.875048410818867);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 21, "Edge Steakhouse", 5.0, 776, 3880.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood Sign", 4.0, 7701, 15.54618849356442);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 12, 22, "Le Cirque", 4.5, 2143, 9643.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "The Grove", 4.5, 2525, 15.310176221046058);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 12, 23, "Restaurant Guy Savoy", 4.5, 436, 1962.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Los Angeles County Museum of Art", 4.5, 2823, 15.528198951661135);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 24, "Joe's Seafood, Prime Steak & Stone Crab", 4.5, 5069, 22810.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Staples Center", 4.5, 3484, 15.939351658510315);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 25, "Vic & Anthony's Steakhouse", 4.5, 2237, 10066.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "The Broad", 4.5, 1775, 14.621392608260006);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 26, "Andiamo Italian Steakhouse", 4.5, 2326, 10467.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 2, "Venice Beach", 4.0, 10856, 16.14267933860672);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 5, 27, "Kabuto", 5.0, 172, 860.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "The Wizarding World of Harry Potter", 4.5, 1575, 14.387762511565287);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 28, "Sid's Café", 4.0, 773, 3092.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Natural History Museum of Los Angeles County", 4.5, 1347, 14.082154180753435);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 29, "Mr. Mamas", 4.5, 2256, 10152.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Venice Canals Walkway", 4.5, 2044, 14.897164011582037);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 30, "Italian American Club", 4.5, 359, 1615.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood Walk of Fame", 3.5, 17736, 14.87099488037251);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 31, "Omelet House", 4.5, 843, 3793.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Dodger Stadium", 4.5, 2097, 14.947192937094046);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 32, "Casa Di Amore", 4.5, 1685, 7582.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Madame Tussauds Hollywood", 4.5, 3300, 15.833312729450492);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, NULL, 33,"Chin Chin", 4.5, 5318, 23931.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Runyon Canyon Park", 4.5, 1233, 13.909333844680791);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, NULL, 34,"EDO Gastro Tapas & Wine", 5.0, 98, 490.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Union Station", 4.5, 1838, 14.689554781725414);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 1, 35, "Fresco Italiano", 4.5, 914, 4113.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Pantages Theatre", 4.5, 1057, 13.608337442883418);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 5, 36, "Benihana", 4.5, 1181, 5314.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 7, "Citadel Outlets", 4.0, 1563, 12.775835912076747);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 8, 37, "Weera Thai Restaurant", 4.5, 626, 2817.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 7, "Universal CityWalk Hollywood", 4.0, 1841, 13.060215154016058);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, NULL, 38,"The Halal Guys - Spring Mountain", 3.5, 43, 150.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "The Nethercutt Collection", 5.0, 847, 14.639417051653535);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 39, "Steak 'n Shake", 4.5, 1196, 5382.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Olvera Street", 4.0, 1356, 12.529038758124177);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 40, "Jamm's Restaurant", 4.5, 628, 2826.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Little Tokyo", 4.0, 853, 11.723796124670091);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, NULL, 41,"Fat Tuesday", 4.5, 356, 1602.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Bradbury Building", 4.5, 632, 12.603226852270732);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 5, 42, "Monta Noodle House", 4.5, 320, 1440.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Hollywood Bowl Museum", 4.5, 1397, 14.153383827513817);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 4, 43, "Tacos El Gordo", 4.5, 413, 1858.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "GRAMMY Museum", 4.5, 886, 13.263451748491727);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (0, 0, 44, "Blueberry Hill", 4.5, 587, 2641.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "The Hollywood Museum", 4.0, 779, 11.566149830690257);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 18, 45, "Socarrat Paella Bar - Chelsea", 4.0, 225, 900.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Dolby Theatre", 4.0, 1072, 12.120779141427004);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 46, "Zeppola Bakery", 5.0, 212, 1060.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "University of California, Los Angeles (UCLA)", 4.5, 685, 12.760607571715914);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 47, "Angelina Bakery Times Square", 5.0, 191, 955.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Abbot Kinney Boulevard", 4.5, 417, 11.790612247381906);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 48, "Piccola Cucina Estiatorio", 5.0, 397, 1985.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 2, "Venice Beach Boardwalk", 4.0, 2988, 13.901522372573442);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 49, "Club A Steakhouse", 4.5, 4409, 19840.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "The Greek Theatre", 4.5, 494, 12.12177127015641);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 50, "Olio e Più", 4.5, 2942, 13239.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood Forever Cemetery", 4.5, 413, 11.771775232453805);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 12, 51, "Boucherie West Village", 4.5, 1436, 6462.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Skirball Cultural Center", 4.5, 387, 11.6446993425851);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 12, 52, "Boucherie Union Square", 4.5, 1311, 5899.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Autry Museum of the American West", 4.5, 625, 12.581460078048337);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 53, "Bleecker Street Pizza", 4.5, 1712, 7704.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Pierce Brothers Westwood Village Memorial Park", 4.5, 455, 11.961051284957005);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 22, 54, "Angelina Bakery NYC", 5.0, 496, 2480.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Bhagavad-gita Diorama-Museum", 5.0, 200, 11.505149978319904);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 55, "Miss Mamie's Spoonbread Too", 4.0, 102, 408.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood Hills", 4.0, 663, 11.286054113619091);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 12, 56, "La Grande Boucherie", 4.5, 1073, 4828.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Cathedral of Our Lady of the Angels (NOTE: Fix the three typos in the About section)", 4.5, 549, 12.328075550025412);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 57, "Piccola Cucina Osteria", 4.5, 2705, 12172.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Japanese American National Museum", 4.5, 373, 11.572689743139094);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 58, "K Rico Steakhouse", 4.5, 3481, 15664.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Los Angeles Central Library", 4.5, 428, 11.841496960559272);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 19, 59, "Loi Estiatorio", 4.5, 636, 2862.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Lake Hollywood Park", 4.5, 409, 11.752754886033038);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 8, 60, "Bua Thai Ramen & Robata Grill", 4.5, 422, 1899.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Angels Flight Railway", 4.0, 421, 10.497128383342671);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 61, "MERMAID OYSTER BAR TIMES SQUARE", 5.0, 8, 40.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "University of Southern California", 4.5, 336, 11.368526748254297);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 2, 62, "Jungsik", 4.5, 288, 1296.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood", 4.0, 1419, 12.607929581829895);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 63, "Scalini Fedeli", 4.5, 446, 2007.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 9, "Los Angeles Zoo & Botanical Gardens", 4.0, 1003, 12.005203732081672);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 64, "Royal 35 Steakhouse", 4.5, 587, 2641.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "City Hall", 4.5, 353, 11.464986174245201);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 65, "Gallaghers Steakhouse", 4.5, 5636, 25362.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Sunset Boulevard", 4.0, 637, 11.2165577293414);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 66, "The Modern", 4.5, 2129, 9580.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood Bowl Overlook", 4.5, 379, 11.603876444856326);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 67, "Bemelmans Bar", 4.5, 501, 2254.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "San Antonio Winery - Los Angeles", 4.5, 183, 10.181029903786932);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 4, 68, "Los Tacos No. 1", 4.5, 696, 3132.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Holocaust Museum LA", 4.5, 221, 10.549765231582995);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 69, "Bagels & Schmear", 4.5, 264, 1188.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Will Rogers State Historic Park", 4.5, 158, 9.893956891294902);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 70, "Patsy's Italian Restaurant", 4.5, 5133, 23098.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Korean Bell of Friendship", 4.5, 196, 10.31515232110414);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 71, "Saar Indian Bistro", 4.5, 96, 432.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Stahl House", 5.0, 81, 9.542425094393248);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 12, 72, "Petite Boucherie", 4.5, 633, 2848.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Watts Towers", 4.0, 262, 9.673205165278981);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 73, "The Consulate", 4.5, 246, 1107.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Topanga State Park", 4.5, 164, 9.966797316214642);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 27, 74, "SottoCasa Pizzeria", 5.0, 430, 2150.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood Bowl", 4.5, 124, 9.420397583230057);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 5, 75, "Mei Jin Ramen", 4.5, 178, 801.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Echo Park", 4.0, 120, 8.316724984190499);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 6, 76, "Spice Symphony", 4.5, 2778, 12501.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Forest Lawn Memorial Park - Hollywood Hills", 4.5, 98, 8.960517340616226);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 19, 77, "Greek From Greece", 4.5, 16, 72.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "The Museum of Contemporary Art", 4.0, 299, 9.902684753297718);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 5, 78, "Kuu Ramen", 4.5, 223, 1003.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "El Pueblo de Los Angeles", 4.0, 358, 10.215532106575496);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 79, "NY Pizza Suprema", 4.5, 1336, 6012.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 12, "Cabrillo Marine Aquarium", 4.5, 105, 9.09535184581472);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 80, "Johny's Luncheonette", 4.5, 434, 1953.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Wiltern Theatre", 4.0, 95, 7.91089442115539);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 19, 81, "Hummus Place", 4.5, 343, 1543.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Los Angeles Memorial Coliseum", 4.0, 217, 9.345838935394118);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 82, "Brooklyn Bagel & Coffee Company", 4.5, 490, 2205.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Museum of Death", 4.0, 360, 10.225210003069149);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 83, "John's Coffee Shop", 4.5, 266, 1197.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Hollywood Wax Museum", 3.5, 435, 9.23471239934123);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 84, "EatWith: Diana of New York City", 5.0, 114, 570.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 7, "Beverly Center", 4.0, 387, 10.350843860075646);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, NULL, 85,"EatWith: Gustavo of New York", 5.0, 14, 70.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Hollywood Farmers Market", 4.5, 181, 10.159553586911331);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 19, 86, "Dina of Dina's Kitchen", 5.0, 31, 155.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "LA Fashion District", 3.5, 287, 8.602586638568972);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 87, "EatWith: Ai of New York Cit", 5.0, 13, 65.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Hollyhock House", 4.5, 178, 10.12689001039002);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 8, 88, "EatWith: Thanapasit of New York City", 5.0, 4, 20.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Ripley's Believe It or Not!", 4.0, 360, 10.225210003069149);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 22, 89, "Frisson Espresso", 4.5, 182, 819.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Hammer Museum", 4.0, 186, 9.078051776871666);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 90, "Best Bagel and Coffee", 4.5, 1674, 7533.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Venice Skatepark", 4.5, 184, 10.191680203542914);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 22, 91, "Breads Bakery", 4.5, 340, 1530.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 9, "Wildlife Learning Center", 4.5, 82, 8.612162335726726);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 22, 92, "Little Collins", 4.5, 478, 2151.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Microsoft Theater", 4.5, 165, 9.978677748962577);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 0, 93, "Schmackary's", 4.5, 736, 3312.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Museum of Tolerance", 4.5, 168, 10.013891767766381);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 1, 94, "Veniero's Pasticceria & Caffe", 4.5, 572, 2574.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Travel Town", 4.5, 160, 9.91853992195166);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 12, 95, "Mille-Feuille Bakery & Cafe", 4.5, 320, 1440.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Los Angeles Convention Center", 4.0, 223, 9.393219452192643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, NULL, 96,"Wafels & Dinges", 4.5, 660, 2970.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Chinatown", 3.5, 594, 9.708252557434177);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 22, 97, "Stumptown Coffee Roasters", 4.5, 353, 1588.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Urban Light", 4.5, 61, 8.03398425754845);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (1, 22, 98, "Bibble & Sip", 4.5, 338, 1521.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Samuel Oschin Air & Space Center", 5.0, 60, 8.890756251918218);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, NULL, 99,"Istanbul Grill", 4.0, 21, 84.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Melrose Avenue", 4.0, 160, 8.816479930623698);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 16, 100, "Adega Gaucha", 5.0, 142, 710.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Lake Shrine Temple and Retreat", 5.0, 52, 8.580016718173995);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 1, 101, "NYPD Pizza", 4.5, 844, 3798.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Koreatown", 4.0, 121, 8.3311414812658);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 102, "The Gnarly Barley", 4.5, 212, 954.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Orpheum Theater", 4.5, 58, 7.935425971033217);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 103, "Border Grill Fresh-Mex", 4.5, 379, 1705.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Exposition Park", 4.5, 94, 8.879075341198643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 4, 104, "The Mexican Camel", 5.0, 89, 445.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Lake Balboa Park", 4.5, 95, 8.899756223799814);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, NULL, 105,"Kilwins Celebration", 4.5, 461, 2074.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Eames House", 4.5, 59, 7.968834052389649);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, NULL, 106,"Haagen Dazs Ice Cream", 4.5, 319, 1435.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "California Science Center", 4.5, 3979, 16.198982726158743);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 107, "Senor Frog's Orlando", 4.5, 3496, 15732.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Mission San Fernando", 4.5, 90, 8.794091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 108, "Mrs. Potato Restaurant", 4.5, 390, 1755.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Bronson Caves", 4.5, 76, 8.46366116526356);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 11, 109, "Bosphorous Turkish Cuisine - Dr Phillips", 4.5, 879, 3955.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Candy Cane Lane", 4.0, 49, 6.760784320114054);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 20, 110, "Strong Water Tavern", 4.5, 592, 2664.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "The Japanese Garden", 4.0, 130, 8.455773409227346);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 11, 111, "Bosphorous Turkish Cuisine", 5.0, 363, 1815.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Park La Brea", 4.0, 106, 8.10122346105908);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 14, 112, "Pineapple Lanai", 5.0, 397, 1985.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Ahmanson Theatre", 4.5, 108, 9.150406899691273);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 113, "Ginther's Swirls Ice Cream", 4.5, 256, 1152.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Point Fermin Park", 4.5, 47, 7.524440360710728);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 114, "Kings Dining & Entertainment", 4.5, 796, 3582.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Geffen Playhouse", 5.0, 48, 8.406206186877936);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 115, "Hot Krust Panini Kitchen", 4.5, 1094, 4923.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Angeles Crest Highway", 4.5, 37, 7.0569077583014765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 1, 116, "La Luce", 4.5, 2064, 9288.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Avila Adobe", 4.0, 109, 8.149705991762493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 117, "Victoria & Albert's", 5.0, 1604, 8020.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 2, "Will Rogers State Beach", 4.5, 67, 8.217336612153717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 118, "Chatham's Place", 5.0, 816, 4080.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Heritage Square Museum", 4.5, 43, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 119, "Bull & Bear Steakhouse at Waldorf Astoria Orlando", 4.5, 1620, 7290.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 2, "Playa Del Rey Beach", 4.5, 58, 7.935425971033217);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 120, "Spencer's For Steak & Chops", 4.5, 815, 3667.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Flower Market", 4.5, 32, 6.773174902439576);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 121, "Eddie V's Prime Seafood", 4.5, 1214, 5463.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Grand Park", 4.5, 97, 8.940472804198102);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 122, "Ocean Prime", 4.5, 612, 2754.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Jurassic Park The Ride", 4.5, 44, 7.395537044187843);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 1, 123, "Vito's Chop House", 4.5, 1794, 8073.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 1, "Hollywood Reservoir", 4.5, 33, 6.833312729450493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 124, "Kres Chophouse", 4.5, 530, 2385.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Lucky Strike LA Live", 4.0, 195, 9.160138445450071);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 125, "Fleming's Prime Steakhouse & Wine Bar", 4.5, 525, 2362.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Capitol Records Building", 4.0, 71, 7.4050333948763);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 18, 126, "Q'Kenan Restaurant", 4.5, 830, 3735.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "Flight Path Learning Center & Museum", 4.5, 55, 7.831632102724098);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 127, "The Melting Pot", 5.0, 4594, 22970.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 6, "Mildred Mathias Botanical Gardens", 4.5, 29, 6.580790990545302);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 5, 128, "Zeta Asia", 4.5, 417, 1876.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Mosaic Tile House", 4.5, 31, 6.711127622254227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 16, 129, "Ana's Brazilian Kitchen", 4.5, 212, 954.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Point Fermin Lighthouse", 4.5, 54, 7.795771919203358);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 130, "NYPD Pizza Lake Cay", 4.5, 1002, 4509.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 1, "Temescal Gateway Park", 4.5, 47, 7.524440360710728);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 131, "Dixie Belle's Cafe", 4.5, 217, 976.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 4, "Studio Tour", 4.5, 48, 7.5655855681901425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 132, "Starbucks", 4.5, 381, 1714.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (3, 3, "FIDM Museum and Galleries", 4.5, 42, 7.304621806790552);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 1, 133, "Flippers Pizzeria", 4.5, 381, 1714.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (3, 1, 14.357753090161221);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 16, 134, "Pie-Fection", 4.5, 332, 1494.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (3, 2, 16.152762583186934);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 16, 135, "Gostoso Bakery", 4.5, 600, 2700.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (3, 3, 48.27903391991285);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 136, "Dunkin'", 4.0, 522, 2088.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (3, 4, 124.52077419963403);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 137, "Starbucks Coffee", 4.0, 140, 560.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (3, 6, 40.82453572045259);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 138, "Drunken Monkey Coffee Bar", 4.0, 96, 384.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "The Art Institute of Chicago", 5.0, 24421, 21.93881721810778);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 139, "Starbucks and Ben and Jerry's Ice Cream", 4.0, 154, 616.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 6, "Millennium Park", 4.5, 25028, 19.792917658374677);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 140, "Kusafiri Coffee Shop & Bakery", 4.0, 85, 340.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Cloud Gate", 4.5, 18217, 19.172145862473403);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 0, 141, "Joffrey's", 4.0, 76, 304.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Wrigley Field", 4.5, 9912, 17.982725820156027);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (2, 22, 142, "Lineage Coffee Roasting", 4.5, 36, 162.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Museum of Science and Industry", 4.5, 11129, 18.20905264085666);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 143, "Diddy Riese Cookies", 4.5, 1003, 4513.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The Magnificent Mile", 4.5, 15772, 18.890490457805335);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 144, "Langer's", 4.5, 839, 3775.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Skydeck Chicago - Willis Tower", 4.5, 17729, 19.11907908006966);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 1, 145, "Maccheroni Republic", 4.5, 365, 1642.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Field Museum", 4.5, 8857, 17.76278990105009);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 146, "Toast Bakery Cafe", 4.5, 405, 1822.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "360 Chicago Observation Deck", 4.5, 11009, 18.187865422754697);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 16, 147, "Pampas Grill", 4.5, 326, 1467.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 9, "Lincoln Park Zoo", 4.5, 5939, 16.981709963746596);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 148, "Lemonade", 4.5, 423, 1903.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Riverwalk", 4.5, 3061, 15.686384983188002);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 149, "Carney's Restaurant", 4.5, 515, 2317.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Cultural Center", 4.5, 3050, 15.679349277060535);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 150, "Nickel Diner", 4.5, 296, 1332.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Richard H. Driehaus Museum", 4.5, 1457, 14.235567982964954);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 151, "Truxton's American Bistro", 4.5, 269, 1210.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 12, "Shedd Aquarium", 4.0, 9810, 15.966676029519792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 4, 152, "Tocaya - Venice", 4.5, 302, 1359.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 6, "Navy Pier", 4.0, 15093, 16.71510228818164);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 153, "Café Gratitude Venice", 4.5, 487, 2191.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago River", 4.5, 2019, 14.873113435246376);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 1, 154, "Angelini Osteria", 4.5, 518, 2331.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 1, "Lakefront Trail", 4.5, 2443, 15.245655601380465);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 155, "Gjusta", 4.5, 326, 1467.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Skyline", 5.0, 738, 14.340281809115208);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 156, "Craft Los Angeles", 4.5, 514, 2313.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Buckingham Fountain", 4.5, 3412, 15.898540601229682);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 157, "Joan's on Third", 4.5, 522, 2349.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Garfield Park Conservatory", 4.5, 848, 13.177781335155212);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 5, 158, "n/naka", 5.0, 175, 875.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The Loop", 4.5, 1258, 13.948562884991622);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 24, 159, "Providence", 4.5, 797, 3586.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Holy Name Cathedral", 4.5, 1112, 13.707471542607172);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 160, "Magic Castle", 4.5, 403, 1813.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The Chicago Theatre", 4.5, 802, 13.068784657278735);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 161, "Musso & Frank Grill", 4.5, 1278, 5751.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 6, "Maggie Daley Park", 4.5, 1340, 14.071971592641633);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 162, "Water Grill", 4.5, 890, 4005.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "United Center", 4.5, 1495, 14.285885366972016);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 163, "Getty Center Restaurant", 4.5, 665, 2992.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 6, "Lincoln Park", 4.5, 866, 13.218830514078059);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 164, "Redbird", 4.5, 269, 1210.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Oriental Institute Museum", 4.5, 559, 12.363353135488904);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 1, 165, "Bestia", 4.5, 633, 2848.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Lookingglass Theatre Company", 5.0, 469, 13.355864213575416);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 1, 166, "Sparrow", 4.0, 18, 72.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Frank Lloyd Wright's Robie House", 4.5, 848, 13.177781335155212);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 1, 167, "Raffaello Ristorante", 4.5, 280, 1260.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Chicago History Museum", 4.5, 1180, 13.823469032877563);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 168, "The Griddle Cafe", 4.5, 1591, 7159.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Lincoln Park Conservatory", 4.5, 784, 13.024422282079971);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 4, 169, "El Compadre", 4.5, 149, 670.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "University of Chicago", 4.5, 476, 12.049231287242218);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 5, 170, "Sushi Gen", 4.5, 483, 2173.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Medieval Torture Museum", 5.0, 218, 11.692282468023024);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 5, 171, "Samurai Hibachi Grill", 5.0, 2, 10.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Shakespeare Theater on Navy Pier", 5.0, 631, 14.000146796220669);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 5, 172, "Shin", 4.5, 63, 283.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Crown Fountain", 4.5, 2132, 14.979542401595404);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 5, 173, "Sushi A Go Go", 4.5, 749, 3370.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "American Writers Museum", 5.0, 405, 13.037275116073342);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 174, "The Original Pantry", 4.0, 985, 3940.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Lyric Opera of Chicago", 5.0, 464, 13.332589902774403);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 175, "Johnny Rockets", 4.0, 1033, 4132.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The Rookery Building", 4.5, 402, 11.719017238880115);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 176, "Roscoe's House of Chicken & Waffles", 4.0, 840, 3360.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 6, "Grant Park", 4.5, 926, 13.349749440068704);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 177, "Apple Pan", 4.0, 368, 1472.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Michigan Avenue Bridge", 4.5, 978, 13.456524846544207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 5, 178, "Daikokuya", 4.5, 273, 1228.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Goodman Theatre", 4.5, 433, 11.864195533590143);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 0, 179, "Good Neighbor", 4.5, 160, 720.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Tribune Tower", 4.5, 631, 12.600132116598603);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (3, 8, 180, "Luv2Eat Thai Bistro", 4.5, 109, 490.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Goose Island Beer Co.", 4.5, 282, 11.026120987437125);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 181, "Cupitol Coffee & Eatery (Streeterville)", 4.5, 69, 310.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Graceland Cemetery", 4.5, 220, 10.540902063699928);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 182, "Do-Rite Donuts & Chicken - Streeterville", 4.5, 243, 1093.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "National Museum of Mexican Art", 4.5, 245, 10.751247379640397);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 183, "Doughnut Vault", 4.5, 481, 2164.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Wrigley Building", 4.5, 310, 11.211127622254226);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 184, "Joe's Seafood, Prime Steak & Stone Crab", 4.5, 4407, 19831.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Engine 18 Chicago Fire", 4.5, 56, 7.866846121527902);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 185, "Molly's Cupcakes", 4.5, 330, 1485.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Union Station", 4.0, 1128, 12.209236398589294);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 1, 186, "Monteverde", 4.5, 370, 1665.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Adler Planetarium", 4.0, 2162, 13.339422758469166);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 187, "Wildberry Pancakes and Cafe", 4.5, 374, 1683.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "James M. Nederlander Theatre", 4.5, 456, 11.965341791989957);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 21, 188, "Avec", 4.5, 821, 3694.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Guaranteed Rate Field", 4.0, 1095, 12.157656476704547);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 1, 189, "Volare", 4.5, 2352, 10584.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Harold Washington Library Center", 4.5, 265, 10.904606432715633);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 190, "Batter & Berries", 4.5, 391, 1759.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Holy Trinity Orthodox Cathedral", 5.0, 70, 9.225490200071285);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 191, "Smoque BBQ", 4.5, 1596, 7182.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Chicago Children's Museum", 4.5, 559, 12.363353135488904);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 1, 192, "Spacca Napoli", 4.5, 307, 1381.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Soldier Field", 4.0, 926, 11.866443946727737);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 193, "Lula Cafe", 4.5, 324, 1458.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Macy's on State Street", 4.0, 1312, 12.471735340158563);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 12, 194, "Pierrot Gourmet", 4.5, 337, 1516.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "CIBC Theatre", 4.0, 715, 11.41722416720432);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 1, 195, "Sapori Trattoria", 4.5, 514, 2313.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 7, "Water Tower Place", 4.5, 794, 13.049192260921933);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 196, "Longman & Eagle", 4.5, 382, 1719.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "The Peggy Notebaert Nature Museum", 4.5, 207, 10.421866554556129);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 197, "The Capital Grille", 4.5, 1121, 5044.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Picasso Statue", 4.5, 699, 12.800147290855564);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 198, "Eddie V's Prime Seafood", 4.5, 959, 4315.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Glessner House Museum", 4.5, 99, 8.980358375688974);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 199, "Bavette's Bar & Boeuf", 4.5, 1564, 7038.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 2, "Oak Street Beach", 4.5, 358, 11.492473619897433);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 200, "Boka Restaurant", 4.5, 698, 3141.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Money Museum at the Federal Reserve Bank", 4.5, 512, 12.191714824391237);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 5, 201, "Roka Akor - Chicago", 4.5, 630, 2835.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Fourth Presbyterian Church", 4.5, 230, 10.627775262079167);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 202, "Steak 48", 4.5, 440, 1980.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "McCormick Place", 4.0, 494, 10.774907795694586);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 203, "RL", 4.5, 1150, 5175.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Cadillac Palace Theatre", 4.5, 327, 11.315464886971286);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 204, "Tortoise Supper Club", 4.5, 599, 2695.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Museum of Contemporary Art", 4.0, 894, 11.805350075183668);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 205, "Shaw's Crab House", 4.5, 3307, 14881.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "John Hancock Center", 4.5, 63, 8.097032472541116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 206, "Wishbone Restaurant", 4.0, 247, 988.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 2, "North Avenue Beach", 4.5, 260, 10.86738006586868);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 207, "The Chicago Diner, Logan Square", 4.5, 313, 1408.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Museum Of Illusions Chicago", 4.5, 68, 8.246290107178062);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 26, 208, "JoJo's Shake Bar - River North", 3.5, 27, 94.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Boystown", 4.0, 97, 7.947086937064979);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 19, 209, "The Purple Pig", 4.5, 6122, 27549.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Wicker Park", 4.5, 123, 9.404573001477289);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 210, "Nookies Wells", 4.5, 429, 1930.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Newberry Library", 4.5, 56, 7.866846121527902);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 211, "Cupitol Coffee & Eatery (West Loop)", 5.0, 4, 20.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "DuSable Museum of African American History", 4.5, 100, 9.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 1, 212, "Bongiorno's Italian Deli and Pizzeria", 4.5, 354, 1593.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Alfred Caldwell Lily Pool", 4.5, 67, 8.217336612153717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 4, 213, "Big Star", 4.5, 433, 1948.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Devon Avenue", 4.0, 72, 7.429329985725073);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 214, "Corner Bakery Cafe", 4.0, 491, 1964.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Joffrey Ballet of Chicago", 4.5, 102, 9.038700772928626);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 215, "Superdawg Drive-In", 4.5, 389, 1750.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 2, "Ohio Street Beach", 4.0, 130, 8.455773409227346);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 216, "Valois Restaurant", 4.5, 168, 756.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Board of Trade Building", 4.5, 121, 9.372534166424025);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 26, 217, "Billy Goat Tavern", 4.0, 1522, 6088.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Andersonville", 4.5, 122, 9.388619238036366);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 218, "Murphy's Bleachers", 4.5, 147, 661.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Rockefeller Memorial Chapel", 4.5, 123, 9.404573001477289);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 219, "Stella's Diner", 4.5, 130, 585.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 7, "Merchandise Mart", 4.0, 148, 8.681046861579828);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 18, 220, "Irazu", 4.5, 163, 733.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "International Museum of Surgical Science", 4.0, 208, 9.272253339851046);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 22, 221, "Intelligentsia Coffee", 4.5, 408, 1836.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Pilsen", 4.5, 60, 8.001680626726396);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 222, "Goddess and the Baker, Wabash", 4.5, 454, 2043.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The Escape Game Chicago", 5.0, 2821, 17.25201543077683);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 22, 223, "Elaine's Coffee Call", 4.5, 123, 553.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chagall's Four Seasons", 4.5, 84, 8.659256787278466);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 224, "Stan's Donuts and Coffee", 4.5, 84, 378.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "The McCormick Bridgehouse & Chicago River Museum", 4.5, 155, 9.85649264176631);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 225, "Peet's Coffee & Tea", 4.5, 101, 454.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Transit Authority - CTA", 4.0, 437, 10.561925747881686);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 226, "Starbucks at the Palmer House Hilton", 4.0, 78, 312.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Marina City", 4.0, 162, 8.838060058170521);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 22, 227, "Starbucks", 4.0, 92, 368.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Calder’s Flamingo", 4.0, 266, 9.699526546524266);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 0, 228, "Dunkin'", 4.0, 90, 360.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 2, "Montrose Beach", 4.5, 103, 9.057767511173274);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (4, 22, 229, "Dollop Coffee Co Streeterville", 4.0, 70, 280.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The Mercury Theater", 4.5, 105, 9.09535184581472);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 230, "Elliston Place Soda Shop", 4.5, 38, 171.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Hyde Park", 4.5, 73, 8.384952870542051);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 9, 231, "Miss Saigon Restaurant", 4.5, 405, 1822.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Marquette Building", 4.5, 56, 7.866846121527902);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 232, "Jeni's Splendid Ice Creams", 4.5, 745, 3352.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Oak Street", 4.5, 77, 8.489208263276169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 233, "The Row Kitchen & Pub", 4.5, 1743, 7843.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Museum of Broadcast Communications", 4.0, 182, 9.040285551940299);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 234, "Burger Republic", 4.5, 339, 1525.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Willie Dixon's Blues Heaven Foundation", 4.5, 72, 8.357996233940707);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 235, "Five Daughters", 4.5, 373, 1678.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Fox in a Box Chicago", 5.0, 1445, 15.799339235462833);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 1, 236, "DeSano Pizza", 4.5, 715, 3217.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Klairmont Kollections", 5.0, 16, 6.020599913279623);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 237, "Jack Cawthon's Bar-B-Que", 4.5, 306, 1377.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Historic Water Tower", 4.0, 226, 9.416433756589603);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 238, "Burger Up", 4.5, 556, 2502.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Prairie Avenue Historic District", 4.5, 30, 6.647045646238481);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, NULL, 239,"Whiskey River Saloon - Nashville, TN", 5.0, 1, 5.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The 606", 4.5, 107, 9.132226999583441);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 240, "Jeff Ruby's Steakhouse, Nashville", 4.5, 598, 2691.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Lurie Garden", 4.5, 122, 9.388619238036366);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 1, 241, "Luogo", 5.0, 70, 350.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Mindworks: The Science Of Thinking", 5.0, 13, 5.569716761534184);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 242, "Darfons Restaurant & Lounge", 4.5, 1435, 6457.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 6, "Milton Lee Olive Park", 4.5, 44, 7.395537044187843);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 243, "Lockeland Table", 4.5, 376, 1692.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Old St. Patrick's Church", 4.5, 76, 8.46366116526356);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 244, "Hattie B's Hot Chicken", 4.5, 926, 4167.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "The Old Town of Chicago", 4.5, 37, 7.0569077583014765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 245, "Mitchell Delicatessen", 4.5, 356, 1602.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Bloomingdale's", 4.0, 88, 7.777930688600675);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 246, "Bourbon Steak by Michael Mina, a Nashville Steakhouse", 4.5, 1108, 4986.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Chinatown", 3.5, 623, 9.780708163307093);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 247, "The Chef and I", 4.5, 383, 1723.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Centennial Wheel", 4.0, 173, 8.952184412515182);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 248, "Etch", 4.5, 2247, 10111.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Jane Addams Hull-House Museum l,ll", 4.5, 68, 8.246290107178062);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 249, "Kayne Prime", 4.5, 1161, 5224.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Pedway", 4.5, 61, 8.03398425754845);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 250, "Bob's Steak & Chop House", 4.5, 593, 2668.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Loyola University Museum of Art (LUMA)", 4.5, 63, 8.097032472541116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 251, "Rolf and Daughters", 4.5, 580, 2610.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Color Factory Chicago", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 252, "5th and Taylor", 4.5, 504, 2268.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Chicago Temple", 4.5, 48, 7.5655855681901425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 253, "The Standard", 4.5, 337, 1516.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "St. John Cantius Church", 4.5, 38, 7.109026184775645);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 254, "Old Hickory Steakhouse", 4.5, 846, 3807.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Tilt", 4.0, 164, 8.859375392190792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 255, "Robert's Western World", 4.5, 1156, 5202.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Harris Theater", 4.5, 63, 8.097032472541116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 256, "Monell's Dining & Catering", 4.5, 2668, 12006.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 3, "Ukrainian National Museum", 5.0, 24, 6.90105620855803);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 257, "Midtown Cafe", 4.5, 567, 2551.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (4, 4, "Carbide and Carbon Building", 4.5, 51, 7.684065792440713);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 258, "The Wild Cow Vegetarian Restaurant", 4.5, 495, 2227.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (4, 2, 9.057767511173274);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 1, 259, "Five Points Pizza", 4.5, 1041, 4684.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (4, 3, 43.01195726230376);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 260, "The Patterson House", 4.5, 510, 2295.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (4, 4, 187.9790819799667);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 261, "Bourbon Street Blues and Boogie Bar", 4.5, 285, 1282.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (4, 6, 7.395537044187843);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 262, "Sun Diner Nashville", 4.5, 556, 2502.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Grand Ole Opry", 4.5, 13662, 18.609814264494535);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 263, "Legends Corner", 4.5, 335, 1507.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Ryman Auditorium", 4.5, 13666, 18.610386373740006);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 264, "Nashville Biscuit House", 4.5, 329, 1480.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Ole Smoky Distillery & Yee-Haw Brewery", 5.0, 4715, 18.367408485366735);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 265, "Tootsie's Orchid Lounge", 4.0, 1001, 4004.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Belle Meade Historic Site & Winery", 4.5, 7530, 17.44557739290315);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 266, "The Nashville Palace", 4.5, 251, 1129.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Country Music Hall of Fame and Museum", 4.5, 15117, 18.807595258839438);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 267, "Benchmark Bar and Grill", 4.5, 180, 810.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "RCA Studio B", 4.5, 3716, 16.06534067394722);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 4, 268, "Baja Burrito", 4.5, 156, 702.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Andrew Jackson's Hermitage", 4.5, 5790, 16.932053536773463);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 26, 269, "Nashville Crossroads", 4.5, 97, 436.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Gaylord Opryland Resort Gardens", 4.5, 6109, 17.036865563094043);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 9, 270, "VN Pho & Deli", 4.5, 77, 346.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "The Johnny Cash Museum", 4.5, 7040, 17.314076966139503);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 271, "Frothy Monkey", 4.5, 495, 2227.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Downtown Nashville", 4.5, 10056, 18.010913691050558);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 272, "Cafe Roze", 4.5, 53, 238.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Parthenon", 4.5, 4859, 16.589461045783526);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 273, "Barista Parlor", 4.0, 189, 756.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Lane Motor Museum", 4.5, 950, 13.399756223799814);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 22, 274, "Three Brothers Coffee", 4.5, 54, 243.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Belmont Mansion", 4.5, 1050, 13.59535184581472);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 275, "Mimi's Ice Cream And Coffee Shoppe", 4.5, 51, 229.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nelson's Green Brier Distillery", 5.0, 1679, 16.125253480690244);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 22, 276, "Caliber Coffee Co", 5.0, 28, 140.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Musicians Hall of Fame and Museum", 4.5, 1182, 13.826778644453563);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 277, "Bongo Java", 4.0, 98, 392.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Cheekwood", 4.5, 1427, 14.19490787901591);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 0, 278, "dose. [Coffee & Tea]", 4.5, 64, 288.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Tennessee State Museum", 4.5, 972, 13.444498192168234);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (5, 22, 279, "Ugly Mugs Coffee and Tea", 4.5, 58, 261.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Centennial Park", 4.5, 2169, 15.01316798406387);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 280, "Tommy Bahama Marlin Bar & Store", 4.5, 43, 193.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Radnor Lake State Park", 4.5, 832, 13.140554968308257);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 281, "Ambrogio15", 5.0, 302, 1510.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Bicentennial Capitol Mall State Park", 4.5, 962, 13.424287824170158);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 282, "Parma Cucina Italiana", 4.5, 1179, 5305.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Bridgestone Arena", 4.5, 2040, 14.893335753416542);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 283, "The Baked Bear", 4.5, 616, 2772.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Tennessee Legend Distillery", 5.0, 214, 11.652068866745953);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, NULL, 284,"The Mission - East Village", 4.5, 428, 1926.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "John Seigenthaler Pedestrian Bridge", 4.5, 1070, 13.632226999583441);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 5, 285, "Harney Sushi", 4.5, 437, 1966.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Schermerhorn Symphony Center", 5.0, 650, 14.064566783214277);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 286, "Pappalecco", 4.5, 417, 1876.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Athena Statue", 4.5, 660, 12.687947709938408);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 287, "The Cottage La Jolla", 4.5, 1591, 7159.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Edwin and Percy Warner Parks", 4.5, 368, 11.54631518403083);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 288, "Camp Cucina", 4.5, 936, 4212.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Frist Art Museum", 4.5, 1010, 13.51944618202189);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 289, "Half Door", 4.5, 222, 999.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 9, "Nashville Zoo", 4.0, 1607, 12.824063507053376);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 19, 290, "Bandar Restaurant", 4.0, 318, 1272.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "National Museum of African American Music", 5.0, 134, 10.635523991824037);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 291, "Dockside 1953", 4.5, 577, 2596.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "The District", 4.5, 630, 12.597032472541118);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 292, "Oceana Coastal Kitchen", 4.5, 875, 3937.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Vanderbilt University", 4.5, 392, 11.669787301592056);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 293, "Kono's Cafe", 4.5, 1281, 5764.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Madame Tussauds Nashville", 4.5, 652, 12.664114180793641);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 4, 294, "The Taco Stand", 4.5, 1153, 5188.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 7, "Opry Mills", 4.0, 1458, 12.655030095927822);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 295, "Eddie V's Prime Seafood", 4.5, 1468, 6606.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Stompin' Grounds", 5.0, 107, 10.146918888426047);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 296, "A.R. Valentien at The Lodge at Torrey Pines", 4.5, 659, 2965.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Cooter’s Museum and Store Nashville", 4.0, 1067, 12.112657677697879);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 297, "Cowboy Star", 4.5, 499, 2245.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Glen Campbell Museum", 5.0, 90, 9.771212547196624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 298, "Island Prime", 4.5, 1065, 4792.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nissan Stadium", 4.0, 677, 11.322354674740577);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 299, "NINE-TEN Restaurant & Bar", 4.5, 664, 2988.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Patsy Cline Museum", 4.5, 397, 11.694557280434019);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 300, "Top of the Market - San Diego", 4.5, 637, 2866.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Natchez Trace Parkway", 4.5, 199, 10.344838843843679);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 301, "Juniper & Ivy", 4.5, 895, 4027.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Music Row", 4.0, 505, 10.813165512474646);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 302, "Grant Grill", 4.5, 463, 2083.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Music City Center", 4.5, 438, 11.886633497268447);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 303, "Fleming's Prime Steakhouse & Wine Bar", 4.5, 440, 1980.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Adventure Science Center", 4.0, 663, 11.286054113619091);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 304, "The Marine Room", 4.5, 794, 3573.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Cumberland River Pedestrian Bridge", 4.5, 453, 11.952441909057743);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 4, 305, "Las Hadas Grill", 4.5, 285, 1282.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Marathon Village", 4.0, 736, 11.467511257349996);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 306, "Hodad's Downtown", 4.5, 713, 3208.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Farmers' Market", 4.0, 505, 10.813165512474646);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 28, 307, "Veranda Fireside Lounge & Restaurant", 4.5, 512, 2304.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Tennessee Brew Works", 4.5, 207, 10.421866554556129);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 308, "100's Seafood Grill Buffet", 4.5, 24, 108.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Flea Market", 4.5, 227, 10.602116357369052);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 309, "Smallgoods Cheese Shop & Cafe", 5.0, 104, 520.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Public Library", 4.5, 359, 11.497925018602436);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 5, 310, "Sushi Ota", 4.5, 869, 3910.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Corsair Distillery & Taproom", 4.5, 240, 10.710950587702227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 311, "Enoteca Adriano", 4.5, 317, 1426.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Historic Travellers Rest", 4.5, 265, 10.904606432715633);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 312, "Petrini's Italian Restaurant", 4.0, 222, 888.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Diskin Cider", 5.0, 99, 9.97817597298775);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 313, "Hodad's", 4.5, 2340, 10530.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Shelby Bottoms Greenway", 4.5, 58, 7.935425971033217);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 314, "Pizza Port Ocean Beach", 4.5, 306, 1377.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 7, "The Mall at Green Hills", 4.5, 249, 10.78289706193081);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 315, "The Waffle Spot", 4.5, 720, 3240.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Tennessee State Capitol", 4.0, 540, 10.929575039291874);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 316, "Perry's Cafe", 4.5, 362, 1629.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Tennessee Performing Arts Center", 4.5, 355, 11.476027588747922);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 4, 317, "Las Cuatro Milpas", 4.5, 204, 918.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Riverfront Park", 4.0, 304, 9.931494334435014);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 318, "Landini's Pizzeria", 4.5, 356, 1602.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Texas Troubadour Theatre", 4.5, 101, 9.019446182021891);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 319, "Cafe Vahik", 4.5, 95, 427.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "The Upper Room Chapel", 4.5, 94, 8.879075341198643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 0, 320, "Bolt Brewery", 4.5, 144, 648.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "What Lifts You Mural", 4.5, 79, 8.539321910806985);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (6, 1, 321, "Pizzeria Luigi", 4.5, 211, 949.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Yazoo Brewing Company", 4.5, 293, 11.100904291593492);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 5, 322, "El Tiesto Cafe Miami", 4.0, 19, 76.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Pennington Distilling Co.", 5.0, 40, 8.01029995663981);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, NULL, 323,"Pane & Vino", 5.0, 5075, 25375.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Printer's Alley", 3.5, 496, 9.43418586771569);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, NULL, 324,"Cafe Americano", 5.0, 704, 3520.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Big Machine Brewery & Distillery", 4.5, 51, 7.684065792440713);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 4, 325, "Oh Mexico Ocean Drive", 5.0, 776, 3880.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Rhinestone Wedding Chapel", 5.0, 60, 8.890756251918218);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 326, "Di Mauro's Restaurant & Bar", 5.0, 851, 4255.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 7, "CoolSprings Galleria", 4.0, 122, 8.345439322698992);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 327, "Grafa Pizza&Pasta", 5.0, 345, 1725.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "First Tennessee Park", 4.5, 175, 10.093671219088325);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 4, 328, "Oh Mexico Taco Shop Lincoln Road", 4.5, 997, 4486.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Percy Priest Lake", 4.0, 132, 8.482295724823398);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 329, "Full Bloom Vegan", 4.5, 353, 1588.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Turn Their Heads Nashville Line Dancing Lessons And More", 5.0, 21, 6.611096473669596);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 11, 330, "Safron Grill", 4.5, 207, 931.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "TailGate Brewery", 4.5, 103, 9.057767511173274);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 18, 331, "Bolivar", 4.5, 1320, 5940.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Convention and Visitor's Bureau", 4.5, 76, 8.46366116526356);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 332, "Limoncello", 5.0, 210, 1050.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "The Escape Game Nashville (Berry Hill)", 5.0, 4469, 18.251051773301796);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 333, "Starlite Cafe", 4.0, 239, 956.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "The Belcourt Theater", 4.5, 53, 7.75924141320355);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 5, 334, "Paperfish", 5.0, 193, 965.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "The Escape Game Nashville (Downtown)", 5.0, 3234, 17.54870007785191);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 19, 335, "Santorini by Georgios", 5.0, 2708, 13540.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Armory", 4.5, 97, 8.940472804198102);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 336, "On Ocean 7 Cafe", 4.5, 1670, 7515.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Fannie Mae Dees Park", 4.5, 31, 6.711127622254227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, NULL, 337,"CVI.CHE 105", 5.0, 6422, 32110.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Bearded Iris Brewing", 4.5, 68, 8.246290107178062);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 16, 338, "Ole Ole Steakhouse", 5.0, 515, 2575.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Craft Distillery", 5.0, 40, 8.01029995663981);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 339, "Caffe Milano Miami Beach", 4.0, 1695, 6780.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Vanderbilt Dyer Observatory", 5.0, 15, 5.880456295278406);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 18, 340, "Garden House Latin Restaurant", 5.0, 288, 1440.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Southern Grist Brewing Co - East Nashville", 4.5, 65, 8.158110104892849);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 4, 341, "Habitat", 5.0, 822, 4110.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Mt. Olivet Cemetery", 4.5, 46, 7.482410242567083);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 19, 342, "Strawberry Moon", 5.0, 213, 1065.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Marathon Music Works", 4.5, 57, 7.901436850526211);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 5, 343, "Katsuya South Beach", 4.5, 1570, 7065.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Sri Ganesha Temple", 4.5, 36, 7.003361253452792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 18, 344, "The Bazaar by Jose Andres", 4.5, 2703, 12163.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Dabble Studio", 5.0, 666, 14.117371145851505);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 7, 345, "Hakkasan Miami", 4.5, 2187, 9841.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Nightlife Theater", 4.0, 129, 8.442358841196995);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 346, "A Fish Called Avalon", 4.5, 1983, 8923.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Beaman Park Nature Center", 4.5, 23, 6.127775262079168);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 21, 347, "Pao by Paul Qui", 4.5, 396, 1782.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Cumberland Park", 4.5, 50, 7.6453650195120835);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 348, "Osteria Del Teatro", 4.5, 1299, 5845.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Carl Van Vechten Gallery", 4.5, 20, 5.854634980487915);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 349, "News cafe", 4.0, 3075, 12300.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Black Abbey Brewing Company", 4.5, 55, 7.831632102724098);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 4, 350, "Oh Mexico Espanola Way", 4.0, 2361, 9444.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Tennfold Breweing", 4.5, 27, 6.4411369387154425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 351, "Icon On Ocean", 4.5, 550, 2475.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "The Escape Game Nashville (Opry Mills)", 5.0, 687, 14.18478368529775);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 352, "Il Bolognese", 4.5, 1521, 6844.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Fort Negley Park and Visitors Center", 4.0, 108, 8.133695021947798);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 353, "The Place", 3.5, 1154, 4039.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Robert's Western World", 4.5, 603, 12.51142790463068);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 354, "Segafredo L'Originale", 4.0, 358, 1432.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Bike the Greenway", 5.0, 289, 12.30448921378274);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 5, 355, "INTI.MO", 5.0, 722, 3610.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Repertory Theatre", 5.0, 11, 5.206963425791125);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 18, 356, "Triton Supermarket", 4.0, 139, 556.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Wave Country", 4.0, 48, 6.724964949502349);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, NULL, 357,"GO-GO Fresh Food", 4.5, 323, 1453.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Brew Bus", 4.5, 33, 6.833312729450493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 358, "Blocks Pizza Deli", 4.5, 710, 3195.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Trapped Escape Game Nashville", 5.0, 523, 13.59250844433637);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 359, "La Sandwicherie Miami Beach", 4.5, 2382, 10719.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "East Nashville Antiques & Vintage", 4.5, 23, 6.127775262079168);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 4, 360, "Alma Mexicana", 4.5, 481, 2164.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Music Valley Antiques and Marketplace", 4.5, 12, 4.856315607214311);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 18, 361, "Charlotte Bakery", 4.5, 330, 1485.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Hops and Crafts", 4.5, 35, 6.94830619957624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 362, "Pizza Rustica", 4.0, 773, 3092.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville National Cemetery", 5.0, 15, 5.880456295278406);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 15, 363, "Puerto Sagua", 4.0, 2687, 10748.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Woodlawn Cemetery", 4.5, 35, 6.94830619957624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 364, "Crema Gourmet Espresso Bar", 4.5, 281, 1264.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Corsair Distillery Headquarters", 4.5, 31, 6.711127622254227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 22, 365, "Nespresso boutique in Miami Beach", 4.5, 447, 2011.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Craft Brewed", 5.0, 22, 6.712113404111031);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 366, "Shepherd Artisan Coffee", 4.5, 265, 1192.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Gas Lamp Too", 4.5, 13, 5.012745085380765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 367, "Aroma Espresso Bar", 4.0, 787, 3148.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Czann's Brewing Company", 4.5, 24, 6.210950587702227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 18, 368, "Buenos Aires Bakery and Cafe", 4.0, 330, 1320.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville War Memorial Auditorium", 4.0, 41, 6.451135426878942);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 0, 369, "Starbucks", 4.0, 379, 1516.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Speedway", 4.0, 21, 5.288877178935676);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 1, 370, "Gelato-go by Dolci di Sicilia", 4.5, 113, 508.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Gallery of Iconic Guitars", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 22, 371, "Panther Coffee", 4.5, 111, 499.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "New Heights Brewing Company", 4.5, 24, 6.210950587702227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 22, 372, "Cachita Bakery and Coffee", 4.5, 61, 274.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Station Inn", 4.5, 366, 11.535664884274846);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (7, 15, 373, "Cortadito Coffee House Washington", 5.0, 14, 70.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Nashville Convention Center", 4.0, 42, 6.492997161591601);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 374, "Oceana Grill", 4.5, 15642, 70389.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "12 South", 4.5, 9, 4.294091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 24, 375, "Olde Nola Cookery", 4.5, 2988, 13446.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "The Gulch", 4.0, 21, 5.288877178935676);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 376, "Ruby Slipper Cafe", 4.5, 261, 1174.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "United Record Pressing", 5.0, 10, 5.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 377, "District Donuts.Sliders.Brew", 4.5, 775, 3487.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "Escape Experience", 5.0, 696, 14.21304619805281);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, NULL, 378,"Meals From The Heart Cafe", 4.5, 816, 3672.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 4, "St Mary's of the Seven Sorrow Catholic Church", 4.5, 15, 5.292410665750565);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 379, "Mambo's", 4.5, 1443, 6493.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 3, "Tennessee Agricultural Museum", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 380, "Verti Marte", 4.5, 728, 3276.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 7, "Rivergate Mall", 4.0, 28, 5.788632125368876);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 21, 381, "Carmo", 4.5, 678, 3051.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (5, 6, "Two Rivers Dog Park", 5.0, 8, 4.515449934959717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 19, 382, "Shaya", 4.5, 1400, 6300.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (5, 3, 10.31515232110414);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 383, "St James Cheese Company", 4.5, 273, 1228.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (5, 4, 175.92484855576333);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 384, "Red Dog Diner", 4.5, 436, 1962.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (5, 6, 19.374109906409863);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 22, 385, "Who Dat Coffee Cafe", 4.5, 250, 1125.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (5, 7, 5.788632125368876);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 386, "Orleans Grapevine Wine Bar and Bistro", 4.5, 1959, 8815.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "USS Midway Museum", 5.0, 25425, 22.026304807973908);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 18, 387, "The Rum House", 4.5, 1475, 6637.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 9, "San Diego Zoo", 4.5, 28909, 20.07464881103164);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 388, "Cochon Butcher", 4.5, 3042, 13689.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Balboa Park", 4.5, 13039, 18.518599283972648);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, NULL, 389,"Alberto’s Cheese & Wine Bistro", 4.5, 349, 1570.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "La Jolla Cove", 4.5, 13687, 18.613387202651158);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 390, "Parkway Bakery & Tavern", 4.5, 1420, 6390.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Torrey Pines State Natural Reserve", 4.5, 3789, 16.10336072373747);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 391, "Toast", 4.5, 332, 1494.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Petco Park", 4.5, 4519, 16.447690535990407);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 392, "GW Fins", 4.5, 8410, 37845.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Cabrillo National Monument", 4.5, 4875, 16.5958857901555);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 393, "Criollo Restaurant", 4.5, 1332, 5994.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Mt. Soledad National Veterans Memorial", 4.5, 2476, 15.271877881566361);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 394, "Restaurant Rebirth", 4.5, 396, 1782.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Sunset Cliffs Natural Park", 4.5, 2115, 14.963896672699773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, NULL, 395,"Restaurant August", 4.5, 2267, 10201.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Coronado Bridge", 4.5, 5796, 16.934077695596113);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 1, 396, "Irene's", 4.5, 2343, 10543.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Fort Rosecrans National Cemetery", 5.0, 1469, 15.83510897895128);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 397, "Doris Metropolitan", 4.5, 792, 3564.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "La Jolla Shores Park", 4.5, 2717, 15.453403372880508);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 398, "Brigtsen's Restaurant", 4.5, 529, 2380.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Point Loma", 4.5, 1931, 14.786020232007274);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 399, "Clancy's Restaurant", 4.5, 533, 2398.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Maritime Museum of San Diego", 4.5, 1793, 14.641111303029822);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 12, 400, "Muriel's Jackson Square", 4.5, 5642, 25389.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Torrey Pines Gliderport", 4.5, 1456, 14.234226187396581);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 401, "Restaurant R'evolution", 4.5, 2044, 9198.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Old Point Loma Lighthouse", 4.5, 1442, 14.215343671725346);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 28, 402, "Atchafalaya", 4.5, 1209, 5440.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Old Town San Diego State Historic Park", 4.5, 5676, 16.89319074053446);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 24, 403, "Drago's Seafood Restaurant", 4.0, 5021, 20084.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Pacific Beach", 4.5, 1300, 14.012745085380764);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 18, 404, "Mais Arepas", 4.5, 248, 1116.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "SeaWorld", 4.0, 10246, 16.04221740616129);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 405, "Daisy Dukes French Quarter", 4.0, 3285, 13140.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Little Italy", 4.5, 2050, 14.902892374750891);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 406, "Commerce Restaurant", 4.5, 832, 3744.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Seaport Village", 4.0, 4725, 14.697607251381127);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 407, "Willie Mae's Scotch House", 4.5, 1908, 8586.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Windansea Beach", 4.5, 587, 12.458871455614265);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 408, "Daisy Dukes Express", 4.5, 1143, 5143.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Birch Aquarium at Scripps", 4.5, 1943, 14.798127602699022);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 409, "Jimmy J's Cafe", 4.5, 1783, 8023.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego Bay Walk", 4.5, 906, 13.307076889545659);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 4, 410, "Juan's Flying Burrito", 4.5, 541, 2434.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Old Town San Diego", 4.5, 1834, 14.685296991003007);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 411, "Copper Monkey", 4.5, 389, 1750.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Botanical Building and Lily Pond", 4.5, 1085, 13.659433821830467);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 412, "The Camellia Grill", 4.5, 1277, 5746.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Mormon Battalion Historic Site", 4.5, 1020, 13.538700772928626);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 22, 413, "Spitfire Coffee", 4.5, 301, 1354.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Children's Pool", 4.5, 1360, 14.100925087665976);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 414, "Bittersweet Confections", 4.5, 213, 958.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Mission Beach", 4.5, 2044, 14.897164011582037);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 415, "Cafe Envie", 4.5, 434, 1953.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Torrey Pines State Beach", 4.5, 339, 11.385898641913867);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 416, "Avenue Cafe", 4.5, 147, 661.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "San Diego Model Railroad Museum", 4.5, 544, 12.310195048641807);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 417, "French Truck Coffee", 4.5, 169, 760.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Shelter Islands", 4.5, 371, 11.562182593267705);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 22, 418, "Cafe Du Monde", 4.0, 39208, 156832.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Old Globe Theatre", 4.5, 507, 12.172535817000012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 419, "Envie Espresso Bar & Cafe", 4.5, 185, 832.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 1, "Cabrillo Tide Pools", 4.5, 400, 11.70926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 12, 420, "Cafe Du Monde Riverwalk Marketplace", 4.0, 1650, 6600.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "San Diego Air & Space Museum", 4.5, 864, 13.214311841155018);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (8, 0, 421, "PJ's Coffee", 4.5, 200, 900.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Mission Beach Boardwalk", 4.5, 789, 13.036846514442388);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 14, 422, "Esotico Miami", 4.5, 43, 193.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Black's Beach", 4.5, 357, 11.487006972504867);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 20, 423, "Grails Miami - Restaurant & Sports Bar", 5.0, 520, 2600.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "The Unconditional Surrender", 4.5, 900, 13.294091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 5, 424, "Paperfish", 5.0, 166, 830.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "La Jolla Caves", 4.5, 732, 12.890299864762762);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 1, 425, "Pummarola Midtown", 5.0, 215, 1075.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Consulate Of The Republic Of Slowjamastan - San Diego", 5.0, 58, 8.817139967814686);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 426, "R House Wynwood", 4.5, 522, 2349.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Mission San Diego de Alcala", 4.5, 391, 11.6647954082814);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 16, 427, "Steak Brasil Churrascaria", 4.5, 877, 3946.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego Convention Center", 4.5, 845, 13.170855190273615);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 18, 428, "El Pollo Inka Miami", 4.5, 821, 3694.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 7, "Fashion Valley", 4.5, 604, 12.514666223795093);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 1, 429, "Crust", 5.0, 1034, 5170.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Las Americas Premium Outlets", 4.5, 861, 13.207514181541445);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 18, 430, "Bandeja Paisa", 5.0, 105, 525.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "La Jolla Playhouse", 4.5, 201, 10.3643822583922);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 4, 431, "Monty's  Coconut Grove", 4.0, 1261, 5044.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Liberty Public Market", 4.5, 314, 11.236183416329464);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 19, 432, "ConSentido Miami", 4.5, 3, 13.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "La Jolla Open Aire Market", 4.5, 83, 8.635851415692333);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 15, 433, "Marabu Restaurant", 5.0, 998, 4990.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Spreckels Organ Pavilion", 4.5, 326, 11.309479200305725);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 18, 434, "Mofongo Restaurant Calle 8", 5.0, 440, 2200.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego California Temple - The Church of Jesus Christ of Latter-day Saints", 4.5, 313, 11.229949518959017);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 1, 435, "Ferraro's Kitchen Restaurant & Wine Bar", 5.0, 362, 1810.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Salk Institute", 4.5, 232, 10.644695932009046);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, NULL, 436,"Aromas del Peru", 4.5, 538, 2421.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Ocean Dog Beach", 4.5, 422, 11.813906029327532);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 437, "Fireman Derek's Bake Shop & Desserts", 4.5, 221, 994.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Spanish Village Art Center", 4.5, 208, 10.431285007332427);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, NULL, 438,"House of Food Porn", 5.0, 487, 2435.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Girard Avenue and Prospect Street", 4.5, 290, 11.0807909905453);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 439, "The Capital Grille", 4.5, 1344, 6048.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "University of California, San Diego", 4.5, 340, 11.391655126690146);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 440, "Truluck's Ocean's Finest Seafood & Crab - Miami", 4.5, 1159, 5215.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Murals of La Jolla", 4.5, 45, 7.439456311989046);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 5, 441, "Zuma Miami", 4.5, 3584, 16128.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Ellen Browning Scripps Park", 4.5, 212, 10.46851137417938);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 18, 442, "La Mar by Gaston Acurio", 4.5, 1398, 6291.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "A National Salute to Bob Hope & the Military", 4.5, 329, 11.327381540774883);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 443, "Edge Steak & Bar", 4.5, 408, 1836.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "University of San Diego USD", 4.5, 83, 8.635851415692333);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 21, 444, "PM Fish & Steakhouse", 4.0, 546, 2184.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Little Italy Mercato Farmers' Market", 4.5, 94, 8.879075341198643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 445, "Area 31", 4.0, 1233, 4932.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Embarcadero", 4.5, 209, 10.440658287499742);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 1, 446, "Il Gabbiano", 4.0, 1258, 5032.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Mission Trails Regional Park", 4.5, 179, 10.137838639409518);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 18, 447, "CVI.CHE 105", 4.5, 7480, 33660.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Map and Atlas Museum of La Jolla", 5.0, 48, 8.406206186877936);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 18, 448, "Pollos & Jarras", 4.5, 1678, 7551.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "ARTS DISTRICT Liberty Station", 4.5, 182, 10.170321245932836);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 15, 449, "El Mago de las Fritas", 4.5, 393, 1768.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Shell Beach Tide Pools", 4.5, 172, 10.059878011083969);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, NULL, 450,"Jardim de Portugal", 4.5, 341, 1534.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Waterfront Park", 4.5, 90, 8.794091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, NULL, 451,"Smoothie Spot Downtown", 4.0, 12, 48.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Timken Museum of Art", 4.5, 207, 10.421866554556129);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 1, 452, "Spris Artisan Pizza", 4.5, 89, 400.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Tourmaline Surfing Park", 4.5, 60, 8.001680626726396);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 15, 453, "El Rey De Las Fritas", 4.5, 250, 1125.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Museum of Contemporary Art San Diego", 4.0, 187, 9.087366426145996);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 16, 454, "Camila's Restaurant Miami", 4.0, 628, 2512.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "San Diego Museum of Art", 4.0, 314, 9.987718592292858);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 15, 455, "El Palacio De Los Jugos", 4.5, 410, 1845.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Beyond Babel", 5.0, 59, 8.854260058210722);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 15, 456, "David's Cafe Cafecito", 4.0, 380, 1520.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Green Flash Brewing Company", 4.5, 156, 9.869060692595077);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 15, 457, "Enriqueta's Sandwich Shop", 4.5, 148, 666.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "Ocean Beach", 4.0, 851, 11.71971824033835);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 458, "Krispy Kreme", 4.5, 144, 648.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "California Tower", 4.5, 62, 8.065762602742142);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 18, 459, "La Granja", 4.0, 237, 948.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Inez Grant Parker Memorial Rose Garden", 4.5, 52, 7.722015046356596);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 4, 460, "Mi Rinconcito Mexicano", 4.5, 162, 729.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Mingei International Museum", 4.5, 117, 9.306836377857728);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 22, 461, "Panther Coffee", 4.5, 391, 1759.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Spruce Street Footbridge", 4.5, 60, 8.001680626726396);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 22, 462, "Starbucks", 4.5, 214, 963.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "AleSmith Brewing Company", 4.5, 106, 9.113876393691465);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 463, "MIAM", 4.5, 120, 540.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 7, "San Diego Factory Outlet Center", 4.0, 119, 8.302187845570122);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 15, 464, "La Colada Gourmet", 4.5, 56, 252.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Hillcrest", 4.5, 144, 9.712631214428622);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 0, 465, "Angelina's Coffee and Juice", 4.5, 58, 261.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Africa and Beyond", 5.0, 28, 7.235790156711095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, NULL, 466,"Freddo", 4.0, 46, 184.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego Symphony", 4.5, 98, 8.960517340616226);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 22, 467, "Dunkin'", 4.0, 66, 264.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "San Diego Natural History Museum", 4.0, 454, 10.628223411428415);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 22, 468, "ALL DAY Coffee and Eggs", 4.5, 37, 166.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego Central Library", 4.5, 88, 8.75017202467576);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (9, 22, 469, "Vice City Bean", 5.0, 16, 80.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Speed Circuit & Family Fun Center", 5.0, 506, 13.520752584198995);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, NULL, 470,"Ambar Capitol Hill", 4.5, 1654, 7443.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Flying Leatherneck Aviation Museum", 4.5, 97, 8.940472804198102);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 471, "Old Ebbitt Grill", 4.5, 13076, 58842.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Desert Garden", 4.5, 37, 7.0569077583014765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 472, "Joe's Seafood Prime Steak & Stone Crab", 4.5, 2441, 10984.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Eppig Brewing", 5.0, 29, 7.31198998949478);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 473, "Unconventional Diner", 4.5, 288, 1296.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 2, "South Carlsbad State Beach", 4.5, 133, 9.557332384351886);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 474, "Logan Tavern", 4.5, 1218, 5481.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Japanese Friendship Garden", 4.0, 365, 10.249171457825899);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 18, 475, "Pisco y Nazca", 4.5, 176, 792.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Marine Corps Command Museum", 4.5, 54, 7.795771919203358);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 476, "Baked and Wired", 4.5, 1056, 4752.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "J.A. Cooley Museum", 5.0, 19, 6.393768004764144);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 477, "Ted's Bulletin 14th Street", 4.5, 820, 3690.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Geisel Library", 4.5, 46, 7.482410242567083);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 12, 478, "Bistro Cacao", 4.5, 381, 1714.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Escapology San Diego", 5.0, 569, 13.775561331975354);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 479, "GCDC Grilled Cheese Bar", 4.5, 490, 2205.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Red Spade Theater", 5.0, 37, 7.841008620334974);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 26, 480, "Whiskey Charlie", 4.5, 249, 1120.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Scripps Institute of Oceanography Coastal Reserve", 4.5, 47, 7.524440360710728);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 481, "Commissary", 4.5, 1475, 6637.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "The Promenade at Pacific Beach", 4.5, 52, 7.722015046356596);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 482, "Rose's Luxury", 4.5, 514, 2313.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "The New Children's Museum", 4.0, 198, 9.186660761046124);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 483, "Doyle", 4.5, 672, 3024.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 7, "Westfield UTC", 4.0, 91, 7.836165569284373);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 1, 484, "Tortino Restaurant", 4.5, 528, 2376.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Cuvier Park - The Wedding Bowl", 4.5, 43, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 1, 485, "Fiola", 4.5, 925, 4162.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Whaley House Museum", 4.0, 373, 10.28683532723475);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 26, 486, "Barmini", 5.0, 280, 1400.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Cowles Mountain", 4.5, 75, 8.437775685262649);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 487, "Lafayette Restaurant", 4.5, 361, 1624.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Mary, Star of the Sea Catholic Church", 4.5, 49, 7.6058823601283105);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 12, 488, "Marcel's by Robert Wiedmaier", 4.5, 702, 3159.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego Civic Theatre", 4.5, 116, 9.29006095152113);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 489, "Kinship Restaurant", 4.5, 223, 1003.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 1, "Miramar Reservoir", 4.5, 35, 6.94830619957624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 6, 490, "Rasika", 4.5, 2879, 12955.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego Comic-Con International", 4.5, 55, 7.831632102724098);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 25, 491, "The Capital Grille", 4.5, 2098, 9441.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Fiesta Island", 4.5, 64, 8.12780988292749);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 492, "The Dabney", 4.5, 304, 1368.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Kate Sessions Memorial Park", 4.5, 25, 6.290730039024169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, NULL, 493,"Keren Restaurant", 4.5, 306, 1377.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Children's Nature Retreat", 5.0, 36, 7.781512503836435);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, NULL, 494,"Bistro Aracosia", 4.5, 177, 796.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "El Prado", 4.5, 77, 8.489208263276169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 495, "The Capital Burger", 4.5, 239, 1075.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Diego Metropolitan Transit System", 4.5, 154, 9.843843243764084);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 1, 496, "&pizza - Hotel Hive", 4.5, 191, 859.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Our Lady of the Rosary Church", 4.5, 26, 6.367380065868681);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 4, 497, "El Rinconcito Cafe", 4.5, 243, 1093.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "Stuart Collection", 4.5, 25, 6.290730039024169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 498, "sweetgreen Capitol Hill", 4.5, 230, 1035.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 6, "Giant Dipper Roller Coaster", 4.0, 56, 6.992752108024802);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 1, 499, "&pizza - K Street", 4.5, 244, 1098.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Plunge San Diego", 4.5, 16, 5.418539921951661);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 19, 500, "Amsterdam Falafelshop", 4.5, 325, 1462.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 3, "The Firehouse Museum", 4.5, 31, 6.711127622254227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 501, "Lincoln's Waffle Shop", 4.0, 1015, 4060.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 1, "Razor Point and Beach Trail Loop", 4.5, 19, 5.75439120428773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 502, "Tune Inn", 4.0, 320, 1280.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Modern Times Beer", 4.5, 70, 8.302941180064156);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 503, "A Baked Joint", 4.5, 139, 625.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "San Pasqual Winery Seaport Village", 4.5, 41, 7.2575273552388095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 504, "Tryst Coffee House and Bar", 4.0, 247, 988.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Balboa Theatre", 4.5, 58, 7.935425971033217);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 22, 505, "La Colombe Coffee Roaster", 4.5, 98, 441.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (6, 4, "Cygnet Theatre Company", 4.5, 37, 7.0569077583014765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 22, 506, "Ebenezers Coffeehouse", 4.5, 109, 490.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (6, 1, 12.702697403863969);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 22, 507, "Compass Coffee", 4.5, 72, 324.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (6, 3, 28.582286427088665);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, NULL, 508,"Dolcezza Gelato", 4.5, 92, 414.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (6, 4, 164.37871817507784);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 509, "Soho Tea and Coffee", 4.5, 113, 508.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (6, 6, 20.63409019715711);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 0, 510, "Lot 38 Espresso Bar", 4.5, 58, 261.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (6, 7, 7.836165569284373);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (10, 22, 511, "Emissary", 4.5, 36, 162.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Lincoln Road", 4.5, 17907, 19.138602751251014);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 14, 512, "Poke Bar", 4.5, 207, 931.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Boardwalk", 4.5, 7389, 17.408635499514446);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 24, 513, "Karai Crab", 4.5, 374, 1683.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "South Pointe Park", 4.5, 2789, 15.504518314197224);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 5, 514, "Marukame Udon Waikiki", 4.5, 3948, 17766.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Art Deco Historic District", 4.5, 6710, 17.220251340760463);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 5, 515, "Momosan Waikiki", 4.5, 206, 927.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Ocean Drive", 4.5, 12443, 18.42716295505873);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 516, "Ruth's Chris Steak House", 4.5, 1763, 7933.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Holocaust Memorial Miami Beach", 4.5, 2579, 15.351531039620717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 9, 517, "The Pig and the Lady", 4.5, 983, 4423.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Lummus Park Beach", 4.5, 1885, 14.738901095438152);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 518, "Duke's Waikiki", 4.5, 15657, 70456.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Española Way", 4.5, 2730, 15.462731911683402);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, NULL, 519,"Chef Chai", 4.5, 252, 1134.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 3, "Jewish Museum of Florida - FIU", 4.5, 647, 12.649069263009151);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 8, 520, "Noi Thai Cuisine - Hawaii", 4.5, 690, 3105.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Collins Avenue", 4.5, 5319, 16.766234956442606);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 521, "Sweet E's Cafe", 4.5, 633, 2848.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Botanical Garden", 4.0, 905, 11.826594316820811);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 522, "STRIPSTEAK Waikiki", 4.5, 602, 2709.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Art Deco Welcome Center", 4.5, 453, 11.952441909057743);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, NULL, 523,"Tropical Tribe", 4.5, 255, 1147.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Hyde Beach", 4.5, 142, 9.685297549723753);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 524, "Steak Shack", 4.5, 1698, 7641.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "New World Symphony", 5.0, 261, 12.083202536691404);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 22, 525, "Kona Coffee Purveyors", 4.5, 451, 2029.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Romero Britto Fine Art Gallery", 4.5, 902, 13.298429418938737);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 14, 526, "Ono Seafood", 4.5, 834, 3753.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 3, "The Wolfsonian - Florida International University", 4.5, 717, 12.849836200505099);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 22, 527, "Kai Coffee Hawaii", 4.5, 696, 3132.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Lik Miami", 4.5, 214, 10.486861980071357);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 528, "Tommy Bahama Restaurant & Bar", 4.5, 1542, 6939.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Fisher Island", 4.5, 378, 11.598713099267513);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 529, "Azure", 4.5, 880, 3960.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 2, "12th Street Beach", 4.5, 379, 11.603876444856326);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 12, 530, "La Mer", 4.5, 698, 3141.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Flamingo Park", 4.0, 337, 10.110519603485354);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, NULL, 531,"Hy's Steak House - Waikiki", 4.5, 1225, 5512.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Art Basel", 4.5, 287, 11.060468535302967);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 14, 532, "Orchids", 4.5, 1664, 7488.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Marina", 4.5, 220, 10.540902063699928);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 24, 533, "Roy's Hawaii Kai", 4.5, 635, 2857.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Boucher Brothers", 5.0, 2819, 17.25047537935801);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 12, 534, "Michel's At the Colony Surf", 4.5, 746, 3357.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 2, "North Shore Open Space Park", 4.5, 177, 10.11587969862813);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 1, 535, "Arancino at The Kahala", 4.5, 421, 1894.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Haulover Inlet", 4.5, 101, 9.019446182021891);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 536, "House Without a Key", 4.5, 2366, 10647.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "8th Street Designer District", 4.0, 162, 8.838060058170521);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, NULL, 537,"Lucky Belly", 4.5, 516, 2322.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 3, "World Erotic Art Museum (WEAM)", 4.0, 463, 10.662323964071811);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 538, "Uncle Bo's Pupu Bar & Grill", 4.5, 1237, 5566.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Colony Theatre", 4.5, 42, 7.304621806790552);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 539, "Cafe Kaila", 4.5, 664, 2988.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Soundscape Park", 4.5, 143, 9.699012168592777);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 540, "goofy cafe & dine", 4.5, 1730, 7785.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Convention Center", 4.0, 283, 9.80714574209716);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 14, 541, "Highway Inn Kaka'ako", 4.5, 374, 1683.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Fillmore Miami Beach at the Jackie Gleason Theater", 4.0, 161, 8.827303504127398);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 14, 542, "Helena's Hawaiian Food", 4.5, 883, 3973.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 3, "The Bass", 4.0, 289, 9.843591371026191);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 543, "The Barefoot Bar", 4.5, 278, 1251.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami City Ballet", 4.5, 49, 7.6058823601283105);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 544, "Cuckoo Coconuts Waikiki", 4.0, 343, 1372.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Saint Francis de Sales Catholic Church", 4.5, 43, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 4, 545, "Oahu Mexican Grill (OMG)", 4.0, 276, 1104.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Intracoastal Park", 4.5, 78, 8.51442571210716);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 546, "Denny's", 4.0, 1258, 5032.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Collins Park", 4.0, 129, 8.442358841196995);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 547, "Harbor Pub & Pizza", 4.0, 595, 2380.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Dante Fascell Park", 4.5, 27, 6.4411369387154425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 5, 548, "Marukame Udon", 4.5, 146, 657.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Latin Chamber of Commerce", 4.5, 21, 5.949986826302636);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 5, 549, "Goma Tei Ramen", 4.0, 213, 852.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Graffiti Gardens Miami", 4.5, 11, 4.686267083212012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 5, 550, "Hawaii Sushi", 5.0, 53, 265.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "LGBT Visitor Center Miami Beach", 4.0, 37, 6.272806896267979);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 551, "Leonard's Bakery", 4.5, 7850, 35325.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Rooftop Hookah Exotix - Sky Yard", 5.0, 145, 10.806840011174872);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (11, 0, 552, "Liliha Bakery II", 4.5, 247, 1111.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 7, "Fifth & Alton", 4.0, 90, 7.816970037757299);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 553, "Rainbow Lodge", 4.5, 368, 1656.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Winter Music Conference", 5.0, 6, 3.8907562519182175);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, NULL, 554,"Mezza Grille", 4.5, 413, 1858.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Welcome Mural", 4.5, 13, 5.012745085380765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 19, 555, "Phoenicia Specialty Foods", 4.5, 1488, 6696.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Clock Thermometer", 4.5, 10, 4.5);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 4, 556, "Xochi", 4.5, 368, 1656.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Mango's Tropical Cafe", 4.0, 2086, 13.277257216362047);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 557, "Taste of Texas", 4.5, 3914, 17613.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Sobe Is Love", 4.0, 27, 5.725455056635949);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 12, 558, "Etoile Cuisine et Bar", 4.5, 343, 1543.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Art Deco Historic District", 5.0, 4, 3.0102999566398116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 16, 559, "Fogo de Chão Brazilian Steakhouse", 4.5, 1619, 7285.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Visit Miami Beach Visitors Center", 4.5, 8, 4.063904941463745);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 4, 560, "Caracol", 4.5, 647, 2911.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "1111", 4.0, 23, 5.446911344070371);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 561, "Steak 48", 4.5, 357, 1606.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "National Geographic Fine Art Galleries", 4.5, 9, 4.294091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 4, 562, "Hugo's", 4.5, 911, 4099.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Palms AVEDA Spa", 5.0, 116, 10.32228994613459);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 1, 563, "La Griglia", 4.5, 528, 2376.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Dion Atelier", 5.0, 3, 2.385606273598312);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 564, "Brenner's on the Bayou", 4.5, 435, 1957.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Betsy Orb", 4.0, 8, 3.6123599479677737);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 565, "Pinkerton's Barbecue", 4.5, 165, 742.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Coral Pine Park", 4.0, 19, 5.1150144038113154);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 566, "Brennan's of Houston", 4.5, 1001, 4504.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "South Beach Trolley", 4.0, 7, 3.380392160057027);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 567, "The Pit Room", 4.5, 361, 1624.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Spa at The Standard Miami", 4.5, 279, 11.005218914731188);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 568, "Backstreet Cafe", 4.5, 464, 2088.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 3, "ARTECHOUSE Miami", 4.0, 40, 6.408239965311849);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 16, 569, "Chama Gaucha Brazilian Steakhouse", 4.5, 925, 4162.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "South Beach Room Escape", 5.0, 360, 12.781512503836437);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 570, "Pappas Bros. Steakhouse", 4.5, 2266, 10197.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Gondolas", 5.0, 1, 0.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 571, "Vic & Anthony's Steakhouse", 4.5, 1124, 5058.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Miami Beach Boot Camp", 5.0, 73, 9.316614300602279);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 5, 572, "Uchi", 4.5, 858, 3861.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Faena Theater", 5.0, 48, 8.406206186877936);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 573, "Eddie V's Prime Seafood", 4.5, 640, 2880.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "STORY Nightclub", 4.0, 483, 10.735788523006047);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 574, "The Capital Grille", 4.5, 438, 1971.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Byron Carlyle Theater", 4.0, 5, 2.795880017344075);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 575, "State Of Grace", 4.5, 249, 1120.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Spa at Carillon Miami", 5.0, 75, 9.375306316958499);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 576, "Willie G's Seafood", 4.5, 397, 1786.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Allison Park", 5.0, 1, 0.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 577, "Sambuca", 4.0, 369, 1476.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Bleau Bar", 4.5, 342, 11.403117477252605);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 578, "Terrace 54 Bar + Table", 5.0, 176, 880.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Mixology Class with Danilo Božović", 5.0, 30, 7.385606273598312);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 579, "The Breakfast Klub", 4.5, 905, 4072.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Beach Yoga @ 3rd Street", 5.0, 116, 10.32228994613459);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 580, "Kenny & Ziggy's New York Deli", 4.5, 1151, 5179.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Lapis Spa", 4.5, 516, 12.20692365732245);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 581, "Pappas Burger", 4.5, 304, 1368.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Flagler Monument Island", 3.5, 6, 2.723529376342752);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 582, "HS Green Fresh Food Kitchen", 4.5, 44, 198.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 7, "Melissa Shoes USA", 3.5, 3, 1.6699243915188184);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 26, 583, "8th Wonder Brewery", 4.5, 143, 643.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Official Art Deco Gift Shop", 4.5, 164, 9.966797316214642);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 584, "Lankford Grocery & Market", 4.5, 229, 1030.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Mac's Club Deuce", 4.5, 161, 9.930716442143323);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 9, 585, "Pho Saigon", 4.5, 103, 463.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 6, "Crespi Park", 5.0, 1, 0.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 19, 586, "Aladdin Mediterranean Cuisine", 4.0, 165, 660.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "South Beach Massage & Bodywork", 5.0, 72, 9.286662482156341);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 9, 587, "Hughie's", 4.5, 69, 310.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Citibike", 4.5, 613, 12.543572135332868);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 1, 588, "Luigi's Pizzeria", 4.5, 67, 301.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Bicycle Center", 4.5, 106, 9.113876393691465);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 4, 589, "La Calle Tacos", 4.5, 62, 279.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "South Beach", 5.0, 1, 0.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 590, "Central Texas Bar-B-Q", 4.5, 75, 337.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "South Beach Boxing", 5.0, 70, 9.225490200071285);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 19, 591, "Arpi's Phoenicia Deli", 4.5, 94, 423.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 3, "Art Deco Museum", 3.5, 6, 2.723529376342752);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 592, "Starbucks", 5.0, 52, 260.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Sawgrass Mall Shuttle", 4.0, 509, 10.826871129347033);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 12, 593, "Croissant Brioche French Bakery & Cafe", 4.0, 92, 368.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "LAS DEAL LIMO SERVICES", 5.0, 29, 7.31198998949478);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 22, 594, "Siphon Coffee", 4.5, 57, 256.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Nikki Beach", 4.0, 1040, 12.068133357195121);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 22, 595, "Agora", 4.5, 73, 328.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Clevelander South Beach Club", 4.0, 557, 10.983420780694916);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 22, 596, "Catalina coffee", 4.5, 60, 270.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Therapy IV Deep Sea Fishing Experience", 5.0, 1798, 16.273948436986046);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 597, "Blacksmith", 4.5, 90, 405.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Bodies Kneaded Therapeutic Massage Spa", 4.5, 87, 8.727836636783781);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 598, "Tout Suite", 4.0, 81, 324.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "LIV", 4.0, 969, 11.94529510820306);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 0, 599, "Boomtown Coffee", 4.0, 64, 256.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Official Art Deco Walking Tour by the Miami Design Preservation League", 5.0, 1508, 15.892006707668775);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (12, 22, 600, "FIX Coffeebar", 4.5, 33, 148.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Betsy Spa", 4.5, 47, 7.524440360710728);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, NULL, 601,"Desta Ethiopian Kitchen", 4.5, 547, 2461.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Tao Spa Miami", 4.5, 59, 7.968834052389649);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 8, 602, "Poor Calvin's", 4.5, 701, 3154.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "The Regent Cocktail Club", 4.5, 85, 8.682385165714317);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 603, "Ray's in the City", 4.5, 1506, 6777.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Target", 3.0, 8, 2.7092699609758304);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 4, 604, "No Mas! Cantina", 4.5, 655, 2947.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Cabaret South Beach", 4.5, 133, 9.557332384351886);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 605, "OK Cafe", 4.5, 713, 3208.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Scooters 2 U", 5.0, 68, 9.162544563531181);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 1, 606, "Pricci", 4.5, 516, 2322.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Bachi Jewels", 5.0, 36, 7.781512503836435);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 607, "Highland Bakery", 4.5, 464, 2088.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Wet Willie's", 4.0, 390, 10.364258428105996);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 4, 608, "Agave", 4.5, 508, 2286.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Massage Therapy", 5.0, 32, 7.52574989159953);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 1, 609, "Antico Pizza Napoletana", 4.5, 1059, 4765.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Uneedamassage", 5.0, 23, 6.808639180087964);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 16, 610, "Fogo de Chão Brazilian Steakhouse", 4.5, 1568, 7056.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "K’Alma Spa", 5.0, 22, 6.712113404111031);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 611, "Ray's on the River", 4.5, 1369, 6160.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Twist", 4.0, 215, 9.32975383966242);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 612, "Buttermilk Kitchen", 4.5, 336, 1512.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "WhiteLaw Bar & Lounge", 4.5, 33, 6.833312729450493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 1, 613, "La Grotta Ristorante Italiano", 4.5, 409, 1840.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Fritz's Skate Bike and Surf", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 614, "Fox Bros. BBQ", 4.5, 1608, 7236.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Art Deco Tours", 5.0, 1527, 15.919195185282105);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 615, "Wrecking Bar Brewpub", 4.5, 284, 1278.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 5, "Palace Bar & Restaurant", 4.0, 232, 9.461951939563598);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 616, "Canoe", 4.5, 2212, 9954.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Golf Club", 4.5, 75, 8.437775685262649);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 1, 617, "La Tavola", 4.5, 374, 1683.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Food Tours", 5.0, 839, 14.618809804143499);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 618, "The Capital Grille", 4.5, 800, 3600.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Art By Mariano Picos Pelegri", 4.5, 24, 6.210950587702227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 619, "Bone's Restaurant", 4.5, 2024, 9108.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Beach Boats", 5.0, 15, 5.880456295278406);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 28, 620, "Nikolai's Roof", 4.5, 582, 2619.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Miami Beach Cinemateque", 4.5, 49, 7.6058823601283105);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 621, "Aria", 4.5, 419, 1885.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "COMO Shambhala Urban Escape", 4.5, 26, 6.367380065868681);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 622, "Blue Ridge Grill", 4.5, 386, 1737.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Perfect Gifts South Beach", 5.0, 17, 6.15224460689137);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, NULL, 623,"Red Phone Booth - Downtown", 4.5, 260, 1170.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Espanola Cigars Craft Bar & Lounge", 4.0, 99, 7.982540778390199);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 5, 624, "Eight Sushi Lounge", 4.5, 199, 895.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Massages by Isabell", 5.0, 13, 5.569716761534184);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 625, "Wisteria", 4.5, 378, 1701.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Spa at The Miami Beach Edition", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, NULL, 626,"Herban Fix - Vegan Kitchen", 4.5, 244, 1098.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Spa 101", 4.5, 33, 6.833312729450493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 19, 627, "Aviva by Kameel", 5.0, 805, 4025.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Tierra Santa Healing House", 4.5, 27, 6.4411369387154425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 628, "Thumbs Up Diner", 4.5, 399, 1795.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "American Tours and Transport LLC", 5.0, 18, 6.276362525516529);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 629, "Atlanta Breakfast Club", 4.5, 781, 3514.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "The Massage Room", 4.5, 12, 4.856315607214311);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 630, "Home Grown", 4.5, 282, 1269.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (7, 4, "Sasparilla", 5.0, 12, 5.395906230238124);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 631, "Silver Skillet", 4.5, 407, 1831.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (7, 4, 177.17199417163826);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 632, "Gus's World Famous Fried Chicken", 4.0, 580, 2320.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (7, 5, 52.64049615488648);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 633, "Corner Bakery Cafe", 4.5, 212, 954.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "The National WWII Museum", 5.0, 30635, 22.431089423339863);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 11, 634, "Cafe Agora", 4.5, 126, 567.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Jackson Square", 4.5, 16332, 18.958677170629315);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 635, "Johnny Rockets", 4.0, 418, 1672.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Frenchmen Street", 4.5, 12030, 18.3611953230293);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 9, 636, "Lee's Bakery", 4.5, 125, 562.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "French Quarter", 4.5, 22722, 19.60400949977011);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 22, 637, "Chattahoochee Coffee Company", 4.5, 66, 297.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Garden District", 4.5, 8923, 17.77729901843698);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 22, 638, "The Little Tart Bakeshop", 4.5, 48, 216.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "RTA - Streetcars", 4.5, 16240, 18.947637112073203);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 22, 639, "Ebrik Coffee Room", 4.5, 42, 189.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "St. Louis Cathedral", 4.5, 8392, 17.657394638334754);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 640, "Grant Park Coffee House", 4.5, 40, 180.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "New Orleans City Park", 4.5, 4334, 16.366000081427092);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 0, 641, "Dunkin'", 4.0, 84, 336.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Preservation Hall", 4.5, 5877, 16.961200608214792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 22, 642, "Caribou Coffee", 4.0, 66, 264.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Royal Street", 4.5, 7778, 17.508905724651484);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 22, 643, "Dancing Goats", 4.5, 23, 103.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "St. Louis Cemetery No. 1", 4.5, 3976, 16.19750869076374);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 22, 644, "Créma Espresso Gourmet", 4.5, 30, 135.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Blaine Kern's Mardi Gras World", 4.5, 4361, 16.378137390030417);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (13, 22, 645, "Chrome Yellow Trading Co.", 5.0, 14, 70.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "The Sydney and Walda Besthoff Sculpture Garden at NOMA", 5.0, 1385, 15.707248867002335);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 1, 646, "Baci di Firenze Trattoria", 5.0, 540, 2700.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Audubon Park", 4.5, 1694, 14.530110326976095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, NULL, 647,"Joe’s Italian Ice", 4.5, 252, 1134.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 9, "Audubon Zoo", 4.5, 2919, 15.593553427446063);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 1, 648, "The Pizza Press", 4.5, 1270, 5715.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Jean Lafitte National Historical Park and Preserve", 4.5, 994, 13.48823872978791);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 649, "Ruth's Chris Steak House", 4.5, 526, 2367.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "New Orleans Pharmacy Museum", 4.5, 1127, 13.73365762220748);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 650, "Mimi's Cafe", 4.0, 1843, 7372.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "New Orleans Museum of Art", 4.5, 1147, 13.768035380555704);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 1, 651, "Marri's Pizza", 4.5, 506, 2277.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "The Historic New Orleans Collection", 4.5, 687, 12.766305316767976);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 652, "California Pizza Kitchen Anaheim", 4.0, 537, 2148.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Hermann-Grima House", 4.5, 510, 12.18406579244071);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 7, 653, "P.F. Chang's", 4.0, 634, 2536.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "The Sazerac House", 5.0, 330, 12.592569699389436);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 4, 654, "Mi Casa Mexicana", 4.0, 291, 1164.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Basin St. Station", 4.5, 527, 12.248147768456459);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 27, 655, "Anaheim White House", 4.0, 360, 1440.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "The Presbytere", 4.5, 983, 13.46649083024461);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 656, "Ghirardelli Soda Fountain & Chocolate Shop", 4.5, 445, 2002.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Lake Lawn Metairie", 4.5, 895, 13.283203658921602);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 22, 657, "The Cove on Harbor", 4.5, 266, 1197.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Mercedes-Benz Superdome", 4.5, 1067, 13.626739887410114);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 658, "The Cheesecake Factory", 4.5, 2823, 12703.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 12, "Audubon Aquarium", 4.0, 3370, 14.110519603485352);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 659, "Corn Dog Castle", 4.5, 353, 1588.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Lafayette Cemetery No.1", 4.5, 2850, 15.546801870038294);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 660, "Earl of Sandwich", 4.5, 1175, 5287.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Longue Vue House and Gardens", 4.5, 255, 10.829430811952795);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 661, "Jolly Holiday Bakery Cafe", 4.5, 532, 2394.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Saenger Theatre", 4.5, 390, 11.659790731619246);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 662, "THE RANCH Restaurant & Saloon", 4.5, 412, 1854.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Magazine Street", 4.5, 1160, 13.79006095152113);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 663, "Napa Rose", 4.5, 1006, 4527.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Immaculate Conception Church", 5.0, 523, 13.59250844433637);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 14, 664, "Roy's Restaurant", 4.0, 561, 2244.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "French Market", 4.0, 2305, 13.450683718902667);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 665, "Morton's The Steakhouse", 4.0, 713, 2852.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Backstreet Cultural Museum", 4.5, 352, 11.459441985651589);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 666, "Catch", 4.0, 270, 1080.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "New Orleans Musical Legends Park", 4.5, 1107, 13.698664293954252);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 667, "Original Pancake House", 4.5, 276, 1242.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "M.S. Rau", 5.0, 81, 9.542425094393248);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 668, "Bubba Gump Shrimp Co.", 4.0, 1924, 7696.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Ogden Museum of Southern Art", 4.5, 642, 12.633907626309838);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, NULL, 669,"Trader Sam's Enchanted Tiki Bar", 4.5, 594, 2673.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Beauregard-Keyes House", 4.5, 339, 11.385898641913867);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 670, "Ralph Brennan's Jazz Kitchen", 4.0, 1750, 7000.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 10, "Harrah's Casino New Orleans", 4.0, 4722, 14.696503930970831);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 4, 671, "TaquerÃ­a at Tortilla Jo's", 4.0, 1729, 6916.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Gallier House", 4.5, 142, 9.685297549723753);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 672, "Denny's", 4.0, 1553, 6212.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Faubourg Marigny", 4.5, 435, 11.873201656295866);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 4, 673, "Sabrosada Fresh Mexican Food", 4.5, 65, 292.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Bourbon Street", 3.5, 7445, 13.551526457308679);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 674, "GCH Craftsman Grill", 4.0, 218, 872.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Algiers Ferry", 4.0, 1014, 12.024151819989267);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 1, 675, "California Pizza Place", 4.0, 148, 592.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Louis Armstrong Park", 4.0, 1102, 12.168726378063063);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 676, "Johnny Rockets", 4.0, 192, 768.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Memorial Hall Confederate Civil War Museum", 4.5, 582, 12.442153430924499);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 0, 677, "Subway", 4.0, 169, 676.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "New Orleans School of Cooking", 5.0, 8757, 19.711776748538384);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 27, 678, "Blaze Pizza", 4.5, 66, 297.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Old Ursuline Convent Museum", 4.5, 262, 10.882355810938854);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (14, 19, 679, "Tanor", 4.0, 105, 420.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "New Orleans Jazz Museum", 4.0, 640, 11.224719895935547);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 5, 680, "Akiko's Sushi Bar and Restaurant", 4.5, 517, 2326.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Smoothie King Center", 4.5, 277, 10.991158960790017);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 1, 681, "Molinari Delicatessen", 4.5, 841, 3784.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Mardi Gras", 4.5, 129, 9.49765369634662);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 682, "The Baked Bear", 4.5, 235, 1057.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "St. Roch Market", 4.5, 373, 11.572689743139094);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 19, 683, "Kokkari Estiatorio", 4.5, 2747, 12361.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "1850 House Museum and Store", 4.5, 443, 11.908816768003813);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 8, 684, "Lapisara Eatery", 4.5, 225, 1012.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "St. Augustine Church", 4.5, 246, 10.759207981965204);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 1, 685, "Piccolo Forno", 4.5, 330, 1485.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Anatolian Silver", 5.0, 85, 9.647094628571462);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 2, 686, "Surisan", 4.5, 341, 1534.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Cabildo", 4.0, 435, 10.553957027818548);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 687, "Hollywood Cafe", 4.5, 3859, 17365.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "NOLA Tropical Winery", 4.5, 186, 10.212808248980624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 24, 688, "Betty Lou's Seafood and Grill", 4.5, 270, 1215.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Lake Pontchartrain", 4.0, 308, 9.954202866001776);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, NULL, 689,"Burma Superstar Restaurant", 4.5, 880, 3960.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Tipitina's", 4.5, 203, 10.383732170609456);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 1, 690, "Cafe Tiramisu", 4.0, 301, 1204.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Mardi Gras Museum of Costumes and Culture", 4.5, 140, 9.65757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 691, "Mersea Restaurant & Bar", 5.0, 548, 2740.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Southern Food and Beverage Museum", 4.0, 167, 8.890865884590333);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 22, 692, "B. Patisserie", 4.5, 278, 1251.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "St. Louis Cemetery No. 3", 4.5, 145, 9.726156010057384);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, NULL, 693,"Norman's Ice Cream and Freezes", 4.5, 323, 1453.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Chalmette National Historical Park", 4.5, 343, 11.408823540192465);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 694, "Eight Am", 4.5, 1264, 5688.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "New Orleans Botanical Gardens", 4.0, 179, 9.011412123919571);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 695, "Pacific Cafe", 4.5, 253, 1138.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Studio Be", 5.0, 39, 7.955323035132496);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 1, 696, "Seven Hills", 4.5, 936, 4212.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Algiers Point", 4.0, 217, 9.345838935394118);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, NULL, 697,"Quince", 4.5, 554, 2493.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Old St. Patrick's Church", 4.5, 110, 9.186267083212012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 1, 698, "Frascati", 4.5, 621, 2794.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "New Orleans Jazz & Heritage Festival", 4.5, 166, 9.990486396180248);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 12, 699, "Chapeau!", 4.5, 315, 1417.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Frenchmen Art Market", 4.5, 183, 10.181029903786932);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 700, "Restaurant Gary Danko", 4.5, 2582, 11619.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Chartres Street", 4.5, 90, 8.794091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 701, "State Bird Provisions", 4.5, 557, 2506.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Villalobos Pitbull Rescue Center", 4.5, 94, 8.879075341198643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 702, "Boulevard", 4.5, 1857, 8356.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Clue Carre - New Orleans' First Live Escape Game", 5.0, 3860, 17.93293652335877);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 703, "Harris' Restaurant - The San Francisco Steakhouse", 4.5, 901, 4054.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Treme's Petit Jazz Museum", 5.0, 50, 8.494850021680092);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 704, "House of Prime Rib", 4.5, 1724, 7758.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "New Orleans Historic Voodoo Museum", 3.5, 803, 10.166504408475383);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 705, "Sweet Maple", 4.5, 923, 4153.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Tulane University", 4.5, 96, 8.920220548678056);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 706, "Anchor Oyster Bar", 4.5, 646, 2907.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Louisiana Children's Museum", 4.0, 227, 9.42410342877249);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 707, "Mo's Grill", 4.5, 489, 2200.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Woldenberg Riverfront Park", 4.0, 262, 9.673205165278981);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 12, 708, "L'ardoise Bistro", 4.5, 248, 1116.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Edgar Degas House Creole Impressionist Tour", 4.0, 199, 9.195412305638826);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 7, 709, "Chili House SF", 4.0, 66, 264.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Our Lady Of Guadalupe Church", 4.5, 47, 7.524440360710728);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 19, 710, "The Halal Guys - San Francisco", 3.5, 81, 283.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Ernest N. Morial Convention Center", 4.0, 267, 9.7060450454583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 1, 711, "Za Pizza", 4.5, 559, 2515.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "The Museum of the Southern Jewish Experience", 5.0, 30, 7.385606273598312);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 712, "Darren's Cafe", 4.5, 517, 2326.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Lalaurie Mansion", 4.0, 188, 9.096631397054718);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 6, 713, "Curry Leaf Restaurant", 4.5, 244, 1098.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Brieux Carre", 5.0, 61, 8.926649175053834);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 714, "Off the Grid: Fort Mason Center", 4.5, 194, 873.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "The Outlet Collection at Riverwalk", 4.0, 760, 11.523254369123165);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 715, "Tommy's Joynt", 4.0, 710, 2840.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Museum of the Free People of Color", 5.0, 23, 6.808639180087964);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 716, "Pinecrest Diner", 4.0, 1945, 7780.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Crescent Park", 4.5, 94, 8.879075341198643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 0, 717, "Orphan Andy's", 4.0, 358, 1432.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Le Petit Theatre du Vieux Carre", 4.5, 41, 7.2575273552388095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (15, 1, 718, "Uncle Vito's Pizzeria", 4.0, 1538, 6152.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Warehouse District", 4.0, 84, 7.6971171442475255);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 719, "Antico Forno", 4.0, 1050, 4200.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Le Musee de f.p.c.", 5.0, 40, 8.01029995663981);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 22, 720, "Cafe Bonjour", 5.0, 162, 810.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "The House of Dance and Feathers", 5.0, 39, 7.955323035132496);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 721, "Monica’s Mercato", 4.5, 299, 1345.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Storyland", 4.0, 113, 8.212313773933678);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 722, "Bova's Bakery", 4.5, 1151, 5179.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Mother-in-Law Lounge", 4.5, 31, 6.711127622254227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 723, "Sam LaGrassa's", 4.5, 1588, 7146.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Carousel Gardens", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 724, "North Street Grille", 4.5, 531, 2389.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "St. Mary's Assumption Church", 5.0, 19, 6.393768004764144);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 725, "Modern Pastry Shop", 4.5, 2224, 10008.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Lower 9th Ward", 4.0, 123, 8.35962044575759);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 726, "Mike & Patty's", 4.5, 402, 1809.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Lafayette Square", 4.0, 178, 9.001680009235574);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 7, 727, "The Q Restaurant", 4.5, 530, 2385.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Craig Tracy Gallery", 5.0, 28, 7.235790156711095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 728, "James Hook & Co.", 4.5, 1738, 7821.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Hurricane Katrina Memorial", 4.5, 37, 7.0569077583014765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 729, "SRV Restaurant", 4.5, 294, 1323.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Vue Orleans", 5.0, 20, 6.505149978319905);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 730, "Flour Bakery + Cafe", 4.5, 834, 3753.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Joan of Arc Statue", 4.5, 80, 8.563904941463745);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 22, 731, "Thinking Cup", 4.5, 305, 1372.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Prytania Theatre", 5.0, 34, 7.657394585211276);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 732, "Bostonia Public House", 4.5, 1320, 5940.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Banksy's Rain Girl", 4.5, 21, 5.949986826302636);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 733, "Parish Cafe & Bar", 4.5, 936, 4212.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Irish Cultural Museum of New Orleans", 4.5, 43, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 734, "Tresca", 4.5, 188, 846.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 6, "Washington Artillery Park", 4.0, 84, 7.6971171442475255);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 735, "Atlantic Fish Co", 4.5, 4922, 22149.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Rodrigue Studio", 4.5, 32, 6.773174902439576);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 736, "Boston Burger Company", 4.5, 493, 2218.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Hex: Old World Witchery", 5.0, 773, 14.440897469591626);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 737, "Mamma Maria", 4.5, 1321, 5944.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Orpheum Theater", 4.5, 32, 6.773174902439576);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 738, "The Capital Grille", 4.5, 1208, 5436.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Haunted Museum", 4.5, 63, 8.097032472541116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 24, 739, "Ostra", 4.5, 1076, 4842.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "St Louis Cemetery No 2", 4.0, 71, 7.4050333948763);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 12, 740, "Mistral", 4.5, 1097, 4936.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Happy Raptor Distilling, Llc", 5.0, 12, 5.395906230238124);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 741, "Sorellina", 4.5, 846, 3807.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Port Orleans Brewing Co.", 4.5, 50, 7.6453650195120835);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 742, "Grill 23 & Bar", 4.5, 1284, 5778.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Fair Grounds Race Course & Slots", 4.0, 66, 7.278175742167473);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 743, "Davio's Northern Italian Steakhouse - Back Bay", 4.5, 813, 3658.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Roulaison Distilling Co", 4.5, 17, 5.537020146202233);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 744, "Prezza", 4.5, 411, 1849.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 3, "Museum of Death", 3.5, 506, 9.464526808939295);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 12, 745, "La Voile", 4.5, 700, 3150.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Parleaux Beer Lab", 4.5, 30, 6.647045646238481);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 746, "Mario's Restaurant", 4.5, 319, 1435.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 7, "Canal Place", 3.5, 117, 7.238650516111566);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 747, "Theo's Cozy Corner Restaurant", 4.5, 387, 1741.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Decatur Street", 4.5, 30, 6.647045646238481);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 748, "Galleria Umberto", 4.5, 321, 1444.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 7, "The Shops at Jax Brewery", 3.5, 267, 8.492789414776013);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 749, "Mike's City Diner", 4.5, 347, 1561.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Arcadian Books", 4.5, 24, 6.210950587702227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 750, "Boston Sail Loft Restaurant", 4.5, 1302, 5859.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Holocaust Memorial", 4.0, 58, 7.0537119742517485);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 751, "Carmelina's", 4.5, 697, 3136.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 4, "Cypress Grove and Greenwood Cemeteries", 4.5, 34, 6.891655126690148);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 752, "Rino's Place", 4.5, 621, 2794.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (8, 5, "The Spotted Cat Music Club", 4.5, 1469, 14.251598081056152);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 753, "La Summa Cucina Italiana", 4.5, 509, 2290.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (8, 3, 24.06670925980032);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 754, "sweetgreen", 4.5, 228, 1026.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (8, 4, 162.26881756644374);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 755, "Regina Pizzeria", 4.5, 2905, 13072.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (8, 5, 14.251598081056152);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 756, "Santarpio's Pizza", 4.5, 620, 2790.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (8, 6, 14.906387105223356);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 757, "Thornton's Restaurant", 4.0, 830, 3320.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (8, 7, 15.731439930887579);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 758, "Tasty Burger", 4.0, 384, 1536.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Vizcaya Museum and Gardens", 4.5, 7126, 17.337806181067485);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 759, "South Street Diner", 4.0, 479, 1916.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Wynwood Walls", 4.5, 9010, 17.79626155940578);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 8, 760, "Pho Basil", 4.5, 307, 1381.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 7, "Bayside Marketplace", 4.0, 13781, 16.557122930874097);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 0, 761, "Tatte Bakery & Cafe", 4.5, 591, 2659.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 9, "Zoo Miami", 4.5, 4819, 16.573306168355437);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 762, "Caffe Vittoria", 4.5, 610, 2745.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 7, "Dolphin Mall", 4.5, 10026, 18.00507465124665);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 12, 763, "L.A. Burdick Handmade Chocolates", 4.5, 197, 886.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "American Airlines Arena", 4.5, 5785, 16.930365134794958);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 22, 764, "George Howell Coffee", 4.5, 172, 774.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 9, "Zoological Wildlife Foundation", 4.5, 1987, 14.841890401994167);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 22, 765, "Caffe Nero", 4.0, 271, 1084.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Metromover", 4.5, 5325, 16.768438254498488);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 766, "Polcari's Coffee Shop", 4.5, 72, 324.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Lock & Load Museum", 5.0, 938, 14.861014191895322);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 1, 767, "Caffe Paradiso", 4.5, 173, 778.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Wynwood", 4.5, 2147, 14.993244199963117);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (16, 22, 768, "Ogawa Coffee", 4.5, 78, 351.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Design District", 4.5, 1446, 14.220757318313304);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 7, 769, "EastWind", 4.5, 457, 2056.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Little Havana", 4.0, 2949, 13.878699090207192);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 1, 770, "Carmine's Italian Restaurant - Atlantic City", 4.5, 1870, 8415.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Bayfront Park", 4.0, 1520, 12.727374351779089);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 15, 771, "Cuba Libre Restaurant & Rum Bar", 4.0, 733, 2932.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Trolley", 4.5, 1350, 14.086501958227528);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 772, "Wingcraft Kitchen and Beer Bar", 4.5, 294, 1323.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Black Police Precinct and Courthouse Museum", 5.0, 207, 11.579851727284588);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 773, "Tony Boloney's", 4.0, 349, 1396.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "LoanDepot Park", 4.5, 1975, 14.830051949831155);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 774, "Maria's Luncheonette", 4.0, 164, 656.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Pérez Art Museum Miami", 4.0, 1668, 12.888784185206879);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 1, 775, "Tony's Baltimore Grill", 4.0, 329, 1316.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 9, "Monkey Jungle", 4.0, 599, 11.109707289557244);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 776, "Applebee's", 4.0, 160, 640.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Calle Ocho", 4.0, 790, 11.590508365161766);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 777, "Hot Bagels & More", 4.5, 46, 207.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Miami Children's Museum", 4.0, 933, 11.879526574985999);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 778, "Brittany Cafe", 4.5, 44, 198.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Deering Estate", 4.5, 378, 11.598713099267513);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 779, "Gilchrist Restaurant", 4.5, 606, 2727.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Coconut Grove", 4.0, 858, 11.733949151394821);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 780, "Breadsticks Cafe & Grill", 4.0, 1011, 4044.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 7, "Brickell City Center", 4.5, 415, 11.781216435204417);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 781, "Back Bay Ale House", 4.0, 383, 1532.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Phillip and Patricia Frost Museum of Science", 4.0, 782, 11.572827012239392);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 4, 782, "Casa Taco & Tequila Bar", 4.0, 408, 1632.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 12, "Miami Seaquarium", 3.5, 4486, 12.78150744236432);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 783, "Johnny Rockets", 4.0, 603, 2412.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Matheson Hammock Park", 4.0, 417, 10.480544219895028);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, NULL, 784,"The Irish Pub Inn Restaurant", 4.0, 567, 2268.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 7, "The Falls Shopping Center", 4.5, 307, 11.192122689647338);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 785, "Chickie's & Pete's", 4.0, 506, 2024.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Tropical Park", 4.5, 163, 9.95484421981781);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 786, "Barbera Seafood and Produce", 4.5, 71, 319.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Olympia Theater", 4.5, 121, 9.372534166424025);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 787, "Vagabond Kitchen & Tap House", 4.0, 201, 804.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Port of Miami", 4.0, 759, 11.52096710358192);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 26, 788, "Hard Rock Cafe", 4.0, 850, 3400.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "The Kampong", 4.5, 111, 9.203953404539957);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 1, 789, "Capriccio", 4.5, 1122, 5049.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Hard Rock Stadium", 4.0, 382, 10.328253451646834);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 790, "Dock's Oyster House", 4.5, 1692, 7614.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Adrienne Arsht Center for the Performing Arts of Miami-Dade County", 4.5, 263, 10.88980086820391);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 791, "Vic & Anthony's Steakhouse", 4.5, 465, 2092.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Freedom Tower at Miami Dade College", 4.0, 384, 10.337324897470122);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 1, 792, "Cafe 2825", 4.5, 528, 2376.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 7, "Shops at Midtown Miami", 4.5, 178, 10.12689001039002);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 1, 793, "Chef Vola's", 4.5, 768, 3456.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Gesu Catholic Church", 4.5, 138, 9.629455888805564);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 794, "Knife & Fork Inn", 4.5, 804, 3618.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "HistoryMiami", 4.0, 187, 9.087366426145996);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 795, "Morton's The Steakhouse", 4.5, 585, 2632.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Florida Grand Opera", 4.5, 72, 8.357996233940707);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 796, "Old Homestead", 4.0, 792, 3168.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Veza Sur Brewing Co.", 4.5, 93, 8.858173268492708);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 797, "Chart House", 4.5, 546, 2457.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Lock & Load Miami", 5.0, 4420, 18.227111346745456);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 798, "McCormick & Schmick's Seafood & Steaks", 4.0, 824, 3296.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "de la Cruz Collection", 4.5, 46, 7.482410242567083);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 799, "White House Sub Shop", 4.5, 1744, 7848.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Barnacle State Historic Site", 4.0, 190, 9.115014403811315);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 800, "Kelsey & Kim's Southern Cafe", 4.5, 694, 3123.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "David T. Kennedy Park", 4.5, 90, 8.794091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 801, "Broadway Burger Bar", 4.5, 373, 1678.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Cubaocho Museum and Performing Arts Center", 4.5, 181, 10.159553586911331);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 1, 802, "Angelo's Fairmount Tavern", 4.0, 746, 2984.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Domino Park", 4.0, 318, 10.00970847993773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 7, 803, "P.F. Chang's", 4.0, 553, 2212.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Rubell Museum", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 19, 804, "Bill's Gyro Souvalki", 4.5, 279, 1255.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Superblue Miami", 4.0, 54, 6.929575039291874);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 805, "A Dam Good Sports Bar", 4.0, 182, 728.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Gator Bait Wakeboard & Wakesurf School of Miami", 5.0, 37, 7.841008620334974);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 22, 806, "Hayday Coffee", 5.0, 15, 75.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Historic Virginia Key Beach Park", 4.0, 157, 8.783598609636934);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 807, "Dunkin' Donuts", 4.0, 56, 224.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Margaret Pace Park", 4.5, 49, 7.6058823601283105);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 808, "Dunkin'", 3.5, 107, 374.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Bay of Pigs Museum", 4.5, 44, 7.395537044187843);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (17, 0, 809, "Harpers", 5.0, 4, 20.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "J. Wakefield Brewing", 4.5, 105, 9.09535184581472);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 9, 810, "Crawfish Cafe", 5.0, 1, 5.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "The Gold Coast Railroad Museum", 4.0, 151, 8.715907789172677);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 811, "Cured", 4.5, 737, 3316.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Center for Architecture & Design", 5.0, 38, 7.89891798308405);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 16, 812, "Fogo de Chão Brazilian Steakhouse", 4.5, 1005, 4522.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Ermita de la Caridad", 4.5, 30, 6.647045646238481);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 813, "Silo Elevated Cuisine - 1604", 4.5, 305, 1372.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "The Wharf Miami", 4.0, 109, 8.149705991762493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 4, 814, "Mi Tierra Cafe & Bakery", 4.0, 7087, 28348.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Metrorail", 4.0, 279, 9.78241681309439);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 815, "Lick Honest Ice Creams", 4.5, 262, 1179.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 7, "CocoWalk", 3.5, 451, 9.289617896572862);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 1, 816, "Luciano Express", 4.0, 666, 2664.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Room Escape Miami by Fox in a Box", 5.0, 1463, 15.826221630626554);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 817, "The Friendly Spot Ice House", 4.5, 247, 1111.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Wynwood Brewing Company", 4.5, 147, 9.75292800636679);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 19, 818, "Pasha Mediterranean Grill", 4.5, 368, 1656.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Trinity Episcopal Cathedral", 4.5, 41, 7.2575273552388095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 819, "Perry's Steakhouse & Grille- San Antonio", 4.5, 384, 1728.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Institute of Contemporary Art, Miami", 4.0, 49, 6.760784320114054);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 820, "Eddie V's Prime Seafood", 4.5, 878, 3951.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Museum of Graffiti", 4.5, 30, 6.647045646238481);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 821, "Cappy's Restaurant", 4.5, 620, 2790.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Bayshore", 4.5, 20, 5.854634980487915);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 4, 822, "La Fonda on Main", 4.5, 1184, 5328.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Agustin Gainza Arts and Tavern", 5.0, 30, 7.385606273598312);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 823, "Boudro's Texas Bistro", 4.5, 4863, 21883.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Peacock Park", 4.5, 48, 7.5655855681901425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 824, "18 Oaks", 4.5, 373, 1678.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 7, "Upper Buena Vista", 4.5, 22, 6.040902063699928);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 825, "Supper American Eatery", 4.5, 451, 2029.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Patricia & Phillip Frost Art Museum", 4.0, 45, 6.612850055101374);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 1, 826, "Dough Pizzeria Napoletana", 4.5, 1018, 4581.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Shark Valley Visitor Center", 4.5, 22, 6.040902063699928);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 827, "Bakery Lorraine", 4.5, 488, 2196.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Blue Lagoon", 4.0, 38, 6.31913438646724);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 16, 828, "Chama Gaucha Brazilian Steakhouse", 4.5, 1741, 7834.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Ultra Music Festival", 4.0, 84, 7.6971171442475255);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 829, "Bliss", 4.5, 936, 4212.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Coconut Grove Organic Market", 4.0, 32, 6.020599913279623);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 830, "J Prime Steakhouse", 4.5, 453, 2038.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Coconut Grove Bike Path", 4.5, 26, 6.367380065868681);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 831, "Biga on the Banks", 4.5, 1622, 7299.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Victoria's Secret", 4.5, 17, 5.537020146202233);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 832, "Bohanan's Prime Steak and Seafood", 4.5, 1807, 8131.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Convention Center", 4.0, 63, 7.197362197814326);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 16, 833, "Texas de Brazil - San Antonio", 4.5, 619, 2785.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Venetian Causeway", 4.0, 29, 5.849591991595824);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 4, 834, "Pollos Asados Los Nortenos", 4.5, 954, 4293.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Centro Cultural Espanol en Miami", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 835, "Domingo Restaurant", 5.0, 413, 2065.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Wings Over Miami Air Museum", 3.5, 52, 6.006011702721796);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 4, 836, "210 Ceviche Seafood and Mariscos", 4.5, 159, 715.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Skyviews Miami", 4.0, 19, 5.1150144038113154);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, NULL, 837,"Green Vegetarian Cuisine", 4.5, 522, 2349.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "St Patrick Catholic Church", 4.5, 13, 5.012745085380765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 1, 838, "Battalion", 4.5, 260, 1170.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "The Margulies Collection at the Warehouse", 5.0, 15, 5.880456295278406);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 4, 839, "Pete's Tako House", 4.5, 233, 1048.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Ironside", 4.0, 18, 5.021090020413223);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 840, "Schilo's", 4.0, 2113, 8452.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "A. D. Barnes Park", 4.0, 20, 5.204119982655924);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 4, 841, "Tito's Restaurant Y Cantina", 4.5, 338, 1521.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Tower", 4.0, 16, 4.816479930623698);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 842, "Gino's Deli & Ice House", 5.0, 65, 325.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami City Hall", 4.0, 37, 6.272806896267979);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 843, "Pancake Joes", 4.5, 206, 927.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Maurice A. Ferré Park", 5.0, 9, 4.771212547196624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 4, 844, "Sanchos Cantina and Cocina", 4.5, 99, 445.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Museum of Contemporary Art", 3.5, 66, 6.368403774396539);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 845, "Cheesy Jane's", 4.5, 108, 486.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Peter Tunney Experience", 4.5, 20, 5.854634980487915);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 846, "Mrs. Kitchen Soul Food Restaurant & Bakery", 4.5, 73, 328.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 10, "Casino Miami", 3.5, 77, 6.602717538103686);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 22, 847, "Local Coffee at the Pearl Brewery", 4.5, 121, 544.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Our Lady of Lourdes Catholic Church", 5.0, 10, 5.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 848, "Sip Brew Bar & Eatery", 4.0, 266, 1064.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "By Brothers Family Park", 5.0, 5, 3.4948500216800937);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 22, 849, "Estate Coffee Company", 5.0, 41, 205.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Metrobus", 4.0, 40, 6.408239965311849);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 850, "Cafecito at The Westin Riverwalk", 4.5, 65, 292.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "The Scott Rakow Youth Center", 4.0, 13, 4.455773409227347);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 0, 851, "Commonwealth Coffeehouse", 4.5, 51, 229.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 1, "Marjorie Stoneman Douglas Park", 4.5, 10, 4.5);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 22, 852, "Commonwealth", 4.5, 17, 76.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 12, "Neighborhood Fish Farm", 4.0, 24, 5.520844966846424);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 22, 853, "Local Coffee", 4.5, 25, 112.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "MacArthur Causeway Bridge", 4.0, 23, 5.446911344070371);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, NULL, 854,"Olmos Perk Coffee Bar", 4.5, 16, 72.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Maurice Gibb Memorial Park", 4.5, 11, 4.686267083212012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (18, 22, 855, "Barrio Barista & Bargains", 4.5, 18, 81.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Calle Ocho Festival", 4.5, 15, 5.292410665750565);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 24, 856, "Askaneli Premium Georgian and International Restaurant", 4.0, 10, 40.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "American Museum of the Cuban Diaspora", 4.0, 15, 4.7043650362227245);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 857, "Dolce Salato Pizza & Gelato", 5.0, 620, 3100.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "La Caimanera Soccer Fields", 5.0, 14, 5.730640178391189);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 858, "Wild Sea Las Olas", 4.5, 1170, 5265.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Bay of Pigs Monument", 4.5, 11, 4.686267083212012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 22, 859, "Fresh First", 4.5, 253, 1138.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Morningside Park", 4.5, 10, 4.5);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 860, "Sandbar Grill", 4.5, 509, 2290.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Riverwalk Trail", 4.0, 10, 4.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 19, 861, "Mini Pita", 4.5, 251, 1129.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Tamiami Park", 4.5, 11, 4.686267083212012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, NULL, 862,"Yo Mama's Ice Cream & Pops Corn", 4.5, 314, 1413.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Bardot", 4.0, 16, 4.816479930623698);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 863, "Cafe Vico Restaurant & Piano Bar", 4.5, 564, 2538.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "The Miami Circle", 4.0, 21, 5.288877178935676);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 864, "Anthony's Coal Fired Pizza", 4.5, 1213, 5458.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "The Wynwood Marketplace", 3.5, 24, 4.8307393459906205);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 7, 865, "Kousine Fort Lauderdale", 4.5, 138, 621.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 6, "Lummus Park Historic District", 4.5, 12, 4.856315607214311);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 866, "Black Rock Bar & Grill", 4.0, 150, 600.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Torch of Friendship", 4.0, 13, 4.455773409227347);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 867, "Tinta- Westin Fort Lauderdale Beach", 5.0, 2256, 11280.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "The Miami Heat Store", 4.5, 9, 4.294091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 4, 868, "Lona Cocina Tequileria", 4.5, 3110, 13995.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Brickell Avenue Bridge", 4.0, 20, 5.204119982655924);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 869, "Golden Lyon Vintage Pub", 5.0, 282, 1410.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "La Isla", 5.0, 7, 4.225490200071284);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 870, "Tommy Bahama Marlin Bar & Store", 4.5, 235, 1057.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Stone Age Antiques", 5.0, 5, 3.4948500216800937);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 871, "Rendezvous Bar & Grill", 4.5, 1476, 6642.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Little Havana Visitors Center", 4.0, 29, 5.849591991595824);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 872, "Kilwin's Ice Cream of Las Olas", 4.5, 644, 2898.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Clima Art Gallery", 5.0, 5, 3.4948500216800937);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 12, 873, "Nanou Las Olas French Bakery", 4.5, 482, 2169.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Miami Arena", 5.0, 4, 3.0102999566398116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 874, "Casa D'Angelo Ristorante", 4.5, 1165, 5242.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Metro-Dade Cultural Center", 4.0, 7, 3.380392160057027);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 875, "Canyon Southwest Cafe", 4.5, 1062, 4779.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 3, "Rubell Museum", 5.0, 4, 3.0102999566398116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 16, 876, "Chima Steakhouse", 4.5, 1173, 5278.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 5, "mySpa", 5.0, 136, 10.667694541851088);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 15, 877, "Cubano's by Mario (formerly Catalina's by Mario)", 4.5, 1129, 5080.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (9, 4, "Beat Culture Brewery", 4.5, 11, 4.686267083212012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 878, "The Capital Grille", 4.5, 1018, 4581.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (9, 1, 4.5);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 879, "Steak 954", 4.5, 1773, 7978.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (9, 3, 7.714664992862536);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 2, 880, "Takato", 4.5, 166, 747.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (9, 4, 93.05206522080972);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 881, "3030 Ocean Restaurant & Bar", 4.5, 590, 2655.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (9, 5, 10.667694541851088);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 16, 882, "Texas de Brazil", 4.5, 383, 1723.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (9, 6, 22.22369979531843);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 883, "Gilbert's 17th Street Grill", 4.5, 1729, 7780.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (9, 12, 5.520844966846424);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 24, 884, "Cafe Seville", 4.5, 532, 2394.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Lincoln Memorial", 4.5, 31900, 20.267058073757312);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 885, "Zuckerello's", 4.5, 694, 3123.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Gallery of Art", 5.0, 9304, 19.843348508601956);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 886, "Primanti Brothers Restaurant", 4.5, 1467, 6601.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Smithsonian National Museum of Natural History", 4.5, 12410, 18.421973016744282);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 887, "G&B Oyster Bar", 4.5, 445, 2002.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Library of Congress", 4.5, 9094, 17.814397274410897);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 888, "Boccaccino Cafe and Pizzeria", 4.0, 414, 1656.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Air and Space Museum", 4.5, 23428, 19.66380846910165);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 889, "3711 Beach Side", 5.0, 430, 2150.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Vietnam Veterans Memorial", 4.5, 11964, 18.35044381961676);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 890, "La Dolce Vita", 4.5, 865, 3892.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "United States Holocaust Memorial Museum", 4.5, 11260, 18.23192275731897);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 891, "Riverside Market", 4.5, 209, 940.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Korean War Veterans Memorial", 4.5, 11053, 18.195660765101476);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 892, "Egg & You", 4.0, 279, 1116.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 6, "National Mall", 4.5, 8361, 17.650162005448347);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 893, "Joe's Cafe", 4.5, 148, 666.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "National World War II Memorial", 4.5, 10171, 18.03313644440525);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 15, 894, "925 Nuevo's Cubano's", 4.5, 189, 850.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Washington Monument", 4.5, 9431, 17.885509851841107);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 895, "Floridian", 4.0, 656, 2624.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "U.S. Capitol", 4.5, 7049, 17.316573797555435);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 896, "New York Marina Deli", 4.5, 110, 495.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Museum of African American History and Culture", 5.0, 3646, 17.809083321594784);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 897, "Davinci's Pizzeria", 4.0, 194, 776.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Portrait Gallery", 4.5, 3554, 15.978228405611773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 898, "Starbucks", 4.0, 354, 1416.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Franklin Delano Roosevelt Memorial", 4.5, 5953, 16.98631147148289);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 1, 899, "Pan'e Dolci Italian Bakery", 4.0, 155, 620.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Jefferson Memorial", 4.5, 6491, 17.155402241090055);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 19, 900, "Cafe Ibiza", 4.0, 326, 1304.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Martin Luther King, Jr. Memorial", 4.5, 5801, 16.935762894604185);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 22, 901, "Ann's Florist and Coffee Bar", 4.5, 66, 297.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Ford's Theatre", 4.5, 4343, 16.37005423213003);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 902, "Press and Grind Cafe", 4.5, 27, 121.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "United States Botanic Garden", 4.5, 2822, 15.52750654238248);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 22, 903, "Brew Urban Cafe", 4.0, 48, 192.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "The National Archives Museum", 4.5, 3550, 15.97602758874792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 22, 904, "Expresso Coffee Co", 4.5, 14, 63.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Hillwood Estate, Museum & Gardens", 5.0, 1288, 15.549579315118967);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (19, 0, 905, "Dunkin'", 4.0, 40, 160.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Washington National Cathedral", 4.5, 3098, 15.709866360404341);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 4, 906, "Velvet Taco", 4.5, 640, 2880.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Museum of American History", 4.5, 5031, 16.657444427965867);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, NULL, 907,"Maple Leaf Diner", 4.5, 323, 1453.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "White House", 4.0, 8169, 15.648675584238507);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 4, 908, "Meso Maya Comida y Copas", 4.5, 1147, 5161.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Georgetown", 4.5, 3009, 15.65289984483036);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 909, "Truck Yard", 4.5, 281, 1264.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Capitol Hill", 4.5, 3469, 15.930919349289267);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 910, "Twisted Root Burger Co.", 4.5, 1237, 5566.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Basilica of the National Shrine of the Immaculate Conception", 5.0, 1906, 16.400614481511536);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 911, "Chop House Burger", 4.5, 375, 1687.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "International Spy Museum", 4.0, 5571, 14.98373263383777);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 912, "Maple and Motor - Burgers and Beer", 4.5, 378, 1701.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 9, "Smithsonian’s National Zoo & Conservation Biology Institute", 4.0, 4553, 14.633190601232759);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 913, "Perry's Steakhouse & Grille - Park District", 4.5, 676, 3042.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Smithsonian Institution Building", 4.5, 3546, 15.973824290692043);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 914, "Ellen's", 4.5, 1019, 4585.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Tidal Basin", 4.5, 1695, 14.531263661425951);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 915, "Mama's Daughter's Diner", 4.5, 254, 1143.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "The Phillips Collection", 4.5, 1417, 14.18116432611357);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 916, "Commons Club", 4.5, 12, 54.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Smithsonian American Art Museum", 4.5, 1568, 14.379057262567887);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 917, "Cafe 43", 4.5, 276, 1242.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Postal Museum", 4.5, 1132, 13.742308920835136);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 12, 918, "rise n°1", 4.5, 1161, 5224.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "John F. Kennedy Center for the Performing Arts", 4.5, 1755, 14.599247043608292);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 919, "Eatzi's Market & Bakery", 4.5, 467, 2101.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Museum of the Bible", 4.5, 1145, 13.76462469004158);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 920, "Emporium Pies", 4.5, 354, 1593.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Smithsonian National Museum of Asian Art", 4.5, 739, 12.908899972776714);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 921, "Rodeo Goat", 4.5, 895, 4027.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Supreme Court", 4.5, 1497, 14.288498101543736);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 922, "The Woolworth", 4.5, 281, 1264.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Union Station", 4.0, 2313, 13.456702531082476);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 923, "Pappas Bros. Steakhouse", 4.5, 1604, 7218.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Renwick Gallery", 4.5, 1134, 13.745758745505993);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 924, "Truluck's Ocean's Finest Seafood & Crab - Dallas", 4.5, 913, 4108.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 1, "U.S. National Arboretum", 4.5, 685, 12.760607571715914);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 925, "Bob's Steak & Chop House - Dallas Lamar", 4.5, 416, 1872.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Nationals Park", 4.5, 1616, 14.43798610397355);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 926, "The Capital Grille", 4.5, 448, 2016.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Albert Einstein Memorial", 4.5, 771, 12.991744701229305);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 5, 927, "Uchi Dallas", 4.5, 294, 1323.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "U.S. Capitol Visitor Center", 4.5, 1017, 13.532944288152349);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 928, "Al Biernat's", 4.5, 810, 3645.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Dumbarton Oaks", 4.5, 331, 11.339225971990732);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 12, 929, "Saint Martin's Wine Bistro", 4.5, 296, 1332.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Museum of the American Indian", 4.0, 2403, 13.523015083215599);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 930, "YO Ranch Steakhouse", 4.5, 1291, 5809.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Vietnam Women's Memorial", 4.5, 647, 12.649069263009151);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 931, "Ocean Prime", 4.5, 402, 1809.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 6, "National Gallery of Art - Sculpture Garden", 4.5, 583, 12.445508496415561);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 932, "Fearing's Restaurant", 4.5, 653, 2938.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "The Pentagon", 4.0, 1217, 12.341162312920257);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 933, "Kenny's Wood Fired Grill", 4.5, 1452, 6534.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "President Lincoln's Cottage", 4.5, 559, 12.363353135488904);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 1, 934, "Kenny's Italian Kitchen", 4.5, 395, 1777.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Union Market", 4.5, 402, 11.719017238880115);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 935, "Cindi's NY Deli & Restaurant", 4.5, 364, 1638.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "White House Visitors Center", 4.0, 737, 11.469869951436204);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 936, "Original Market Diner", 4.5, 347, 1561.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Hirshhorn Museum and Sculpture Garden", 4.0, 899, 11.815038766932913);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 937, "Keller's Drive-in", 4.5, 227, 1021.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Anderson House", 4.5, 161, 9.930716442143323);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 938, "Norma's Cafe", 4.5, 158, 711.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Rock Creek Park", 4.5, 289, 11.074040292404465);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 939, "Angry Dog", 4.0, 241, 964.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Old Post Office Pavilion", 4.0, 606, 11.129890496665144);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 940, "Bubba's Cooks Country", 4.5, 136, 612.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "DAR Museum", 4.5, 231, 10.636253909514648);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 941, "Snuffer's Restaurant & Bar", 4.0, 144, 576.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Law Enforcement Museum", 4.5, 164, 9.966797316214642);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 942, "Record Grill", 4.5, 70, 315.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "National Cherry Blossom Festival", 4.5, 188, 10.233710321686559);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 943, "Flying Horse Cafe", 4.5, 168, 756.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Georgetown University", 4.5, 251, 10.798531746664668);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 944, "Ascension", 4.5, 129, 580.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "The Kreeger Museum", 4.5, 128, 9.482444863415406);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 0, 945, "Opening Bell Coffee", 4.5, 60, 270.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "The President Woodrow Wilson House", 4.5, 223, 10.567371883716723);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 22, 946, "Otto's Coffee And Fine Foods", 4.5, 22, 99.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "National Law Enforcement Officers Memorial", 4.5, 274, 10.969877532691745);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 22, 947, "Palmieri Cafe", 4.5, 22, 99.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Bureau Of Engraving And Printing", 4.0, 957, 11.923647751107373);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, NULL, 948,"Weekend Coffee", 4.5, 21, 94.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Planet Word", 5.0, 47, 8.360489289678586);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, NULL, 949,"Houndstooth Coffee", 4.5, 28, 126.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Franciscan Monastery of the Holy Land", 4.5, 213, 10.477708215474319);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 22, 950, "Cultivar Coffee Bar & Roaster", 4.5, 23, 103.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "The Wharf DC", 4.5, 155, 9.85649264176631);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 22, 951, "Magnolias Sous Le Pont", 5.0, 20, 100.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Building Museum", 4.0, 661, 11.280805837942559);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (20, 22, 952, "Urban Blend Coffee Co.", 4.5, 18, 81.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 6, "Theodore Roosevelt Island Park", 4.5, 474, 12.041002537533382);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 953, "Bright Angel Bicycles and Cafe", 4.5, 396, 1782.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Arena Stage", 4.5, 217, 10.514068802318382);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 954, "Desert View Trading Post", 4.0, 383, 1532.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Museum of Women in the Arts", 4.5, 368, 11.54631518403083);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 955, "Grand Canyon Village Market & Deli", 4.0, 860, 3440.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Capital One Arena", 4.0, 734, 11.46278423966428);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 4, 956, "Plaza Bonita", 4.0, 2603, 10412.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Eastern Market", 4.0, 527, 10.887242460850185);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 957, "Phantom Ranch", 4.5, 268, 1206.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Senate and House Office Buildings", 4.5, 232, 10.644695932009046);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 958, "Grand Canyon Lodge Dining Room", 4.0, 1207, 4828.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Potomac River", 4.0, 307, 9.948553501908744);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 959, "El Tovar Lodge Dining Room", 4.0, 6367, 25468.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Tudor Place", 4.5, 163, 9.95484421981781);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 960, "Arizona Room", 4.0, 1703, 6812.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Petersen Boarding House", 4.5, 189, 10.244078118779598);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 961, "Bright Angel Restaurant, Fountain & Bar", 3.5, 2783, 9740.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Museum of African Art", 4.5, 246, 10.759207981965204);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 962, "Roughrider Saloon", 4.0, 117, 468.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Washington Metropolitan Area Transit Authority (Metro)", 4.0, 730, 11.453291440481822);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 963, "Harvey House Cafe", 3.5, 165, 577.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Museum of the United States Navy", 4.5, 133, 9.557332384351886);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 0, 964, "Maswik Food Court", 3.5, 1248, 4368.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Frederick Douglass National Historic Site", 4.5, 189, 10.244078118779598);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (21, 27, 965, "Deli In The Pines", 3.5, 182, 637.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "National Geographic Museum", 4.0, 868, 11.754078900705967);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 966, "Bright Angel Bicycles and Cafe", 4.5, 396, 1782.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Embassy Row", 4.0, 228, 9.431739388001814);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 967, "Desert View Trading Post", 4.0, 383, 1532.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Walter E. Washington Convention Center", 4.0, 220, 9.369690723288825);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 968, "Grand Canyon Village Market & Deli", 4.0, 860, 3440.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Enid A. Haupt Garden", 4.5, 107, 9.132226999583441);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 4, 969, "Plaza Bonita", 4.0, 2603, 10412.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Saint John Paul II National Shrine", 5.0, 125, 10.484550065040281);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 970, "Phantom Ranch", 4.5, 268, 1206.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Marine Barracks Washington, 8th and I", 5.0, 120, 10.395906230238124);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 971, "Grand Canyon Lodge Dining Room", 4.0, 1207, 4828.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 6, "Kenilworth Park and Aquatic Gardens", 4.5, 108, 9.150406899691273);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 972, "El Tovar Lodge Dining Room", 4.0, 6367, 25468.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "The Escape Game DC (Georgetown)", 4.5, 1526, 14.325995401284876);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 973, "Arizona Room", 4.0, 1703, 6812.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Dupont Circle", 4.0, 361, 10.230028807622631);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 974, "Bright Angel Restaurant, Fountain & Bar", 3.5, 2783, 9740.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Folger Shakespeare Library", 4.5, 218, 10.52305422122072);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 975, "Roughrider Saloon", 4.0, 117, 468.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "African American Civil War Memorial Museum", 4.5, 104, 9.076650026844511);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 976, "Harvey House Cafe", 3.5, 165, 577.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "The National Theatre", 4.0, 144, 8.633449968380997);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 0, 977, "Maswik Food Court", 3.5, 1248, 4368.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (22, 27, 978, "Deli In The Pines", 3.5, 182, 637.0);
+
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (10, 4, "The Exorcist Steps", 4.0, 131, 8.469085182623056);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Ronald Reagan Building and International Trade Center", 4.0, 249, 9.584797388382944);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, NULL, 979,"Pulaski Deli", 4.5, 536, 2412.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "The Three Soldiers", 4.5, 100, 9.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Municipal Fish Market at The Wharf", 4.0, 187, 9.087366426145996);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 980, "Luigi's Trattoria", 4.5, 1340, 6030.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Cathedral of St. Matthew the Apostle", 4.5, 108, 9.150406899691273);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, NULL, 981,"Cafe Old Vienna", 4.5, 1286, 5787.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "United States Navy Memorial and Naval Heritage Center", 4.0, 197, 9.177864904646372);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 982, "Hot Stacks Cafe", 4.5, 207, 931.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 6, "Georgetown Waterfront Park", 4.5, 63, 8.097032472541116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 983, "Croissants Bistro and Bakery", 4.5, 1400, 6300.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Washington Harbour", 4.5, 147, 9.75292800636679);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 984, "Simply Southern Smokehouse", 4.5, 1638, 7371.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "DC Circulator", 4.5, 279, 11.005218914731188);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 985, "Eggs Up Grill", 4.5, 859, 3865.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "House of the Temple", 4.5, 65, 8.158110104892849);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 986, "Toffino's Italian Bakery Deli Pizza", 4.5, 531, 2389.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Barbie Pond on Avenue Q", 5.0, 52, 8.580016718173995);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 16, 987, "Rioz Brazilian Steakhouse", 4.5, 2827, 12721.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Lafayette Square", 4.0, 252, 9.605602163126175);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 988, "Krispy Kreme", 4.5, 368, 1656.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Adams Morgan", 4.0, 136, 8.53415563348087);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 989, "Drift", 5.0, 167, 835.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Eisenhower Executive Office Building", 4.5, 111, 9.203953404539957);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 990, "Hook & Barrel", 4.5, 1216, 5472.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "FBI Headquarters", 4.0, 150, 8.704365036222724);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 991, "Croissants Bistro & Bakery", 4.5, 243, 1093.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Ulysses S. Grant Memorial", 4.0, 133, 8.495406563868343);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 19, 992, "Abraham's Gyros", 4.5, 670, 3015.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "The George Washington University Museum - The Textile Museum", 4.5, 64, 8.12780988292749);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 993, "Hot Tomato", 4.5, 879, 3955.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Old Stone House", 4.0, 147, 8.669269338992702);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 994, "Vicini's Italian Restaurant and Pizzeria", 4.5, 272, 1224.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 7, "CityCenterDC", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 995, "Toscana Italian kitchen", 4.5, 1436, 6462.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 6, "The Yards Park", 4.5, 43, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 996, "The Melting Pot Restaurant of Myrtle Beach", 5.0, 2895, 14475.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "C & O Canal", 4.5, 86, 8.705243030596053);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 997, "Thoroughbreds Chophouse", 4.5, 1207, 5431.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Heurich House Museum", 4.5, 95, 8.899756223799814);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 998, "Aspen Grille", 4.5, 950, 4275.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "National Japanese American Memorial", 4.5, 70, 8.302941180064156);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 999, "Waterscapes Restaurant", 4.5, 455, 2047.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Smithsonian Garden", 4.5, 92, 8.837045223054998);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 24, 1000, "The Library Restaurant", 4.5, 471, 2119.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Department of State", 4.5, 53, 7.75924141320355);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1001, "New York Prime", 4.5, 678, 3051.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 3, "Donald W. Reynolds Center for American Art and Portraiture", 4.5, 35, 6.94830619957624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1002, "Ruth's Chris Steak House", 4.5, 713, 3208.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (10, 4, "Anthem", 4.0, 102, 8.034400687047668);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1003, "Vintage Twelve", 4.0, 110, 440.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (10, 3, 50.38849734268727);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 1004, "Lombardo's Italian Restaurant", 4.5, 491, 2209.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (10, 4, 188.6379473999141);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 4, 1005, "Sun City Cafe", 5.0, 234, 1170.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (10, 6, 15.447640522649255);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 1006, "Ciao Restaurant", 4.5, 1700, 7650.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (10, 7, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 1007, "Villa Romana Italian Restaurant", 4.5, 2015, 9067.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "‪Diamond Head State Monument", 4.5, 24161, 19.724017074039306);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 1008, "Sole Italian Restaurant", 4.5, 1520, 6840.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "USS Arizona Memorial", 4.5, 27061, 19.94554728576327);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 1, 1009, "AJ's Pizza", 4.5, 350, 1575.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Pearl Harbor National Memorial", 4.5, 13716, 18.61752364399308);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1010, "Paula Deen's Family Kitchen", 4.5, 3595, 16177.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Iolani Palace", 4.5, 7697, 17.488446689517655);
+VALUES (23, 0, 1011, "42nd Street Bar And Grill", 5.0, 297, 1485.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Battleship Missouri Memorial", 4.5, 8291, 17.633731118152415);
+VALUES (23, 0, 1012, "Carolina Pancake House", 4.5, 428, 1926.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Hanauma Bay Nature Preserve", 4.5, 17104, 19.04893959539116);
+VALUES (23, 0, 1013, "Donald's Pancake House", 4.5, 738, 3321.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Waikiki Beach", 4.0, 18714, 17.088666500563146);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 19, 1014, "Mediterranean Bistro", 4.5, 185, 832.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Koko Crater Railway Trail", 4.5, 2598, 15.36587616031654);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1015, "National House of Pancakes", 4.5, 639, 2875.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Makapuu Lighthouse Trail", 4.5, 2640, 15.39721767091424);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1016, "Big Mike's Soul Food", 4.5, 1220, 5490.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Manoa Falls", 4.5, 3718, 16.066392234461457);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1017, "Mammy's Kitchen", 4.5, 1123, 5053.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "National Memorial Cemetery of the Pacific", 4.5, 3236, 15.795038308231055);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1018, "Harry's Breakfast Pancakes", 4.0, 588, 2352.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Bishop Museum", 4.5, 2866, 15.557742837275963);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 22, 1019, "Starbucks", 4.5, 120, 540.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "USS Bowfin Submarine Museum & Park", 4.5, 3967, 16.193079902133675);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1020, "Starbucks Caribbean Resort", 4.5, 148, 666.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Shangri La", 4.5, 944, 13.387373974341308);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1021, "Dunkin'", 4.0, 84, 336.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Pearl Harbor Aviation Museum", 4.5, 2352, 15.171467928318453);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 22, 1022, "Fresh Brewed Coffee House", 4.5, 15, 67.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "US Army Museum of Hawaii", 4.5, 2108, 14.95741772943229);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, NULL, 1023,"Dunkin", 3.5, 69, 241.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Honolulu Museum of Art", 4.5, 1284, 13.988542606797754);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (23, 0, 1024, "Starbucks Tanger 17 Outlet", 3.5, 29, 101.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 7, "Ala Moana Center", 4.0, 3105, 13.968246418050393);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1025, "Ajo Al's Mexican Cafe", 4.5, 325, 1462.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 6, "Fort DeRussy Beach Park", 4.5, 1900, 14.75439120428773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1026, "Postino Central", 4.5, 241, 1084.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 6, "Tantalus Lookout Puu Ualakaa State Park", 4.5, 1049, 13.593489696871009);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 1, 1027, "The Parlor Pizzeria", 4.5, 270, 1215.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 6, "Magic Island", 4.5, 733, 12.892967885885074);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1028, "Original Breakfast House", 4.5, 395, 1777.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Diamond Head Crater", 4.5, 586, 12.455539272081406);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 1, 1029, "Pomo Pizzeria Phoenix", 4.5, 898, 4041.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Ala Moana Beach Park", 4.5, 1999, 14.853657573531525);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1030, "True Food Kitchen", 4.5, 647, 2911.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Aloha Stadium Swap Meet & Marketplace", 4.0, 1554, 12.765804057859581);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1031, "Matt's Big Breakfast", 4.5, 1106, 4977.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Saint Augustine by-the-Sea", 4.5, 582, 12.442153430924499);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1032, "Taco Guild", 4.5, 532, 2394.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Waikiki Beach Walk", 4.5, 1607, 14.427071445435049);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1033, "White Chocolate Grill", 4.5, 1083, 4873.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Lyon Arboretum", 4.5, 431, 11.85514771572329);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 1, 1034, "Pizzeria Bianco", 4.5, 322, 1449.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Kapiolani Park", 4.5, 1111, 13.705713265233904);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, NULL, 1035,"Frost A Gelato Shoppe", 5.0, 139, 695.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "The Bus", 4.0, 852, 11.721758379066799);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1036, "Little Miss BBQ", 4.5, 689, 3100.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 9, "Honolulu Zoo", 4.0, 2866, 13.829104744245301);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1037, "Rusconi's American Kitchen", 4.5, 900, 4050.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Statue of Duke Kahanamoku", 4.5, 1968, 14.82311292342895);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, NULL, 1038,"Postino B-Side", 4.5, 486, 2187.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 7, "International Market Place", 4.0, 769, 11.543705359205724);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1039, "Fuego @ the Clarendon", 4.5, 700, 3150.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "King Kamehameha Statue", 4.0, 1480, 12.681046861579828);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1040, "Snooze, an A.M. Eatery", 4.5, 422, 1899.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 7, "Royal Hawaiian Center", 4.0, 790, 11.590508365161766);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1041, "Bobby-Q", 4.5, 2211, 9949.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 6, "Puu Ualakaa State Park", 4.5, 728, 12.879591206908666);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1042, "Breakfast Club", 4.5, 513, 2308.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 7, "Don Quijote", 4.0, 629, 11.194602581781075);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 25, 1043, "Steak 44", 4.5, 840, 3780.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Foster Botanical Gardens", 4.5, 544, 12.310195048641807);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1044, "The Capital Grille", 4.5, 432, 1944.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Kuhio Beach", 4.5, 604, 12.514666223795093);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1045, "Different Pointe of View", 4.5, 904, 4068.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Queen Emma Summer Palace", 4.5, 377, 11.593536075926067);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1046, "Tarbell's", 4.5, 442, 1989.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Spitting Cave of Portlock", 4.5, 274, 10.969877532691745);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1047, "Binkley's Restaurant", 4.5, 353, 1588.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 12, "Waikiki Aquarium", 4.0, 1810, 13.030714299476736);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1048, "Durant's", 4.5, 817, 3676.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "USS Oklahoma Memorial", 4.5, 374, 11.577922209902159);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1049, "Stockyards Restaurant", 4.5, 603, 2713.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Saturday Farmer's Market KCC", 4.0, 820, 11.655255409534865);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1050, "T. Cook's", 4.5, 762, 3429.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Kaimana Beach", 4.5, 337, 11.374334553921024);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1051, "The Melting Pot", 4.5, 266, 1197.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Kuliouou Ridge Hike", 4.5, 138, 9.629455888805564);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1052, "Roy's Restaurant - Desert Ridge", 4.0, 653, 2612.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Honolulu's Police Department Museum", 5.0, 111, 10.226614893933286);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1053, "Phoenix City Grille", 4.5, 368, 1656.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Foodland Ala Moana", 4.5, 337, 11.374334553921024);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1054, "Cocina Madrigal", 4.5, 353, 1588.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Sans Souci Beach Park", 4.5, 96, 8.920220548678056);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1055, "Mi Patio Mexican Food", 4.0, 190, 760.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Manoa Falls Trail", 4.5, 120, 9.356315607214311);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1056, "Los Reyes De La Torta", 4.5, 133, 598.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Hawaii State Art Museum", 4.5, 146, 9.739587851029965);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1057, "5 & Diner", 4.0, 191, 764.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Hawaiian Mission Houses Historic Site and Archives", 4.5, 112, 9.221481102015815);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1058, "Gadzooks Enchiladas & Soup", 4.5, 115, 517.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Duke Kahanamoku Lagoon", 4.5, 140, 9.65757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1059, "The Joy Bus Diner", 5.0, 41, 205.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Koko Crater Botanical Garden", 4.0, 179, 9.011412123919571);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 1, 1060, "Stumpy's Pizza & Subs", 4.5, 64, 288.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Experience Nutridge", 5.0, 887, 14.73961809915863);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1061, "Joe's Diner", 4.5, 75, 337.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 6, "Moanalua Gardens", 4.0, 743, 11.4839552550423);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 0, 1062, "Carly's Bistro", 4.5, 74, 333.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 5, "The Magical Mystery Show at Hilton Waikiki Beach", 5.0, 1010, 15.02160686891321);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1063, "Los Taquitos", 4.0, 182, 728.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Lulumahu Waterfall", 4.5, 105, 9.09535184581472);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (24, 4, 1064, "Maria's Frybread and Mexican Food", 4.5, 52, 234.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Kahala Beach", 4.5, 76, 8.46366116526356);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 5, 1065, "Izakaya Den", 4.5, 338, 1521.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Eternity Beach", 4.5, 35, 6.94830619957624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 5, 1066, "Sushi Den", 4.5, 870, 3915.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Old Waialua Sugar Mill", 4.0, 121, 8.3311414812658);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1067, "Fruition Restaurant", 4.5, 1019, 4585.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 7, "Kahala Mall", 4.0, 451, 10.616706167511841);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1068, "The Capital Grille", 4.5, 788, 3546.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Royal Mausoleum State Monument  (Mauna  Ala)", 4.5, 29, 6.580790990545302);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 1, 1069, "Barolo Grill", 4.5, 304, 1368.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Diamond Head Crater Hike", 4.5, 19, 5.75439120428773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 21, 1070, "Rioja", 4.5, 1952, 8784.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Izumo Taishakyo Mission of Hawaii", 4.0, 517, 10.85396217237577);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1071, "Guard and Grace", 4.5, 896, 4032.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Saint Andrew's Cathedral", 4.5, 92, 8.837045223054998);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, NULL, 1072,"ChoLon Modern Asian", 4.5, 675, 3037.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Honolulu Fish Auction", 5.0, 34, 7.657394585211276);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 1, 1073, "Panzano", 4.5, 1703, 7663.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Makiki Valley Trail", 4.5, 33, 6.833312729450493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1074, "Edge Restaurant & Bar", 4.5, 523, 2353.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Ka’au Crater Hike", 5.0, 33, 7.592569699389436);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1075, "Root Down", 4.5, 1469, 6610.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "University of Hawaii at  Manoa Campus", 4.0, 131, 8.469085182623056);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 1, 1076, "Marco's Coal-Fired", 4.5, 806, 3627.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Aloha Pearl Harbor Tours", 4.0, 565, 11.008193791277753);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1077, "Snooze, an A.M. Eatery", 4.5, 2675, 12037.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Honolulu Beerworks", 4.5, 121, 9.372534166424025);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1078, "The Bagel Deli & Restaurant", 4.5, 313, 1408.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Japanese Cultural Center of Hawaii", 4.5, 41, 7.2575273552388095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1079, "Work and Class", 4.5, 244, 1098.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Hanauma Bay Trail", 4.5, 28, 6.512211141039986);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1080, "Denver Biscuit Company", 4.5, 245, 1102.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Downtown Honolulu", 4.0, 481, 10.728580305495326);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1081, "54thirty Rooftop", 5.0, 274, 1370.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "China Walls", 4.0, 47, 6.688391431742869);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1082, "Corinne Restaurant", 5.0, 692, 3460.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 3, "Children's Discovery Center", 4.0, 79, 7.590508365161765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1083, "Hops and Pie", 4.5, 243, 1093.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Ali'iolani Hale", 4.0, 133, 8.495406563868343);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1084, "Avelina", 4.5, 179, 805.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Hawaii Convention Center", 4.0, 101, 8.01728549513057);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1085, "Lucile's Creole Cafe", 4.5, 442, 1989.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Aloha Stadium", 4.0, 247, 9.570787813038663);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, NULL, 1086,"Anise, Modern Vietnamese Eatery", 5.0, 8, 40.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Waialae Beach Park", 4.5, 45, 7.439456311989046);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1087, "Sam's No. 3", 4.5, 3139, 14125.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Hawaiian Chip Company", 5.0, 26, 7.07486673985409);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1088, "Mad Greens", 4.5, 191, 859.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Nuuanu Valley Rain Forest", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1089, "Pete's Kitchen", 4.0, 341, 1364.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Honolulu Hale (City Hall)", 4.0, 105, 8.084757196279751);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 5, 1090, "Menya Noodle Bar", 4.5, 130, 585.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Hawaii State Capitol", 4.0, 158, 8.79462834781769);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 9, 1091, "Pho-natic", 4.5, 142, 639.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 7, "Ward Centre", 4.0, 164, 8.859375392190792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 9, 1092, "Pho 95", 4.5, 113, 508.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Mu Ryang Sa Buddhist Temple", 4.5, 39, 7.159790731619246);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1093, "Red Rooster Cafe", 4.5, 59, 265.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Cathedral Basilica of Our Lady of Peace", 4.5, 28, 6.512211141039986);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1094, "Butcher Block Cafe", 4.5, 61, 274.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Honolulu Harbor", 4.0, 119, 8.302187845570122);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 27, 1095, "Fat Sully's Pizza", 4.0, 141, 564.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Kaka'ako Waterfront Park", 4.0, 62, 7.169566757993015);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (25, 0, 1096, "The 1UP Arcade Bar - LoDo", 4.0, 121, 484.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Moanalua Middle Ridge", 5.0, 21, 6.611096473669596);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1097, "Roosevelt Lodge Dining Room", 4.0, 610, 2440.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Makalei Beach Park", 5.0, 14, 5.730640178391189);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1098, "Lake Yellowstone Hotel Dining Room", 4.0, 1344, 5376.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Rock-A-Hula", 4.5, 1249, 13.934530972683609);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1099, "Mammoth Hotel Dining Room", 4.0, 1152, 4608.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "San Souci  Beach", 4.5, 25, 6.290730039024169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1100, "Obsidian Dining Room", 3.5, 718, 2513.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "T Galleria by DFS, Hawaii", 3.5, 581, 9.674616463366156);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1101, "Old Faithful Inn Dining Room", 3.5, 2568, 8988.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Kaka'ako Farmer's Market", 4.0, 61, 7.141319340043068);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1102, "Bear Pit Lounge", 4.0, 222, 888.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "U.S. Army Schofield Barracks", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1103, "Canyon Fountain and Grill", 3.5, 256, 896.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Neal S. Blaisdell Center", 4.0, 43, 6.533873822318346);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1104, "Old Faithful Lodge Cafeteria & Bake Shop", 3.5, 714, 2499.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Diamond Head Beach Park", 4.5, 17, 5.537020146202233);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1105, "Wylie's Canteen at Lake Lodge", 3.5, 658, 2303.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Diamond Head Theatre", 4.5, 27, 6.4411369387154425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1106, "Grant Village Dining Room", 3.5, 489, 1711.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "USS Utah Memorial", 4.5, 41, 7.2575273552388095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1107, "Grant Village Lake House Restaurant", 3.0, 317, 951.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Wiliwilinui Hiking Trail", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1108, "Old Faithful General Store", 4.0, 153, 612.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Beach Sunset Yoga Hawaii - Waikiki", 5.0, 380, 12.89891798308405);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1109, "Fishing Bridge General Store", 4.0, 130, 520.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Frostcity", 4.5, 16, 5.418539921951661);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1110, "Old Faithful Inn Bear Paw Deli", 3.5, 196, 686.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Likeke Falls", 4.0, 35, 6.176272177401102);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, NULL, 1111,"Mammoth General Store", 4.0, 216, 864.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Kuan Yin Temple", 4.5, 35, 6.94830619957624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1112, "Canyon Soda Fountain", 4.0, 51, 204.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Queen's Beach", 4.5, 47, 7.524440360710728);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1113, "Lake General Store", 4.0, 47, 188.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Top Limousine Service", 5.0, 254, 12.02416858309969);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1114, "Tower General Store", 3.5, 28, 98.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Kaka'ako", 4.0, 123, 8.35962044575759);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (26, 0, 1115, "Old Faithful Snow Lodge Geyser Grill", 3.0, 441, 1323.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 2, "Kawehewehe", 4.5, 26, 6.367380065868681);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1116, "Timbers Log Cabin Restaurant", 4.5, 378, 1701.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Ala Wai Canal", 4.0, 117, 8.272743446984647);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1117, "Crawdaddy's Restaurant & Oyster Bar", 4.0, 991, 3964.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Judiciary Building", 4.0, 38, 6.31913438646724);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1118, "Johnny Rockets", 4.0, 1011, 4044.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Royal Star Hawaii Deluxe Tours", 5.0, 12226, 20.436421957268806);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 4, 1119, "El Sonador Mexican Restaurant and Grill", 4.5, 252, 1134.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Breakout Waikiki Escape Rooms", 5.0, 2023, 16.529979413854022);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 4, 1120, "Loco Burro Fresh Mex Cantina", 4.0, 3071, 12284.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Tour Advisor Hawaii", 5.0, 8, 4.515449934959717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1121, "TGI Fridays", 4.0, 817, 3268.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Baileys Antiques & Aloha Shirts", 4.5, 86, 8.705243030596053);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1122, "Hungry Bear BBQ", 4.0, 493, 1972.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "E Noa Tours", 5.0, 18946, 21.387587664845853);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1123, "Ben & Jerry's", 4.0, 262, 1048.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Liljestrand House", 5.0, 9, 4.771212547196624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1124, "Smoky Mountains Creperie", 5.0, 25, 125.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 1, "Maunawili Trail", 4.0, 80, 7.612359947967773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1125, "Subway", 3.5, 117, 409.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Super Limousine Service", 5.0, 213, 11.641898017193688);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1126, "Rita's Italian Ice & Frozen Custard", 5.0, 19, 95.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (11, 4, "Washington Place", 4.5, 20, 5.854634980487915);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1127, "Tennessee Jed’s", 5.0, 484, 2420.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (11, 1, 17.285386043479562);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 19, 1128, "Red Oak Bistro", 5.0, 314, 1570.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (11, 2, 31.450210790196998);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1129, "Delauder's BBQ", 4.5, 457, 2056.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (11, 4, 213.93695560910643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1130, "Mad Dog's Creamery & Donuts", 4.5, 443, 1993.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "The Houston Museum of Natural Science", 4.5, 5232, 16.734004808922947);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1131, "Donut Friar", 4.5, 2849, 12820.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Space Center Houston", 4.5, 9745, 17.94951829554138);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 22, 1132, "Coffee and Company", 4.5, 284, 1278.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Museum of Fine Arts, Houston", 4.5, 2751, 15.477707656753573);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1133, "Wild Plum Tea Room", 4.5, 833, 3748.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 9, "Houston Zoo", 4.5, 4217, 16.312516204566883);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1134, "The Village Cafe & Creamery", 4.5, 210, 945.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "The Galleria", 4.5, 5244, 16.738482073581206);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1135, "Buckhorn Inn", 5.0, 543, 2715.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Minute Maid Park", 4.5, 3205, 15.776226152346762);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1136, "Chesapeake's Seafood and Raw Bar", 5.0, 964, 4820.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Houston Museum District", 4.5, 717, 12.849836200505099);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1137, "Trish’s Mountain Diner", 4.5, 503, 2263.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "The Music Box Theater", 5.0, 501, 13.499188629336228);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 1, 1138, "Taste Of Italy", 4.5, 2741, 12334.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "National Museum of Funeral History", 4.5, 566, 12.387673940347222);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1139, "Cherokee Grill", 4.5, 4817, 21676.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Children's Museum Houston", 4.5, 1662, 14.492839587516414);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1140, "New Orleans Sandwich Company", 4.5, 825, 3712.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Cockrell Butterfly Center", 4.5, 712, 12.836159971365852);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1141, "Parton's Deli", 4.5, 411, 1849.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "The Menil Collection", 4.5, 962, 13.424287824170158);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1142, "Log Cabin Pancake House", 4.5, 3722, 16749.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Holocaust Museum Houston", 4.5, 797, 13.056562446282506);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1143, "Pancake Pantry", 4.5, 5451, 24529.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Discovery Green", 4.5, 879, 13.247949937831972);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1144, "Crocketts Breakfast Camp", 4.5, 5511, 24799.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Buffalo Bayou Park", 4.5, 342, 11.403117477252605);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1145, "Split Rail Eats", 5.0, 116, 580.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Saint Arnold Brewing Company", 4.5, 357, 11.487006972504867);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1146, "Little House of Pancakes", 4.5, 760, 3420.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Rodeo Houston or Houston Livestock Show and Rodeo", 4.5, 606, 12.521126808748287);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1147, "Old Dad's", 4.5, 786, 3537.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Bayou Bend Collection and Gardens", 4.5, 459, 11.978157084917674);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1148, "Carmelcorn", 4.5, 206, 927.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Gerald D. Hines Waterwall Park", 4.5, 1364, 14.10666466644207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 4, 1149, "Estrella Hondumex", 4.5, 75, 337.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Rice University Campus", 4.5, 507, 12.172535817000012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1150, "Starbucks", 4.0, 236, 944.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Alley Theatre", 4.5, 273, 10.962731911683402);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1151, "Bigfoot Philly Cheesesteaks", 4.5, 15, 67.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Glenwood Cemetery", 5.0, 220, 11.712113404111031);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (27, 0, 1152, "Burg Steakhouse", 3.5, 140, 490.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Toyota Center", 4.5, 907, 13.309232791770427);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 18, 1153, "Happy Fish", 4.5, 848, 3816.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Hobby Center for the Performing Arts", 4.5, 325, 11.303475124404933);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 15, 1154, "La Segunda Central Bakery", 4.5, 354, 1593.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "NRG Stadium", 4.5, 860, 13.205243030596053);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1155, "Edison: Food+Drink Lab", 4.5, 438, 1971.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Houston Symphony", 5.0, 203, 11.537480189566063);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 26, 1156, "Bulla Gastrobar", 4.5, 156, 702.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Miller Outdoor Theatre", 4.5, 350, 11.448306199576239);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 1, 1157, "Brio Italian Grille", 4.0, 542, 2168.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Lone Star Flight Museum", 5.0, 102, 10.043000858809584);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1158, "Hattricks", 4.0, 525, 2100.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "1940 Air Terminal Museum", 4.5, 167, 10.002224120164126);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1159, "Ella's Americana Folk Art Cafe", 4.5, 351, 1579.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "George R. Brown Convention Center", 4.0, 402, 10.41690421233788);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 21, 1160, "Mise En Place Restaurant", 4.5, 434, 1953.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 12, "Downtown Aquarium", 3.5, 2594, 11.948894901118214);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1161, "Ruth's Chris Steak House", 4.5, 482, 2169.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Smither Park", 5.0, 68, 9.162544563531181);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1162, "Stonewood Grill & Tavern", 4.5, 366, 1647.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Theatre Under The Stars", 4.5, 108, 9.150406899691273);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1163, "Wright's Gourmet House", 4.5, 1209, 5440.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 7, "Memorial City Mall", 4.5, 190, 10.25439120428773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 1, 1164, "La Terrazza Restaurant", 4.5, 609, 2740.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "McGovern Centennial Gardens", 4.5, 173, 10.07120746407958);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1165, "Al's Finger Licking Good Bar-B-Que", 4.5, 300, 1350.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 1, "Houston Arboretum & Nature Center", 4.5, 244, 10.743254218524282);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1166, "On Swann", 4.5, 342, 1539.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Karbach Brewing", 4.5, 260, 10.86738006586868);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1167, "Ocean Prime", 4.5, 1041, 4684.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Houston Grand Opera", 4.5, 94, 8.879075341198643);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 26, 1168, "Mr. Dunderbak's", 4.5, 451, 2029.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Buffalo Soldiers National Museum", 4.5, 140, 9.65757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 8, 1169, "Wat Mongkolratanaram Thai Temple", 4.5, 282, 1269.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Wortham Center", 4.5, 126, 9.451667453029032);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1170, "Fresh Kitchen", 4.5, 188, 846.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Lillie and Hugh Roy Cullen Sculpture Garden", 4.5, 97, 8.940472804198102);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1171, "Daily Eats", 4.5, 511, 2299.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Beer Can House", 4.0, 292, 9.861531405793672);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 1, 1172, "Bella's Italian Café", 4.5, 457, 2056.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Rothko Chapel", 4.0, 435, 10.553957027818548);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 24, 1173, "Eddie V's Prime Seafood", 4.5, 865, 3892.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "TFTI - Houston Interactive", 5.0, 18, 6.276362525516529);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1174, "Fleming's Prime Steakhouse & Wine Bar", 4.5, 536, 2412.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Stages Repertory Theatre", 4.5, 87, 8.727836636783781);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 24, 1175, "Charley’s Steak House & Market Fresh Fish", 4.5, 1537, 6916.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Buffalo Bayou Park Cistern", 4.5, 112, 9.221481102015815);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1176, "Bern's Steak House", 4.5, 4698, 21141.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Sam Houston Park", 4.5, 76, 8.46366116526356);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1177, "Oystercatchers", 4.5, 1106, 4977.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Art Car Museum", 4.0, 198, 9.186660761046124);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1178, "Council Oak Steaks & Seafood", 4.0, 431, 1724.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "JPMorgan Chase Tower", 4.0, 230, 9.44691134407037);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1179, "Rusty Pelican - Tampa", 4.0, 884, 3536.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "The Centurion Lounge", 4.5, 127, 9.467116744301805);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 1, 1180, "Vino E Pasta", 4.5, 362, 1629.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Rice University Trail", 4.5, 104, 9.076650026844511);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 4, 1181, "Green Lemon", 4.5, 420, 1890.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Ice at the Galleria", 4.0, 215, 9.32975383966242);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 16, 1182, "Terra Gaucha Brazilian Steakhouse Tampa", 4.5, 213, 958.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Rienzi Mansion", 4.5, 73, 8.384952870542051);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 15, 1183, "La Teresita Restaurant", 4.5, 475, 2137.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Lakewood Church", 5.0, 29, 7.31198998949478);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1184, "Samaria Cafe", 4.5, 293, 1318.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "The Heritage Society", 4.5, 58, 7.935425971033217);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1185, "Nicki's Omlette & Grill", 4.5, 217, 976.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Military Museum of Texas", 4.5, 38, 7.109026184775645);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, NULL, 1186,"Coppertail Brewing Company", 4.5, 166, 747.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "The Health Museum", 4.0, 189, 9.105847216692975);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 27, 1187, "Five Star Pizza", 4.5, 126, 567.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Houston Ballet", 4.5, 44, 7.395537044187843);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 1, 1188, "Due Amici", 4.5, 108, 486.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Downtown Historic District Market Square", 4.0, 149, 8.692745073649096);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 1, 1189, "New York New York Pizza - Ybor City", 4.0, 185, 740.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "BBVA Compass Stadium", 4.5, 126, 9.451667453029032);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 9, 1190, "Thinh An Kitchen & Tofu", 4.5, 77, 346.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Lucky Land Houston", 4.5, 27, 6.4411369387154425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 15, 1191, "West Tampa Sandwich Shop", 4.5, 102, 459.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "A.D. Players", 4.5, 52, 7.722015046356596);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1192, "Buddy Brew Coffee - Kennedy", 4.5, 98, 441.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Christ Church Cathedral", 4.5, 36, 7.003361253452792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 22, 1193, "The Blind Tiger Cafe", 4.5, 82, 369.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Downtown Tunnels", 3.5, 158, 7.695299804340479);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1194, "Starbucks", 4.5, 80, 360.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "James Turrell's Twilight Epiphany Skyscape", 4.5, 78, 8.51442571210716);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1195, "Moxies Cafe and Caterer", 4.0, 103, 412.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Waugh Drive Bat Colony", 4.5, 67, 8.217336612153717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 22, 1196, "Buddy Brew", 4.5, 45, 202.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Color Factory", 4.5, 25, 6.290730039024169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1197, "The Grind Coffee Bar & Cafe at Westchase", 4.5, 47, 211.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Byzantine Fresco Chapel", 4.5, 52, 7.722015046356596);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1198, "Felicitous Coffee & Tea", 4.5, 48, 216.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Budweiser Brewery Experience", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 22, 1199, "Jet City Espresso", 5.0, 18, 90.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Houston Graffiti Building", 4.5, 43, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 0, 1200, "Sips Specialty Coffee House", 5.0, 18, 90.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Asia Society Texas Center", 4.5, 44, 7.395537044187843);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (28, 22, 1201, "Kahwa Cafe", 4.5, 30, 135.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Contemporary Arts Museum Houston", 4.0, 90, 7.816970037757299);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1202, "Honeyhole Sandwiches", 4.5, 2, 9.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Houston Center for Contemporary Craft", 4.5, 33, 6.833312729450493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 1, 1203, "Pizzeria Credo", 5.0, 219, 1095.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Houston Museum of African American Culture", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 1, 1204, "Salumi Deli", 4.5, 428, 1926.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Buffalo Bayou Brewing", 4.5, 36, 7.003361253452792);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1205, "Rocco's", 4.5, 392, 1764.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Houston Maritime Center", 4.5, 31, 6.711127622254227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1206, "Pike Place Chowder", 4.5, 4295, 19327.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 7, "Rice Village Shops", 4.0, 107, 8.117535110740837);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 15, 1207, "Paseo", 4.5, 591, 2659.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "The Escape Game Houston (City Centre)", 5.0, 1450, 15.806840011174872);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1208, "Bacco Cafe", 4.5, 1061, 4774.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Sawyer Yards", 5.0, 20, 6.505149978319905);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 5, 1209, "Shiro's", 4.5, 494, 2223.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Kickerillo-Mischer Preserve", 4.5, 18, 5.648726272964876);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 7, 1210, "Din Tai Fung", 4.5, 718, 3231.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Williams Tower", 4.0, 46, 6.6510313267262955);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1211, "Toulouse Petit Kitchen & Lounge", 4.5, 1640, 7380.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 7, "Willowbrook Mall", 4.0, 64, 7.224719895935547);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 9, 1212, "Ba Bar South Lake", 4.0, 40, 160.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Ensemble Theatre", 5.0, 14, 5.730640178391189);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 22, 1213, "Ghost Alley Espresso", 5.0, 173, 865.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Clayton Library Center for Genealogical Research", 5.0, 13, 5.569716761534184);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 1, 1214, "The Pink Door", 4.5, 2879, 12955.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Terry Hershey Park", 4.5, 17, 5.537020146202233);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 22, 1215, "The Crumpet Shop", 4.5, 1068, 4806.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "The Catastrophic Theatre", 5.0, 17, 6.15224460689137);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1216, "Macrina Bakery", 4.5, 454, 2043.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Annunciation Catholic Church", 5.0, 12, 5.395906230238124);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, NULL, 1217,"Fremont Brewing", 4.5, 196, 882.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Houston Audubon", 5.0, 7, 4.225490200071284);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1218, "Citizen Coffee", 4.5, 422, 1899.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "The Orange Show Center for Visionary Art", 4.0, 55, 6.9614507579769755);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 1, 1219, "Assaggio Ristorante", 4.5, 973, 4378.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Levy Park", 4.5, 20, 5.854634980487915);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 1, 1220, "Spinasse", 4.5, 427, 1921.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Reliant Park", 4.0, 99, 7.982540778390199);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1221, "The Capital Grille", 4.5, 633, 2848.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Hermann Park", 4.5, 1089, 13.666625458900986);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 1, 1222, "Altura Restaurant", 4.5, 351, 1579.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 7, "Hong Kong City Mall", 4.0, 36, 6.225210003069148);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 19, 1223, "Andaluca Restaurant", 4.5, 731, 3289.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Houston Police Department Museum", 4.0, 30, 5.9084850188786495);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 24, 1224, "Six Seven Restaurant", 4.5, 1159, 5215.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Hermann Park's Japanese Garden", 4.5, 30, 6.647045646238481);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 12, 1225, "Place Pigalle Restaurant and Bar", 4.5, 462, 2079.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Main Street Theater", 5.0, 16, 6.020599913279623);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 25, 1226, "Metropolitan Grill", 4.5, 1605, 7222.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Sam Houston Race Park", 4.0, 58, 7.0537119742517485);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 1, 1227, "Il Terrazzo Carmine", 4.5, 358, 1611.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Archway Gallery", 5.0, 8, 4.515449934959717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1228, "El Gaucho Seattle", 4.5, 601, 2704.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Allen Parkway Loop", 4.5, 15, 5.292410665750565);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1229, "Tilikum Place Cafe", 4.5, 756, 3402.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "The Chapel of St. Basil", 4.5, 11, 4.686267083212012);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1230, "Shaker + Spear", 4.5, 303, 1363.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Police Officer's Memorial", 4.5, 13, 5.012745085380765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1231, "Radiator Whiskey", 4.5, 284, 1278.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Burke Baker Planetarium", 4.0, 38, 6.31913438646724);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 2, 1232, "Chan Seattle", 4.5, 309, 1390.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Bear Creek Pioneers Park", 4.5, 15, 5.292410665750565);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1233, "Biscuit Bitch", 4.5, 191, 859.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "The Nice Winery", 5.0, 8, 4.515449934959717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1234, "Mecca Cafe", 4.0, 357, 1428.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Yellow Rose Distilling", 4.5, 29, 6.580790990545302);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 22, 1235, "Five Point Cafe", 4.0, 995, 3980.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "East End Park", 4.5, 15, 5.292410665750565);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1236, "HoneyHole Sandwiches", 4.5, 118, 531.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 7, "River Oaks Shopping Center", 4.5, 18, 5.648726272964876);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 7, 1237, "Dough Zone Dumpling House", 4.5, 112, 504.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Queensbury Theatre", 5.0, 11, 5.206963425791125);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 14, 1238, "FOB Poke Bar", 5.0, 64, 320.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "TDECU Stadium", 4.5, 23, 6.127775262079168);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, NULL, 1239,"Uli's Famous Sausage", 4.5, 175, 787.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Edith L. Moore Nature Sanctuary", 4.5, 16, 5.418539921951661);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1240, "Voula's Offshore Cafe", 4.5, 158, 711.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Reeves Art and Design", 5.0, 6, 3.8907562519182175);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (29, 0, 1241, "Beth's Cafe", 4.0, 298, 1192.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Spindletap Brewery", 4.5, 29, 6.580790990545302);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1242, "Tommy Bahama Marlin Bar & Store", 4.5, 102, 459.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "River Oaks Theater", 4.0, 42, 6.492997161591601);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1243, "Coconut's Fish Cafe", 4.5, 5266, 23697.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Silver Street Studios", 4.5, 13, 5.012745085380765);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1244, "Maui Coffee Roasters", 4.5, 223, 1003.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 4, "Chinatown", 4.5, 10, 4.5);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1245, "Ruth's Chris Steak House", 4.0, 878, 3512.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Shrine of the Black Madonna Museum", 5.0, 4, 3.0102999566398116);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1246, "Baked on Maui", 4.5, 126, 567.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 3, "Seismique", 4.0, 20, 5.204119982655924);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 27, 1247, "The Outrigger Pizza Company", 4.5, 196, 882.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 6, "Sheldon Lake State Park & Environmental Learning Center", 4.5, 17, 5.537020146202233);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 4, 1248, "Las Pinatas Of Maui", 4.0, 179, 716.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 1, "Eleanor Tinsley Park", 4.5, 9, 4.294091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 8, 1249, "HI Thai Food Truck", 4.5, 19, 85.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (12, 9, "Houston Interactive Aquarium and Animal Preserve", 4.0, 19, 5.1150144038113154);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 5, 1250, "Alive & Well Health Store and Broth Cafe'", 4.5, 38, 171.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (12, 1, 4.294091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1251, "Island Cream Co.", 5.0, 793, 3965.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (12, 3, 14.122904958174384);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 24, 1252, "South Maui Fish Company", 5.0, 674, 3370.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (12, 4, 107.85671449269323);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 14, 1253, "Ululani's Hawaiian Shave Ice", 5.0, 329, 1645.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (12, 6, 29.78846693660435);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 14, 1254, "Aunty Sandy's Banana Bread", 4.5, 561, 2524.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (12, 7, 11.873936276034025);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, NULL, 1255,"Choice Health Bar", 4.5, 410, 1845.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (12, 9, 5.1150144038113154);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 14, 1256, "Ululani’s Hawaiian Shave Ice", 4.5, 306, 1377.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 12, "Georgia Aquarium", 4.5, 23585, 19.67686146261774);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 22, 1257, "Hawaiian Village Coffee", 4.5, 244, 1098.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Atlanta Botanical Garden", 4.5, 5140, 16.69933403547874);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1258, "Lahaina Grill", 4.5, 4989, 22450.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "World of Coca-Cola", 4.0, 14460, 16.64067317183405);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1259, "Mama's Fish House", 4.5, 14874, 66933.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Martin Luther King Jr. National Historic Site", 4.5, 3489, 15.942154362516497);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1260, "Lobby Lounge at Four Seasons Resort Maui", 4.5, 447, 2011.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "National Center for Civil and Human Rights", 5.0, 2156, 16.668243782573505);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1261, "Fleetwood's on Front St.", 4.5, 5240, 23580.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "Piedmont Park", 4.5, 2385, 15.198697725192597);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 14, 1262, "Ko.", 4.5, 1544, 6948.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Fox Theatre", 4.5, 4456, 16.420253319745527);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 24, 1263, "The Restaurant at Hotel Wailea", 4.5, 985, 4432.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "Centennial Olympic Park", 4.0, 4348, 14.553158141657027);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1264, "Ka'ana Kitchen", 4.5, 912, 4104.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 9, "Zoo Atlanta", 4.0, 3666, 14.25676984250479);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1265, "Merriman's Maui", 4.5, 3767, 16951.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Atlanta History Center", 4.5, 1449, 14.224807734620285);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 5, 1266, "Japengo", 4.5, 1372, 6174.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Jimmy Carter Presidential Library & Museum", 4.5, 1249, 13.934530972683609);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 1, 1267, "Ferraro's Bar e Ristorante", 4.5, 1699, 7645.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "High Museum of Art", 4.5, 1960, 14.81515232110414);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 10, 1268, "Down To Earth Organic & Natural Kahului", 4.5, 123, 553.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "College Football Hall of Fame", 4.5, 1560, 14.369060692595077);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1269, "Flatbread Company", 4.5, 2503, 11263.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Oakland Cemetery", 4.5, 1163, 13.795108716278015);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 14, 1270, "Kinaole Grill Food Truck", 4.5, 725, 3262.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The King Center", 4.5, 424, 11.823146354667296);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 5, 1271, "Miso Phat Sushi", 4.5, 404, 1818.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "State Farm Arena", 4.5, 908, 13.311386318344884);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1272, "Gazebo Restaurant at Napili Shores", 4.5, 3282, 14769.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Swan House", 4.5, 638, 12.621693054245227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1273, "Kula Bistro", 4.5, 1220, 5490.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Ebenezer Baptist Church", 4.5, 814, 13.097809822001404);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1274, "808 on Main", 4.5, 236, 1062.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Center for Puppetry Arts", 4.5, 481, 12.069652843682242);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1275, "Nalu's South Shore Grill", 4.5, 1183, 5323.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 7, "Ponce City Market", 4.5, 960, 13.420220548678056);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 5, 1276, "Nuka", 4.5, 296, 1332.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Fernbank Museum", 4.0, 1115, 12.189099469536718);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1277, "Cool Cat Cafe", 4.5, 4489, 20200.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Delta Flight Museum", 4.5, 445, 11.91762004941419);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 8, 1278, "Nutcharee's Authentic Thai Food", 4.5, 278, 1251.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 7, "Lenox Square", 4.0, 647, 11.2436171226748);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1279, "808 Grindz Cafe", 4.5, 789, 3550.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Mercedes Benz Stadium", 4.5, 769, 12.986668529106439);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 1, 1280, "Prison St Pizza", 4.5, 548, 2466.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Buckhead", 4.5, 506, 12.168677325779095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 14, 1281, "Shaka Pops", 5.0, 143, 715.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Truist Park Tours", 4.5, 1082, 13.654022673467475);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1282, "Sunrise Cafe", 4.0, 588, 2352.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Michael C. Carlos Museum", 4.5, 284, 11.039932530211669);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1283, "Makawao Garden Cafe", 4.5, 183, 823.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "SKYVIEW Atlanta", 4.0, 1259, 12.400102920431449);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1284, "Tasty Crust Restaurant", 4.0, 341, 1364.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Shakespeare Tavern Playhouse", 4.5, 401, 11.71414967679082);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 1, 1285, "Round Table Pizza", 4.0, 315, 1260.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 1, "Atlanta BeltLine Eastside Trail", 4.5, 365, 11.530317890054135);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, NULL, 1286,"Sam Sato's", 4.5, 222, 999.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Emory University", 4.5, 270, 10.941136938715443);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1287, "Maui Bread Company", 4.5, 148, 666.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Margaret Mitchell House", 4.0, 812, 11.6382241169647);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, NULL, 1288,"Mana Foods", 4.5, 908, 4086.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Carter Center", 4.5, 250, 10.790730039024167);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1289, "808 Deli", 4.5, 968, 4356.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Chastain Park Amphitheater", 4.5, 443, 11.908816768003813);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1290, "The Coffee Store Napili", 4.5, 317, 1426.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Cobb Energy Performing Arts Centre", 4.5, 235, 10.669805380222812);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1291, "Sugar Beach Bake Shop", 4.5, 500, 2250.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 7, "Atlantic Station", 4.0, 492, 10.76786041106944);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1292, "Maui Pie", 4.5, 491, 2209.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Little Five Points", 4.0, 477, 10.714073516160456);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (30, 0, 1293, "Beach Street Maui Shave Ice", 4.5, 349, 1570.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Atlanta Symphony Orchestra", 4.5, 188, 10.233710321686559);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1294, "Burger Me", 4.0, 304, 1216.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Georgia World Congress Center", 4.0, 575, 11.03867137875852);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1295, "Jax At The Tracks", 4.0, 645, 2580.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "LEGOLAND Discovery Center", 3.5, 1394, 11.004919708166966);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 5, 1296, "Drunken Monkey", 4.0, 186, 744.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Federal Reserve Bank of Atlanta", 4.5, 246, 10.759207981965204);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1297, "Tahoe Central Market", 4.5, 49, 220.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Fernbank Science Center", 4.0, 251, 9.59869488592415);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 22, 1298, "Zuri Coffee Co.", 5.0, 17, 85.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Children's Museum of Atlanta", 4.0, 347, 10.161317899163494);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1299, "Blue Dog Pizza Tahoe Stateline", 4.0, 432, 1728.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 7, "Perimeter Mall", 4.0, 286, 9.82546413251617);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 27, 1300, "Blue Dog Pizza Tahoe Midtown", 4.0, 122, 488.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Bodies The Exhibition (Atlanta)", 4.0, 330, 10.074055759511548);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1301, "Vinny's Pizzeria", 4.0, 131, 524.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Alliance Theatre", 4.5, 126, 9.451667453029032);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, NULL, 1302,"Truckee River Winery", 4.5, 41, 184.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Georgia State Capitol", 4.0, 261, 9.666562029353123);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 1, 1303, "Goodfellas Pizza", 4.0, 69, 276.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Chick-fil-A Backstage Tour", 4.5, 60, 8.001680626726396);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1304, "Flatstick Pub", 5.0, 262, 1310.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Variety Playhouse", 4.5, 141, 9.671486006949209);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1305, "Getaway Cafe", 4.5, 253, 1138.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Virginia-Highland", 4.5, 141, 9.671486006949209);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1306, "Fire Sign Cafe", 4.5, 573, 2578.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 7, "Phipps Plaza", 4.0, 149, 8.692745073649096);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1307, "Sprouts", 4.5, 750, 3375.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "The Breman Museum", 4.5, 89, 8.772255029902107);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1308, "Base Camp Pizza Co.", 4.5, 2737, 12316.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "David J. Sencer CDC Museum", 4.5, 127, 9.467116744301805);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1309, "Driftwood Cafe", 4.5, 1386, 6237.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Catholic Shrine of the Immaculate Conception", 4.5, 76, 8.46366116526356);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1310, "California Burger Co.", 4.5, 642, 2889.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Wren's Nest", 4.5, 81, 8.588182584953923);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1311, "Cold Water Brewery & Grill", 4.5, 360, 1620.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Inman Park", 4.5, 58, 7.935425971033217);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 1, 1312, "Fireside Pizza Company", 4.5, 467, 2101.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Rialto Center for the Arts at Georgia State University", 4.5, 81, 8.588182584953923);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1313, "Christy Hill Restaurant", 4.5, 355, 1597.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Monday Night Brewing", 4.5, 67, 8.217336612153717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1314, "Evan's American Gourmet Cafe", 4.5, 521, 2344.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "APEX Museum", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 1, 1315, "Cafe Fiore", 4.5, 415, 1867.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Buckhead Theatre", 4.5, 64, 8.12780988292749);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1316, "Jimmy's Restaurant", 4.5, 619, 2785.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 7, "The Hub at Peachtree Center", 3.5, 216, 8.170588129028257);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1317, "Six Peaks Grille", 4.5, 221, 994.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Dad's Garage Theater Company", 4.5, 57, 7.901436850526211);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1318, "The Soule Domain", 4.5, 302, 1359.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "Grant Park", 4.0, 66, 7.278175742167473);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1319, "Wolfdale's", 4.5, 194, 873.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Bobby Dodd Stadium", 4.0, 125, 8.387640052032225);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 19, 1320, "Stella", 4.5, 144, 648.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Jackson Street Bridge", 4.5, 42, 7.304621806790552);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1321, "Manzanita", 4.0, 311, 1244.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Horizon Theatre Company", 4.5, 58, 7.935425971033217);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1322, "Trokay", 4.5, 127, 571.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Cobb Galleria Centre", 4.0, 101, 8.01728549513057);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1323, "Squeeze In", 4.5, 607, 2731.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Atlanta Brewing Company", 4.5, 77, 8.489208263276169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 1, 1324, "Pianeta Ristorante", 4.5, 380, 1710.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Georgia Governor's Mansion", 4.5, 48, 7.5655855681901425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 26, 1325, "The Loft Restaurant/Lounge", 4.0, 118, 472.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Amaluna - Cirque du Soleil", 4.5, 60, 8.001680626726396);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1326, "Sidellis Lake Tahoe Brewery and Restaurant", 4.5, 76, 342.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "AmericasMart Atlanta", 4.0, 55, 6.9614507579769755);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 4, 1327, "Jalisco Grill", 4.5, 133, 598.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Museum of Design Atlanta", 4.0, 50, 6.795880017344074);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 4, 1328, "Taqueria Jimenez", 4.5, 58, 261.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Aaron's Amphitheatre at Lakewood", 3.5, 248, 8.380580882891756);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 7, 1329, "Hunan Garden Restaurant", 4.0, 84, 336.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Atlanta Opera", 4.5, 24, 6.210950587702227);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1330, "Steamers Bar & Grill", 4.5, 46, 207.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Theatrical Outfit", 5.0, 40, 8.01029995663981);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1331, "The Grid Bar & Grill", 4.0, 70, 280.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 1, "East Palisades Trail", 4.5, 21, 5.949986826302636);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 4, 1332, "Jaliscos taqueria", 4.5, 35, 157.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Sweet Auburn", 4.0, 62, 7.169566757993015);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (31, 0, 1333, "Meyers Downtown Cafe", 5.0, 29, 145.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Trap Music Museum", 4.0, 39, 6.364258428105996);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 18, 1334, "Incas Restaurant", 4.5, 386, 1737.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Sun Dial Observation Level", 4.5, 33, 6.833312729450493);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 15, 1335, "Kim's Kuban", 4.5, 222, 999.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Old 4th Distillery", 4.5, 26, 6.367380065868681);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 1, 1336, "Onlywood Pizzeria Trattoria", 4.5, 1962, 8829.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Callanwolde Fine Arts Center", 4.0, 47, 6.688391431742869);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1337, "New York Pasta Garden", 4.5, 3877, 17446.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Cathedral of Christ the King", 4.5, 20, 5.854634980487915);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 19, 1338, "Oasis Mediterranean Cuisine", 4.5, 247, 1111.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Center Stage Theater", 4.0, 69, 7.355396362949021);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 19, 1339, "Kennedy Cafe", 4.5, 346, 1557.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Sweet Auburn Curb Market", 4.5, 40, 7.20926996097583);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 26, 1340, "Sandbar Sports Grill", 4.5, 330, 1485.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Rhodes Memorial Hall", 4.5, 27, 6.4411369387154425);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1341, "Hard Rock Cafe", 4.0, 2198, 8792.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Cascade Springs Nature Preserve", 4.0, 44, 6.573810705944749);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 1, 1342, "Onlywood Grill", 4.5, 207, 931.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Krog Street Tunnel", 4.0, 50, 6.795880017344074);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1343, "Wing Masters", 4.5, 252, 1134.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Basilica of the Sacred Heart of Jesus", 4.5, 25, 6.290730039024169);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 15, 1344, "The Stoned Crab", 3.5, 2413, 8445.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "Lullwater Park", 4.5, 20, 5.854634980487915);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 22, 1345, "Seaside Cafe at the Mansion", 5.0, 1682, 8410.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 7, "Cumberland Mall", 4.0, 62, 7.169566757993015);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1346, "The Breakfast Club, Too", 4.5, 746, 3357.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 1, "Atlanta BeltLine West End Trail", 4.5, 43, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1347, "Red Shoe Island Bistro", 5.0, 194, 970.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Georgia Institute of Technology", 5.0, 24, 6.90105620855803);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1348, "Moondog Cafe & Bakery", 4.5, 1284, 5778.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Scad Fash", 4.5, 41, 7.2575273552388095);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 12, 1349, "La Grignote", 5.0, 972, 4860.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Dixie Coca-Cola Bottling Plant", 4.0, 37, 6.272806896267979);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1350, "Fisherman's Cafe", 4.5, 350, 1575.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Atlanta Alpaca Treehouse", 4.5, 17, 5.537020146202233);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1351, "The Lobster Shack Key West", 4.5, 630, 2835.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "ASW Distillery", 4.5, 30, 6.647045646238481);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 15, 1352, "Cuban Coffee Queen", 4.5, 2943, 13243.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Westview Cemetery", 4.5, 19, 5.75439120428773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1353, "Prime Steakhouse", 4.5, 1157, 5206.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Escape Game Atlanta", 5.0, 468, 13.35122926537062);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1354, "Hot Tin Roof", 4.5, 2588, 11646.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Candler Park", 4.5, 18, 5.648726272964876);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 19, 1355, "Tavern N Town", 4.5, 2428, 10926.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Original Selfie Museum", 5.0, 6, 3.8907562519182175);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1356, "Cafe Marquesa", 4.5, 1107, 4981.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "Historic Fourth Ward Park", 4.5, 18, 5.648726272964876);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 20, 1357, "Latitudes", 4.5, 5165, 23242.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Lake Lanier", 4.5, 19, 5.75439120428773);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1358, "Little Pearl", 4.5, 704, 3168.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Cathedral of St. Philip", 5.0, 12, 5.395906230238124);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 24, 1359, "Cafe' Sole'", 4.5, 1611, 7249.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Robert C. Williams Museum of Papermaking", 4.5, 15, 5.292410665750565);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1360, "Nine One Five", 4.5, 2316, 10422.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Candler Building", 5.0, 8, 4.515449934959717);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1361, "Louie's Backyard", 4.5, 4151, 18679.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Fire Station No. 6", 5.0, 11, 5.206963425791125);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 1, 1362, "Antonia's", 4.5, 1003, 4513.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Candytopia ATL", 4.0, 48, 6.724964949502349);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1363, "Key Plaza Creperie", 4.5, 820, 3690.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Scofflaw Brewing Co.", 4.5, 28, 6.512211141039986);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1364, "Off the Hook Grill Key West", 4.5, 1564, 7038.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Time to Escape - Atlanta Escape Room (Brookhaven)", 5.0, 750, 14.375306316958499);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1365, "Goldman's Bagel Deli", 4.5, 581, 2614.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Georgia Shakespeare", 5.0, 17, 6.15224460689137);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 1, 1366, "Clemente's Trolley Pizzeria", 4.5, 316, 1422.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Urban Tree Cidery", 4.5, 22, 6.040902063699928);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 18, 1367, "Key West Cuban Coffee shop", 5.0, 267, 1335.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "The Temple", 4.5, 9, 4.294091292476962);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1368, "Garbo's Grill", 4.5, 4459, 20065.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Atlanta Street Car", 4.0, 55, 6.9614507579769755);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 15, 1369, "Frita's Cuban Burger Cafe", 4.5, 770, 3465.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Cascade Family Skating", 4.0, 11, 4.1655707406329);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1370, "Harpoon Harry's", 4.5, 1541, 6934.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Bank of America Plaza", 4.0, 17, 4.9217956855130955);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1371, "Lagerheads Beach Bar", 4.5, 358, 1611.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "MARTA", 3.5, 154, 7.656322522927621);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 1, 1372, "Duetto Pizza and Gelato", 4.5, 2866, 12897.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 6, "Chastain Park", 5.0, 10, 5.0);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, NULL, 1373,"Mam's Best Food", 4.5, 212, 954.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 3, "Ivan Allen Jr. Braves Museum & Hall of Fame", 5.0, 9, 4.771212547196624);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 25, 1374, "Viva Argentinian Steakhouse", 4.0, 514, 2056.0);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Actor's Express", 4.5, 14, 5.15757616055207);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 4, 1375, "Amigos Tortilla Bar", 4.5, 1415, 6367.5);
 
-INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (13, 4, "Mastermind Escape Games", 5.0, 270, 12.156818820794937);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1376, "Keys Coffee Co.", 5.0, 338, 1690.0);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (13, 1, 7.350608050108139);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1377, "Baby's Coffee", 4.5, 323, 1453.5);
 
-INSERT INTO City_Activities (city_id, activity_id, rating)
-VALUES (13, 3, 26.41887024589534);
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 15, 1378, "Cuban Coffee Queen Downtown", 4.5, 297, 1336.5);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1379, "Starbucks Coffee", 4.0, 142, 568.0);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 0, 1380, "Starbucks", 3.5, 316, 1106.0);
+
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (13, 4, 150.89727806834222);
@@ -5459,7 +5555,6 @@ INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, nu
 VALUES (14, 4, "Space Mountain", 4.5, 156, 9.869060692595077);
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
-VALUES (14, 4, "The Little Mermaid - Ariel's Undersea Adventure", 4.5, 80, 8.563904941463745);
 
 INSERT INTO Specific_Activities (city_id, activity_id, activity_name, rating, number_ratings, weighted_rating)
 VALUES (14, 4, "City National Grove of Anaheim", 4.0, 75, 7.500245053566799);
@@ -12375,4 +12470,8 @@ VALUES (32, 4, 220.94422411792146);
 
 INSERT INTO City_Activities (city_id, activity_id, rating)
 VALUES (32, 5, 118.95053206921554);
+
+INSERT INTO City_Restaurants (city_id, cuisine_id, restaurant_id, restaurant_name, rating, number_ratings, weighted_rating)
+VALUES (32, 15, 1381, "Riviera Coffee & Sandwich Shop", 4.5, 20, 90.0);
+
 

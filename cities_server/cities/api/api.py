@@ -3,6 +3,27 @@ import flask
 import cities
 import spacy
 
+from cities_server.cities.api import scrape_prices as sp
+
+climate_abbreviation_to_text_map = {
+    "BWh": "hot desert climate",
+    "Dfa": "hot summer humid continental climate",
+    "Am": "tropical monsoon climate",
+    "Csa": "Mediterranean climate",
+    "Cfa": "humid subtropical climate",
+    "BSh": "hot semi-arid climate",
+    "Csb": "Mediterranean climate",
+    "BSk": "cold semi-arid climate"
+}
+climate_text_to_abbreviation_map = {
+    "hot desert climate" : "BWh",
+    "hot summer humid continental climate" : "Dfa",
+    "tropical monsoon climate": "Am",
+    "Mediterranean climate": "Csa",
+    "humid subtropical climate" : "Cfa",
+    "hot semi-arid climate" : "BSh",
+    "cold semi-arid climate" : "BSk"
+}
 @cities.app.route('/api/testing/', methods=['GET'])
 def get_services():
     """return list of avalible services"""
@@ -17,6 +38,7 @@ def get_services():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+<<<<<<< HEAD
 @cities.app.route("/api/getCity/", method=['GET'])
 def get_cities_by_name():
     connection = cities.model.get_db()
@@ -95,6 +117,69 @@ def getRestaurantsByCityCuisines():
     results.sort(reverse = True, key = sorting_ratings)
     context = {
         "restaurants": results
+=======
+@cities.app.route('/recommendCities/', methods=['GET'])
+def get_recommended_cities():
+    """return list of avalible services"""
+    input_json = flask.request.json
+    # intent names needs to match the json key entry in main.js
+    connection = cities.model.get_db()
+    activities_list = input_json['activities']['list']
+    act1, act2, act3 = filter_activities(connection,activities_list)
+    new_activities = [act1, act2, act3]
+    first_set_cities, activities = get10Cities(new_activities)
+    input_climate = input_json['climate']['list'][0]
+    next_city_filter = []
+    filtered_climate = filter_climate(connection,input_climate)
+    print(filtered_climate)
+    climate = climate_text_to_abbreviation_map[filtered_climate]
+    print(climate)
+    print(type(climate))
+    next_city_filter = []
+    
+    for city in first_set_cities:
+        print(type(city))
+        connection = cities.model.get_db()
+        cur = connection.execute("SELECT C.city_id, C.city_name "
+                                 "FROM Cities C "
+                                 "WHERE C.climate = ? AND C.city_name = ? ",
+                                 (climate, city["city_name"]))
+        # cur = connection.execute("SELECT city_id, city_name "
+        #                          "FROM Cities "
+        #                          "WHERE city_name = ? ",
+        #                          (city))
+        result = cur.fetchall()
+        print("RESULT1:", result)
+        if(len(result) > 0):
+            next_city_filter.append(result[0])
+    if(len(next_city_filter) == 0):
+        for city in first_set_cities:
+            city_object = {'city_id': city['city_id'],'city_name':city['city_name']}
+            next_city_filter.append(city_object)
+    print("CLimate Filtered Cities: ", next_city_filter)
+    starting_location = input_json['location']['list'][0]
+    preferred_travel_method = input_json['travelMethod']['list'][0]
+    travel_method = get_travel_method(preferred_travel_method)
+    trip_duration = input_json['tripDuration']['list'][0]
+    budget = input_json['budget']['list'][0]
+    citiesList = []
+    for city in next_city_filter:
+        cost, travel_duration = get_expenses_travel_duration(travel_method,starting_location, city['city_name'],trip_duration,budget)
+        city_specific_activity_list = get_specific_city_activities_list(city['city_id'])
+        cityObject = {"name":city['city_name'],
+                      "id":city['city_id'],
+                      "nights":trip_duration,
+                      "travel_method":travel_method,
+                      "travelTimeEstimate":travel_duration,
+                      "estimated_cost": cost,
+                      "cityActivityList": city_specific_activity_list}
+        citiesList.append(cityObject)
+    context = {
+        "citiesList":citiesList,
+        "userBudget":budget,
+        "userActivities":activities
+
+>>>>>>> sidnaga/recommend_cities
     }
     response = flask.jsonify(**context)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -186,6 +271,26 @@ def getCities(activity_list):
     city_dic = curr.fetchall()    
     return city_dic, [act1, act2, act3]
 
+def get10Cities(activity_list):
+    print(activity_list)
+    connection = cities.model.get_db()
+    act1, act2, act3 = filter_activities(connection, activity_list)
+    print(act1 + " " + act2 + " " + act3 )
+    curr = connection.execute(
+        "SELECT * FROM ("
+        "SELECT C.city_id, C.city_name, COUNT(*) as num_act "
+        "FROM Cities C, City_Activities CA, Activities A "
+        "WHERE C.city_id = CA.city_id AND CA.activity_id = A.activity_id "
+        "AND (A.activity_name = ? OR A.activity_name = ? OR A.activity_name = ?) "
+        "GROUP BY C.city_id, C.city_name) "
+        "ORDER BY num_act desc ",
+        (act1, act2, act3,)
+    )  
+    
+    
+    city_dic = curr.fetchall()
+    print(city_dic)    
+    return city_dic, [act1, act2, act3]
 
 def filter_activities(con, act_list):
     nlp = spacy.load('en_core_web_md')
@@ -212,6 +317,7 @@ def filter_activities(con, act_list):
         filtered_acts.append(temp_sim_list[0])
     filtered_acts.sort(reverse=True, key=sorting_sims)
     return filtered_acts[0]['activity'], filtered_acts[1]['activity'], filtered_acts[2]['activity']
+<<<<<<< HEAD
 
 def filter_cities(con, usr_city):
     nlp = spacy.load('en_core_web_md')
@@ -242,6 +348,38 @@ def sorting_sims(sim_entry):
 
 def sorting_ratings(entry):
     return entry['weighted_rating']  
+=======
+        
+def filter_climate(con, climate):
+    print("CLim In:", climate)
+    nlp = spacy.load('en_core_web_md')
+    climates_dict = get_all_climates(con)
+    print(climates_dict)
+    #stop_words = ["semi-arid"]
+    temp_sim_list = []
+    
+    input_word = climate
+    input_nlp = nlp(input_word)
+    print(input_nlp)
+    for entry in climates_dict:
+        mapped_climate = climate_abbreviation_to_text_map[entry['climate']]
+        db_words = nlp(mapped_climate)
+        temp_sim_list.append(
+            {
+                "climate": mapped_climate,
+                "similarity": input_nlp.similarity(db_words)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    print(temp_sim_list)
+    return temp_sim_list[0]['climate']
+
+def sorting_sims(sim_entry):
+    return sim_entry['similarity']
+
+def sorting_ratings(rating_entry):
+    return rating_entry['weighted_rating']        
+>>>>>>> sidnaga/recommend_cities
 
 def get_all_activites(con):
     curr = con.execute(
@@ -250,6 +388,7 @@ def get_all_activites(con):
     )
     return curr.fetchall()
 
+<<<<<<< HEAD
 def get_all_cities(con):
     curr = con.execute(
         "SELECT DISTINCT C.city_name "
@@ -289,8 +428,108 @@ def get_all_cuisines():
     for result in results:
         cuisine_list.append(result["cuisine_name"])
     return cuisine_list
+=======
+def get_all_climates(con):
+    curr = con.execute(
+        "SELECT DISTINCT C.climate "
+        "FROM Cities C"
+    )
+    return curr.fetchall()
+    
+    
+>>>>>>> sidnaga/recommend_cities
 def convert(lst):
     return str(lst).translate(None, '[],\'')
+
+def get_travel_method(usr_travel_method):    
+    nlp = spacy.load('en_core_web_md')
+    methods_list = ["flight","drive"]
+    methods_string = ''
+    for entry in methods_list:
+        methods_string += entry + " "
+    
+    temp_sim_list = []
+    input_word = nlp(usr_travel_method)
+    db_words = nlp(methods_string)
+        
+    for token in db_words:
+        temp_sim_list.append(
+            {
+                "method": token.text,
+                "similarity": input_word.similarity(token)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    print(temp_sim_list)
+    return temp_sim_list[0]['method']
+
+def get_expenses_travel_duration(travel_method, starting_location, city, trip_duration, budget):
+    travel_duration = 0
+    if(travel_method == 'flight'):
+        closest_airport = get_closest_airport(city)
+        flight_price = sp.scrape_flight_prices(starting_location,closest_airport)
+        travel_duration = sp.get_flight_duration(starting_location,closest_airport)
+        connection = cities.model.get_db()
+        cur = connection.execute("SELECT C.Avg_Hotel_Price "
+                                    "FROM Cities C "
+                                    "WHERE C.City_Name = ?",
+                                    (city,))
+        results = cur.fetchall()
+        hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
+        total_price = hotel_price + flight_price
+
+
+    elif(travel_method == 'drive'):
+        distance, travel_duration = sp.get_distance(starting_location,city)
+        approximate_driving_cost = distance * 0.15 * 2
+        
+        connection = cities.model.get_db()
+        cur = connection.execute("SELECT C.Avg_Hotel_Price "
+                                    "FROM Cities C "
+                                    "WHERE C.City_Name = ?",
+                                    (city))
+        results = cur.fetchall()
+        hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
+        total_price = hotel_price + approximate_driving_cost
+    
+        
+    return total_price,travel_duration
+
+def get_specific_city_activities_list(city_id):
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT A.activity_name, A.activity_id "
+                             "FROM Activities A "
+                             "INNER JOIN City_Activities CA "
+                             "ON A.activity_id = CA.activity_id "
+                             "WHERE CA.city_id = ?",(city_id,))
+    city_general_activities = cur.fetchall()
+    
+    activity_list = []
+    for activity in city_general_activities:
+        activity_list.append(activity['activity_name'])
+    
+    """
+    activity_map = {}
+    for activity in city_general_activities:
+        general_activity = activity['activity_name']
+        connection = cities.model.get_db()
+        cur = connection.execute("SELECT SA.activity_name, SA.weighted_rating "
+                                "FROM Specific_Activities SA "
+                                "WHERE SA.city_id = ? AND SA.activity_id = ?",(city_id,activity['activity_id']))
+        results = cur.fetchall()
+        print("RESULTS:", results)
+        results.sort(reverse=True, key=sorting_ratings)
+        activity_map[general_activity] = results
+    """
+    return activity_list
+
+def get_closest_airport(city_name):
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT C.closest_airport "
+                            "FROM Cities C "
+                            "WHERE C.city_name = ?",(city_name))
+    results = cur.fetchall()
+    return results[0]['closest_airport']
 
 if __name__ == '__main__':
     connection = cities.model.get_db()
