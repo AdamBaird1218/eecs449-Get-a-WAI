@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState} from 'react';
 
 
-function Chat({attributeInfoList, setAttributeInfoList, userId, tripIsFull}) {
+function Chat({attributeInfoList, setAttributeInfoList, userId}) {
   const [text_entry, setText_entry] = useState('')
   const [message_list, setMessage_list] = useState([<MessageBox
     position={"left"}
@@ -24,7 +24,7 @@ function Chat({attributeInfoList, setAttributeInfoList, userId, tripIsFull}) {
     "user_state": false
   })
 
-  const handleSubmitPhase1 = () => {
+  const handleSubmit= () => {
     setMessage_list(prev_list => [...prev_list,
           <MessageBox
             position={"right"}
@@ -75,16 +75,6 @@ function Chat({attributeInfoList, setAttributeInfoList, userId, tripIsFull}) {
         }
       })
 
-
-    // let updated_info = attributeInfoList
-    // data.entities.forEach((entity) => {
-    //   const entityType = entity.entity
-    //   if(attributeInfoList[entityType].list.length + 1 <= attributeInfoList[entityType].limit){
-    //     updated_info[entityType].list = [...updated_info[entityType].list, entity.value]
-    //   }
-    // })
-    // setAttributeInfoList(() => ({...updated_info}))
-    // generateTextResponse(data)
   }
 
   const add_value_to_attribute_list = (key, slots) => {
@@ -143,69 +133,18 @@ function Chat({attributeInfoList, setAttributeInfoList, userId, tripIsFull}) {
         text={data.text}/>])
   } 
 
-  const handleSubmitPhase2 = () => {
-    const url = "http://localhost:5005/model/parse"
-
-    const options = {
-      method: "POST",
-      credentials: "same-origin",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({text: text_entry})
-    }
-
-    fetch(url, options)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        const cityOfInterest = getInterestedCity(data)
-        if (cityOfInterest !== null) {
-          getCityList()
-        }
-      })
-
-  }
-
-  const getInterestedCity = (data) => {
-      let city_name = ''
-      if (data.intent.name === "city_interest") {
-        data.entities.map((entity) => {
-          if (entity.entity === "GPE") {
-            city_name = entity.value
-          }
-        })
-        return city_name
-      }
-      return null
-  }
-
-  const getCityList = (getCityList) => {
-    const url = `http://localhost:8000/api/getCity/?city_name=${getCityList}`
-
-  }
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      submitDecider()
+      handleSubmit()
     }
   }
 
-  const submitDecider = () => {
-    if(tripIsFull){
-      handleSubmitPhase2()
-    }
-    else {
-      handleSubmitPhase1()
-    }
-  }
  
   return (
     <>
     <div class='card-body p-4' style={{height: "800px", overflow: "auto" }}>
       <div>
-        {userId}
           {message_list.map((text_list_item,index) =>{
             return <div key={index}> {text_list_item} </div>
           })}
@@ -217,7 +156,7 @@ function Chat({attributeInfoList, setAttributeInfoList, userId, tripIsFull}) {
       <div class="input-group">
         <input type="text" class="form-control border-0" placeholder="Write a message" name="user_question" value={text_entry}  onChange={e => setText_entry(e.target.value)} onKeyDown={handleKeyDown}/>
         <div class="input-group-text bg-transparent border-0">
-            <button class="btn btn-light" onClick={submitDecider} ><FontAwesomeIcon icon={"fa fa-paper-plane"} /> </button>
+            <button class="btn btn-light" onClick={handleSubmit} ><FontAwesomeIcon icon={"fa fa-paper-plane"} /> </button>
         </div>
       </div>
           

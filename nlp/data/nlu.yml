@@ -234,7 +234,18 @@ nlu:
     - What [seafood](cuisine) places are there?
     - What [fast-food](cuisine) is there in the Atlanta?
     - I want to know what [bars](cuisine) there are
-    - 
+    - I want to have some new york [pizza](cruisine)
+    - where is the best [vietnamese](cruisine) food in atlanta
+    - I want to have the best [indian](cruisine) food
+    - I love [italian](cruisine) food
+    - I want to go to a fancy [korean](cruisine) restaurant
+    - I would love to have some [american](cruisine) food right now
+    - [japanese](cruisine) food would slap right now
+    - I want to try [cuban](cruisine) food
+    - I don't know what to eat
+    - Can I eat at a [turkish](cruisine) restaurant
+    - Where is the best restaurant here
+    - I want to have some [seafood](cruisine)
 - intent: help
   examples: |
     - what can you do

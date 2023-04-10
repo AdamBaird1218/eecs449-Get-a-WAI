@@ -136,7 +136,6 @@ function Main() {
                     attributeInfoList={attributeInfo_List}
                     setAttributeInfoList={setAttributeInfo_List} 
                     userId={userId}
-                    tripIsFull={tripInfoIsFull}
                     /> 
                 </div>
             </div>
@@ -148,8 +147,6 @@ function Main() {
                     tripFull={tripInfoIsFull}
                     /> 
             }
-            <TestingCities />
-            
         </div>
     </div>
     </>

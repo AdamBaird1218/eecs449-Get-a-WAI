@@ -87,7 +87,8 @@ slots:
     influence_conversation: true
     mappings:
     - type: custom
-      action: set_city_interested_slot
+      action: set_city_interest_slot
+      intent: city_interest
 forms:
   vacation_data_form:
     required_slots:
@@ -143,7 +144,7 @@ actions:
 - utter_restaurants_or_specific_activities
 - utter_greet
 - validate_vacation_data_form
-- Action
+- action_get_restaurants_info
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: false

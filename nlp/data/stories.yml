@@ -28,6 +28,38 @@ stories:
   - intent: restaurants_interest
   - action: action_get_restaurants_info
 
+- story: restaurants_2
+  steps:
+  - intent: city_interest
+  - action: set_city_interest_slot
+  - intent: city_interest
+    entities:
+    - GPE: Key West
+  - action: set_city_interest_slot
+  - slot_was_set:
+    - interested_city: Key West
+  - intent: restaurants_interest
+  - action: action_get_restaurants_info
+  - intent: restaurants_interest
+    entities:
+    - cruisine: thai
+  - action: action_get_restaurants_info
+
+- story: restaurants_1
+  steps:
+  - intent: city_interest
+  - action: set_city_interest_slot
+  - intent: city_interest
+    entities:
+    - GPE: Phoenix
+  - action: set_city_interest_slot
+  - slot_was_set:
+    - interested_city: Phoenix
+  - intent: restaurants_interest
+    entities:
+    - cruisine: pizza
+  - action: action_get_restaurants_info
+
 
 
 - story: resturant_info
