@@ -6,7 +6,7 @@ function CityObject({
     cityID,
     imgLink,
     travelMethod,
-    travelTimeEstimate,
+    // travelTimeEstimate,
     estimatedCost,
     cityActivitiesList,
     userBudget,
@@ -41,7 +41,7 @@ function CityObject({
                 </div>
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
-                <div><FontAwesomeIcon icon={getCorrectIcon()} /> {travelTimeEstimate}</div>
+                <div><FontAwesomeIcon icon={getCorrectIcon()} /></div>
                 <div>${estimatedCost}</div>
             </div>
         </div>

@@ -76,7 +76,7 @@ def get_cuisines_by_city():
     return response
 
 @cities.app.route("/api/getRestaurantsByCityCuisines/", methods=['GET'])
-def getRestaurantsByCityCuisines():
+def getRestaurantsByCityCuisines(): 
     city_name = flask.request.args.get('city_name')   
     cuisine = flask.request.args.get("cuisine")
     filtered_cuisine = filter_cuisines(cuisine)
@@ -98,9 +98,11 @@ def getRestaurantsByCityCuisines():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
     
-@cities.app.route('/recommendCities/', methods=['POST'])
+@cities.app.route('/recommendCities/', methods=['POST',"OPTIONS"])
 def get_recommended_cities():
     """return list of avalible services"""
+    if flask.request.method == "OPTIONS": # CORS preflight
+        return _build_cors_preflight_response()
     input_json = flask.request.json
     # intent names needs to match the json key entry in main.js
     connection = cities.model.get_db()
@@ -148,7 +150,7 @@ def get_recommended_cities():
         city_specific_activity_list = get_specific_city_activities_list(city['city_id'])
         cityObject = {"name":city['city_name'],
                       "id":city['city_id'],
-                      "nights":trip_duration,
+                      
                       "travel_method":travel_method,
                       "estimated_cost": cost,
                       "absolute_difference_to_budget": abs(cost - budget),
@@ -156,6 +158,7 @@ def get_recommended_cities():
         citiesList.append(cityObject)
     citiesList.sort(reverse=False, key = sorting_costs)
     context = {
+        "nights":trip_duration,
         "citiesList":citiesList,
         "userBudget":budget,
         "userActivities":activities
@@ -164,6 +167,15 @@ def get_recommended_cities():
     response = flask.jsonify(**context)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
+def _build_cors_preflight_response():
+    response = flask.make_response()
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add('Access-Control-Allow-Headers', "*")
+    response.headers.add('Access-Control-Allow-Methods', "*")
+    return response
+    
+
 
 def filter_budget(input):
     words = input.split()
@@ -194,7 +206,7 @@ def filter_trip_duration(string_duration):
             multiplier = 7
         if word.strip().lower() == "month":
             multiplier = 30
-        if word.string().lower() == "day" or word.string().lower() == "days":
+        if word.strip().lower() == "day" or word.strip().lower() == "days":
             is_day = 1
             
     return (extracted_num - is_day) * multiplier
@@ -497,7 +509,7 @@ def get_expenses_travel_duration(travel_method, starting_location, city, trip_du
         cur = connection.execute("SELECT C.Avg_Hotel_Price "
                                     "FROM Cities C "
                                     "WHERE C.City_Name = ?",
-                                    (city))
+                                    (city,))
         results = cur.fetchall()
         hotel_price = results[0]['Avg_Hotel_Price'] * trip_duration
         total_price = hotel_price + distance

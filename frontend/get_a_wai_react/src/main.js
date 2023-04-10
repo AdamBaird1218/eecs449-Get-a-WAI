@@ -31,7 +31,7 @@ function Main() {
             "list": []
         },
         "tripDuration": {
-            "name": "Trip Length in Nights",
+            "name": "Trip Length",
             "limit": 1,
             "list": []
         },
@@ -93,9 +93,10 @@ function Main() {
         const targetBackendURL = 'http://localhost:8000/recommendCities/'
         const options = {
             method: "POST",
-            credentials: "same-origin",
+            mode: 'cors',
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
             },
             body: JSON.stringify(attributeInfo_List)
         }

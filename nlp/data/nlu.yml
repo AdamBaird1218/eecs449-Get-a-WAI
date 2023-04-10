@@ -122,7 +122,7 @@ nlu:
     - I need to be on a [9 day](tripDuration) trip
     - I want to relax for [8 days](tripDuration)
     - [5 nights](tripDuration)
-    - I am looking to spend around [a week](tripDuration) there
+    - I am looking to spend around a [week](tripDuration) there
     - I want to stay about [5 days](tripDuration)
     - I think we are going to stay around [2 weeks](tripDuration), and maybe even later.
     - I want a cheap vacation
@@ -158,6 +158,7 @@ nlu:
     - We are going to spend [7 nights](tripDuration)
     - We can spend [1200 dollars](budget)
     - I am traveling from Novi
+    - Pretty long, I think were going to stay [3 months](tripDuration)
     - I live in New York
 - intent: city_interest
   examples: |

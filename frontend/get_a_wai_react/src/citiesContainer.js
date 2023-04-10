@@ -9,11 +9,11 @@ function CitiesContainer({citiesInfo, tripFull}) {
                 key={index}
                 rank={index + 1}
                 cityName={city.name}
-                cityID={city.cityID}
-                imgLink={city.imgLink}
-                travelMethod={city.travelMethod}
-                travelTimeEstimate={city.travelTimeEstimate}
-                estimatedCost={city.estimatedCost}
+                cityID={city.id}
+                imgLink={`${city.id}.jpg`}
+                travelMethod={city.travel_method}
+                // travelTimeEstimate={city.travelTimeEstimate}
+                estimatedCost={city.estimated_cost}
                 cityActivitiesList={city.cityActivitiesList}
                 userBudget={citiesInfo.userBudget}
                 userActivities={citiesInfo.userActivities}
