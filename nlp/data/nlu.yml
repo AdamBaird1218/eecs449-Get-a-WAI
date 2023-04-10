@@ -230,6 +230,10 @@ nlu:
     - I could go for some [indian](cuisine) food
     - I really like [thai](cuisine)
     - [mediterranean](cuisine)
+    - I could go for [pizza](cuisine)
+    - What [seafood](cuisine) places are there?
+    - What [fast-food](cuisine) is there in the Atlanta?
+    - I want to know what [bars](cuisine) there are
     - 
 - intent: help
   examples: |

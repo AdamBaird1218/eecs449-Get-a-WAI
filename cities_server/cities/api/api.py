@@ -5,25 +5,6 @@ import spacy
 
 from cities_server.cities.api import scrape_prices as sp
 
-climate_abbreviation_to_text_map = {
-    "BWh": "hot desert climate",
-    "Dfa": "hot summer humid continental climate",
-    "Am": "tropical monsoon climate",
-    "Csa": "Mediterranean climate",
-    "Cfa": "humid subtropical climate",
-    "BSh": "hot semi-arid climate",
-    "Csb": "Mediterranean climate",
-    "BSk": "cold semi-arid climate"
-}
-climate_text_to_abbreviation_map = {
-    "hot desert climate" : "BWh",
-    "hot summer humid continental climate" : "Dfa",
-    "tropical monsoon climate": "Am",
-    "Mediterranean climate": "Csa",
-    "humid subtropical climate" : "Cfa",
-    "hot semi-arid climate" : "BSh",
-    "cold semi-arid climate" : "BSk"
-}
 @cities.app.route('/api/testing/', methods=['GET'])
 def get_services():
     """return list of avalible services"""
@@ -117,6 +98,9 @@ def getRestaurantsByCityCuisines():
     context = {
         "restaurants": results
     }
+    response = flask.jsonify(**context)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
     
 @cities.app.route('/recommendCities/', methods=['GET'])
 def get_recommended_cities():
@@ -132,7 +116,7 @@ def get_recommended_cities():
     next_city_filter = []
     filtered_climate = filter_climate(connection,input_climate)
     print(filtered_climate)
-    climate = climate_text_to_abbreviation_map[filtered_climate]
+    climate = filtered_climate
     print(climate)
     print(type(climate))
     next_city_filter = []
@@ -351,14 +335,13 @@ def filter_climate(con, climate):
     nlp = spacy.load('en_core_web_md')
     climates_dict = get_all_climates(con)
     print(climates_dict)
-    #stop_words = ["semi-arid"]
     temp_sim_list = []
     
     input_word = climate
     input_nlp = nlp(input_word)
     print(input_nlp)
     for entry in climates_dict:
-        mapped_climate = climate_abbreviation_to_text_map[entry['climate']]
+        mapped_climate = entry['climate']
         db_words = nlp(mapped_climate)
         temp_sim_list.append(
             {

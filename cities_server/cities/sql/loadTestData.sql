@@ -2,103 +2,103 @@ PRAGMA foreign_keys = ON;
 
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (0, "Las Vegas", "Nevada", 36.1716, 115.1391, "BWh", 171, "LAS");
+VALUES (0, "Las Vegas", "Nevada", 36.1716, 115.1391, "Hot", 171, "LAS");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (1, "New York City", "New York", 40.7128, 74.006, "Dfa", 175, "New York");
+VALUES (1, "New York City", "New York", 40.7128, 74.006, "Moderate", 175, "JFK");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (2, "Orlando", "Florida", 28.5384, 81.3789, "Am", 174, "MCO");
+VALUES (2, "Orlando", "Florida", 28.5384, 81.3789, "Hot", 174, "MCO");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (3, "Los Angeles", "California", 34.0522, 118.2437, "Csa", 177, "LAX");
+VALUES (3, "Los Angeles", "California", 34.0522, 118.2437, "Hot", 177, "LAX");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (4, "Chicago", "Illinois", 41.8781, 87.6298, "Dfa", 161, "Chicago");
+VALUES (4, "Chicago", "Illinois", 41.8781, 87.6298, "Moderate", 161, "ORD");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (5, "Nashville", "Tennessee", 36.1627, 86.7816, "Cfa", 152, "BNA");
+VALUES (5, "Nashville", "Tennessee", 36.1627, 86.7816, "Moderate", 152, "BNA");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (6, "San Diego", "California", 32.7157, 117.1611, "BSh", 214, "SAN");
+VALUES (6, "San Diego", "California", 32.7157, 117.1611, "Hot", 214, "SAN");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (7, "Miami Beach", "Florida", 25.7907, 80.13, "Am", 211, "MIA");
+VALUES (7, "Miami Beach", "Florida", 25.7907, 80.13, "Hot", 211, "MIA");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (8, "New Orleans", "Louisiana", 29.9511, 90.0715, "Cfa", 135, "MSY");
+VALUES (8, "New Orleans", "Louisiana", 29.9511, 90.0715, "Hot", 135, "MSY");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (9, "Miami", "Florida", 25.7617, 80.1918, "Am", 153, "MIA");
+VALUES (9, "Miami", "Florida", 25.7617, 80.1918, "Hot", 153, "MIA");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (10, "Washington DC", "District of Columbia", 38.9072, 77.0369, "Cfa", 185, "DCA");
+VALUES (10, "Washington DC", "District of Columbia", 38.9072, 77.0369, "Moderate", 185, "DCA");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (11, "Honolulu", "Hawaii", 21.3099, 157.8581, "Am", 274, "HNL");
+VALUES (11, "Honolulu", "Hawaii", 21.3099, 157.8581, "Hot", 274, "HNL");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (12, "Houston", "Texas", 29.7604, 95.3698, "Cfa", 86, "IAH");
+VALUES (12, "Houston", "Texas", 29.7604, 95.3698, "Hot", 86, "IAH");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (13, "Atlanta", "Georgia", 33.7488, 84.3877, "Cfa", 131, "ATL");
+VALUES (13, "Atlanta", "Georgia", 33.7488, 84.3877, "Hot", 131, "ATL");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (14, "Anaheim", "California", 33.8366, 117.9143, "Csa", 195, "SNA");
+VALUES (14, "Anaheim", "California", 33.8366, 117.9143, "Hot", 195, "SNA");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (15, "San Francisco", "California", 37.7749, 122.4194, "Csb", 199, "SFO");
+VALUES (15, "San Francisco", "California", 37.7749, 122.4194, "Moderate", 199, "SFO");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (16, "Boston", "Massachusetts", 42.3601, 71.0589, "Dfa", 230, "BOS");
+VALUES (16, "Boston", "Massachusetts", 42.3601, 71.0589, "Moderate", 230, "BOS");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (17, "Atlantic City", "New Jersey", 39.3643, 74.4229, "Cfa", 108, "ACY");
+VALUES (17, "Atlantic City", "New Jersey", 39.3643, 74.4229, "Moderate", 108, "ACY");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (18, "San Antonio", "Texas", 29.4252, 98.4946, "Cfa", 129, "SAT");
+VALUES (18, "San Antonio", "Texas", 29.4252, 98.4946, "Hot", 129, "SAT");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (19, "Fort Lauderdale", "Florida", 26.1224, 80.1373, "Am", 166, "FLL");
+VALUES (19, "Fort Lauderdale", "Florida", 26.1224, 80.1373, "Hot", 166, "FLL");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (20, "Dallas", "Texas", 32.7767, -96.797, "Cfa", 121, "DFW");
+VALUES (20, "Dallas", "Texas", 32.7767, -96.797, "Hot", 121, "DFW");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (21, "Grand Canyon National Park", "Arizona", 36.2679, 112.3535, "BWh", 150, "PHX");
+VALUES (21, "Grand Canyon National Park", "Arizona", 36.2679, 112.3535, "Hot", 150, "PHX");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (22, "Austin", "Texas", 30.2672, -97.7431, "Cfa", 152, "AUS");
+VALUES (22, "Austin", "Texas", 30.2672, -97.7431, "Hot", 152, "AUS");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (23, "Myrtle Beach", "South Carolina", 33.6891, -78.8867, "Cfa", 192, "MYR");
+VALUES (23, "Myrtle Beach", "South Carolina", 33.6891, -78.8867, "Hot", 192, "MYR");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (24, "Phoenix", "Arizona", 33.4484, -112.074, "BWh", 106, "PHX");
+VALUES (24, "Phoenix", "Arizona", 33.4484, -112.074, "Hot", 106, "PHX");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (25, "Denver", "Colorado", 39.7392, -104.9903, "BSk", 172, "DEN");
+VALUES (25, "Denver", "Colorado", 39.7392, -104.9903, "Cold", 172, "DEN");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (26, "Yellowstone National Park", "Wyoming", 44.428, 110.5885, "Dfa", 150, "BZN");
+VALUES (26, "Yellowstone National Park", "Wyoming", 44.428, 110.5885, "Cold", 150, "BZN");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102, "Cfa", 256, "TYS");
+VALUES (27, "Gatlinburg", "Tennessee", 35.7143, -83.5102, "Moderate", 256, "TYS");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (28, "Tampa", "Florida", 27.9506, -82.4572, "Cfa", 133, "TPA");
+VALUES (28, "Tampa", "Florida", 27.9506, -82.4572, "Hot", 133, "TPA");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (29, "Seattle", "Washington", 47.6062, -122.3321, "Csb", 187, "SEA");
+VALUES (29, "Seattle", "Washington", 47.6062, -122.3321, "Moderate", 187, "SEA");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319, "Am", 250, "OGG");
+VALUES (30, "Maui", "Hawaii", 20.7984, 156.3319, "Hot", 250, "OGG");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (31, "Lake Tahoe", "California", 39.0968, 120.0324, "Csb", 150, "TVL");
+VALUES (31, "Lake Tahoe", "California", 39.0968, 120.0324, "Moderate", 150, "TVL");
 
 INSERT INTO Cities (city_id, city_name, state_name, longitude, latitude, climate, Avg_Hotel_Price, closest_airport)
-VALUES (32, "Key West", "Florida", 24.5554, 81.7842, "Am", 215, "EYW");
+VALUES (32, "Key West", "Florida", 24.5554, 81.7842, "Hot", 215, "EYW");
 
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (0, 'skiing');

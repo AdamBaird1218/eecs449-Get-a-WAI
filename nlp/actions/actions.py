@@ -41,14 +41,14 @@ class ActionGetCityCusines(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         interested_city = tracker.get_slot("interested_city")
-        interested_general_activity = next(tracker.get_latest_entity_values('activities'), None)
+        interested_general_activity = next(tracker.get_latest_entity_values('cuisine'), None)
         
         if not interested_city:
             msg = f"Hmm I didn't detect a interested city. What city are you interested in?"
             dispatcher.utter_message(text=msg)
             return []
         if not interested_general_activity:
-            msg = f"Hmm I didn't detect a interested general activity. What general activity are you interested in for {interested_city}?"
+            msg = f"Hmm I didn't detect any specified cuisine. What kind of food are you in the mood for ?"
             dispatcher.utter_message(text=msg)
             return []
         

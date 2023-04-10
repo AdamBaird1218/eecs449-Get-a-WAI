@@ -143,6 +143,7 @@ actions:
 - utter_restaurants_or_specific_activities
 - utter_greet
 - validate_vacation_data_form
+- Action
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: false
