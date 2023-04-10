@@ -38,7 +38,6 @@ def get_services():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-<<<<<<< HEAD
 @cities.app.route("/api/getCity/", method=['GET'])
 def get_cities_by_name():
     connection = cities.model.get_db()
@@ -117,7 +116,8 @@ def getRestaurantsByCityCuisines():
     results.sort(reverse = True, key = sorting_ratings)
     context = {
         "restaurants": results
-=======
+    }
+    
 @cities.app.route('/recommendCities/', methods=['GET'])
 def get_recommended_cities():
     """return list of avalible services"""
@@ -179,7 +179,6 @@ def get_recommended_cities():
         "userBudget":budget,
         "userActivities":activities
 
->>>>>>> sidnaga/recommend_cities
     }
     response = flask.jsonify(**context)
     response.headers.add('Access-Control-Allow-Origin', '*')
@@ -317,7 +316,6 @@ def filter_activities(con, act_list):
         filtered_acts.append(temp_sim_list[0])
     filtered_acts.sort(reverse=True, key=sorting_sims)
     return filtered_acts[0]['activity'], filtered_acts[1]['activity'], filtered_acts[2]['activity']
-<<<<<<< HEAD
 
 def filter_cities(con, usr_city):
     nlp = spacy.load('en_core_web_md')
@@ -348,7 +346,6 @@ def sorting_sims(sim_entry):
 
 def sorting_ratings(entry):
     return entry['weighted_rating']  
-=======
         
 def filter_climate(con, climate):
     print("CLim In:", climate)
@@ -379,7 +376,6 @@ def sorting_sims(sim_entry):
 
 def sorting_ratings(rating_entry):
     return rating_entry['weighted_rating']        
->>>>>>> sidnaga/recommend_cities
 
 def get_all_activites(con):
     curr = con.execute(
@@ -388,7 +384,6 @@ def get_all_activites(con):
     )
     return curr.fetchall()
 
-<<<<<<< HEAD
 def get_all_cities(con):
     curr = con.execute(
         "SELECT DISTINCT C.city_name "
@@ -428,7 +423,6 @@ def get_all_cuisines():
     for result in results:
         cuisine_list.append(result["cuisine_name"])
     return cuisine_list
-=======
 def get_all_climates(con):
     curr = con.execute(
         "SELECT DISTINCT C.climate "
@@ -437,7 +431,6 @@ def get_all_climates(con):
     return curr.fetchall()
     
     
->>>>>>> sidnaga/recommend_cities
 def convert(lst):
     return str(lst).translate(None, '[],\'')
 
