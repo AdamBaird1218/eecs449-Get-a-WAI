@@ -145,7 +145,7 @@ def get_recommended_cities():
     preferred_travel_method = input_json['travelMethod']['list'][0]
     travel_method = get_travel_method(preferred_travel_method)
     trip_duration = input_json['tripDuration']['list'][0]
-    budget = input_json['budget']['list'][0]
+    budget = filter_budget(input_json['budget']['list'][0])
     citiesList = []
     for city in next_city_filter:
         cost = get_expenses_travel_duration(travel_method,starting_location, city['city_name'],trip_duration,budget)
@@ -168,6 +168,23 @@ def get_recommended_cities():
     response = flask.jsonify(**context)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
+
+def filter_budget(input):
+    words = input.split()
+    amount = 1000
+    multiplier = 1
+    for word in words:
+        if word.isnumeric():
+            amount = int(word)
+        else:
+            word = word.lower()
+            if (word == "thousand" or word == "grand" or word == "k"):
+                multiplier = 1000
+    return (amount * multiplier)
+            
+
+
+
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID

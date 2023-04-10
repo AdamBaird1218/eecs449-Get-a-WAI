@@ -128,7 +128,10 @@ nlu:
     - I want a cheap vacation
     - I have an unlimited budget
     - I only have [500 dollars](budget)
-    - I want to drop four grand on this trip
+    - I want to drop [4 grand](budget) on this trip
+    - I want to spend [8 thousand](budget) on this trip
+    - [8 k](budget)
+    - I can spend up to [7 thousand](budget) dollars 
     - Max I can spend is [300 dollars]dollars
     - I need to spend at least [400 bucks]dollars on this getaway
     - I want to spend around [2000 dollars] dollars
