@@ -92,7 +92,7 @@ function Main() {
         // will need to replace the information object on the stack
         const targetBackendURL = 'http://localhost:8000/recommendCities/'
         const options = {
-            method: "GET",
+            method: "POST",
             credentials: "same-origin",
             headers: {
                 "Content-Type": "application/json"

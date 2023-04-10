@@ -98,7 +98,7 @@ def getRestaurantsByCityCuisines():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
     
-@cities.app.route('/recommendCities/', methods=['GET'])
+@cities.app.route('/recommendCities/', methods=['POST'])
 def get_recommended_cities():
     """return list of avalible services"""
     input_json = flask.request.json
@@ -197,7 +197,7 @@ def filter_trip_duration(string_duration):
         if word.string().lower() == "day" or word.string().lower() == "days":
             is_day = 1
             
-    return (extracted_num - 1) * multiplier
+    return (extracted_num - is_day) * multiplier
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID
