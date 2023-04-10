@@ -17,6 +17,86 @@ def get_services():
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
+@cities.app.route("/api/getCity/", method=['GET'])
+def get_cities_by_name():
+    connection = cities.model.get_db()
+    city_name = flask.request.args.get('city_name')
+    activity_name = flask.request.args.get('activity_name')
+    city_name = filter_cities(connection, city_name)
+    # todo filter activity_name
+    
+    
+    curr = connection.execute(
+        "SELECT DISTINCT CS.activity_name, CS.weighted_rating FROM Cities C,  "
+        "Activities A, Specific_Activities SA "
+        "WHERE C.city_id = SA.city_id AND SA.activity_id = A.activity_id "
+        "AND C.city_name = ? AND A.activity_name = ? ",
+        (city_name, activity_name,)
+    )
+    
+    city_activity_id_dict = curr.fetchall()
+    
+    # TODO sort list above by weighted rating. With best raiting as the first element
+    
+    response = flask.jsonify(**city_activity_id_dict)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+    
+    
+    # ignore below
+    
+    result_dict = {}
+    for entry in city_activity_id_dict:
+        curr2 = connection.execute(
+            "SELECT SA.activity_name, SA.weighted_rating, FROM Specifc_activites SA WHERE "
+            " SA.city_id = ? AND SA.activity_id = ? ",
+            (entry['city_id'], entry['activity_id'])
+            )
+        temp_list_of_dict = curr2.fetchall()
+        temp_list_of_dict.sort(temp_list_of_dict.items(), reverse=True, key=lambda x: x[1])
+        result_dict[temp_list_of_dict[0]['activity_name']] = temp_list_of_dict[]
+        
+        
+    
+    
+    
+    
+@cities.app.route("/api/getCuisines/", method=['GET'])
+def get_cities_by_name():
+    city_name = flask.request.args.get('city_name')
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT DISTINCT CU.cuisine_name "
+                             "FROM Cities C "
+                             "INNER JOIN City_Restaurants CR "
+                             "ON C.city_id = CR.city_id "
+                             "INNER JOIN Cuisines CU "
+                             "ON CR.cuisine_id = CU.cuisine_id "
+                             "WHERE C.city_name = ?", (city_name))
+    results = cur.fetchall()
+    cuisines_list = []
+    for result in results:
+        cuisines_list.append(result["cuisine_name"])
+    context = {
+        "cuisines_list": cuisines_list
+    }
+    response = flask.jsonify(**context)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+@cities.app.route("/api/getRestaurantsByCityCuisines/", method=['GET'])
+def getRestaurantsByCityCuisines():
+    city_name = flask.request.args.get('city_name')   
+    cuisines_list = flask.request.args.get("cuisines")
+    filtered_cuisines = filter_cuisines(cuisines_list)
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT DISTINCT CR.restaurant_name, CR.weighted_rating "
+                             "FROM City_Restaurants CR "
+                             "INNER JOIN Cities C "
+                             "ON CR.city_id = C.city_id "
+                             "INNER JOIN Cuisines CU "
+                             "ON CR.cuisine_id = CU.cuisine_id "
+                             "WHERE CU.cuisine_name IN ? AND C.city_name = ? "
+                             "ORDER BY CR.weighted_rating ",(filtered_cuisines,city_name))
 # @cities.app.route('/api/cities/<int:cityid>', methods=['GET'])
 # def city_activities(cityid):
 #     """Return a cities and its activities by ID
@@ -130,10 +210,36 @@ def filter_activities(con, act_list):
         filtered_acts.append(temp_sim_list[0])
     filtered_acts.sort(reverse=True, key=sorting_sims)
     return filtered_acts[0]['activity'], filtered_acts[1]['activity'], filtered_acts[2]['activity']
-        
+
+def filter_cities(con, usr_city):
+    nlp = spacy.load('en_core_web_md')
+    cities_dict = get_all_cities(con)
+    print(type(cities_dict))
+    city_string = ''
+    for entry in cities_dict:
+        city_string += entry['city_name'] + " "
+    
+
+    temp_sim_list = []
+    input_word = nlp(usr_city)
+    db_words = nlp(city_string)
+    
+    for token in db_words:
+        temp_sim_list.append(
+            {
+                "city": token.text,
+                "similarity": input_word.similarity(token)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    return temp_sim_list[0]['city']
+
         
 def sorting_sims(sim_entry):
-    return sim_entry['similarity']    
+    return sim_entry['similarity']   
+
+def sorting_ratings(entry):
+    return entry['weighted_rating']  
 
 def get_all_activites(con):
     curr = con.execute(
@@ -141,8 +247,46 @@ def get_all_activites(con):
         "FROM Activities A"
     )
     return curr.fetchall()
-    
-    
+
+def get_all_cities(con):
+    curr = con.execute(
+        "SELECT DISTINCT C.city_name "
+        "FROM Cities C"
+    )
+    return curr.fetchall()
+
+
+def filter_cuisines(cuisines_list):
+    nlp = spacy.load('en_core_web_md')
+    all_cuisines = get_all_cuisines()
+    cuisines_string = ''
+    for entry in all_cuisines:
+        cuisines_string += entry + " "
+    filtered_cuisines_list = []
+    for cuisine in cuisines_list:
+        input_word = nlp(cuisine)
+        db_words = nlp(cuisines_string)
+        temp_sim_list = []
+        for token in db_words:
+            temp_sim_list.append(
+                {
+                    "cuisine": token.text,
+                    "similarity": input_word.similarity(token)
+                }
+            )
+        temp_sim_list.sort(reverse=True, key=sorting_sims)
+        filtered_cuisines_list.append(temp_sim_list[0]["cuisine"])
+    return filtered_cuisines_list
+
+def get_all_cuisines():
+    connection = cities.model.get_db()
+    cur = connection.execute("SELECT cuisine_name "
+                             "FROM Cuisines")
+    results = cur.fetchall()
+    cuisine_list = []
+    for result in results:
+        cuisine_list.append(result["cuisine_name"])
+    return cuisine_list
 def convert(lst):
     return str(lst).translate(None, '[],\'')
 

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState} from 'react';
 
 
-function Chat({attributeInfoList, setAttributeInfoList}) {
+function Chat({attributeInfoList, setAttributeInfoList, userId, tripIsFull}) {
   const [text_entry, setText_entry] = useState('')
   const [message_list, setMessage_list] = useState([<MessageBox
     position={"left"}
@@ -12,7 +12,19 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
     title={"Get-A-wAI Bot"}
     text="Welcome to Get-A-WAI! What do you like to do?"/>])
 
-  const handleSubmit = () => {
+  const [slot_tracker, setSlot_tracker] = useState({
+    "liked_activity_1": false,
+    "liked_activity_2": false,
+    "liked_activity_3": false,
+    "preferred_climate": false,
+    "preferred_travel_method": false,
+    "preferred_trip_length": false,
+    "preferred_budget": false,
+    "user_city": false,
+    "user_state": false
+  })
+
+  const handleSubmitPhase1 = () => {
     setMessage_list(prev_list => [...prev_list,
           <MessageBox
             position={"right"}
@@ -22,7 +34,117 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
           />
     ])
     // TODO: Change to correct RASA route
-    const path1 = 'http://localhost:5005/model/parse/'
+    const path1 = 'http://localhost:5005/webhooks/rest/webhook'
+
+    const options = {
+      method: "POST",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({message: text_entry, sender: userId})
+    }
+  
+    fetch(path1, options)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        generateTextResponse(data[0])
+        handleResponse(data[0])
+      })  
+      .catch((error) => console.log(error));
+      setText_entry('');
+  };
+
+  //intent type needs to match the names declared in main.js for the attrivuteInfo object
+  const handleResponse = (data) => {
+
+    const get_slots_url = `http://localhost:5005/conversations/${userId}/tracker`
+    fetch(get_slots_url, {credentials: "same-origin"})
+      .then((response2) => {
+        return response2.json();
+      })
+      .then((tracker) => {
+        console.log(tracker)
+        for (const key in tracker.slots){
+          console.log(`the value of key is ${key}. The value of slots tracker is ${slot_tracker[key]} The set value of the slot is ${tracker.slots[key] !== null}`)
+          if (key in slot_tracker && tracker.slots[key] !== null && !slot_tracker[key]){
+            add_value_to_attribute_list(key, tracker.slots)
+          }
+        }
+      })
+
+
+    // let updated_info = attributeInfoList
+    // data.entities.forEach((entity) => {
+    //   const entityType = entity.entity
+    //   if(attributeInfoList[entityType].list.length + 1 <= attributeInfoList[entityType].limit){
+    //     updated_info[entityType].list = [...updated_info[entityType].list, entity.value]
+    //   }
+    // })
+    // setAttributeInfoList(() => ({...updated_info}))
+    // generateTextResponse(data)
+  }
+
+  const add_value_to_attribute_list = (key, slots) => {
+
+    switch (key) {
+      case "liked_activity_1":
+        update_activity_display(key, slots, "activities")
+        break;
+      case "liked_activity_2":
+        update_activity_display(key, slots, "activities")
+        break;
+      case "liked_activity_3":
+        update_activity_display(key, slots, "activities")
+        break;
+      case "preferred_climate":
+        update_activity_display(key, slots, "climate")
+        break;
+      case "preferred_travel_method":
+        update_activity_display(key, slots, "travelMethod")
+        break;
+      case "preferred_trip_length":
+        update_activity_display(key, slots, "tripDuration")
+        break;
+      case "preferred_budget":
+        update_activity_display(key, slots, "budget")
+        break;
+      case "user_city":
+        update_activity_display(key, slots, "location")
+        break;
+      case "user_state":
+        update_activity_display(key, slots, "location")
+        break;
+      default:
+    }
+    
+  }
+
+  const update_activity_display = (key, slots, attributeName) => {
+    let updated_info = attributeInfoList
+        updated_info[attributeName].list = [...updated_info[attributeName].list, slots[key]]
+        console.log(updated_info)
+        setAttributeInfoList({...updated_info})
+        let updated_slot_tracker = slot_tracker
+        updated_slot_tracker[key] = true
+        setSlot_tracker({...updated_slot_tracker})
+  }
+
+
+  const generateTextResponse = (data) => {
+      console.log(data.text)
+      setMessage_list(prev_list => [...prev_list, 
+        <MessageBox
+        position={"left"}
+        type={"text"}
+        title={"GET-a-wAI Bot"}
+        text={data.text}/>])
+  } 
+
+  const handleSubmitPhase2 = () => {
+    const url = "http://localhost:5005/model/parse"
 
     const options = {
       method: "POST",
@@ -32,50 +154,58 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
       },
       body: JSON.stringify({text: text_entry})
     }
-  
-    fetch(path1, options)
+
+    fetch(url, options)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        handleIntent(data)
-      })  
-      .catch((error) => console.log(error));
-      setText_entry('');
-  };
+        const cityOfInterest = getInterestedCity(data)
+        if (cityOfInterest !== null) {
+          getCityList()
+        }
+      })
 
-  //intent type needs to match the names declared in main.js for the attrivuteInfo object
-  const handleIntent = (data) => {
-    let updated_info = attributeInfoList
-    data.entities.forEach((entity) => {
-      const entityType = entity.entity
-      if(attributeInfoList[entityType].list.length + 1 <= attributeInfoList[entityType].limit){
-        updated_info[entityType].list = [...updated_info[entityType].list, entity.value]
-      }
-    })
-    setAttributeInfoList(() => ({...updated_info}))
-    generateTextResponse(data)
   }
 
-  const generateTextResponse = (data) => {
-    setMessage_list(prev_list => [...prev_list, 
-      <MessageBox
-      position={"left"}
-      type={"text"}
-      title={"GET-a-wAI Bot"}
-      text={`Triggered ${data.intent.name}Intent. TODO: make better responses`}/>])
-  } 
+  const getInterestedCity = (data) => {
+      let city_name = ''
+      if (data.intent.name === "city_interest") {
+        data.entities.map((entity) => {
+          if (entity.entity === "GPE") {
+            city_name = entity.value
+          }
+        })
+        return city_name
+      }
+      return null
+  }
+
+  const getCityList = (getCityList) => {
+    const url = `http://localhost:8000/api/getCity/?city_name=${getCityList}`
+
+  }
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      handleSubmit()
+      submitDecider()
     }
   }
 
+  const submitDecider = () => {
+    if(tripIsFull){
+      handleSubmitPhase2()
+    }
+    else {
+      handleSubmitPhase1()
+    }
+  }
+ 
   return (
     <>
     <div class='card-body p-4' style={{height: "800px", overflow: "auto" }}>
       <div>
+        {userId}
           {message_list.map((text_list_item,index) =>{
             return <div key={index}> {text_list_item} </div>
           })}
@@ -87,7 +217,7 @@ function Chat({attributeInfoList, setAttributeInfoList}) {
       <div class="input-group">
         <input type="text" class="form-control border-0" placeholder="Write a message" name="user_question" value={text_entry}  onChange={e => setText_entry(e.target.value)} onKeyDown={handleKeyDown}/>
         <div class="input-group-text bg-transparent border-0">
-            <button class="btn btn-light" onClick={handleSubmit} ><FontAwesomeIcon icon={"fa fa-paper-plane"} /> </button>
+            <button class="btn btn-light" onClick={submitDecider} ><FontAwesomeIcon icon={"fa fa-paper-plane"} /> </button>
         </div>
       </div>
           

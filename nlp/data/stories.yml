@@ -2,3 +2,56 @@ version: "3.1"
 
 stories:
 
+- story: get specific activites
+  steps:
+  - intent: city_interest
+    entities:
+    - GPE: "Miami"
+  - action: set_city_interest_slot
+  - slot_was_set:
+    - interested_city: Miami
+  - action: utter_restaurants_or_specific_activities
+  - intent: specific_activity_intent
+    entities:
+    - activities: "beach"
+  - action: action_get_specific_activities
+
+- story: get specific activities without city set
+  steps:
+  - intent: city_interest
+  - action: set_city_interest_slot
+  - intent: city_interest
+    entities:
+    - GPE: Orlando
+  - action: set_city_interest_slot
+  - slot_was_set:
+    - interested_city: Orlando
+  - action: utter_restaurants_or_specific_activities
+  # - intent: resturant_information
+  # - action: action_get_resturant_info
+  # - intent:
+
+
+- story: resturant_info
+  steps:
+    - intent: city_interest
+      entities:
+      - GPE: "Boston"
+    - action: set_city_interest_slot
+    - slot_was_set:
+      - interested_city: Boston
+    - action: utter_restaurants_or_specific_activities
+    # - intent: resturant_information
+    # - action: action_get_resturant_info
+
+# need to add help intent
+- story: beginning
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: help
+    - action: utter_respond_capabilities
+    
+
+    
+    

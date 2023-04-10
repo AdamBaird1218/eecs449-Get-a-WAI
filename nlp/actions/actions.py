@@ -6,22 +6,154 @@
 
 
 # This is a simple example for a custom action which utters "Hello World!"
+import requests
+from typing import Any, Text, Dict, List
 
-# from typing import Any, Text, Dict, List
+from rasa_sdk import Action, Tracker, FormValidationAction
+from rasa_sdk.events import EventType, SlotSet
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.types import DomainDict
 
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
+
+class ActionSetCityInterestedSlot(Action):
+    def name(self) -> Text:
+        return "set_city_interest_slot"
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        interested_city = next(tracker.get_latest_entity_values("GPE"), None)
+        
+        if not interested_city:
+            msg = f"What city are you interested in?"
+            dispatcher.utter_message(text=msg)
+            return []
+        
+        
+        return [SlotSet("interested_city", interested_city)]
 
 
-# class ActionHelloWorld(Action):
+class ActionGetSpecificActivities(Action):
+    
+    def name(self) -> Text:
+        return "action_get_specific_activities"
+    
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        interested_city = tracker.get_slot("interested_city")
+        interested_general_activity = next(tracker.get_latest_entity_values('activities'), None)
+        
+        if not interested_city:
+            msg = f"Hmm I didn't detect a interested city. What city are you interested in?"
+            dispatcher.utter_message(text=msg)
+            return []
+        if not interested_general_activity:
+            msg = f"Hmm I didn't detect a interested general activity. What general activity are you interested in for {interested_city}?"
+            dispatcher.utter_message(text=msg)
+            return []
+        
+        
+        payload = {'city_name': interested_city, 'activity_name': interested_general_activity }
+        r = requests.get('http://localhost:8000/api/getCity/', params=payload)
+        specific_activites = specific_activites.json()
+        for idx, activity in enumerate(specific_activites):
+            msg = f"#{idx} {activity['activity_name']}"
+            dispatcher.utter_message(f"activity[]")
+        
+            
+        
+        
+        return []
 
-#     def name(self) -> Text:
-#         return "action_hello_world"
 
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+class ValidateVacationDataForm(FormValidationAction):
 
-#         dispatcher.utter_message(text="Hello World!")
+    def name(self) -> Text:
+        return "validate_vacation_data_form"
+    
+    def validate_liked_activity_1(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
 
-#         return []
+        return {"liked_activity_1": slot_value}
+
+    def validate_liked_activity_2(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+    
+        return {"liked_activity_2": slot_value}
+    
+    def validate_liked_activity_3(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+        return {"liked_activity_3": slot_value}
+    
+    def validate_preferred_climate(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+        return {"preferred_climate": slot_value}
+    
+    def validate_preferred_travel_method(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+        return {"preferred_travel_method": slot_value}
+    
+    def validate_preferred_trip_length(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+        return {"preferred_trip_length": slot_value}
+    
+    def validate_preferred_budget(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+        return {"preferred_budget": slot_value}
+    
+    def validate_user_city(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+        return {"user_city": slot_value}
+    
+    def validate_user_state(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict               
+        ) -> Dict[Text, Any]:
+        return {"user_state": slot_value}
+    
+    
+

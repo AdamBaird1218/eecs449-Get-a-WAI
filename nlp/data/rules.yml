@@ -1,3 +1,20 @@
 version: "3.1"
 
 rules:
+- rule: Collect Vacation Data
+  steps:
+  - intent: start_vacation_planning
+  - action: vacation_data_form
+  - active_loop: vacation_data_form
+
+- rule: End Vacation Data Collection
+  condition:
+  - active_loop: vacation_data_form
+  steps:
+  - action: vacation_data_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_all_data_collected
+  - action: utter_next_steps
+    
