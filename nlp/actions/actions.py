@@ -54,18 +54,18 @@ class ActionGetCityCusines(Action):
             re = requests.get("http://localhost:8000/api/getCuisines/", params=payload)
             cuisines = re.json()
             msg2 = ''
-            for cuisine in cuisines:
-                msg2 += cuisine + " "
+            for cuisine in cuisines['cuisines_list']:
+                msg2 += cuisine + ", "
             dispatcher.utter_message(text=msg2)
             return []
         
         payload = {'city_name': interested_city, 'cuisines': interested_cuisine }
         r = requests.get('http://localhost:8000/api/getRestaurantsByCityCuisines/', params=payload)
         specific_rest = r.json()
-        for idx, rest in enumerate(specific_rest):
-            msg = f"#{idx} {rest['restaurant_name']}"
+        for idx, rest in enumerate(specific_rest['restaurants']):
+            msg = f"#{idx + 1} {rest['restaurant_name']}"
             dispatcher.utter_message(text=msg)
-        if len(specific_rest):
+        if not len(specific_rest['restaurants']):
             dispatcher.utter_message(text=f"Sorry, we couldn't find any resturants that have {interested_cuisine} in {interested_city}")
             
         return []

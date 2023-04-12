@@ -26,23 +26,26 @@ def get_cities_by_name():
     city_name = flask.request.args.get('city_name')
     activity_name = flask.request.args.get('activity_name')
     city_name = filter_cities(connection, city_name)
-    # TODO filter activity_name
+    activity_name = filter_single_activity(connection, activity_name)
+    print(f"value: {city_name} type: {type(city_name)}")
+    print(f"value: {activity_name} type: {type(activity_name)}")
     
     
     curr = connection.execute(
-        "SELECT DISTINCT CS.activity_name, CS.weighted_rating FROM Cities C,  "
+        "SELECT DISTINCT SA.activity_name, SA.weighted_rating FROM Cities C, "
         "Activities A, Specific_Activities SA "
         "WHERE C.city_id = SA.city_id AND SA.activity_id = A.activity_id "
-        "AND C.city_name = ? AND A.activity_name = ? ",
-        (city_name, activity_name,)
+        "AND C.city_name = 'Chicago' AND A.activity_name = 'parks' "
     )
     
     city_activity_id_dict = curr.fetchall()
-    
+    print(city_activity_id_dict)
     # TODO sort list above by weighted rating. With best raiting as the first element
     city_activity_id_dict.sort(reverse=True, key = sorting_ratings)
     
-    response = flask.jsonify(**city_activity_id_dict)
+    
+    
+    response = flask.jsonify(city_activity_id_dict)
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
     
@@ -79,7 +82,7 @@ def get_cuisines_by_city():
 @cities.app.route("/api/getRestaurantsByCityCuisines/", methods=['GET'])
 def getRestaurantsByCityCuisines(): 
     city_name = flask.request.args.get('city_name')   
-    cuisine = flask.request.args.get("cuisine")
+    cuisine = flask.request.args.get("cuisines")
     filtered_cuisine = filter_cuisines(cuisine)
     connection = cities.model.get_db()
     cur = connection.execute("SELECT DISTINCT CR.restaurant_name, CR.weighted_rating "
@@ -178,6 +181,30 @@ def _build_cors_preflight_response():
     return response
     
 
+
+def filter_single_activity(con, act_name):
+    nlp = spacy.load('en_core_web_md')
+    activites_dict = get_all_activites(con)
+    print(type(activites_dict))
+    act_string = ''
+    for entry in activites_dict:
+        act_string += entry['activity_name'] + " "
+    
+    temp_sim_list = []
+    input_word = nlp(act_name)
+    db_words = nlp(act_string)
+    
+    for token in db_words:
+        temp_sim_list.append(
+            {
+                "activity": token.text,
+                "similarity": input_word.similarity(token)
+            }
+        )
+    temp_sim_list.sort(reverse=True, key=sorting_sims)
+    return temp_sim_list[0]['activity']
+
+    
 
 def filter_budget(input):
     words = input.split()
@@ -351,12 +378,17 @@ def filter_cities(con, usr_city):
     cities_dict = get_all_cities(con)
     print(type(cities_dict))
     city_string = ''
+
     for entry in cities_dict:
         city_string += entry['city_name'] + " "
+ 
     
 
     temp_sim_list = []
     input_word = nlp(usr_city)
+
+    print(f"{type(input_word)}")
+
     db_words = nlp(city_string)
     
     for token in db_words:
