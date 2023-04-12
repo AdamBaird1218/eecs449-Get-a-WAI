@@ -123,7 +123,7 @@ VALUES (9, 'zoos');
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (10, 'casinos');
 INSERT INTO Activities (activity_id, activity_name)
-VALUES (11, 'theares');
+VALUES (11, 'theatres');
 INSERT INTO Activities (activity_id, activity_name)
 VALUES (12, 'aquariums');
 

@@ -11,6 +11,9 @@ nlu:
     - yes, lets plan one
     - I'm ready to begin
     - I would like to plan a vacation
+    - lets go back to planning the vacation
+    - back to the vacation
+    - back to the plan
 - intent: inform_vacation_data
   examples: |
     - I love [hiking](activities) mountains.
@@ -75,6 +78,8 @@ nlu:
     - I want to go [sightseeing](activities)
     - I like [warm](climate) weather
     - I enjoy [cold](climate) weather
+    - I want something with [moderate](climate) temperatures
+    - I want somewhere with [medium](climate) temperatures
     - I like [cold](climate) weather
     - [cold](climate)
     - [sunny](climate)
@@ -160,6 +165,7 @@ nlu:
     - I am traveling from Novi
     - Pretty long, I think were going to stay [3 months](tripDuration)
     - I live in New York
+    - I think it would need to be [cold](climate)
 - intent: city_interest
   examples: |
     - I'm interested in Dallas
@@ -178,6 +184,8 @@ nlu:
     - Las Vegas
     - New York City
     - Orlando
+    - gatlinburg seems pretty interesting
+    - What can I do in Boston
     - Los Angeles
     - Chicago
     - Nashville

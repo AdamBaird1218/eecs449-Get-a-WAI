@@ -56,7 +56,7 @@ class ActionGetCityCusines(Action):
             msg2 = ''
             for cuisine in cuisines:
                 msg2 += cuisine + " "
-            tracker.utter_message("msg2")
+            dispatcher.utter_message(text=msg2)
             return []
         
         payload = {'city_name': interested_city, 'cuisines': interested_cuisine }

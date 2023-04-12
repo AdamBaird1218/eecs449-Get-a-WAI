@@ -1,8 +1,8 @@
 import React from 'react';
 import CityObject from './cityObject';
 function CitiesContainer({citiesInfo, tripFull}) {
-
-    if (tripFull){
+    console.log(citiesInfo)
+    if (tripFull && citiesInfo !== undefined){
         return <>
         {citiesInfo.citiesList.map((city, index) => {
             return <div class="col"><CityObject 
@@ -14,7 +14,7 @@ function CitiesContainer({citiesInfo, tripFull}) {
                 travelMethod={city.travel_method}
                 // travelTimeEstimate={city.travelTimeEstimate}
                 estimatedCost={city.estimated_cost}
-                cityActivitiesList={city.cityActivitiesList}
+                cityActivitiesList={city.cityActivityList}
                 userBudget={citiesInfo.userBudget}
                 userActivities={citiesInfo.userActivities}
                 nights={citiesInfo.nights}

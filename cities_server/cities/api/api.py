@@ -2,6 +2,7 @@
 import flask
 import cities
 import spacy
+from operator import itemgetter, attrgetter
 
 from cities_server.cities.api import scrape_prices as sp
 
@@ -121,7 +122,6 @@ def get_recommended_cities():
     
     for city in first_set_cities:
         print(type(city))
-        connection = cities.model.get_db()
         cur = connection.execute("SELECT C.city_id, C.city_name "
                                  "FROM Cities C "
                                  "WHERE C.climate = ? AND C.city_name = ? ",
@@ -133,13 +133,14 @@ def get_recommended_cities():
         result = cur.fetchall()
         print("RESULT1:", result)
         if(len(result) > 0):
+            result[0]['num_match_acts'] = city['num_act']
             next_city_filter.append(result[0])
     if(len(next_city_filter) == 0):
         for city in first_set_cities:
-            city_object = {'city_id': city['city_id'],'city_name':city['city_name']}
+            city_object = {'city_id': city['city_id'],'city_name':city['city_name'], 'num_match_acts': city['num_act']}
             next_city_filter.append(city_object)
     print("CLimate Filtered Cities: ", next_city_filter)
-    starting_location = input_json['location']['list'][0]
+    starting_location = input_json['location']['list'][0] + " " + input_json['location']['list'][1]
     preferred_travel_method = input_json['travelMethod']['list'][0]
     travel_method = get_travel_method(preferred_travel_method)
     budget = filter_budget(input_json['budget']['list'][0])
@@ -150,13 +151,14 @@ def get_recommended_cities():
         city_specific_activity_list = get_specific_city_activities_list(city['city_id'])
         cityObject = {"name":city['city_name'],
                       "id":city['city_id'],
-                      
+                      'num_match_acts': city['num_match_acts'],
                       "travel_method":travel_method,
                       "estimated_cost": cost,
                       "absolute_difference_to_budget": abs(cost - budget),
                       "cityActivityList": city_specific_activity_list}
         citiesList.append(cityObject)
-    citiesList.sort(reverse=False, key = sorting_costs)
+    citiesList =  sorted(citiesList, key=sorting_costs, reverse=False)
+    citiesList = sorted(citiesList, key=sorting_num_acts, reverse=True)
     context = {
         "nights":trip_duration,
         "citiesList":citiesList,
@@ -196,15 +198,15 @@ def filter_budget(input):
 
 def filter_trip_duration(string_duration):
     word_list = string_duration.split()
-    extracted_num = 4
+    extracted_num = 1
     multiplier = 1
     is_day = 0
     for word in word_list:
         if word.isnumeric():
             extracted_num = int(word)
-        if word.strip().lower() == "week":
+        if word.strip().lower() == "week" or word.strip().lower() == "weeks" :
             multiplier = 7
-        if word.strip().lower() == "month":
+        if word.strip().lower() == "month" or word.strip().lower() == "months":
             multiplier = 30
         if word.strip().lower() == "day" or word.strip().lower() == "days":
             is_day = 1
@@ -373,6 +375,11 @@ def sorting_sims(sim_entry):
 
 def sorting_ratings(entry):
     return entry['weighted_rating']  
+
+def sorting_num_acts(entry):
+    return entry['num_match_acts']
+
+
         
 def filter_climate(con, climate):
     print("CLim In:", climate)

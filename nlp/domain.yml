@@ -134,7 +134,7 @@ responses:
   - text: Getting specific activities!
   - text: Getting potential activities for the city you selected!
   utter_next_steps:
-  - text: Please look through the cities below and let me know which one you are interested in.
+  - text: Please wait while we find your perfect destinations. Let us know if any of them sound interesting!
 actions:
 - set_city_interest_slot
 - utter_next_steps

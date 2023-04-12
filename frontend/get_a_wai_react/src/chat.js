@@ -50,15 +50,16 @@ function Chat({attributeInfoList, setAttributeInfoList, userId}) {
         return response.json();
       })
       .then((data) => {
-        generateTextResponse(data[0])
-        handleResponse(data[0])
+        console.log(data)
+        generateTextResponse(data)
+        handleResponse()
       })  
       .catch((error) => console.log(error));
       setText_entry('');
   };
 
   //intent type needs to match the names declared in main.js for the attrivuteInfo object
-  const handleResponse = (data) => {
+  const handleResponse = () => {
 
     const get_slots_url = `http://localhost:5005/conversations/${userId}/tracker`
     fetch(get_slots_url, {credentials: "same-origin"})
@@ -125,12 +126,17 @@ function Chat({attributeInfoList, setAttributeInfoList, userId}) {
 
   const generateTextResponse = (data) => {
       console.log(data.text)
+      let adding_msg_array = []
+      data.forEach(element => {
+        adding_msg_array.push(<MessageBox
+          position={"left"}
+          type={"text"}
+          title={"GET-a-wAI Bot"}
+          text={element.text}/>)
+      });
+
       setMessage_list(prev_list => [...prev_list, 
-        <MessageBox
-        position={"left"}
-        type={"text"}
-        title={"GET-a-wAI Bot"}
-        text={data.text}/>])
+        ...adding_msg_array])
   } 
 
 

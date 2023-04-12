@@ -15,7 +15,7 @@ function Information({activitiesInfo, tripFull, citiesInfo, showLeftColumn, setS
         tripFull={tripFull}
         />
 
-        <div class="d-grid gap-2"> <button class="btn btn-primary" type="button" onClick={togglePosition}>Toggle activities View</button> </div>
+        <div class="d-grid gap-2"> <button class="btn btn-primary" type="button" onClick={togglePosition}>Toggle Cities View</button> </div>
         </>
 
     }
@@ -51,7 +51,7 @@ function Information({activitiesInfo, tripFull, citiesInfo, showLeftColumn, setS
             attributeLimit={activitiesInfo.budget.limit}
             attributeList={activitiesInfo.budget.list}
         />
-        {tripFull && <div class="d-grid gap-2"> <button class="btn btn-primary" type="button" onClick={togglePosition}>Toggle activities View</button> </div>}
+        {tripFull && <div class="d-grid gap-2"> <button class="btn btn-primary" type="button" onClick={togglePosition}>Toggle Cities View</button> </div>}
     </>  
    
     }

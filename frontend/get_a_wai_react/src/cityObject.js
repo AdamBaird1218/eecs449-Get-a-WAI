@@ -13,6 +13,8 @@ function CityObject({
     userActivities,
     nights}) {
 
+        console.log(cityActivitiesList)
+
     const getCorrectIcon = () => {
         if (travelMethod === "car"){
             return "fa-solid fa-car"
