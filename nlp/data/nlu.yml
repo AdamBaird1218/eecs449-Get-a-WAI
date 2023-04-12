@@ -218,7 +218,7 @@ nlu:
   examples: |
     - yes, I am interested in the specific activities for Denver.
     - Yes, I would like to know more about [hiking](activities).
-    - Can I know more about the activities thar are available?
+    - Can I know more about the activities that are available?
     - what activities are there?
     - Lets go with the activities
     - What kind of stuff is there to do in Miami
@@ -227,7 +227,13 @@ nlu:
     - I want to know about which activities are offered
     - I am interested in [Gambling]{"entity": "activities", "value": "gambling"}
     - I am pretty interested in [gambling](activities).
+    - What [parks](activities) are available
+    - Where can I go [hiking](activities)
+    - What are my [beach](activities) options
+    - Where can I go the [beach](activities)
+    - what [hiking](activities) trails are there
 - intent: restaurants_interest
+
   examples: |
     - I'm interested in what restaurants are avaliable
     - I'm in the mood for [chinease](cuisine) food.

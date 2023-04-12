@@ -35,7 +35,8 @@ def get_cities_by_name():
         "SELECT DISTINCT SA.activity_name, SA.weighted_rating FROM Cities C, "
         "Activities A, Specific_Activities SA "
         "WHERE C.city_id = SA.city_id AND SA.activity_id = A.activity_id "
-        "AND C.city_name = 'Chicago' AND A.activity_name = 'parks' "
+        "AND C.city_name = ? AND A.activity_name = ? ", 
+        (city_name, activity_name)
     )
     
     city_activity_id_dict = curr.fetchall()

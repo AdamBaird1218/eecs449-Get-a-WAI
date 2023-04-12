@@ -42,6 +42,8 @@ class ActionGetCityCusines(Action):
         
         interested_city = tracker.get_slot("interested_city")
         interested_cuisine = next(tracker.get_latest_entity_values('cuisine'), None)
+        if not interested_cuisine:
+            interested_cuisine = next(tracker.get_latest_entity_values('NORP'), None)
         
         if not interested_city:
             msg = f"Hmm I didn't detect a interested city. What city are you interested in?"

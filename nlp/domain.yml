@@ -105,7 +105,7 @@ responses:
   utter_greet:
   - text: Hey! How are you?
   utter_respond_capabilities:
-  - text: Get-a-wAI helps individuals discover new and exciting vaction destinations. To design your tailored-made trip, I need to collect information about your activity instrests, weather preference, budget, trip length, travel method, and address.
+  - text: Get-a-wAI helps individuals discover new and exciting vaction destinations. Let us know when you're ready to design your tailored-made trip!
   utter_ask_liked_activity_1:
   - text: What kind of activities are you interested in doing on your vaction? Please only include one activity at a time.
   utter_ask_liked_activity_2:

@@ -23,8 +23,6 @@ rules:
   steps:
   - intent: city_interest
   - action: set_city_interest_slot
-
-
 - rule: When specific activity intent
   condition:
   - active_loop: null
@@ -34,8 +32,8 @@ rules:
 
 
 - rule: When Restuarants Intent
-condition:
-- active_loop: null
-steps:
-- intent: restaurants_interest
-- action: action_get_restaurants_info
+  condition:
+  - active_loop: null
+  steps:
+  - intent: restaurants_interest
+  - action: action_get_restaurants_info
