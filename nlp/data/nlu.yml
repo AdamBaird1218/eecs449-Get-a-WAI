@@ -233,7 +233,6 @@ nlu:
     - Where can I go the [beach](activities)
     - what [hiking](activities) trails are there
 - intent: restaurants_interest
-
   examples: |
     - I'm interested in what restaurants are avaliable
     - I'm in the mood for [chinease](cuisine) food.
